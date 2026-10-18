@@ -1,0 +1,17 @@
+{
+ "id": "test3-20261018",
+ "items": [
+  {
+   "key": "phone",
+   "query": "smartphone at night",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "server",
+   "query": "data center",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
