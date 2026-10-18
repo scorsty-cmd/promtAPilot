@@ -2,6 +2,8 @@
 
 Otonom içerik üretimi, görsel toplama ve YouTube bulut yükleme otomasyon platformu.
 
+> 🤖 **Yeni:** [J.A.R.V.I.S. kişisel yapay zeka asistanı](jarvis/README.md) — bilgisayarınızda komut çalıştıran, dosyalarınızı yöneten, internette araştıran Claude tabanlı ajan.
+
 ## 🎬 YouTube Daily Upload & Schedule Otomasyonu
 
 Bilgisayardan bağımsız olarak Google Drive üzerindeki videoları GitHub Actions üzerinde tarar, standart kontrollerini yapar (Tarih kanalı belgeselleri için en az 8 dakika kuralı) ve YouTube kanalına otomatik yükleyip planlar.
