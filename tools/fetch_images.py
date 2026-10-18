@@ -8,7 +8,7 @@ For each item it searches Openverse for CC0 / Public Domain Mark images first
 up to n usable images (short side >= 700 px), resizes them to max 1800 px and writes
 assets/<id>/<key>_<k>.jpg plus manifest.json (title, creator, licence, source page).
 """
-import io, json, os, sys, time
+import io, json, os, re, sys, time
 import requests
 from PIL import Image
 
@@ -25,7 +25,7 @@ def search_commons(query):
     """Wikimedia Commons fallback: only CC0, Public Domain and CC BY (not BY-SA) files."""
     params = {'action': 'query', 'format': 'json', 'generator': 'search', 'gsrnamespace': 6,
               'gsrsearch': query + ' filetype:bitmap', 'gsrlimit': 30, 'prop': 'imageinfo',
-              'iiprop': 'url|extmetadata|size', 'iiurlwidth': 1800}
+              'iiprop': 'url|extmetadata|size', 'iiurlwidth': 1280}
     try:
         r = requests.get(COMMONS, params=params, headers=UA, timeout=30)
         pages = r.json().get('query', {}).get('pages', {}).values()
@@ -43,7 +43,7 @@ def search_commons(query):
             kind, credit = 'by', True
         else:
             continue
-        artist = md.get('Artist', {}).get('value', '')
+        artist = re.sub(r'<[^>]+>', '', md.get('Artist', {}).get('value', '')).strip()
         out.append({'url': ii.get('thumburl') or ii.get('url'), 'title': pg.get('title'), 'creator': artist[:120],
                     'license': kind, 'license_version': lic, 'license_url': md.get('LicenseUrl', {}).get('value'),
                     'foreign_landing_url': ii.get('descriptionurl'), 'needs_credit': credit,
@@ -53,10 +53,11 @@ def search_commons(query):
 
 
 def search(query, licences, orientation=None):
-    params = {'q': query, 'license': licences, 'page_size': 30, 'mature': 'false'}
+    params = {'q': query, 'license': licences, 'page_size': 20, 'mature': 'false'}
     if orientation in ('tall', 'wide', 'square'):
         params['aspect_ratio'] = orientation
-    for attempt in range(3):
+    for attempt in range(2):
+        time.sleep(2)
         try:
             r = requests.get(API, params=params, headers=UA, timeout=30)
             if r.status_code == 200:
@@ -64,8 +65,32 @@ def search(query, licences, orientation=None):
             log('openverse', query, r.status_code, r.text[:200])
         except Exception as e:  # network hiccup
             log('openverse error', e)
-        time.sleep(3 * (attempt + 1))
+        if r.status_code in (401, 403): break
+        time.sleep(6)
     return []
+
+
+PEXELS_KEY = os.environ.get('PEXELS_API_KEY', '').strip()
+
+
+def search_pexels(query, orientation=None):
+    """Pexels (free licence: no attribution needed, editing allowed). Used first when the
+    repo has a PEXELS_API_KEY secret."""
+    if not PEXELS_KEY:
+        return []
+    params = {'query': query, 'per_page': 20}
+    if orientation in ('tall', 'wide', 'square'):
+        params['orientation'] = {'tall': 'portrait', 'wide': 'landscape', 'square': 'square'}[orientation]
+    try:
+        r = requests.get('https://api.pexels.com/v1/search', params=params, headers={'Authorization': PEXELS_KEY, **UA}, timeout=30)
+        photos = r.json().get('photos', []) if r.status_code == 200 else []
+        log('pexels', query, r.status_code, 'results', len(photos))
+    except Exception as e:
+        log('pexels error', e); return []
+    return [{'url': p['src'].get('large2x') or p['src'].get('original'), 'thumbnail': p['src'].get('large'),
+             'title': p.get('alt') or query, 'creator': p.get('photographer'), 'license': 'pexels',
+             'license_version': 'Pexels License', 'license_url': 'https://www.pexels.com/license/',
+             'foreign_landing_url': p.get('url'), 'attribution': None} for p in photos]
 
 
 def download(res):
@@ -97,6 +122,8 @@ def handle(req):
         key, n = item['key'], max(1, min(int(item.get('n', 2)), 5))
         got = 0
         def sources():
+            for x in search_pexels(item['query'], item.get('orientation')):
+                yield x, False
             for licences, credit in (('cc0,pdm', False), ('by', True)):
                 res = search(item['query'], licences, item.get('orientation'))
                 log('openverse', item['query'], licences, 'results', len(res))
@@ -109,6 +136,7 @@ def handle(req):
                 if got >= n:
                     break
                 im = download(res)
+                time.sleep(1)
                 if im is None:
                     continue
                 name = f'{key}_{got}.jpg'

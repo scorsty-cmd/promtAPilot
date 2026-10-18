@@ -29,6 +29,8 @@ jobs:
           python-version: '3.12'
       - run: pip install -q requests pillow
       - name: Download images for new requests
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python tools/fetch_images.py
       - name: Commit
         run: |
