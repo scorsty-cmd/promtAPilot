@@ -1,0 +1,40 @@
+name: Fetch open-licence images
+
+# A Reel run pushes image-requests/<id>.json; this workflow downloads matching
+# CC0 / Public Domain photos from Openverse into assets/<id>/ and commits them,
+# so the render workspace can read them from raw.githubusercontent.com.
+on:
+  push:
+    branches: [main]
+    paths: ['image-requests/*.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-images
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests pillow
+      - name: Download images for new requests
+        run: python tools/fetch_images.py
+      - name: Commit
+        run: |
+          git config user.name "hidden-layer-bot"
+          git config user.email "hidden-layer-bot@users.noreply.github.com"
+          git add assets
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "Add images for $(ls -t image-requests | head -1)"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
