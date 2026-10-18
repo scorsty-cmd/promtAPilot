@@ -42,3 +42,25 @@ Google Drive klasörünüze yükleyeceğiniz dosyalar şu şekilde eşleştirili
 ```
 
 Video yüklendiğinde, Drive üzerindeki dosya otomatik olarak `[YUKLENDI]_video_adi.mp4` olarak güncellenir ve tekrar yüklenmesi engellenir.
+
+---
+
+## 📌 DECISIONS (Mimari ve Otonom Çalışma Kararları)
+
+1. **Bilgisayardan Tam Bağımsızlık (GitHub Actions Runner):**
+   - Tüm video tarama, indirme, süre denetimi, YouTube yükleme ve yayın zamanlama süreçleri yerel makineden koparılarak Ubuntu GitHub Actions runner'larına devredildi.
+   - Yerel bilgisayar kapalı veya uykuda olsa dahi, her gün saat 07:00 UTC (10:00 TSİ) cron görevi bağımsız olarak çalışır.
+
+2. **Sıfır Hardcoded Secret Prensibi:**
+   - Kod, konfigürasyon ve log dosyalarında hiçbir API anahtarı, OAuth client secret veya refresh token tutulmaz.
+   - Tüm kimlik doğrulama verileri çalışma anında (runtime) yalnızca GitHub Repository Secrets üzerinden ortam değişkeni olarak çekilir.
+
+3. **Çift Katmanlı Bulut Depolama (Google Drive Fallback):**
+   - Google Drive API için yetkili Servis Hesabı veya OAuth Refresh Token varsa tam yetkili Drive v3 API kullanılır (dosyalar işlem sonrası `[YUKLENDI]` olarak etiketlenir).
+   - Servis Hesabı veya özel yetki bulunmadığı durumlarda, sistem kilitlenmemesi için otomatik olarak `gdown` paylaşımlı klasör indirme motoruna geçer.
+
+4. **Tarih Kanalı Video Kalite ve Süre Standardı:**
+   - Standart belgesel videolarının en az 480 saniye (8 dakika) olması kuralı kod seviyesinde denetlenir; eksik veya kısa süreli videolar sisteme yüklenmeyerek kanal kalitesi garanti altına alınır. Shorts içerikleri bu filtreden muaf tutulur.
+
+5. **Self-Healing ve Otonom Doğrulama Döngüsü:**
+   - Her kod veya altyapı değişikliğinden sonra ilgili workflow `workflow_dispatch` API ile tetiklenir, loglar denetlenir ve koşu yeşil (success) olmadan süreç tamamlanmış sayılmaz.
