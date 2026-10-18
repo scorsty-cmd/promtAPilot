@@ -1,0 +1,42 @@
+{
+ "id": "20261019-0249b",
+ "images": [
+  {
+   "file": "letters_0.jpg",
+   "key": "letters",
+   "query": "stack of old envelopes letters",
+   "width": 1280,
+   "height": 1631,
+   "title": "File:Letter signed Sara, New York, to Mother F (Kate Filsinger), February 10, 1919 - DPLA - 33332a49a4645663aef029e8d04e07f7 (page 3).jpg",
+   "creator": "Teasdale, Sara, 1884-1933",
+   "license": "pdm",
+   "license_version": "public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Letter_signed_Sara,_New_York,_to_Mother_F_(Kate_Filsinger),_February_10,_1919_-_DPLA_-_33332a49a4645663aef029e8d04e07f7_(page_3).jpg",
+   "attribution_required": false,
+   "attribution": null
+  },
+  {
+   "file": "letters_1.jpg",
+   "key": "letters",
+   "query": "stack of old envelopes letters",
+   "width": 1280,
+   "height": 822,
+   "title": "File:Letter signed Sara, New York, to Mother F (Kate Filsinger), February 10, 1919 - DPLA - 33332a49a4645663aef029e8d04e07f7 (page 8).jpg",
+   "creator": "Teasdale, Sara, 1884-1933",
+   "license": "pdm",
+   "license_version": "public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Letter_signed_Sara,_New_York,_to_Mother_F_(Kate_Filsinger),_February_10,_1919_-_DPLA_-_33332a49a4645663aef029e8d04e07f7_(page_8).jpg",
+   "attribution_required": false,
+   "attribution": null
+  }
+ ],
+ "missing": [
+  {
+   "key": "drawer",
+   "query": "old mobile phones in a drawer",
+   "found": 0
+  }
+ ]
+}
