@@ -1,0 +1,23 @@
+{
+ "id": "20261018-1649",
+ "items": [
+  {
+   "key": "phone",
+   "query": "hand holding smartphone",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "city",
+   "query": "city lights at night aerial",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "cafe",
+   "query": "coffee cups on cafe table",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
