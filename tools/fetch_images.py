@@ -15,6 +15,41 @@ from PIL import Image
 API = 'https://api.openverse.org/v1/images/'
 UA = {'User-Agent': 'HiddenLayerReels/1.0 (github.com/scorsty-cmd/promtapilot)'}
 REQ_DIR, OUT_DIR = 'image-requests', 'assets'
+LOG = []
+def log(*a):
+    LOG.append(' '.join(str(x) for x in a)); print(*a)
+COMMONS = 'https://commons.wikimedia.org/w/api.php'
+
+
+def search_commons(query):
+    """Wikimedia Commons fallback: only CC0, Public Domain and CC BY (not BY-SA) files."""
+    params = {'action': 'query', 'format': 'json', 'generator': 'search', 'gsrnamespace': 6,
+              'gsrsearch': query + ' filetype:bitmap', 'gsrlimit': 30, 'prop': 'imageinfo',
+              'iiprop': 'url|extmetadata|size', 'iiurlwidth': 1800}
+    try:
+        r = requests.get(COMMONS, params=params, headers=UA, timeout=30)
+        pages = r.json().get('query', {}).get('pages', {}).values()
+    except Exception as e:
+        log('commons error', query, e); return []
+    out = []
+    for pg in sorted(pages, key=lambda p: p.get('index', 99)):
+        ii = (pg.get('imageinfo') or [{}])[0]; md = ii.get('extmetadata', {})
+        lic = (md.get('LicenseShortName', {}).get('value') or '').lower()
+        if 'sa' in lic.replace('usa', ''):
+            continue
+        if 'cc0' in lic or 'public domain' in lic or lic.startswith('pd'):
+            kind, credit = 'cc0' if 'cc0' in lic else 'pdm', False
+        elif lic.startswith('cc by') or lic.startswith('cc-by'):
+            kind, credit = 'by', True
+        else:
+            continue
+        artist = md.get('Artist', {}).get('value', '')
+        out.append({'url': ii.get('thumburl') or ii.get('url'), 'title': pg.get('title'), 'creator': artist[:120],
+                    'license': kind, 'license_version': lic, 'license_url': md.get('LicenseUrl', {}).get('value'),
+                    'foreign_landing_url': ii.get('descriptionurl'), 'needs_credit': credit,
+                    'attribution': f"{pg.get('title')} by {artist[:80]} ({lic}), via Wikimedia Commons" if credit else None})
+    log('commons', query, 'usable results', len(out))
+    return out
 
 
 def search(query, licences, orientation=None):
@@ -26,9 +61,9 @@ def search(query, licences, orientation=None):
             r = requests.get(API, params=params, headers=UA, timeout=30)
             if r.status_code == 200:
                 return r.json().get('results', [])
-            print('search', query, r.status_code, r.text[:200])
+            log('openverse', query, r.status_code, r.text[:200])
         except Exception as e:  # network hiccup
-            print('search error', e)
+            log('openverse error', e)
         time.sleep(3 * (attempt + 1))
     return []
 
@@ -40,16 +75,16 @@ def download(res):
         try:
             r = requests.get(url, headers=UA, timeout=40)
             if r.status_code != 200 or len(r.content) < 20000:
-                continue
+                log('skip', r.status_code, len(r.content), url[:90]); continue
             im = Image.open(io.BytesIO(r.content)).convert('RGB')
             if min(im.size) < 700:
-                continue
+                log('too small', im.size, url[:90]); continue
             s = 1800 / max(im.size)
             if s < 1:
                 im = im.resize((int(im.width * s), int(im.height * s)), Image.LANCZOS)
             return im
         except Exception as e:
-            print('download error', url, e)
+            log('download error', url[:90], e)
     return None
 
 
@@ -61,10 +96,16 @@ def handle(req):
     for item in req.get('items', [])[:8]:
         key, n = item['key'], max(1, min(int(item.get('n', 2)), 5))
         got = 0
-        for licences, needs_credit in (('cc0,pdm', False), ('by', True)):
-            if got >= n:
-                break
-            for res in search(item['query'], licences, item.get('orientation')):
+        def sources():
+            for licences, credit in (('cc0,pdm', False), ('by', True)):
+                res = search(item['query'], licences, item.get('orientation'))
+                log('openverse', item['query'], licences, 'results', len(res))
+                for x in res:
+                    yield x, credit
+            for x in search_commons(item['query']):
+                yield x, x['needs_credit']
+        if True:
+            for res, needs_credit in sources():
                 if got >= n:
                     break
                 im = download(res)
@@ -86,6 +127,8 @@ def handle(req):
             manifest['missing'].append({'key': key, 'query': item['query'], 'found': got})
     with open(os.path.join(out, 'manifest.json'), 'w') as f:
         json.dump(manifest, f, indent=1)
+    with open(os.path.join(out, 'log.txt'), 'w') as f:
+        f.write('\n'.join(LOG))
 
 
 def main():

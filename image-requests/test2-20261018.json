@@ -1,0 +1,5 @@
+{"id": "test2-20261018", "items": [
+ {"key": "server", "query": "server room", "n": 2, "orientation": "tall"},
+ {"key": "phone", "query": "smartphone", "n": 2},
+ {"key": "contract", "query": "signing contract", "n": 2}
+]}
