@@ -1,0 +1,29 @@
+{
+ "id": "20261020-0249",
+ "items": [
+  {
+   "key": "sim",
+   "query": "sim card closeup",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "oldphones",
+   "query": "old mobile phones",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "keypad",
+   "query": "telephone keypad",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "mailbox",
+   "query": "empty mailbox",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
