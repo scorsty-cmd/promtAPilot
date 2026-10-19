@@ -1,0 +1,23 @@
+{
+ "id": "20261019-1649b",
+ "items": [
+  {
+   "key": "phone",
+   "query": "smartphone in hand night",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "city",
+   "query": "city street night",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "map",
+   "query": "map pins travel",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
