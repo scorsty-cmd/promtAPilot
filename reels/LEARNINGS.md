@@ -10,7 +10,7 @@
 
 ## Entries
 ### 2026-10-19 16:49 – FILE 005 – iPhone Significant Locations (P2 amber/blue, 27.9 s)
-- File: HL_Reel_20261019_1649_iphone-significant-locations.mp4
+- File: HL_Reel_20261019_1649_iphone-significant-locations.mp4 · https://www.instagram.com/reel/Dercfl2DG4H/
 - New vs FILE 004: animated Settings-path payoff beat; parallax photo card; rack-focus + light leak on photos; hit SFX on every cut; voice 1.08x (was 1.05x).
 - Analysis: outlier search (5 cr) – @meganmykal44 Samsung policy (55x median), @maddisonrotner iPhone setting with path (187x), @leovibes.ai settings tutorial + save CTA (21x), @just.call.me.koko surveillance explainer w/ real footage (68x).
 - Previous (FILE 004 Google inactive account, 26 s): insights still lagging (0 plays reported). FILE 003 Venmo: 10 plays, 19.6% watched, 77.8% skip, 0 saves/shares.
