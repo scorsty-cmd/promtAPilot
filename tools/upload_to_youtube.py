@@ -200,12 +200,15 @@ def calculate_next_publish_time(channel: str = "history", is_shorts: bool = Fals
             # History Sourced: Salı 22:00 TSİ (19:00 UTC), Cumartesi 17:00 TSİ (14:00 UTC)
             slots = [(1, 19, 0, "Salı 22:00 TSİ"), (5, 14, 0, "Cumartesi 17:00 TSİ")]
 
-    for day_diff in range(1, 14):
+    # Bugünün slotu da sayılır; ancak YouTube işleme süresi için en az 90 dk sonrası olmalı.
+    earliest = now + datetime.timedelta(minutes=90)
+    for day_diff in range(0, 14):
         target = now + datetime.timedelta(days=day_diff)
         for wday, h, m, label in slots:
             if target.weekday() == wday:
                 dt = target.replace(hour=h, minute=m, second=0, microsecond=0)
-                candidates.append((dt, label))
+                if dt >= earliest:
+                    candidates.append((dt, label))
 
     candidates.sort(key=lambda x: x[0])
     selected_dt, label = candidates[0]
