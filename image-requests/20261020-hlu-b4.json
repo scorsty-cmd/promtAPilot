@@ -1,0 +1,29 @@
+{
+ "id": "20261020-hlu-b4",
+ "items": [
+  {
+   "key": "servers",
+   "query": "data center corridor",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "coins",
+   "query": "euro coins",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "skyline",
+   "query": "city skyline night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "crosswalk",
+   "query": "busy crosswalk night",
+   "n": 2,
+   "orientation": "wide"
+  }
+ ]
+}
