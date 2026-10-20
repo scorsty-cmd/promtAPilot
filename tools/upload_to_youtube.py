@@ -208,8 +208,90 @@ def download_via_gdown(folder_id: str, dest_dir: str):
 
 def get_candidate_video_from_cloud(work_dir: str) -> dict[str, Any]:
     """
-    Buluttan (Google Drive veya Direct URL) yüklenecek videoyu ve ilişkili dosyaları çeker.
+    Buluttan (GitHub Release Asset, Local Path, Google Drive veya Direct URL) yüklenecek videoyu çeker.
     """
+    # 0. Öncelik: GitHub Release üzerinden indirilmiş veya yerel video verilmişse
+    local_env_path = get_env_var("LOCAL_VIDEO_PATH")
+    local_files = [
+        os.path.join(work_dir, f) for f in os.listdir(work_dir)
+        if any(f.lower().endswith(ext) for ext in [".mp4", ".mov", ".mkv"])
+    ] if os.path.exists(work_dir) else []
+
+    if local_env_path and os.path.exists(local_env_path):
+        target_video = local_env_path
+        scan_dir = os.path.dirname(local_env_path)
+    elif local_files:
+        target_video = local_files[0]
+        scan_dir = work_dir
+    else:
+        target_video = None
+        scan_dir = None
+
+    if target_video:
+        print(f"📦 Yerel / GitHub Release videosu bulundu: {target_video}")
+        base_name = os.path.splitext(os.path.basename(target_video))[0]
+        
+        # Kapak resmi ara
+        thumb_path = None
+        for ext in [".jpg", ".jpeg", ".png"]:
+            cand_thumb = os.path.join(scan_dir, f"{base_name}{ext}")
+            if os.path.exists(cand_thumb):
+                thumb_path = cand_thumb
+                break
+        if not thumb_path:
+            # Genel thumb_B.jpg veya benzeri ara
+            for f in os.listdir(scan_dir):
+                if ("thumb" in f.lower() or "kapak" in f.lower()) and any(f.lower().endswith(ext) for ext in [".jpg", ".jpeg", ".png"]):
+                    thumb_path = os.path.join(scan_dir, f)
+                    break
+
+        # Metadata ara (.json veya YOUTUBE_METADATA.txt)
+        meta_title = base_name.replace("_", " ").title()
+        meta_desc = f"{meta_title}\n\nFull animated history documentary.\n#History #Documentary"
+        meta_tags = ["History", "Documentary", "Educational"]
+        is_shorts = "shorts" in base_name.lower()
+
+        meta_json_path = os.path.join(scan_dir, f"{base_name}.json")
+        meta_txt_path = os.path.join(scan_dir, "YOUTUBE_METADATA.txt")
+
+        if os.path.exists(meta_json_path):
+            try:
+                with open(meta_json_path, "r", encoding="utf-8") as jf:
+                    jdata = json.load(jf)
+                    meta_title = jdata.get("title", meta_title)
+                    meta_desc = jdata.get("description", meta_desc)
+                    meta_tags = jdata.get("tags", meta_tags)
+                    is_shorts = jdata.get("is_shorts", is_shorts)
+            except Exception as e:
+                print(f"[UYARI] JSON metadata okunamadı: {e}")
+        elif os.path.exists(meta_txt_path):
+            try:
+                with open(meta_txt_path, "r", encoding="utf-8") as tf:
+                    t_content = tf.read()
+                t_m = re.search(r"TITLE.*?:?\n([^\n]+)", t_content)
+                if t_m: meta_title = t_m.group(1).strip()
+                d_m = re.search(r"DESCRIPTION:\n(.*?)(?=\nCHAPTERS:|\nTAGS:|\nUPLOAD NOTES:)", t_content, re.DOTALL)
+                c_m = re.search(r"CHAPTERS:\n(.*?)(?=\nTAGS:|\nUPLOAD NOTES:)", t_content, re.DOTALL)
+                tg_m = re.search(r"TAGS:\n(.*?)(?=\nUPLOAD NOTES:|$)", t_content, re.DOTALL)
+                
+                desc_body = d_m.group(1).strip() if d_m else ""
+                chaps = c_m.group(1).strip() if c_m else ""
+                meta_desc = f"{desc_body}\n\nTIMESTAMPS:\n{chaps}".strip()
+                if tg_m:
+                    meta_tags = [t.strip() for t in tg_m.group(1).split(",") if t.strip()]
+            except Exception as e:
+                print(f"[UYARI] TXT metadata okunamadı: {e}")
+
+        return {
+            "video_path": target_video,
+            "title": meta_title,
+            "description": meta_desc,
+            "tags": meta_tags,
+            "thumbnail_path": thumb_path,
+            "is_shorts": is_shorts,
+            "drive_file_id": None,
+        }
+
     # 1. Öncelik: Doğrudan URL verilmişse (workflow_dispatch veya secret)
     direct_url = get_env_var("VIDEO_DOWNLOAD_URL")
     if direct_url:
@@ -229,7 +311,7 @@ def get_candidate_video_from_cloud(work_dir: str) -> dict[str, Any]:
     # 2. Öncelik: Google Drive Klasörü
     folder_id = get_env_var("GDRIVE_FOLDER_ID")
     if not folder_id:
-        raise RuntimeError("❌ Bulut kaynağı tanımlanmamış! GDRIVE_FOLDER_ID veya VIDEO_DOWNLOAD_URL secret'ı gereklidir.")
+        raise RuntimeError("❌ Yüklenecek video bulunamadı! Ne yerel dosya/Release var, ne de GDRIVE_FOLDER_ID tanımlı.")
 
     drive_service = get_drive_service()
 

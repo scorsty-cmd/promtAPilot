@@ -1,6 +1,8 @@
 name: Daily YouTube Upload & Schedule
 
 on:
+  release:
+    types: [published]
   schedule:
     # Her gün 07:00 UTC (Türkiye Saati ile 10:00 TSİ)
     - cron: '0 7 * * *'
@@ -54,6 +56,43 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements-upload.txt
+
+      - name: Download Video from GitHub Release (If triggered by Release)
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_ID: ${{ github.event.release.id }}
+          REPO: ${{ github.repository }}
+        run: |
+          echo "🚀 GitHub Release tetiklendi (ID: $RELEASE_ID). Varlıklar indiriliyor..."
+          mkdir -p release_assets
+          python -c "
+          import os, requests
+          token = os.environ.get('GH_TOKEN')
+          rel_id = os.environ.get('RELEASE_ID')
+          repo = os.environ.get('REPO')
+          headers = {'Authorization': f'token {token}', 'Accept': 'application/vnd.github.v3+json'}
+          r = requests.get(f'https://api.github.com/repos/{repo}/releases/{rel_id}', headers=headers).json()
+          assets = r.get('assets', [])
+          print(f'Bulunan varlık sayısı: {len(assets)}')
+          for a in assets:
+              name = a['name']
+              url = a['url']
+              print(f'  İndiriliyor: {name} ({a.get(\"size\", 0)/(1024*1024):.1f} MB)...')
+              down_headers = {'Authorization': f'token {token}', 'Accept': 'application/octet-stream'}
+              with requests.get(url, headers=down_headers, stream=True) as resp:
+                  resp.raise_for_status()
+                  with open(os.path.join('release_assets', name), 'wb') as f:
+                      for chunk in resp.iter_content(chunk_size=1024*1024*4):
+                          if chunk: f.write(chunk)
+          print('✅ Tüm release varlıkları başarıyla indirildi.')
+          "
+          # İlk video dosyasını LOCAL_VIDEO_PATH olarak dışa aktar
+          V_PATH=$(find release_assets -type f \( -name "*.mp4" -o -name "*.mov" -o -name "*.mkv" \) | head -n 1)
+          if [ -n "$V_PATH" ]; then
+            echo "LOCAL_VIDEO_PATH=$PWD/$V_PATH" >> $GITHUB_ENV
+            echo "🎯 İşlenecek video: $PWD/$V_PATH"
+          fi
 
       - name: Run YouTube Cloud Uploader
         env:
