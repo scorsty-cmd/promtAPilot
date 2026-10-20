@@ -182,8 +182,12 @@ def calculate_next_publish_time(channel: str = "history", is_shorts: bool = Fals
             # Hidden Layer Uzun Video: Salı 21:30 TSİ (18:30 UTC), Pazar 18:00 TSİ (15:00 UTC)
             slots = [(1, 18, 30, "Salı 21:30 TSİ"), (6, 15, 0, "Pazar 18:00 TSİ")]
     else:
-        # History Sourced: Salı 22:00 TSİ (19:00 UTC), Cumartesi 17:00 TSİ (14:00 UTC)
-        slots = [(1, 19, 0, "Salı 22:00 TSİ"), (5, 14, 0, "Cumartesi 17:00 TSİ")]
+        if is_shorts:
+            # History Sourced Shorts: Çarşamba, Cuma, Pazar 18:00 TSİ (15:00 UTC)
+            slots = [(2, 15, 0, "Çarşamba 18:00 TSİ"), (4, 15, 0, "Cuma 18:00 TSİ"), (6, 15, 0, "Pazar 18:00 TSİ")]
+        else:
+            # History Sourced: Salı 22:00 TSİ (19:00 UTC), Cumartesi 17:00 TSİ (14:00 UTC)
+            slots = [(1, 19, 0, "Salı 22:00 TSİ"), (5, 14, 0, "Cumartesi 17:00 TSİ")]
 
     for day_diff in range(1, 14):
         target = now + datetime.timedelta(days=day_diff)
@@ -500,6 +504,30 @@ def mark_gdrive_video_as_uploaded(service, file_id: str, old_name: str, video_id
         print(f"[UYARI] Google Drive dosya adı güncellenemedi: {e}")
 
 
+def annotate_release_with_video(video_url: str, schedule_label: str):
+    """Release ile tetiklendiyse, yüklenen YouTube linkini release açıklamasının sonuna ekler."""
+    rel_id = get_env_var("RELEASE_ID")
+    token = get_env_var("GH_TOKEN")
+    repo = get_env_var("GITHUB_REPOSITORY")
+    if not (rel_id and token and repo):
+        return
+    try:
+        import requests
+        api = f"https://api.github.com/repos/{repo}/releases/{rel_id}"
+        headers = {"Authorization": f"token {token}", "Accept": "application/vnd.github+json"}
+        body = requests.get(api, headers=headers, timeout=30).json().get("body") or ""
+        if video_url in body:
+            return
+        line = f"\n\nYouTube: {video_url}"
+        if schedule_label:
+            line += f"\nPlanlanan yayın: {schedule_label}"
+        r = requests.patch(api, headers=headers, json={"body": body + line}, timeout=30)
+        r.raise_for_status()
+        print(f"📝 Release açıklamasına YouTube linki eklendi: {video_url}")
+    except Exception as e:
+        print(f"[UYARI] Release açıklaması güncellenemedi: {e}")
+
+
 def main():
     print("=" * 70)
     print("🚀 YOUTUBE CLOUD UPLOADER (GITHUB ACTIONS)")
@@ -624,6 +652,9 @@ def main():
                 candidate["original_name"],
                 video_id
             )
+
+        # Release açıklamasına YouTube bağlantısını ekle (Shorts görevleri uzun videonun linkini buradan okur)
+        annotate_release_with_video(video_url, schedule_label)
 
         # GitHub Actions Step Summary (Rapor Oluşturma)
         summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
