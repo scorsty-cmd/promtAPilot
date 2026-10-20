@@ -1,0 +1,29 @@
+{
+ "id": "20261020-hlu-b2",
+ "items": [
+  {
+   "key": "stadium",
+   "query": "stadium lights night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "aerial",
+   "query": "aerial city streets",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "servers",
+   "query": "server room",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "receipt",
+   "query": "paper receipt",
+   "n": 2,
+   "orientation": "wide"
+  }
+ ]
+}
