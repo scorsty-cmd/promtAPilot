@@ -570,9 +570,26 @@ def main():
 
         try:
             ch_resp = youtube.channels().list(part="snippet", mine=True).execute()
-            ch_title = ch_resp["items"][0]["snippet"]["title"] if ch_resp.get("items") else "Kanal"
+            ch_title = ch_resp["items"][0]["snippet"]["title"] if ch_resp.get("items") else "Bilinmeyen Kanal"
             print(f"✅ Bağlı YouTube Kanalı: {ch_title}")
+
+            # KANAL İSMİ DOĞRULAMA KİLİDİ (CROSS-CHANNEL UPLOAD GUARD)
+            if target_channel == "hidden_layer":
+                if "hidden layer" not in ch_title.lower():
+                    raise RuntimeError(
+                        f"❌ KRİTİK GÜVENLİK ENGELİ: Hedef kanal 'Hidden Layer' ancak OAuth ile bağlanan kanal '{ch_title}'!\n"
+                        f"Videonun yanlış kanala yüklenmesini önlemek için yükleme DERHAL DURDURULDU."
+                    )
+            elif target_channel == "history":
+                if "history" not in ch_title.lower():
+                    raise RuntimeError(
+                        f"❌ KRİTİK GÜVENLİK ENGELİ: Hedef kanal 'History Sourced' ancak OAuth ile bağlanan kanal '{ch_title}'!\n"
+                        f"Videonun yanlış kanala yüklenmesini önlemek için yükleme DERHAL DURDURULDU."
+                    )
+            print(f"🛡️ Güvenlik Doğrulaması Başarılı: Hedef kanal ve bağlı kanal eşleşti ({ch_title}).")
         except Exception as e:
+            if "KRİTİK GÜVENLİK ENGELİ" in str(e):
+                raise
             print(f"⚠️ Kanal bilgisi alınamadı: {e}")
 
         # 3. Süre ve Standart Denetimi
