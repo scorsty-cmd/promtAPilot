@@ -1,0 +1,77 @@
+{
+ "id": "20261020-hl-uber",
+ "items": [
+  {
+   "key": "traffic",
+   "query": "city traffic at night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "carint",
+   "query": "car interior night dashboard",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "rainwin",
+   "query": "rain on car window night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "phonehand",
+   "query": "hand holding smartphone night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "airport",
+   "query": "airport arrivals road cars",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "highway",
+   "query": "highway light trails long exposure",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "stadium",
+   "query": "stadium at night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "aerial",
+   "query": "aerial view city intersection",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "servers",
+   "query": "data center server racks",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "receipt",
+   "query": "paper receipt closeup",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "streetrain",
+   "query": "rainy city street night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "taxiline",
+   "query": "cars waiting at curb night",
+   "n": 2,
+   "orientation": "wide"
+  }
+ ]
+}
