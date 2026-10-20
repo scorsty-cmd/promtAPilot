@@ -103,6 +103,8 @@ jobs:
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+          YOUTUBE_TOKEN_JSON_HIDDEN_LAYER: ${{ secrets.YOUTUBE_TOKEN_JSON_HIDDEN_LAYER }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
 
           # Google Drive / Bulut Depolama Bilgileri (GitHub Secrets)
           GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}

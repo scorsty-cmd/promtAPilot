@@ -65,10 +65,17 @@ def get_env_var(name: str, default: str | None = None) -> str | None:
     return default
 
 
-def get_youtube_credentials() -> Credentials:
-    """Ortam değişkenlerinden YouTube OAuth credentials objesi üretir."""
-    # 1. Tam JSON formatında verilmişse
-    token_json_str = get_env_var("YOUTUBE_TOKEN_JSON") or get_env_var("GOOGLE_TOKEN_JSON")
+def get_youtube_credentials(channel: str = "history") -> Credentials:
+    """Ortam değişkenlerinden YouTube OAuth credentials objesi üretir.
+    channel: 'history' veya 'hidden_layer'
+    """
+    if channel == "hidden_layer":
+        token_json_str = get_env_var("YOUTUBE_TOKEN_JSON_HIDDEN_LAYER") or get_env_var("YOUTUBE_TOKEN_JSON")
+        print(f"🔑 YouTube Kimliği Seçildi: Hidden Layer Kanalı")
+    else:
+        token_json_str = get_env_var("YOUTUBE_TOKEN_JSON") or get_env_var("GOOGLE_TOKEN_JSON")
+        print(f"🔑 YouTube Kimliği Seçildi: History Sourced Kanalı")
+
     if token_json_str:
         try:
             token_data = json.loads(token_json_str)
@@ -77,7 +84,7 @@ def get_youtube_credentials() -> Credentials:
                 creds.refresh(Request())
             return creds
         except Exception as e:
-            print(f"[UYARI] YOUTUBE_TOKEN_JSON ayrıştırılamadı: {e}. Ayrı değişkenler kontrol ediliyor...")
+            print(f"[UYARI] YOUTUBE_TOKEN_JSON ({channel}) ayrıştırılamadı: {e}. Ayrı değişkenler kontrol ediliyor...")
 
     # 2. Ayrı anahtarlar olarak verilmişse
     client_id = get_env_var("YOUTUBE_CLIENT_ID") or get_env_var("GOOGLE_CLIENT_ID")
@@ -104,6 +111,26 @@ def get_youtube_credentials() -> Credentials:
     )
     creds.refresh(Request())
     return creds
+
+
+def detect_target_channel(candidate: dict) -> str:
+    """Videonun hedef kanalını (history vs hidden_layer) tespit eder."""
+    tag = (get_env_var("RELEASE_TAG") or "").lower()
+    if "hiddenlayer" in tag or "hidden-layer" in tag or "hidden_layer" in tag:
+        return "hidden_layer"
+    if "history" in tag:
+        return "history"
+
+    v_path = (candidate.get("video_path") or "").lower()
+    if "hidden" in v_path:
+        return "hidden_layer"
+
+    # Metadata başlık/etiket kontrolü
+    tags_str = " ".join(candidate.get("tags") or []).lower()
+    if any(k in tags_str for k in ["yapay zeka", "deep learning", "ai agent", "python", "neural"]):
+        return "hidden_layer"
+
+    return "history"
 
 
 def get_drive_service():
@@ -142,19 +169,30 @@ def get_drive_service():
     return None
 
 
-def calculate_next_publish_time() -> tuple[str, str]:
-    """Salı 22:00 TSİ (19:00 UTC) veya Cumartesi 17:00 TSİ (14:00 UTC) için en yakın yayın zamanını döner."""
+def calculate_next_publish_time(channel: str = "history", is_shorts: bool = False) -> tuple[str, str]:
+    """Hedef kanalın stratejik yayın takvimine göre sıradaki slotu hesaplar."""
     now = datetime.datetime.now(datetime.timezone.utc)
     candidates = []
+
+    if channel == "hidden_layer":
+        if is_shorts:
+            # Hidden Layer Shorts: Çarşamba 14:00 TSİ, Cuma 16:00 TSİ, Cumartesi 12:00 TSİ
+            slots = [(2, 11, 0, "Çarşamba 14:00 TSİ"), (4, 13, 0, "Cuma 16:00 TSİ"), (5, 9, 0, "Cumartesi 12:00 TSİ")]
+        else:
+            # Hidden Layer Uzun Video: Salı 21:30 TSİ (18:30 UTC), Pazar 18:00 TSİ (15:00 UTC)
+            slots = [(1, 18, 30, "Salı 21:30 TSİ"), (6, 15, 0, "Pazar 18:00 TSİ")]
+    else:
+        # History Sourced: Salı 22:00 TSİ (19:00 UTC), Cumartesi 17:00 TSİ (14:00 UTC)
+        slots = [(1, 19, 0, "Salı 22:00 TSİ"), (5, 14, 0, "Cumartesi 17:00 TSİ")]
+
     for day_diff in range(1, 14):
         target = now + datetime.timedelta(days=day_diff)
-        if target.weekday() == 1:  # Salı 19:00 UTC (22:00 TSİ)
-            dt = target.replace(hour=19, minute=0, second=0, microsecond=0)
-            candidates.append((dt, "Salı 22:00 TSİ"))
-        elif target.weekday() == 5:  # Cumartesi 14:00 UTC (17:00 TSİ)
-            dt = target.replace(hour=14, minute=0, second=0, microsecond=0)
-            candidates.append((dt, "Cumartesi 17:00 TSİ"))
+        for wday, h, m, label in slots:
+            if target.weekday() == wday:
+                dt = target.replace(hour=h, minute=m, second=0, microsecond=0)
+                candidates.append((dt, label))
 
+    candidates.sort(key=lambda x: x[0])
     selected_dt, label = candidates[0]
     iso_str = selected_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
     return iso_str, f"{label} ({selected_dt.strftime('%d.%m.%Y')})"
@@ -467,20 +505,8 @@ def main():
     print("🚀 YOUTUBE CLOUD UPLOADER (GITHUB ACTIONS)")
     print("=" * 70)
 
-    # 1. YouTube API bağlantısı
-    print("\n[1/4] YouTube API Kimlik Doğrulaması yapılıyor...")
-    creds = get_youtube_credentials()
-    youtube = build("youtube", "v3", credentials=creds)
-
-    try:
-        ch_resp = youtube.channels().list(part="snippet", mine=True).execute()
-        ch_title = ch_resp["items"][0]["snippet"]["title"] if ch_resp.get("items") else "Kanal"
-        print(f"✅ Bağlı YouTube Kanalı: {ch_title}")
-    except Exception as e:
-        print(f"⚠️ Kanal bilgisi alınamadı: {e}")
-
-    # 2. Buluttan video temini
-    print("\n[2/4] Bulut deposundan video taranıyor ve indiriliyor...")
+    # 1. Buluttan video temini
+    print("\n[1/4] Bulut deposundan video taranıyor ve indiriliyor...")
     with tempfile.TemporaryDirectory() as work_dir:
         candidate = get_candidate_video_from_cloud(work_dir)
         if not candidate:
@@ -494,6 +520,22 @@ def main():
         thumbnail_path = candidate.get("thumbnail_path")
         is_shorts = candidate.get("is_shorts", False)
 
+        # Hedef Kanal Tespiti
+        target_channel = detect_target_channel(candidate)
+        print(f"🎯 Hedef YouTube Kanalı Tespiti: [{target_channel.upper()}]")
+
+        # 2. YouTube API bağlantısı (Hedef Kanala Göre)
+        print(f"\n[2/4] YouTube API Kimlik Doğrulaması ({target_channel}) yapılıyor...")
+        creds = get_youtube_credentials(target_channel)
+        youtube = build("youtube", "v3", credentials=creds)
+
+        try:
+            ch_resp = youtube.channels().list(part="snippet", mine=True).execute()
+            ch_title = ch_resp["items"][0]["snippet"]["title"] if ch_resp.get("items") else "Kanal"
+            print(f"✅ Bağlı YouTube Kanalı: {ch_title}")
+        except Exception as e:
+            print(f"⚠️ Kanal bilgisi alınamadı: {e}")
+
         # 3. Süre ve Standart Denetimi
         print("\n[3/4] Video kontrolleri ve standart denetimi yapılıyor...")
         duration = measure_video_duration(video_path)
@@ -501,7 +543,7 @@ def main():
         print(f"  Ölçülen Süre: {duration:.1f} sn ({duration/60:.2f} dk)")
         print(f"  Format: {'Shorts' if is_shorts else 'Ana Video / Belgesel'}")
 
-        if not is_shorts and duration > 0 and duration < MIN_DOCUMENTARY_DURATION_SEC:
+        if target_channel == "history" and not is_shorts and duration > 0 and duration < MIN_DOCUMENTARY_DURATION_SEC:
             err_msg = (
                 f"❌ YÜKLEME REDDEDİLDİ: '{os.path.basename(video_path)}' süresi {duration:.1f} saniye!\n"
                 f"Tarih Kanalı Otomasyonu Standardı gereği ana videolar EN AZ "
@@ -510,7 +552,7 @@ def main():
             print(f"\n{err_msg}\n")
             raise ValueError(err_msg)
 
-        # Yayın planı
+        # Yayın planı (Kanala göre slot)
         auto_schedule = get_env_var("AUTO_SCHEDULE", "true").lower() == "true"
         privacy_status = get_env_var("YOUTUBE_PRIVACY_STATUS", "private")
 
@@ -519,7 +561,7 @@ def main():
                 "title": title[:100],
                 "description": description,
                 "tags": tags,
-                "categoryId": "27",  # Education
+                "categoryId": "27" if target_channel == "history" else "28",  # 27: Education, 28: Science & Technology
             },
             "status": {
                 "selfDeclaredMadeForKids": False,
@@ -528,10 +570,10 @@ def main():
 
         schedule_label = "Manuel / Anında"
         if auto_schedule:
-            publish_at_utc, schedule_label = calculate_next_publish_time()
+            publish_at_utc, schedule_label = calculate_next_publish_time(target_channel, is_shorts)
             body["status"]["privacyStatus"] = "private"
             body["status"]["publishAt"] = publish_at_utc
-            print(f"📅 Otomatik Yayın Planı: {schedule_label} (UTC: {publish_at_utc})")
+            print(f"📅 Otomatik Yayın Planı ({target_channel}): {schedule_label} (UTC: {publish_at_utc})")
         else:
             body["status"]["privacyStatus"] = privacy_status
             print(f"🔒 Gizlilik Durumu: {privacy_status}")
