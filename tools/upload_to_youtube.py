@@ -70,11 +70,22 @@ def get_youtube_credentials(channel: str = "history") -> Credentials:
     channel: 'history' veya 'hidden_layer'
     """
     if channel == "hidden_layer":
-        token_json_str = get_env_var("YOUTUBE_TOKEN_JSON_HIDDEN_LAYER") or get_env_var("YOUTUBE_TOKEN_JSON")
-        print(f"🔑 YouTube Kimliği Seçildi: Hidden Layer Kanalı")
+        token_json_str = get_env_var("YOUTUBE_TOKEN_JSON_HIDDEN_LAYER")
+        if not token_json_str:
+            raise RuntimeError(
+                "❌ KRİTİK GÜVENLİK ENGELİ: Hidden Layer videosu için YOUTUBE_TOKEN_JSON_HIDDEN_LAYER secret'ı bulunamadı!\n"
+                "Videonun yanlışlıkla History Sourced kanalına yüklenmesini önlemek için işlem durduruldu.\n"
+                "GitHub Secrets içinde 'YOUTUBE_TOKEN_JSON_HIDDEN_LAYER' tanımlanmalıdır."
+            )
+        print("🔑 YouTube Kimliği Seçildi: Hidden Layer Kanalı (Doğrulandı)")
     else:
         token_json_str = get_env_var("YOUTUBE_TOKEN_JSON") or get_env_var("GOOGLE_TOKEN_JSON")
-        print(f"🔑 YouTube Kimliği Seçildi: History Sourced Kanalı")
+        if not token_json_str:
+            raise RuntimeError(
+                "❌ KRİTİK GÜVENLİK ENGELİ: History Sourced videosu için YOUTUBE_TOKEN_JSON secret'ı bulunamadı!\n"
+                "GitHub Secrets içinde 'YOUTUBE_TOKEN_JSON' tanımlanmalıdır."
+            )
+        print("🔑 YouTube Kimliği Seçildi: History Sourced Kanalı (Doğrulandı)")
 
     if token_json_str:
         try:
