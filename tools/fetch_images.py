@@ -58,6 +58,7 @@ def search(query, licences, orientation=None):
         params['aspect_ratio'] = orientation
     for attempt in range(2):
         time.sleep(2)
+        r = None
         try:
             r = requests.get(API, params=params, headers=UA, timeout=30)
             if r.status_code == 200:
@@ -65,7 +66,7 @@ def search(query, licences, orientation=None):
             log('openverse', query, r.status_code, r.text[:200])
         except Exception as e:  # network hiccup
             log('openverse error', e)
-        if r.status_code in (401, 403): break
+        if r is not None and r.status_code in (401, 403): break
         time.sleep(6)
     return []
 

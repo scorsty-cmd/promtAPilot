@@ -1,0 +1,29 @@
+{
+ "id": "20261020-hlu-b1",
+ "items": [
+  {
+   "key": "traffic",
+   "query": "city traffic night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "phonehand",
+   "query": "smartphone in hand",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "carint",
+   "query": "car interior",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "highway",
+   "query": "highway light trails",
+   "n": 2,
+   "orientation": "wide"
+  }
+ ]
+}
