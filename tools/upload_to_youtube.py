@@ -590,7 +590,7 @@ def main():
         except Exception as e:
             if "KRİTİK GÜVENLİK ENGELİ" in str(e):
                 raise
-            print(f"⚠️ Kanal bilgisi alınamadı: {e}")
+            raise RuntimeError(f"❌ KRİTİK GÜVENLİK ENGELİ: Bağlı YouTube kanalı doğrulanamadı ({e}). Güvenlik gereği yükleme derhal durduruldu.")
 
         # 3. Süre ve Standart Denetimi
         print("\n[3/4] Video kontrolleri ve standart denetimi yapılıyor...")
