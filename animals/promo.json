@@ -1,8 +1,35 @@
 {
-  "_note": "E-kitap tanıtımı. link boşsa videolara promo eklenmez.",
-  "product": "",
-  "link": "",
-  "end_card_line": "",
-  "description_block": "",
-  "pinned_comment": ""
+  "_note": "DijitalStore (Shopier) e-kitapları. Videodaki hayvana göre ürün seç: kedi -> cat_behaviour (varsayılan), kedi+bebek/aile temalı -> cat_baby, köpek -> dog_care. Diğer hayvanlarda cat_behaviour kullan. 21 Eki 2026'da üçü de Shopier'de 'Tükendi' görünüyordu; kullanıcı stoğu düzeltene kadar da link verilir, e-postada hatırlatılır.",
+  "products": {
+    "cat_behaviour": {
+      "title": "Kedi Davranışları Bilimi: Kedinizin Aklından Geçenleri Anlama Rehberi",
+      "price": "49,99 TL",
+      "link": "https://www.shopier.com/dijitalstor/34803776",
+      "end_card_line": "Kedin ne düşünüyor? E-kitap linki açıklamada",
+      "description_block": "📘 Kedin bunu neden yapıyor? Beden dili, miyavlama, mırlama ve garip alışkanlıkların anlamı:\n\"Kedi Davranışları Bilimi\" e-kitabı → https://www.shopier.com/dijitalstor/34803776",
+      "pinned_comment": "Kedinin aklından geçenleri merak ediyorsan 📘 Kedi Davranışları Bilimi e-kitabı: https://www.shopier.com/dijitalstor/34803776 — Sizin kediniz en garip ne yapıyor? 👇"
+    },
+    "cat_baby": {
+      "title": "Kediler ve Bebekler Birlikte Güvenle Büyüyebilir | Uzman Destekli Kapsamlı Rehber",
+      "price": "99,99 TL",
+      "link": "https://www.shopier.com/dijitalstor/42245528",
+      "end_card_line": "Kedi ve bebek bir arada? Rehber linki açıklamada",
+      "description_block": "👶🐱 Evde kedi var, bebek yolda mı? Kedi ve bebeğin birlikte güvenle büyümesi için uzman destekli rehber:\nhttps://www.shopier.com/dijitalstor/42245528",
+      "pinned_comment": "Evde kedi ve bebek bir arada mı? 👶🐱 Uzman destekli rehber: https://www.shopier.com/dijitalstor/42245528"
+    },
+    "dog_care": {
+      "title": "Evde Köpek Bakım Rehberi",
+      "price": "49,99 TL",
+      "link": "https://www.shopier.com/dijitalstor/25171116",
+      "end_card_line": "Köpek bakım rehberi linki açıklamada",
+      "description_block": "📗 Eğitim, beslenme, sağlık ve oyun: evde köpek bakımı için pratik rehber:\n\"Evde Köpek Bakım Rehberi\" e-kitabı → https://www.shopier.com/dijitalstor/25171116",
+      "pinned_comment": "Köpeğinle daha mutlu bir ev için 📗 Evde Köpek Bakım Rehberi: https://www.shopier.com/dijitalstor/25171116 — Köpeğinin adı ne? 👇"
+    }
+  },
+  "rules": [
+    "Tanıtım satış dili kullanmaz; videonun konusuna doğal bağlanır (B formatındaki 'Bunu biliyor muydun?' videoları kedi davranışları e-kitabına en uygun olanlardır).",
+    "Açıklamada link ilk 2 satırdan sonra, kanal satırından önce yer alır.",
+    "Haftada en az 2 videoda (tercihen B formatı) bitiş kartında da end_card_line gösterilir; diğer günlerde sadece açıklamada link olur, böylece izleyici her videoda reklam görmez.",
+    "Ürün sayfasında olmayan bir vaat (indirim, garanti, uzman adı) yazma."
+  ]
 }

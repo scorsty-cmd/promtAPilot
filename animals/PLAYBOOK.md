@@ -27,7 +27,7 @@ Kurallar:
 - Satırlar kısa (en fazla ~8 kelime), konuşma dilinde. Vurgulanacak kelimeyi `*böyle*` yaz (sarı görünür).
 - Seslendirme metninde kısaltma, rakam, emoji kullanma; sayıları yazıyla yaz ("on altı saat").
 - Son satır ya bir soru (yorum getirir) ya da başa saran bir espri (loop).
-- Bitiş kartı: "ABONE OL" + "Her gün yeni komik hayvan videosu" + `promo.json` doluysa promo satırı.
+- Bitiş kartı: "ABONE OL" + "Her gün yeni komik hayvan videosu"; haftada en az 2 videoda (tercihen B) `promo.json` ürününün `end_card_line` satırı da.
 - Müzik: A ve C için `bouncy`, B için `calm`.
 - Klip: içerikle gerçekten eşleşen, net, hayvanın yüzü/hareketi görünen klip seç. Önizleme şeritlerine BAK.
   Logo, filigran, okunur yazı, tanınabilir insan yüzü veya hayvana eziyet/tehlike içeren klibi reddet.
@@ -38,7 +38,8 @@ Kurallar:
   Daha önce kullanılmış başlığı tekrar etme (LEARNINGS'teki listeye bak).
 - **Açıklama (YOUTUBE_METADATA.txt DESCRIPTION):**
   1. satır: videonun tek cümlelik özeti + soru.
-  2. `promo.json` "description_block" doluysa olduğu gibi ekle.
+  2. `promo.json`'dan videodaki hayvana uygun ürünün `description_block` metnini HER videoda olduğu gibi ekle
+     (kedi → cat_behaviour, kedi+bebek/aile → cat_baby, köpek → dog_care, diğer → cat_behaviour).
   3. "🐾 Her gün 19:00'da yeni komik hayvan videosu — abone olmayı unutma!"
   4. Klip kaynağı (manifest'ten): "Görüntü: <creator> / <Pexels | Wikimedia Commons> (<lisans>)" — CC BY ise
      manifest'teki `attribution` metnini aynen yaz.
@@ -55,7 +56,13 @@ Kurallar:
    `animals_<YYYY-MM-DD>_<slug>_shorts.mp4`, `thumb_B.jpg`, `YOUTUBE_METADATA.txt`. Önce draft, varlıkları
    kontrol et, sonra yayınla → "Daily YouTube Upload & Schedule" kanala yükler ve 19:00'a zamanlar.
 
-## 5. Öğrenme döngüsü
+## 5. E-kitap satışı (DijitalStore / Shopier)
+- Ürünler ve hazır metinler `promo.json` içinde. Satış dili yok: tanıtım videonun konusuna doğal bağlanır.
+- E-postada her gün o videonun `pinned_comment` metnini ver (kullanıcı yorumu sabitleyebilir; API sabitleme yapamaz).
+- Ürün linkine gelen tıklamalar ölçülemiyor; satış artışı için kullanıcıdan Shopier satış sayısını isteme, sadece
+  hangi ürünün hangi videolarda gösterildiğini LEARNINGS tablosunda tut.
+
+## 6. Öğrenme döngüsü
 - Her çalıştırmada son 7 Short'un izlenme/beğeni/yorum sayısını **ücretsiz** `vidiq_get_videos_by_ids` ile al,
   `animals/LEARNINGS.md` tablosuna yaz; hangi format/hook/hayvan iyi gidiyor, 2–3 madde kural çıkar.
 - Haftada bir (Pazartesi) ve sadece vidIQ bakiyesi ≥ 60 ise en fazla 5 kredilik tek rakip analizi
