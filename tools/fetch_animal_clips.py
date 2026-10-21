@@ -19,7 +19,8 @@ import requests
 
 REQ_DIR = 'animal-requests'
 STORE = sys.argv[1] if len(sys.argv) > 1 else 'store'
-UA = {'User-Agent': 'UniverseOfAnimalsShorts/1.0 (github.com/scorsty-cmd/promtapilot)'}
+UA = {'User-Agent': 'UniverseOfAnimalsShorts/1.1 (https://github.com/scorsty-cmd/promtapilot; scorsty@gmail.com) python-requests'}
+RUNLOG = []
 PEXELS_KEY = os.environ.get('PEXELS_API_KEY', '').strip()
 COMMONS = 'https://commons.wikimedia.org/w/api.php'
 VOICE = 'tr_TR-fahrettin-medium'
@@ -28,7 +29,30 @@ LOG = []
 
 
 def log(*a):
-    LOG.append(' '.join(str(x) for x in a)); print(*a, flush=True)
+    line = ' '.join(str(x) for x in a)
+    LOG.append(line); RUNLOG.append(line); print(*a, flush=True)
+
+
+def get_stream(url, dest, limit_mb=300, tries=4):
+    """Download with polite retries (Wikimedia answers 429 when hit too fast)."""
+    for k in range(tries):
+        try:
+            with requests.get(url, headers=UA, stream=True, timeout=120) as r:
+                if r.status_code == 429:
+                    wait = int(r.headers.get('Retry-After') or 0) or 10 * (k + 1)
+                    log('429, waiting', wait); time.sleep(min(wait, 60)); continue
+                r.raise_for_status()
+                size = 0
+                with open(dest, 'wb') as f:
+                    for ch in r.iter_content(1 << 20):
+                        size += len(ch); f.write(ch)
+                        if size > limit_mb * (1 << 20):
+                            raise RuntimeError('too big')
+                return True
+        except Exception as e:
+            log('download error', url[:120], e)
+            time.sleep(5)
+    return False
 
 
 def load_json(p, default):
@@ -70,7 +94,7 @@ def search_pexels(query, seen):
 
 def search_commons(query, seen):
     params = {'action': 'query', 'format': 'json', 'generator': 'search', 'gsrnamespace': 6,
-              'gsrsearch': query + ' filetype:video', 'gsrlimit': 40, 'prop': 'imageinfo',
+              'gsrsearch': query if 'filetype:' in query else query + ' filetype:video', 'gsrlimit': 40, 'prop': 'imageinfo',
               'iiprop': 'url|extmetadata|size|mediatype'}
     try:
         r = requests.get(COMMONS, params=params, headers=UA, timeout=30)
@@ -154,15 +178,10 @@ def ensure_voice():
         p = os.path.join(d, VOICE + ext)
         if os.path.exists(p) and os.path.getsize(p) > 1000:
             continue
-        try:
-            with requests.get(VOICE_BASE + VOICE + ext, headers=UA, stream=True, timeout=120) as r:
-                r.raise_for_status()
-                with open(p, 'wb') as f:
-                    for ch in r.iter_content(1 << 20):
-                        f.write(ch)
-            log('voice cached', p, os.path.getsize(p))
-        except Exception as e:
-            log('voice download failed', ext, e)
+        ok = get_stream(VOICE_BASE + VOICE + ext + '?download=true', p, limit_mb=200)
+        log('voice', ext, 'ok' if ok else 'FAILED', os.path.getsize(p) if os.path.exists(p) else 0)
+        if not ok and os.path.exists(p):
+            os.remove(p)
 
 
 def main():
@@ -187,6 +206,7 @@ def main():
             continue
         os.makedirs(out_dir, exist_ok=True)
         LOG.clear(); manifest = []
+        log('pexels key present:', bool(PEXELS_KEY))
         for item in req.get('items', []):
             key = re.sub(r'[^a-z0-9_-]', '', item.get('key', 'clip').lower()) or 'clip'
             n = int(item.get('n', 3))
@@ -196,17 +216,11 @@ def main():
                 if got >= n:
                     break
                 tmp = os.path.join(out_dir, '_src')
-                try:
-                    with requests.get(c['url'], headers=UA, stream=True, timeout=120) as r:
-                        r.raise_for_status()
-                        size = 0
-                        with open(tmp, 'wb') as f:
-                            for ch in r.iter_content(1 << 20):
-                                size += len(ch); f.write(ch)
-                                if size > 300 * (1 << 20):
-                                    raise RuntimeError('too big')
-                except Exception as e:
-                    log('download failed', c['url'], e); continue
+                url = c['url'].split('?utm_')[0]
+                if c['source_id'].startswith('commons-'):
+                    time.sleep(3)
+                if not get_stream(url, tmp):
+                    log('download failed', url[:120]); continue
                 name = f'{key}_{got}'
                 ok = normalise(tmp, os.path.join(out_dir, name + '.mp4'), os.path.join(out_dir, name + '.jpg'))
                 if os.path.exists(tmp):
@@ -225,6 +239,8 @@ def main():
             f.write('\n'.join(LOG))
     with open(seen_p, 'w', encoding='utf-8') as f:
         json.dump(sorted(seen), f)
+    with open(os.path.join(STORE, '_last_run_log.txt'), 'w', encoding='utf-8') as f:
+        f.write(datetime.datetime.utcnow().isoformat() + 'Z\n' + '\n'.join(RUNLOG))
 
 
 if __name__ == '__main__':
