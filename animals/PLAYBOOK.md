@@ -50,7 +50,7 @@ Kurallar:
 
 ## 4. Teslim (cloud)
 1. `animal-requests/<YYYYMMDD>-<HHMM>.json` push → "Fetch animal clips" iş akışı klipleri `animal-assets` dalına koyar.
-2. Dalı çek, önizlemelere bak, `spec.json` yaz, `PIPER_VOICE=<store>/tts/tr_TR-fahrettin-medium.onnx
+2. Dalı çek, önizlemelere bak, `spec.json` yaz, `PIPER_VOICE=<store>/tts/<tts/VOICE.txt'deki dosya>
    python animals/render_short.py spec.json out/` çalıştır, `contact.jpg`'ye ve en az 6 kareye bak.
 3. Release etiketi `animals-<YYYY-MM-DD>-<slug>` (asla "history"/"hidden" içermez). Varlıklar:
    `animals_<YYYY-MM-DD>_<slug>_shorts.mp4`, `thumb_B.jpg`, `YOUTUBE_METADATA.txt`. Önce draft, varlıkları

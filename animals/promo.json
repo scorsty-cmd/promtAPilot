@@ -1,5 +1,5 @@
 {
-  "_note": "DijitalStore (Shopier) e-kitapları. Videodaki hayvana göre ürün seç: kedi -> cat_behaviour (varsayılan), kedi+bebek/aile temalı -> cat_baby, köpek -> dog_care. Diğer hayvanlarda cat_behaviour kullan. 21 Eki 2026'da üçü de Shopier'de 'Tükendi' görünüyordu; kullanıcı stoğu düzeltene kadar da link verilir, e-postada hatırlatılır.",
+  "_note": "DijitalStore (Shopier) e-kitapları. Videodaki hayvana göre ürün seç: kedi -> cat_behaviour (varsayılan), kedi+bebek/aile temalı -> cat_baby, köpek -> dog_care. Diğer hayvanlarda cat_behaviour kullan. Kullanıcının Shopier panelinde stoklar 999 (21 Eki 2026); sayfa okuyucusunda görünen 'Tükendi' metni yanıltıcı olabilir, buna göre tanıtımı durdurma.",
   "products": {
     "cat_behaviour": {
       "title": "Kedi Davranışları Bilimi: Kedinizin Aklından Geçenleri Anlama Rehberi",
