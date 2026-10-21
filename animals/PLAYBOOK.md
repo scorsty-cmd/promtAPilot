@@ -57,7 +57,7 @@ Kurallar:
    kontrol et, sonra yayınla → "Daily YouTube Upload & Schedule" kanala yükler ve 19:00'a zamanlar.
 
 ## 4b. Instagram (Antigravity + Buffer yönetir)
-- Her gün: 1 Reels (20:00), 1 kaydırmalı gönderi (13:00), 2–3 hikâye (10:30 / 17:30 / 21:30).
+- Her gün: 1 Reels (20:00), 1 kaydırmalı gönderi (17:00), 2–3 hikâye (16:00 / 18:30 / 21:30); görev 14:00 civarı bittiği için saatler öğleden sonraya göre.
 - Claude dosyaları ve INSTAGRAM_PLAN.json'u release'e koyar; Antigravity planı Buffer'a aynen işler.
 - Gönderi Reels'in tekrarı olmaz: ek bilgi, mini rehber veya "hangisi sensin?" verir (kaydedilme ve paylaşılma getirir).
 - E-kitap: biyografide link; promo hikâyesi gün aşırı; gönderilerde haftada 3 kez yumuşak "link profilde" satırı.

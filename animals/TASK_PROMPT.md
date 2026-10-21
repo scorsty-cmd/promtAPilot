@@ -26,9 +26,9 @@ STEP 5b — Instagram pack (for Antigravity/Buffer). Extract 2–3 clean stills 
 - stories: 2–3 (1080x1920): (1) "teaser" with a photo announcing the Reel, (2) "question" (a simple question/poll idea for interaction), and every second day (3) "promo" for the matching promo.json product with foot "Link profilde" — never two promo stories on consecutive days (check yesterday's INSTAGRAM_PLAN.json in the previous animals-* release).
 Render, LOOK at every image (text fully readable, nothing cut, photo not ugly), fix and re-render if needed. Then write INSTAGRAM_PLAN.json (Turkish captions, Istanbul times; date = today — Antigravity moves any item whose time has already passed to the same time tomorrow):
 {"date":"YYYY-MM-DD","account":"Universe Of Animals Instagram (hayvanlar alemi sayfası)","items":[
- {"type":"story","file":"IG_story_01.jpg","time":"10:30","note":"..."},
- {"type":"post","files":["IG_post_01.jpg","IG_post_02.jpg","..."],"time":"13:00","caption":"<hook line + 2–3 short lines + question + 'Kedinin aklından geçenleri merak ediyorsan link profilde 📘' on promo days + 5–8 hashtags>"},
- {"type":"story","file":"IG_story_02.jpg","time":"17:30","note":"Instagram soru/anket çıkartması eklenebilir: <question>"},
+ {"type":"story","file":"IG_story_01.jpg","time":"16:00","note":"..."},
+ {"type":"post","files":["IG_post_01.jpg","IG_post_02.jpg","..."],"time":"17:00","caption":"<hook line + 2–3 short lines + question + 'Kedinin aklından geçenleri merak ediyorsan link profilde 📘' on promo days + 5–8 hashtags>"},
+ {"type":"story","file":"IG_story_02.jpg","time":"18:30","note":"Instagram soru/anket çıkartması eklenebilir: <question>"},
  {"type":"reel","file":"animals_<date>_<slug>_shorts.mp4","time":"20:00","caption":"<INSTAGRAM_CAPTION.txt content>"},
  {"type":"story","file":"IG_story_03.jpg","time":"21:30","note":"promo — link profilde"}],
  "bio_link":"<the promoted product link from promo.json>",
