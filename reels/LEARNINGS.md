@@ -11,6 +11,9 @@
 - Hook text at frame 0 must fit with the 1.06 slam scale: non-accent lines max 860 px, accent 820 px.
 - Long renders: launch with `setsid nohup ... < /dev/null & disown`, otherwise a timed-out shell kills the render.
 - Owner data 20 Oct: FILE 004 (Google account, loss/consequence hook, 02:49 slot) 78% watched / 0% skip (tiny sample); FILE 005 (iPhone locations, amber, photo-heavy) 13% watched / 94% skip on 18 plays. Loss/consequence hooks look stronger than "your device does X" hooks so far.
+- Owner data 21 Oct: FILE 006 (recycled numbers, numswap animation, 24 s) best so far: 118 plays, 25.1% watched, 61.6% skip (FILE 005: 17.0% / 79.7%). Custom on-screen animation + loss hook + tight pace is the direction.
+- 21 Oct: repo scorsty-cmd/promtAPilot is now PRIVATE -> raw.githubusercontent URLs return 404, photos.py waits forever (copy assets/<id>/ from the clone after `git pull` instead) and vidiq_video_upload cannot import the MP4. Publishing is blocked until the owner makes the repo public again or picks another public host.
+- reel2_v4 (reels/renderer/reel2_v4.py): `exif` beat (photo card + metadata sheet typing coordinates + pin drop on mini map, card_photo=key), `toggle` beat (path rows light up, drawn switch ON->OFF, confirmation chip), GPS_TICKER live scrambling readout on the hook from frame 0, per-beat blur= for photos with text, whip-pan smear on odd cuts / glitch on even. reel_audio peak factor 0.70 (0.79 gave -0.5 dB max).
 
 ## Entries
 ### 2026-10-19 16:49 – FILE 005 – iPhone Significant Locations (P2 amber/blue, 27.9 s)
@@ -26,3 +29,9 @@
 - Analysis (free, 02:49 run, 0 credits): owner insights above; Opus/quso 2026 guides – hook within 0.5–1.5 s, script first 3 s, change visual every 1.5–3 s, one text element per frame, one specific CTA.
 - Previous (FILE 005): 18 plays, 13.3% watched, 94.1% skip, 1 save, 0 shares.
 - Photos: workflow run 11 OK (Openverse). Kept keypad_0 (CC BY), reused CC0 phone_1 from 20261018-1649; rejected Nook (brand UI), postbox/phone box (text), person.
+
+### 2026-10-21 16:49 – FILE 007 – Photo location metadata (P3 coral/indigo, 26.3 s) – NOT PUBLISHED (repo private)
+- File: HL_Reel_20261021_1649_photo-location.mp4 · sent to owner as "bekliyor".
+- New vs FILE 006: live GPS ticker on frame 0; `exif` metadata-reveal animation with map pin; `toggle` switch animation for the fix; whip-pan cuts alternating with glitch; 3 real CC0 photos (map pin blurred, street house, doorway).
+- Analysis (free; vidIQ balance 10 < 40): owner insights above; inro.social 3-second hook guide – open on the strongest moment, hook as first on-screen line + first spoken words, no greeting/dead air, watch the early retention drop.
+- Previous (FILE 006): 118 plays, 25.1% watched, 61.6% skip, 0 saves, 0 shares.

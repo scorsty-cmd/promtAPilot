@@ -1,0 +1,13 @@
+Your photos can carry your exact location. Save this before you forget.
+
+With Location Services on for the Camera, your iPhone embeds GPS coordinates in each photo and video. Apple's own safety guide warns that the people you share them with "may be able to access the location metadata and learn where it was taken."
+
+Before you share: Share → Options → turn off Location ("Location Not Included").
+Stop it at the source: Settings → Privacy & Security → Location Services → Camera → Never.
+(Coordinates on screen are example values.)
+
+Sources: Apple Personal Safety User Guide, "Manage location metadata in Photos" (support.apple.com/guide/personal-safety/ips0d7a5df82), published Sept 2026, read 21 Oct 2026.
+Photos: CC0 via Openverse (Flickr / Wikimedia Commons).
+
+Follow for the hidden rules.
+#hiddenlayer #iphonetips #privacy #photography #techtips
