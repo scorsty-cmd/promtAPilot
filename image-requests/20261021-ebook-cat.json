@@ -1,0 +1,95 @@
+{
+ "id": "20261021-ebook-cat",
+ "items": [
+  {
+   "key": "cover",
+   "query": "tabby cat portrait",
+   "n": 3,
+   "orientation": "tall"
+  },
+  {
+   "key": "tail",
+   "query": "cat tail up walking",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "eyes",
+   "query": "cat eyes close up",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "ears",
+   "query": "cat ears",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "kneading",
+   "query": "cat kneading blanket",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "sleep",
+   "query": "cat sleeping",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "box",
+   "query": "cat in cardboard box",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "scratch",
+   "query": "cat scratching post",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "play",
+   "query": "kitten playing",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "hide",
+   "query": "cat hiding",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "groom",
+   "query": "cat grooming licking",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "twocats",
+   "query": "two cats together",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "senior",
+   "query": "old cat",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "window",
+   "query": "cat looking out window",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "belly",
+   "query": "cat lying on back",
+   "n": 2,
+   "orientation": "wide"
+  }
+ ]
+}
