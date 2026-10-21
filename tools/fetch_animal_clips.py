@@ -23,8 +23,6 @@ UA = {'User-Agent': 'UniverseOfAnimalsShorts/1.1 (https://github.com/scorsty-cmd
 RUNLOG = []
 PEXELS_KEY = os.environ.get('PEXELS_API_KEY', '').strip()
 COMMONS = 'https://commons.wikimedia.org/w/api.php'
-VOICE = 'tr_TR-fahrettin-medium'
-VOICE_BASE = 'https://huggingface.co/rhasspy/piper-voices/resolve/main/tr/tr_TR/fahrettin/medium/'
 LOG = []
 
 
@@ -145,11 +143,14 @@ def normalise(src, dst, jpg):
     if h >= w * 1.5:   # already vertical
         vf = 'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920'
     else:              # landscape/square → blurred fill + centred
+        # foreground 1150 px tall, centre-cropped to the full width, over a blurred fill:
+        # the animal stays large on a phone instead of a thin strip
         vf = ('split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,'
-              'boxblur=30:2,eq=brightness=-0.08[bg];[b]scale=1080:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2')
+              'boxblur=30:2,eq=brightness=-0.10[bg];[b]scale=-2:1150,crop=min(iw\\,1080):1150[fg];'
+              '[bg][fg]overlay=(W-w)/2:(H-h)/2')
     r = subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', src, '-t', f'{length:.2f}', '-an',
                         '-filter_complex', vf + ',fps=30,format=yuv420p', '-c:v', 'libx264', '-preset', 'veryfast',
-                        '-crf', '22', '-movflags', '+faststart', dst], capture_output=True, text=True)
+                        '-crf', '25', '-movflags', '+faststart', dst], capture_output=True, text=True)
     if r.returncode != 0:
         log('ffmpeg error', r.stderr[-300:]); return False
     # preview strip: 3 frames side by side (start / middle / end)
@@ -173,15 +174,30 @@ def normalise(src, dst, jpg):
 
 
 def ensure_voice():
+    """Cache a Turkish Piper voice in <STORE>/tts/ (looked up via the Hugging Face tree API)."""
     d = os.path.join(STORE, 'tts'); os.makedirs(d, exist_ok=True)
-    for ext in ('.onnx', '.onnx.json'):
-        p = os.path.join(d, VOICE + ext)
-        if os.path.exists(p) and os.path.getsize(p) > 1000:
-            continue
-        ok = get_stream(VOICE_BASE + VOICE + ext + '?download=true', p, limit_mb=200)
-        log('voice', ext, 'ok' if ok else 'FAILED', os.path.getsize(p) if os.path.exists(p) else 0)
-        if not ok and os.path.exists(p):
-            os.remove(p)
+    have = [f for f in os.listdir(d) if f.endswith('.onnx') and os.path.getsize(os.path.join(d, f)) > 1_000_000]
+    if have and os.path.exists(os.path.join(d, have[0] + '.json')):
+        return
+    files = []
+    try:
+        r = requests.get('https://huggingface.co/api/models/rhasspy/piper-voices/tree/main/tr/tr_TR',
+                         params={'recursive': 'true'}, headers=UA, timeout=30)
+        files = [x['path'] for x in r.json() if x.get('type') == 'file']
+        log('hf tree', r.status_code, files)
+    except Exception as e:
+        log('hf tree error', e)
+    onnx = [f for f in files if f.endswith('.onnx')]
+    pref = ['fahrettin-medium', 'fettah-medium', 'dfki-medium']
+    onnx.sort(key=lambda f: next((i for i, k in enumerate(pref) if k in f), 9))
+    for path in onnx[:3]:
+        name = os.path.basename(path)
+        ok = all(get_stream(f'https://huggingface.co/rhasspy/piper-voices/resolve/main/{pp}', os.path.join(d, os.path.basename(pp)), limit_mb=200)
+                 for pp in (path, path + '.json'))
+        log('voice', name, 'ok' if ok else 'FAILED')
+        if ok:
+            open(os.path.join(d, 'VOICE.txt'), 'w').write(name)
+            return
 
 
 def main():
