@@ -1,0 +1,17 @@
+{
+ "id": "20261021-1649b",
+ "items": [
+  {
+   "key": "snap",
+   "query": "taking photo with smartphone",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "door",
+   "query": "front door of house",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
