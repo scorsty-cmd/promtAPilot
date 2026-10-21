@@ -1,0 +1,8 @@
+openverse error HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)
+openverse error HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)
+openverse taking photo with smartphone cc0,pdm results 0
+openverse error HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)
+openverse error HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=30)
+openverse taking photo with smartphone by results 0
+commons taking photo with smartphone usable results 23
+openverse front door of house cc0,pdm results 20
