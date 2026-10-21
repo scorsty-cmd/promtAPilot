@@ -60,13 +60,53 @@ Kurallar:
 - Her gün: 1 Reels (20:00), 1 kaydırmalı gönderi (17:00), 2–3 hikâye (16:00 / 18:30 / 21:30); görev 14:00 civarı bittiği için saatler öğleden sonraya göre.
 - Claude dosyaları ve INSTAGRAM_PLAN.json'u release'e koyar; Antigravity planı Buffer'a aynen işler.
 - Gönderi Reels'in tekrarı olmaz: ek bilgi, mini rehber veya "hangisi sensin?" verir (kaydedilme ve paylaşılma getirir).
-- E-kitap: biyografide link; promo hikâyesi gün aşırı; gönderilerde haftada 3 kez yumuşak "link profilde" satırı.
+- E-kitap: biyografide link; promo hikâyesi ve "kitaptan bir sayfa" gönderisi bölüm 5.2 takvimine göre (haftada 4 promo hikâyesi).
 
-## 5. E-kitap satışı (DijitalStore / Shopier)
-- Ürünler ve hazır metinler `promo.json` içinde. Satış dili yok: tanıtım videonun konusuna doğal bağlanır.
-- E-postada her gün o videonun `pinned_comment` metnini ver (kullanıcı yorumu sabitleyebilir; API sabitleme yapamaz).
-- Ürün linkine gelen tıklamalar ölçülemiyor; satış artışı için kullanıcıdan Shopier satış sayısını isteme, sadece
-  hangi ürünün hangi videolarda gösterildiğini LEARNINGS tablosunda tut.
+## 5. E-kitap pazarlaması (DijitalStore / Shopier) — ÖNCELİKLİ HEDEF
+Kullanıcının isteği (21 Eki 2026): e-kitap satışına iyi odaklan, profesyonel pazarlama yap, ilgi çek.
+Yaklaşım: **önce değer, sonra teklif.** İnsanlar kitabı reklamdan değil, "bu sayfa kedimi gerçekten anlamamı
+sağlıyor" hissinden alır. Her içerik kitabın konularından birine kapı açar; satış dili abartısız ve dürüst olur.
+
+### 5.1 İçerik sütunları (kitapların konularından)
+- **Kedi Davranışları Bilimi** (ana ürün, 49,99 TL): kuyruk/kulak/göz beden dili, miyavlama ve mırlamanın
+  anlamları, garip alışkanlıklar (kutu, yoğurma, hediye getirme, 3'te koşturma), stres işaretleri,
+  davranış sorunları (tırmalama, kum dışına yapma, gece miyavlaması), yavru/yaşlı/çok kedili ev.
+- **Evde Köpek Bakım Rehberi** (49,99 TL): temel eğitim, beslenme, oyun, sağlık rutinleri, ev düzeni.
+- **Kediler ve Bebekler** (99,99 TL): bebek gelmeden kediyi hazırlama, hijyen, uyku düzeni, güvenli tanıştırma
+  (sağlık iddiasında çok dikkatli ol: tıbbi tavsiye verme, "doktorunuza danışın" de).
+
+### 5.2 Haftalık pazarlama takvimi (gün = yayın günü, İstanbul)
+| Gün | Reels/Short | Kaydırmalı gönderi | Hikâye 3 (promo) |
+|---|---|---|---|
+| Pzt | A (komik iç ses) | **Rehber**: "Kedinin kuyruğu ne diyor? 5 işaret" gibi kaydedilecek içerik | Yok |
+| Sal | B (bilgi) — sonunda "kitapta daha fazlası" | Hangisi sensin? (etkileşim) | **Problem→çözüm**: "Kedin gece miyavlıyor mu?" + kitap kapağı |
+| Çar | C (hangisi sensin) | **Mini vaka**: bir davranış sorunu, 4 adımda çözüm yolu | Yok |
+| Per | B (bilgi) | **Kitaptan bir sayfa tadında**: 3 ipucu + "devamı e-kitapta" son slaytı + kapak | **Kapak tanıtımı**: ne öğreneceksin (3 madde) |
+| Cum | A (komik) | Eğlenceli liste ("Kedilerin 7 garip alışkanlığı") | Yok |
+| Cmt | B (köpek veya kedi-bebek) | **Köpek ya da kedi-bebek rehberi** (diğer iki kitaba kapı) | **İlgili kitabın tanıtımı** |
+| Paz | A/C | Haftanın özeti / "kaydet" rehberi | **Hafta sonu hatırlatma**: "Link profilde" |
+- Promo hikâyesi haftada 4 gün (Sal, Per, Cmt, Paz); diğer günler değer + etkileşim. Aynı ürün art arda
+  iki promo gününde kullanılmaz (Sal kedi davranış → Per kedi davranış olabilir ama Cmt köpek/kedi-bebek).
+- YouTube Short açıklamasında ilgili ürünün `description_block`'u HER gün; bitiş kartı promo satırı Sal/Per/Cmt.
+
+### 5.3 Profesyonel tanıtım kuralları
+- **Kapak görseli kullan**: `animals/covers/<ürün anahtarı>.jpg` varsa promo hikâyesi ve "kitaptan bir sayfa"
+  gönderisinin son slaytında make_social.py'nin `cover` alanıyla göster. Yoksa kapaksız tasarım + e-postada
+  kullanıcıya kapak görselini göndermesini hatırlat.
+- Promo metni yapısı: **dert (soru) → bilgi kırıntısı → kitapta ne var (3 kısa madde) → net çağrı ("Link profilde")**.
+  Örnek: "Kedin neden sana bakıp yavaşça göz kırpıyor? → Bu bir güven işaretidir → Kitapta: beden dili rehberi,
+  miyavlama sözlüğü, 20+ gerçek vaka → Link profilde 📘".
+- Sadece ürün sayfasında yazan bilgileri söyle (Shopier açıklaması: beden dili, miyavlama/mırlama, garip
+  alışkanlıklar, stres, davranış sorunları, 20+ vaka, kişilik testi, QR'lı uzman videoları; fiyat 49,99 TL).
+  **Uydurma yorum, sahte müşteri, sahte aciliyet ("son 2 saat!") veya olmayan indirim YOK.** Gerçek bir indirim
+  kodu ancak kullanıcı promo.json'a eklerse kullanılır.
+- Fiyatı haftada en fazla 1 kez söyle ("bir kahve fiyatına" gibi karşılaştırmayla, dürüst).
+- Her gün e-postada o günün `pinned_comment` metnini ver; YouTube'da kullanıcı sabitler.
+
+### 5.4 Ölçüm
+- Tıklama ölçülemiyor: e-postada kullanıcıdan haftada bir (Pazar) Shopier satış sayısını yazmasını iste
+  ve kullanıcı cevap verirse LEARNINGS'e "Satış" satırı olarak işle; hangi hafta hangi içerik türü öne
+  çıkarıldıysa yanına not et. Satışa en çok eşlik eden içerik türünü sonraki haftalarda artır.
 
 ## 6. Öğrenme döngüsü
 - Her çalıştırmada son 7 Short'un izlenme/beğeni/yorum sayısını **ücretsiz** `vidiq_get_videos_by_ids` ile al,

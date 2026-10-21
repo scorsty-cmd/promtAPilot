@@ -19,6 +19,8 @@ social.json:
      {"kind": "promo", "title": "Kedin ne düşünüyor?", "body": "Kedi Davranışları Bilimi e-kitabı", "foot": "Link profilde"}
   ]
 }
+Any slide or story may add "cover": "/abs/cover.jpg" (e-book cover, shown with a shadow) and
+"bullets": ["…", "…"] (up to 3 short points shown under the cover).
 Outputs IG_post_01.jpg… and IG_story_01.jpg… (emoji are stripped from images; keep them for captions).
 """
 import json, os, re, sys
@@ -87,6 +89,30 @@ def handle(d, w, y, color):
     d.text(((w - d.textlength(t, font=fnt)) / 2, y), t, font=fnt, fill=color)
 
 
+def paste_cover(im, cover, cx, top, height):
+    """E-book cover with a soft drop shadow, centred on cx; returns bottom y."""
+    c = Image.open(cover).convert('RGB')
+    w = int(c.width * height / c.height)
+    c = c.resize((w, height), Image.LANCZOS)
+    sh = Image.new('RGBA', (w + 80, height + 80), (0, 0, 0, 0))
+    ImageDraw.Draw(sh).rounded_rectangle([40, 50, w + 40, height + 50], radius=18, fill=(0, 0, 0, 150))
+    sh = sh.filter(ImageFilter.GaussianBlur(18))
+    im.paste(sh, (int(cx - w / 2 - 40), top - 40), sh)
+    im.paste(c, (int(cx - w / 2), top))
+    return top + height
+
+
+def bullets_block(d, items, x, y, w, color, size=50):
+    fnt = f(F_BOLD, size)
+    for b in items[:3]:
+        lines = wrap(d, '✓ ' if False else b, fnt, w - 70)
+        d.ellipse([x, y + size * 0.3, x + 30, y + size * 0.3 + 30], fill=RED)
+        for l in lines:
+            d.text((x + 55, y), l, font=fnt, fill=color); y += int(size * 1.25)
+        y += 18
+    return y
+
+
 def slide(s, idx, total, frames, path):
     W, H = 1080, 1350
     has_photo = frames and s.get('frame') is not None and s['frame'] < len(frames)
@@ -99,14 +125,18 @@ def slide(s, idx, total, frames, path):
     tf, tl = fit(d, s.get('title', ''), F_BLACK, 96, W - 2 * m, 4)
     bf, bl = fit(d, s.get('body', ''), F_BOLD, 60, W - 2 * m, 8, 34) if s.get('body') else (None, [])
     block = (120 if s.get('kicker') else 0) + int(tf.size * 1.12) * len(tl) + (40 + int(bf.size * 1.3) * len(bl) if bl else 0)
-    y = max(140, (H - 200 - block) / 2) if not has_photo else 150   # centre text on plain slides
+    y = max(140, (H - 200 - block) / 2) if not (has_photo or s.get('cover') or s.get('bullets')) else 150   # centre text on plain slides
     if s.get('kicker'):
         k = clean(s['kicker']); kw = d.textlength(k, font=kf)
         d.rounded_rectangle([m, y, m + kw + 48, y + 72], radius=36, fill=RED)
         d.text((m + 24, y + 12), k, font=kf, fill=WHITE); y += 120
     y = draw_lines(d, tl, tf, m, y, txt, int(tf.size * 1.12), stroke=6 if has_photo else 0) + 40
     if bl:
-        draw_lines(d, bl, bf, m, y, txt, int(bf.size * 1.3), stroke=4 if has_photo else 0)
+        y = draw_lines(d, bl, bf, m, y, txt, int(bf.size * 1.3), stroke=4 if has_photo else 0)
+    if s.get('cover') and os.path.exists(s['cover']):
+        y = paste_cover(im, s['cover'], W / 2, int(y + 30), min(560, int(H - 260 - y - 40)))
+    if s.get('bullets'):
+        bullets_block(d, s['bullets'], m, y + 30, W - 2 * m, txt, 44)
     if total > 1:   # page dots + swipe hint
         for i in range(total):
             cx = W / 2 + (i - (total - 1) / 2) * 34
@@ -131,7 +161,7 @@ def story(s, frames, path):
     # top 250 px and bottom 300 px are covered by Instagram UI / stickers
     tf, tl = fit(d, s.get('title', ''), F_BLACK, 110, W - 2 * m, 4)
     lh = int(tf.size * 1.12)
-    y = 520
+    y = 260 if (s.get('cover') or s.get('bullets')) else 520
     if kind == 'question':
         box_h = lh * len(tl) + 120
         d.rounded_rectangle([m - 30, y - 60, W - m + 30, y - 60 + box_h], radius=48, fill=WHITE)
@@ -141,15 +171,20 @@ def story(s, frames, path):
         bf, bl = fit(d, s['body'], F_BOLD, 60, W - 2 * m, 5, 36)
         y = draw_lines(d, bl, bf, m, y + (60 if kind == 'question' else 0), WHITE if has_photo or kind == 'promo' else INK,
                        int(bf.size * 1.3), center_w=W - 2 * m, stroke=4 if has_photo else 0) + 40
+    if s.get('cover') and os.path.exists(s['cover']):
+        y = paste_cover(im, s['cover'], W / 2, int(y), 440) + 50
+    if s.get('bullets'):
+        y = bullets_block(d, s['bullets'], m + 20, y, W - 2 * m - 40, WHITE if has_photo or kind == 'promo' else INK, 46)
     if kind == 'question':   # space for Buffer/Instagram question sticker
         d.rounded_rectangle([m, y + 40, W - m, y + 220], radius=40, outline=INK if not has_photo else WHITE, width=5)
         hf = f(F_BOLD, 44); t = 'Cevabını buraya yaz'
         d.text(((W - d.textlength(t, font=hf)) / 2, y + 105), t, font=hf, fill=INK if not has_photo else WHITE)
     if s.get('foot'):
         ff = f(F_BLACK, 64); t = clean(s['foot']); tw = d.textlength(t, font=ff)
-        d.rounded_rectangle([(W - tw) / 2 - 50, 1480, (W + tw) / 2 + 50, 1600], radius=60, fill=RED)
-        d.text(((W - tw) / 2, 1500), t, font=ff, fill=WHITE)
-    handle(d, W, 1640, WHITE if has_photo or kind == 'promo' else INK)
+        fy = max(1470, int(y) + 30)
+        d.rounded_rectangle([(W - tw) / 2 - 50, fy, (W + tw) / 2 + 50, fy + 120], radius=60, fill=RED)
+        d.text(((W - tw) / 2, fy + 20), t, font=ff, fill=WHITE)
+    handle(d, W, 1650, WHITE if has_photo or kind == 'promo' else INK)
     im.save(path, quality=92)
 
 
