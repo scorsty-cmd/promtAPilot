@@ -1,0 +1,56 @@
+name: Fetch animal clips (Universe Of Animals)
+
+# A Universe Of Animals Short run pushes animal-requests/<id>.json; this workflow downloads
+# free-licence animal clips (Pexels first if PEXELS_API_KEY exists, then Wikimedia Commons
+# CC0/PD/CC BY), normalises them to vertical 1080x1920 silent MP4s and stores them on the
+# separate branch "animal-assets" (one squashed commit, so the repo does not grow).
+on:
+  push:
+    branches: [main]
+    paths: ['animal-requests/*.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-animal-clips
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q requests
+      - name: Load existing asset store
+        run: |
+          mkdir -p store
+          if git ls-remote --exit-code --heads origin animal-assets >/dev/null; then
+            git fetch -q --depth 1 origin animal-assets
+            git --work-tree=store checkout FETCH_HEAD -- .
+            git reset -q
+          fi
+          ls store || true
+      - name: Download clips for new requests
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python tools/fetch_animal_clips.py store
+      - name: Publish asset store (single squashed commit)
+        run: |
+          cd store
+          git init -q -b animal-assets
+          git config user.name "universe-of-animals-bot"
+          git config user.email "universe-of-animals-bot@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Animal clips store $(date -u +%Y-%m-%dT%H:%MZ)"
+          git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git push -q -f origin animal-assets
+          du -sh . && find . -name manifest.json -newer seen.json -o -name manifest.json | head -20

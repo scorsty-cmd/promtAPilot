@@ -67,8 +67,23 @@ def get_env_var(name: str, default: str | None = None) -> str | None:
 
 def get_youtube_credentials(channel: str = "history") -> Credentials:
     """Ortam değişkenlerinden YouTube OAuth credentials objesi üretir.
-    channel: 'history' veya 'hidden_layer'
+    channel: 'history', 'hidden_layer' veya 'animals'
     """
+    if channel == "animals":
+        token_json_str = get_env_var("YOUTUBE_TOKEN_JSON_ANIMALS")
+        if not token_json_str:
+            raise RuntimeError(
+                "❌ KRİTİK GÜVENLİK ENGELİ: Universe Of Animals videosu için YOUTUBE_TOKEN_JSON_ANIMALS secret'ı bulunamadı!\n"
+                "Videonun yanlış kanala yüklenmesini önlemek için işlem durduruldu.\n"
+                "GitHub Secrets içinde 'YOUTUBE_TOKEN_JSON_ANIMALS' tanımlanmalıdır (tools/kanal_yetkisi_al.py ile üretilir)."
+            )
+        print("🔑 YouTube Kimliği Seçildi: Universe Of Animals Kanalı (Doğrulandı)")
+        # Bu kanal için ayrı anahtarlara (YOUTUBE_REFRESH_TOKEN) ASLA düşülmez: o token History Sourced'a aittir.
+        token_data = json.loads(token_json_str)
+        creds = Credentials.from_authorized_user_info(token_data)
+        if not creds.valid and creds.refresh_token:
+            creds.refresh(Request())
+        return creds
     if channel == "hidden_layer":
         token_json_str = get_env_var("YOUTUBE_TOKEN_JSON_HIDDEN_LAYER")
         if not token_json_str:
@@ -127,6 +142,8 @@ def get_youtube_credentials(channel: str = "history") -> Credentials:
 def detect_target_channel(candidate: dict) -> str:
     """Videonun hedef kanalını (history vs hidden_layer) tespit eder."""
     tag = (get_env_var("RELEASE_TAG") or "").lower()
+    if tag.startswith("animals-"):
+        return "animals"
     if "hiddenlayer" in tag or "hidden-layer" in tag or "hidden_layer" in tag:
         return "hidden_layer"
     if "history" in tag:
@@ -185,7 +202,10 @@ def calculate_next_publish_time(channel: str = "history", is_shorts: bool = Fals
     now = datetime.datetime.now(datetime.timezone.utc)
     candidates = []
 
-    if channel == "hidden_layer":
+    if channel == "animals":
+        # Universe Of Animals: her gün 1 Short, 19:00 TSİ (16:00 UTC)
+        slots = [(d, 16, 0, "Her gün 19:00 TSİ") for d in range(7)]
+    elif channel == "hidden_layer":
         if is_shorts:
             # Hidden Layer Shorts: Çarşamba 14:00 TSİ, Cuma 16:00 TSİ, Cumartesi 12:00 TSİ
             slots = [(2, 11, 0, "Çarşamba 14:00 TSİ"), (4, 13, 0, "Cuma 16:00 TSİ"), (5, 9, 0, "Cumartesi 12:00 TSİ")]
@@ -565,6 +585,8 @@ def main():
         # Hedef Kanal Tespiti
         target_channel = detect_target_channel(candidate)
         print(f"🎯 Hedef YouTube Kanalı Tespiti: [{target_channel.upper()}]")
+        if target_channel == "animals":
+            is_shorts = True  # Universe Of Animals yalnızca dikey Shorts yayınlar
 
         # 2. YouTube API bağlantısı (Hedef Kanala Göre)
         print(f"\n[2/4] YouTube API Kimlik Doğrulaması ({target_channel}) yapılıyor...")
@@ -577,7 +599,13 @@ def main():
             print(f"✅ Bağlı YouTube Kanalı: {ch_title}")
 
             # KANAL İSMİ DOĞRULAMA KİLİDİ (CROSS-CHANNEL UPLOAD GUARD)
-            if target_channel == "hidden_layer":
+            if target_channel == "animals":
+                if "universe of animals" not in ch_title.lower():
+                    raise RuntimeError(
+                        f"❌ KRİTİK GÜVENLİK ENGELİ: Hedef kanal 'Universe Of Animals' ancak OAuth ile bağlanan kanal '{ch_title}'!\n"
+                        f"Videonun yanlış kanala yüklenmesini önlemek için yükleme DERHAL DURDURULDU."
+                    )
+            elif target_channel == "hidden_layer":
                 if "hidden layer" not in ch_title.lower():
                     raise RuntimeError(
                         f"❌ KRİTİK GÜVENLİK ENGELİ: Hedef kanal 'Hidden Layer' ancak OAuth ile bağlanan kanal '{ch_title}'!\n"
@@ -620,7 +648,9 @@ def main():
                 "title": title[:100],
                 "description": description,
                 "tags": tags,
-                "categoryId": "27" if target_channel == "history" else "28",  # 27: Education, 28: Science & Technology
+                # 27: Education, 28: Science & Technology, 15: Pets & Animals
+                "categoryId": {"history": "27", "animals": "15"}.get(target_channel, "28"),
+                **({"defaultLanguage": "tr", "defaultAudioLanguage": "tr"} if target_channel == "animals" else {}),
             },
             "status": {
                 "selfDeclaredMadeForKids": False,
