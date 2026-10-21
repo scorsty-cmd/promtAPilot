@@ -6,8 +6,8 @@
 - Ortalama izlenme 13 sn → 12–25 sn arası, ilk saniyede hareket, sonda döngü.
 
 ## Yayın kaydı
-| Tarih | Release etiketi | Format | Hayvan | Başlık | YouTube ID | 24s izlenme | 7g izlenme | Beğeni | Yorum |
-|---|---|---|---|---|---|---|---|---|---|
+| Tarih | Release etiketi | Format | Hayvan | Başlık | YouTube ID | 24s izlenme | 7g izlenme | Beğeni | Yorum | Instagram (Reel paylaşım tarihi + link) |
+|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Kullanılmış başlıklar
 - sizin kediniz de böyle mi😹😹 (eski)
