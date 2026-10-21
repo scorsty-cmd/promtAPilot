@@ -1,0 +1,29 @@
+{
+ "id": "20261021-1649",
+ "items": [
+  {
+   "key": "lens",
+   "query": "camera lens macro",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "street",
+   "query": "residential street houses",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "pins",
+   "query": "map with pins",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "prints",
+   "query": "pile of printed photographs",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
