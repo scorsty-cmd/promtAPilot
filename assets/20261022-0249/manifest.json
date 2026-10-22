@@ -1,0 +1,72 @@
+{
+ "id": "20261022-0249",
+ "images": [
+  {
+   "file": "envelope_0.jpg",
+   "key": "envelope",
+   "query": "sealed envelope wax seal",
+   "width": 768,
+   "height": 1024,
+   "title": "Cutting Cake with Handmade Gumpaste Figurines",
+   "creator": "clevercupcakes",
+   "license": "by",
+   "license_version": "2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source_page": "https://www.flickr.com/photos/12803689@N02/4938706399",
+   "attribution_required": true,
+   "attribution": "\"Cutting Cake with Handmade Gumpaste Figurines\" by clevercupcakes is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/."
+  },
+  {
+   "file": "envelope_1.jpg",
+   "key": "envelope",
+   "query": "sealed envelope wax seal",
+   "width": 1280,
+   "height": 1261,
+   "title": "File:US Vice Presidents seal 1850.jpg",
+   "creator": "U.S. Government (photo); seal designer unknown",
+   "license": "pdm",
+   "license_version": "public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:US_Vice_Presidents_seal_1850.jpg",
+   "attribution_required": false,
+   "attribution": null
+  },
+  {
+   "file": "lens_0.jpg",
+   "key": "lens",
+   "query": "smartphone camera lens close up",
+   "width": 768,
+   "height": 1024,
+   "title": "Close-up of a tiny insect on a person\u2019s finger",
+   "creator": "Ivan Radic",
+   "license": "by",
+   "license_version": "2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source_page": "https://www.flickr.com/photos/26344495@N05/27023336852",
+   "attribution_required": true,
+   "attribution": "\"Close-up of a tiny insect on a person\u2019s finger\" by Ivan Radic is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/."
+  },
+  {
+   "file": "lens_1.jpg",
+   "key": "lens",
+   "query": "smartphone camera lens close up",
+   "width": 768,
+   "height": 1024,
+   "title": "Extrene close-up of a ladybug (Coccinella septempunctata) on a person\u2019s hand",
+   "creator": "Ivan Radic",
+   "license": "by",
+   "license_version": "2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source_page": "https://www.flickr.com/photos/26344495@N05/26494440154",
+   "attribution_required": true,
+   "attribution": "\"Extrene close-up of a ladybug (Coccinella septempunctata) on a person\u2019s hand\" by Ivan Radic is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/."
+  }
+ ],
+ "missing": [
+  {
+   "key": "laptop",
+   "query": "laptop keyboard dark room",
+   "found": 0
+  }
+ ]
+}
