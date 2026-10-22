@@ -85,13 +85,13 @@ def get_release(tag: str) -> dict | None:
 def prepare(out_dir: str) -> None:
     tag = tag_from_ref()
     job = Path("upload_queue") / tag
-    if not TAG_RE.match(tag):
-        summary(f"❌ Geçersiz etiket: `{tag}` (history-, hiddenlayer-, animals- veya test- ile başlamalı)")
-        raise SystemExit(1)
     if (job / "CANCEL").exists():
         summary(f"🗑️ `{tag}` iptal edildi (CANCEL dosyası). Dal silinecek, hiçbir şey yüklenmeyecek.")
         set_output(action="cancel", tag=tag)
         return
+    if not TAG_RE.match(tag):
+        summary(f"❌ Geçersiz etiket: `{tag}` (history-, hiddenlayer-, animals- veya test- ile başlamalı)")
+        raise SystemExit(1)
     man_path = job / "MANIFEST.json"
     if not man_path.exists():
         print(f"ℹ️ {man_path} henüz yok (parçalar hâlâ geliyor). Bekleniyor, iş bitti.")

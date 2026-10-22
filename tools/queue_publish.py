@@ -187,10 +187,10 @@ def main() -> None:
     a = ap.parse_args()
 
     tag = a.tag.strip()
-    check_tag(tag)
     if a.cancel:
         cancel(tag)
         return
+    check_tag(tag)
 
     files = [Path(f).resolve() for f in a.files]
     if not files:
