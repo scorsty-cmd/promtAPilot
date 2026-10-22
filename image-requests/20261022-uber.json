@@ -1,0 +1,83 @@
+{
+ "id": "20261022-uber",
+ "items": [
+  {
+   "key": "traffic",
+   "query": "city traffic at night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "rainwin",
+   "query": "rain on car window at night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "carint",
+   "query": "car interior steering wheel night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "phone",
+   "query": "hand holding smartphone at night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "street",
+   "query": "empty city street at night",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "airport",
+   "query": "airport arrivals curb cars",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "battery",
+   "query": "smartphone low battery charging cable",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "server",
+   "query": "server room data center",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "rush",
+   "query": "rush hour traffic jam highway",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "stadium",
+   "query": "stadium at night exterior",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "receipt",
+   "query": "paper receipt on table",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "skyline",
+   "query": "city skyline at dusk",
+   "n": 2,
+   "orientation": "wide"
+  },
+  {
+   "key": "taxi",
+   "query": "taxi roof light sign night",
+   "n": 2,
+   "orientation": "wide"
+  }
+ ]
+}
