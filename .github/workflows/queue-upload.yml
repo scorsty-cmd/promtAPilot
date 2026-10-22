@@ -1,0 +1,78 @@
+name: Queue Upload (queue/<tag> → YouTube + Release)
+
+# Claude'un bulut oturumları release oluşturamadığı için videolar queue/<tag>
+# dalına parçalar halinde push'lanır (tools/queue_publish.py). Son push
+# MANIFEST.json'u ekler ve bu iş akışını tetikler. Ayrıntı: tools/queue_job.py
+
+on:
+  push:
+    branches:
+      - 'queue/**'
+    paths:
+      - 'upload_queue/**/MANIFEST.json'
+      - 'upload_queue/**/CANCEL'
+
+concurrency:
+  # Her video kendi sırasında; farklı videolar birbirini iptal etmez.
+  group: queue-upload-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    name: Birleştir, YouTube'a yükle, release oluştur
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      OUT_DIR: ${{ github.workspace }}/../queue_out
+
+    steps:
+      - name: Checkout queue branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Parçaları birleştir ve doğrula
+        id: prep
+        run: python3 tools/queue_job.py prepare "$OUT_DIR"
+
+      - name: Set up Python
+        if: steps.prep.outputs.action == 'upload'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install ffmpeg and Python dependencies
+        if: steps.prep.outputs.action == 'upload'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install --upgrade pip
+          pip install -r requirements-upload.txt
+
+      - name: YouTube'a yükle
+        id: yt
+        if: steps.prep.outputs.action == 'upload'
+        continue-on-error: true
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+          YOUTUBE_TOKEN_JSON_HIDDEN_LAYER: ${{ secrets.YOUTUBE_TOKEN_JSON_HIDDEN_LAYER }}
+          YOUTUBE_TOKEN_JSON_ANIMALS: ${{ secrets.YOUTUBE_TOKEN_JSON_ANIMALS }}
+          RELEASE_TAG: ${{ steps.prep.outputs.tag }}
+          LOCAL_VIDEO_PATH: ${{ steps.prep.outputs.video }}
+          QUEUE_RESULT_FILE: ${{ env.OUT_DIR }}/_result.json
+          AUTO_SCHEDULE: 'true'
+        run: python tools/upload_to_youtube.py
+
+      - name: Release oluştur / güncelle
+        if: steps.prep.outputs.action == 'upload' || steps.prep.outputs.action == 'dry'
+        run: python3 tools/queue_job.py finalize "$OUT_DIR" "${{ steps.yt.outcome }}"
+
+      - name: queue dalını sil
+        if: success() && (steps.prep.outputs.action == 'upload' || steps.prep.outputs.action == 'dry' || steps.prep.outputs.action == 'cancel' || steps.prep.outputs.action == 'already_done')
+        run: git push origin --delete "${GITHUB_REF_NAME}"

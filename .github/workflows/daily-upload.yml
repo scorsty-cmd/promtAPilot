@@ -35,6 +35,8 @@ concurrency:
 jobs:
   upload:
     name: Cloud Video Upload & YouTube Schedule
+    # Kuyruk akışının (queue-upload.yml) bot olarak oluşturduğu release'ler zaten yüklenmiştir: tekrar yükleme.
+    if: github.event_name != 'release' || github.event.release.author.login != 'github-actions[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:

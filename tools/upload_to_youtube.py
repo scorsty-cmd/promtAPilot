@@ -717,6 +717,24 @@ def main():
         # Release açıklamasına YouTube bağlantısını ekle (Shorts görevleri uzun videonun linkini buradan okur)
         annotate_release_with_video(video_url, schedule_label)
 
+        # Kuyruk (queue/<tag> dalı) akışı: sonucu iş akışının okuyacağı dosyaya yaz
+        result_file = get_env_var("QUEUE_RESULT_FILE")
+        if result_file:
+            try:
+                with open(result_file, "w", encoding="utf-8") as rf:
+                    json.dump({
+                        "video_id": video_id,
+                        "video_url": video_url,
+                        "schedule_label": schedule_label,
+                        "channel": target_channel,
+                        "channel_title": ch_title,
+                        "title": title,
+                        "is_shorts": bool(is_shorts),
+                        "duration_sec": round(duration, 1),
+                    }, rf, ensure_ascii=False, indent=2)
+            except Exception as e:
+                print(f"[UYARI] Kuyruk sonuç dosyası yazılamadı: {e}")
+
         # GitHub Actions Step Summary (Rapor Oluşturma)
         summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
         if summary_file:
