@@ -15,6 +15,11 @@
 - 21 Oct: repo scorsty-cmd/promtAPilot was restored to PUBLIC -> raw.githubusercontent URLs return 200 OK. Video raw link is active and accessible for vidIQ / Instagram import.
 - reel2_v4 (reels/renderer/reel2_v4.py): `exif` beat (photo card + metadata sheet typing coordinates + pin drop on mini map, card_photo=key), `toggle` beat (path rows light up, drawn switch ON->OFF, confirmation chip), GPS_TICKER live scrambling readout on the hook from frame 0, per-beat blur= for photos with text, whip-pan smear on odd cuts / glitch on even. reel_audio peak factor 0.70 (0.79 gave -0.5 dB max).
 
+- Owner data 22 Oct: FILE 007 (photo location, published 21 Oct 15:04 UTC) only 12 plays, 7.5% watched, 90.9% skip – worst v2 result. Likely causes: hook stated the answer (closed loop), 7-word hook + GPS ticker clutter, location topic repeated (FILE 005 too). Keep hooks open-loop (hide the payoff), max 6 words, one element on frame 0; avoid a 3rd location topic.
+- reel2_v5 (reels/renderer/reel2_v5.py + reel_audio_v5.py): `snap` beat (drawn email card, buttons strike OFF one by one, viewfinder closes, shutter flash on the spoken word via shutter=<fraction>, screenshot thumbnail flies to corner + SAVED chip), `shutter` SFX, PUNCH_EVERY module var (fewer zooms), blurred photo plates under compare/snap beats. Peak factor 0.70 -> -1.7 dB max.
+- photos.py: raw manifest URL can lag/404 although the workflow committed; after ~3 min `git pull` and copy from the clone's assets/<id>/. Openverse returns junk for abstract queries ("sealed envelope", "camera lens") – ask for hands/objects in use ("hands typing on laptop keyboard").
+- support.apple.com guide pages, faq.whatsapp.com (robots) and linkedin.com (permission) could not be read on 22 Oct; support.google.com works.
+
 ## Entries
 ### 2026-10-19 16:49 – FILE 005 – iPhone Significant Locations (P2 amber/blue, 27.9 s)
 - File: HL_Reel_20261019_1649_iphone-significant-locations.mp4 · https://www.instagram.com/reel/Dercfl2DG4H/
@@ -30,8 +35,15 @@
 - Previous (FILE 005): 18 plays, 13.3% watched, 94.1% skip, 1 save, 0 shares.
 - Photos: workflow run 11 OK (Openverse). Kept keypad_0 (CC BY), reused CC0 phone_1 from 20261018-1649; rejected Nook (brand UI), postbox/phone box (text), person.
 
-### 2026-10-21 16:49 – FILE 007 – Photo location metadata (P3 coral/indigo, 26.3 s) – READY TO PUBLISH (repo public, raw link active)
+### 2026-10-21 16:49 – FILE 007 – Photo location metadata (P3 coral/indigo, 26.3 s) – published 21 Oct 15:04 UTC · https://www.instagram.com/reel/Dewr6MNgrS-/
 - File: HL_Reel_20261021_1649_photo-location.mp4 · Raw URL: https://raw.githubusercontent.com/scorsty-cmd/promtAPilot/main/reels/HL_Reel_20261021_1649_photo-location.mp4 (HTTP 200 OK).
 - New vs FILE 006: live GPS ticker on frame 0; `exif` metadata-reveal animation with map pin; `toggle` switch animation for the fix; whip-pan cuts alternating with glitch; 3 real CC0 photos (map pin blurred, street house, doorway).
 - Analysis (free; vidIQ balance 10 < 40): owner insights above; inro.social 3-second hook guide – open on the strongest moment, hook as first on-screen line + first spoken words, no greeting/dead air, watch the early retention drop.
 - Previous (FILE 006): 118 plays, 25.1% watched, 61.6% skip, 0 saves, 0 shares.
+
+### 2026-10-22 02:49 – FILE 008 – Gmail confidential mode can't stop screenshots (red/yellow, 23.3 s)
+- File: HL_Reel_20261022_0249_gmail-confidential.mp4 · https://www.instagram.com/reel/DexrlvgguXY/
+- New vs FILE 007: open-loop 6-word hook ("Confidential mode has a blind spot", payoff hidden until beat 2) with a context kicker chip and no ticker; new `snap` animation with shutter flash on the word "screenshot"; first myth-vs-fact `compare` beat over a blurred real photo; calmer camera (punch-in every 3rd caption group); new red/yellow palette + shutter SFX.
+- Analysis (free, 02:49 run, 0 credits): owner insights; async.com editing guide (strongest moment first, cut dead air >0.4 s, fewer zooms, end on payoff/loop); postiz hook framework (open a loop, context in ~1 s, don't show the answer in frame 0).
+- Previous (FILE 007): 12 plays, 7.5% watched, 90.9% skip, 0 saves, 0 shares. FILE 006 still best (118 plays, 24.9%, 61.6%).
+- Photos: run 26 junk (cake, seal, insects); run 27 OK -> typing_1 (CC BY 2.0, Shixart1985); reused CC0 laptop_0 from 20261019-0249 as compare plate.
