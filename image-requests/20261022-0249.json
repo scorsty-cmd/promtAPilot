@@ -1,0 +1,23 @@
+{
+ "id": "20261022-0249",
+ "items": [
+  {
+   "key": "laptop",
+   "query": "laptop keyboard dark room",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "envelope",
+   "query": "sealed envelope wax seal",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "lens",
+   "query": "smartphone camera lens close up",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
