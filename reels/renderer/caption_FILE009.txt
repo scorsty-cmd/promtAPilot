@@ -1,0 +1,12 @@
+Did your car raise your insurance? Save this before you forget.
+
+The FTC says GM tracked where and how people drove, sometimes every 3 seconds, and sold data like hard braking, late-night driving and speeding to consumer reporting agencies. Insurers used those reports to set rates and deny coverage. GM ended its Smart Driver program in April 2024, and a final FTC order (Jan 14, 2026) bans it from sharing that data with consumer reporting agencies for 5 years.
+
+Drive a connected car? Open its app and check the data-sharing settings.
+
+Numbers on the report and premium cards are examples.
+Sources: FTC press release, 16 Jan 2025 (ftc.gov/news-events/news/press-releases/2025/01/ftc-takes-action-against-general-motors-sharing-drivers-precise-location-driving-behavior-data) · FTC press release, 14 Jan 2026 (ftc.gov/news-events/news/press-releases/2026/01/ftc-finalizes-order-settling-allegations-gm-onstar-collected-sold-geolocation-data-without-consumers) · TechCrunch, 14 Jan 2026. Read 22 Oct 2026.
+Photo: "Light Trails" by wwarby, CC BY 2.0. Other photos CC0.
+Not legal advice.
+
+#hiddenlayer #dataprivacy #carinsurance #connectedcar #ftc
