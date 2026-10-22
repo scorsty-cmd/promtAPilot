@@ -19,6 +19,10 @@
 - reel2_v5 (reels/renderer/reel2_v5.py + reel_audio_v5.py): `snap` beat (drawn email card, buttons strike OFF one by one, viewfinder closes, shutter flash on the spoken word via shutter=<fraction>, screenshot thumbnail flies to corner + SAVED chip), `shutter` SFX, PUNCH_EVERY module var (fewer zooms), blurred photo plates under compare/snap beats. Peak factor 0.70 -> -1.7 dB max.
 - photos.py: raw manifest URL can lag/404 although the workflow committed; after ~3 min `git pull` and copy from the clone's assets/<id>/. Openverse returns junk for abstract queries ("sealed envelope", "camera lens") – ask for hands/objects in use ("hands typing on laptop keyboard").
 - support.apple.com guide pages, faq.whatsapp.com (robots) and linkedin.com (permission) could not be read on 22 Oct; support.google.com works.
+- Owner data 22 Oct (16:49): FILE 008 (Gmail confidential, open-loop hook, 23 s) 33 plays, 19.8% watched, 76.7% skip – better than FILE 007 (39 plays, 14.1%, 74.3% now) but still below FILE 006 (24.9% / 61.6%). Custom animation + consequence hook remains the best predictor.
+- reel2_v6 (reels/renderer/reel2_v6.py + reel_audio_v6.py): `telemetry` beat (drawn map, car dot drives a route, breadcrumb ping on a fixed rhythm, event pins pop with chips, live PING/MPH/time ticker, "EXAMPLE"), `report` beat (paper report fills row by row -> SOLD stamp -> flies along an arrow to an INSURER card where an example premium counts up), SPEED_LINES module var (streaking light lines behind the hook from frame 0), `blip`/`beep` SFX synced to pings/events. Peak factor 0.70 -> -0.9 dB max (borderline; use 0.66 if a mix gets louder).
+- 22 Oct 16:49: fetch-images workflow runs 30/31 hung (in_progress/pending >15 min, no assets). Fallback used: unused CC0/CC BY car/road photos from the long-video folders 20261020-hlu-b1/b3. photos.py process must be killed before copying fallbacks (it would overwrite photos/). Low-res (1024 px) photos are fine as blurred plates, borderline as sharp hook backgrounds.
+- vidIQ balance was 0 on 22 Oct (resets 29 Oct) -> all analysis free until then.
 
 ## Entries
 ### 2026-10-19 16:49 – FILE 005 – iPhone Significant Locations (P2 amber/blue, 27.9 s)
@@ -47,3 +51,10 @@
 - Analysis (free, 02:49 run, 0 credits): owner insights; async.com editing guide (strongest moment first, cut dead air >0.4 s, fewer zooms, end on payoff/loop); postiz hook framework (open a loop, context in ~1 s, don't show the answer in frame 0).
 - Previous (FILE 007): 12 plays, 7.5% watched, 90.9% skip, 0 saves, 0 shares. FILE 006 still best (118 plays, 24.9%, 61.6%).
 - Photos: run 26 junk (cake, seal, insects); run 27 OK -> typing_1 (CC BY 2.0, Shixart1985); reused CC0 laptop_0 from 20261019-0249 as compare plate.
+
+### 2026-10-22 16:49 – FILE 009 – Connected-car driving data sold to insurers (FTC v. GM; lime/cyan, 27.4 s) · https://www.instagram.com/reel/DezLITzDQUH/
+- File: HL_Reel_20261022_1649_car-driving-data.mp4 · Raw URL HTTP 200.
+- New vs FILE 008: first question hook ("Did your car raise your insurance?", 6 words, consequence + open loop) over motion speed-lines + real light-trail photo; new `telemetry` route animation (ping every "3 s", HARD BRAKE / 11:47 PM / SPEEDING pins); new `report` -> SOLD -> INSURER premium count-up animation; data blip/beep SFX synced to the pings; first non-phone topic (car), new lime/cyan palette.
+- Analysis (free; vidIQ balance 0): owner insights (above); web trend guides (argil: b-roll/visual changes every 2–4 s, quality of hook + pacing over face); niche pattern kept: news/regulator receipt (FTC order card) + practical check at the end.
+- Previous (FILE 008): 33 plays, 19.8% watched, 76.7% skip, 0 saves, 0 shares.
+- Photos: workflow hung; reused CC BY "Light Trails" (wwarby) + CC0 city traffic x2 + CC0 rain on car window from 20261020-hlu-b1/b3.
