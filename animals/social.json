@@ -1,0 +1,51 @@
+{
+  "frames": [
+    "c:/Users/HP/OneDrive/Masaüstü/Antigravity/promtAPilot_repo/animals/temp_frames/cat_0.jpg",
+    "c:/Users/HP/OneDrive/Masaüstü/Antigravity/promtAPilot_repo/animals/temp_frames/cat_1.jpg",
+    "c:/Users/HP/OneDrive/Masaüstü/Antigravity/promtAPilot_repo/animals/temp_frames/cat_2.jpg",
+    "c:/Users/HP/OneDrive/Masaüstü/Antigravity/promtAPilot_repo/animals/temp_frames/cat_3.jpg"
+  ],
+  "carousel": [
+    {
+      "kicker": "BUNU BİLİYOR MUYDUN?",
+      "title": "Kedin seni neden yoğuruyor?",
+      "body": "Kedilerin patileriyle bisküvi yapma hareketinin arkasındaki 3 bilimsel gerçek...",
+      "frame": 0
+    },
+    {
+      "title": "1. Bebeklik Güven Refleksi",
+      "body": "Yavruyken annelerinden süt emerken yaptıkları bu hareket, yetişkinken sadece kendilerini %100 güvende hissettiklerinde ortaya çıkar.",
+      "frame": 1
+    },
+    {
+      "title": "2. Seni Kendi Ailesi Olarak İşaretliyor",
+      "body": "Patilerinin altındaki özel koku bezleriyle seni işaretler. Yani sana 'Sen benim en güvendiğim insansın' diyor.",
+      "frame": 2
+    },
+    {
+      "title": "3. Tam Bir Rahatlama ve Mutluluk",
+      "body": "Yoğururken bir de mırlıyorsa, endorfin salgılıyor demektir. Bu, kedinizin en yüksek huzur seviyesine ulaştığının kanıtıdır.",
+      "frame": 3
+    },
+    {
+      "title": "Sizin kediniz en çok ne zaman yoğuruyor?",
+      "body": "Yorumlarda buluşalım! 👇\nKedinizin tüm beden dilini ve gizli işaretlerini öğrenmek için Kedi Davranışları Rehberi profildeki linkte 📘",
+      "cta": true,
+      "frame": 0
+    }
+  ],
+  "stories": [
+    {
+      "kind": "teaser",
+      "title": "Kedin seni neden yoğuruyor?",
+      "body": "Yeni kaydırmalı rehber yayında! Profildeki gönderiye göz atın.",
+      "frame": 0
+    },
+    {
+      "kind": "question",
+      "title": "Kediniz sizi yoğururken mırlıyor mu?",
+      "body": "Evet, her zaman / Bazen",
+      "frame": 1
+    }
+  ]
+}
