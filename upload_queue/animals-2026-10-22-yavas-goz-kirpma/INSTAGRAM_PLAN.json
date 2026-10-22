@@ -1,0 +1,44 @@
+{
+ "date": "2026-10-22",
+ "account": "Universe Of Animals Instagram (hayvanlar alemi sayfası)",
+ "items": [
+  {
+   "type": "story",
+   "file": "IG_story_01.jpg",
+   "time": "16:00",
+   "note": "Reels duyurusu (yavaş göz kırpma). Bağlantı/çıkartma gerekmez."
+  },
+  {
+   "type": "post",
+   "files": [
+    "IG_post_01.jpg",
+    "IG_post_02.jpg",
+    "IG_post_03.jpg",
+    "IG_post_04.jpg",
+    "IG_post_05.jpg"
+   ],
+   "time": "17:00",
+   "caption": "Kedin sana güveniyor mu? 3 sessiz işaret 🐾\nYavaş göz kırpma, dimdik kuyruk ve göbek göstermek... Hepsi bir şey anlatıyor.\nKaydet, kedine bakarken kontrol et!\nSenin kedin hangisini yapıyor? 👇\nKedinin aklından geçenleri merak ediyorsan link profilde 📘\n#kedi #kediler #kedibedendili #kedidavranışları #hayvanlar #komikhayvanlar #kedisevenler"
+  },
+  {
+   "type": "story",
+   "file": "IG_story_02.jpg",
+   "time": "18:30",
+   "note": "Instagram soru/anket çıkartması eklenebilir: Kedin sana hiç yavaşça göz kırptı mı? (Evet / Hayır)"
+  },
+  {
+   "type": "reel",
+   "file": "animals_2026-10-22_yavas-goz-kirpma_shorts.mp4",
+   "time": "20:00",
+   "caption": "Kedin sana yavaşça göz kırpıyor mu? 😺 Bu bir \"sana güveniyorum\" işareti olabilir.\nBir dahakine sen de yavaşça göz kırp, bakalım karşılık verecek mi?\n📘 E-kitap linki profilde\nGörüntü: NaIzletuSi ™ (CC BY 3.0) ve Joaquim Baeta (CC BY 4.0), Wikimedia Commons\n#kedi #kediler #komikhayvanlar #hayvanlar #reels #kedidavranışları"
+  },
+  {
+   "type": "story",
+   "file": "IG_story_03.jpg",
+   "time": "21:30",
+   "note": "promo — Kedi Davranışları Bilimi kapak tanıtımı, link profilde (link çıkartması eklenebilir: https://www.shopier.com/dijitalstor/34803776)"
+  }
+ ],
+ "bio_link": "https://www.shopier.com/dijitalstor/34803776",
+ "rules": "Only the animal page, never Hidden Layer; post captions exactly as written; max 1 reel, 1 post and 3 stories per day."
+}
