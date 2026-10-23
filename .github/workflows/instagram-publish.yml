@@ -1,0 +1,52 @@
+name: Instagram Publish (Universe Of Animals)
+
+# Publishes the Reel, carousel post and stories from each animals-* release
+# (INSTAGRAM_PLAN.json) to the animal Instagram page with the official Instagram API.
+# Runs shortly after each planned time (Istanbul): 16:05, 17:05, 18:35, 20:05, 21:35.
+# Details and safety rules: tools/instagram_publisher.py
+on:
+  schedule:
+    - cron: '5 13,14,17 * * *'
+    - cron: '35 15,18 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Sadece göster, paylaşma (deneme)'
+        type: boolean
+        default: false
+      force_tag:
+        description: 'Sadece bu release (opsiyonel, örn. animals-2026-10-23-...)'
+        type: string
+        default: ''
+
+concurrency:
+  group: instagram-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests
+      - name: Paylaş
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_MEDIA_PAT: ${{ secrets.IG_MEDIA_PAT }}
+          IG_MEDIA_REPO: ${{ vars.IG_MEDIA_REPO || 'scorsty-cmd/uoa-media' }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+          FORCE_TAG: ${{ inputs.force_tag }}
+        run: |
+          # Sundays in the first run: refresh the 60-day Instagram token
+          if [ "$(date -u +%u)" = "7" ] && [ "$(date -u +%H)" = "13" ]; then export REFRESH_TOKEN=1; fi
+          python3 tools/instagram_publisher.py
