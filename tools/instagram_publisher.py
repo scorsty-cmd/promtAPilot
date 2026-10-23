@@ -227,7 +227,8 @@ def refresh_token():
 
 def main():
     if not IG_TOKEN:
-        sys.exit('IG_ACCESS_TOKEN secret tanımlı değil.')
+        print('IG_ACCESS_TOKEN secret henüz tanımlı değil; kurulum bitince paylaşımlar başlar.')
+        return
     me = ig('GET', 'me', fields='user_id,username,account_type')
     user_id, username = me.get('user_id') or me.get('id'), me.get('username', '')
     log(f'Bağlı Instagram hesabı: @{username} ({me.get("account_type")})')
