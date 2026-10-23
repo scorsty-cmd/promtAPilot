@@ -23,6 +23,10 @@
 - reel2_v6 (reels/renderer/reel2_v6.py + reel_audio_v6.py): `telemetry` beat (drawn map, car dot drives a route, breadcrumb ping on a fixed rhythm, event pins pop with chips, live PING/MPH/time ticker, "EXAMPLE"), `report` beat (paper report fills row by row -> SOLD stamp -> flies along an arrow to an INSURER card where an example premium counts up), SPEED_LINES module var (streaking light lines behind the hook from frame 0), `blip`/`beep` SFX synced to pings/events. Peak factor 0.70 -> -0.9 dB max (borderline; use 0.66 if a mix gets louder).
 - 22 Oct 16:49: fetch-images workflow runs 30/31 hung (in_progress/pending >15 min, no assets). Fallback used: unused CC0/CC BY car/road photos from the long-video folders 20261020-hlu-b1/b3. photos.py process must be killed before copying fallbacks (it would overwrite photos/). Low-res (1024 px) photos are fine as blurred plates, borderline as sharp hook backgrounds.
 - vidIQ balance was 0 on 22 Oct (resets 29 Oct) -> all analysis free until then.
+- Owner data 23 Oct: FILE 008 (Gmail confidential, statement open-loop "X has a blind spot", 23 s, snap animation) climbed to 71 plays, 45.0% watched, 67.2% skip – best watch % so far. FILE 009 (question hook "Did your car raise your insurance?") 14 plays, 9.1% / 76.9% early. Statement open-loop hooks > question hooks so far.
+- 23 Oct: new user skill "hidden-layer-style" (style DNA): Instrument Serif headlines (one italic phrase on a highlighter block), IBM Plex Mono labels/captions (ink on paper pill, keyword highlighted), ink #121316 / paper #ECE8DE / highlighter #E4FF3C only accent, hard cuts (no whoosh every cut), margin notes typing on, stamps in ink. Fonts in reels/renderer/fonts/ (copy next to reel2.py). Future: "Fine Print" paper-background variant needs panel/caption colour rework.
+- reel2_v7 (reels/renderer/reel2_v7.py + reel_audio_v7.py): STYLE='dna' module var (fonts/captions/stamp), CUTS='hard', `ingest` beat (example chat bubbles type in, fly on a curve into a MODEL core, counter + bar), TYPING_HOOK (typing-dots bubble under the hook), beat note='→ ...' margin note (2 frames/char + `type` key-tap SFX). Peak 0.70 -> -2.5 dB max.
+- Fetch workflow run 32 (23 Oct) returned 0 images for all 3 queries -> fallback typing_0 (CC BY, 20261022-0249b) + server_0 (CC0, 20261022-uber). Still-unused fallbacks: servers_0/1 (hlu-b2, CC0; servers_0 has mannequins – skip), laptop_1 (20261019-0249). help.openai.com pages are readable with WebFetch.
 
 ## Entries
 ### 2026-10-19 16:49 – FILE 005 – iPhone Significant Locations (P2 amber/blue, 27.9 s)
@@ -58,3 +62,9 @@
 - Analysis (free; vidIQ balance 0): owner insights (above); web trend guides (argil: b-roll/visual changes every 2–4 s, quality of hook + pacing over face); niche pattern kept: news/regulator receipt (FTC order card) + practical check at the end.
 - Previous (FILE 008): 33 plays, 19.8% watched, 76.7% skip, 0 saves, 0 shares.
 - Photos: workflow hung; reused CC BY "Light Trails" (wwarby) + CC0 city traffic x2 + CC0 rain on car window from 20261020-hlu-b1/b3.
+
+### 2026-10-23 02:49 – FILE 010 – ChatGPT content may train OpenAI models (style DNA dark variant, 26.3 s) · https://www.instagram.com/reel/De1UI6bjBvS/
+- File: HL_Reel_20261023_0249_chatgpt-training.mp4 · Raw URL HTTP 200. Same topic as today's planned YouTube Fine Print episode (cross-promo).
+- New vs FILE 009: first Reel in the Hidden Layer style DNA (serif headline + italic highlighter phrase, mono paper-pill captions, ink stamp "OPT-OUT"); statement open-loop hook (FILE 008 pattern) instead of a question; new `ingest` chat-to-model animation; typing bubble + margin notes with key-tap SFX; hard cuts instead of whip/glitch.
+- Analysis (free, 02:49 run, 0 credits): owner insights (above); shortgenius 2026 trends (Reels favour clean composition + polished captions, each scene a micro-payoff, outcome-first opener built backward from the payoff); pippit retention guide (pattern interrupts, no early CTA, captions for sound-off).
+- Previous (FILE 009): 14 plays, 9.1% watched, 76.9% skip, 0 saves, 0 shares.
