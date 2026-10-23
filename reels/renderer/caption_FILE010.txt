@@ -1,0 +1,10 @@
+Your ChatGPT chats aren't just yours. Save this before you forget.
+
+OpenAI's help page says that on Free, Plus and Pro, it "may use your content to train our models." To opt out: Settings > Data controls > turn off "Improve the model for everyone" (or use OpenAI's Privacy Portal). Temporary Chats aren't used for training, but OpenAI may keep a copy for up to 30 days for safety.
+
+Chat bubbles shown are examples.
+Sources: OpenAI Help Center, "How your data is used to improve model performance" (help.openai.com/en/articles/5722486) · OpenAI "Temporary Chat FAQ" (help.openai.com/en/articles/8914046). Read 23 Oct 2026.
+Photo: "Hands are typing on a laptop keyboard while a clock rests next to the device" by Shixart1985, CC BY 2.0, via Wikimedia Commons. Server photo CC0.
+Not legal advice.
+
+#hiddenlayer #chatgpt #dataprivacy #ai #privacytips
