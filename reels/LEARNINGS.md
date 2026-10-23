@@ -28,6 +28,10 @@
 - reel2_v7 (reels/renderer/reel2_v7.py + reel_audio_v7.py): STYLE='dna' module var (fonts/captions/stamp), CUTS='hard', `ingest` beat (example chat bubbles type in, fly on a curve into a MODEL core, counter + bar), TYPING_HOOK (typing-dots bubble under the hook), beat note='→ ...' margin note (2 frames/char + `type` key-tap SFX). Peak 0.70 -> -2.5 dB max.
 - Fetch workflow run 32 (23 Oct) returned 0 images for all 3 queries -> fallback typing_0 (CC BY, 20261022-0249b) + server_0 (CC0, 20261022-uber). Still-unused fallbacks: servers_0/1 (hlu-b2, CC0; servers_0 has mannequins – skip), laptop_1 (20261019-0249). help.openai.com pages are readable with WebFetch.
 
+- Owner data 23 Oct 16:49: FILE 010 (ChatGPT, DNA dark variant, generic "aren't just yours" hook, static doc page at 2.5 s) 21 plays, 8.8% watched, 100% skip – worst so far. Hook too expected/abstract and nothing happens on screen in the first 2 s. FILE 008 still best (71 plays, 45.0% / 67.2%).
+- reel2_v8 (reels/renderer/reel2_v8.py; audio = reel_audio_v7.py unchanged): PAPER=True "Fine Print" paper variant of the style DNA (paper bg with ghost document lines + margin rule, ink caption pills with highlighter word, ink chips, ink numerals with highlighter bar, paper cards with ink outline), `pixel` beat (email card -> magnifier on a 1x1 pixel -> dashed ping line -> SENDER SERVER log types OPENED), hook `print=` taped real photo + `ping=` sonar rings from frame 0, stat `print=`/`count_y`/`source_y`, doc `redact=True` (bars slide off before highlighter). Helper: render chosen frames by importing reel2.py with importlib (exec() breaks __file__).
+- Fetch workflow run 33 (23 Oct 16:49) delivered after ~11 min (photos.py gives up at 9) -> after "NO PHOTOS" just `git pull` and copy assets/<id>/. Openverse junk again for "pile of envelopes" (old letters with text) and "laptop on desk" (UI/watermarks); a text bar can be cropped out (hand_0 = crop of phone_1).
+
 ## Entries
 ### 2026-10-19 16:49 – FILE 005 – iPhone Significant Locations (P2 amber/blue, 27.9 s)
 - File: HL_Reel_20261019_1649_iphone-significant-locations.mp4 · https://www.instagram.com/reel/Dercfl2DG4H/
@@ -68,3 +72,10 @@
 - New vs FILE 009: first Reel in the Hidden Layer style DNA (serif headline + italic highlighter phrase, mono paper-pill captions, ink stamp "OPT-OUT"); statement open-loop hook (FILE 008 pattern) instead of a question; new `ingest` chat-to-model animation; typing bubble + margin notes with key-tap SFX; hard cuts instead of whip/glitch.
 - Analysis (free, 02:49 run, 0 credits): owner insights (above); shortgenius 2026 trends (Reels favour clean composition + polished captions, each scene a micro-payoff, outcome-first opener built backward from the payoff); pippit retention guide (pattern interrupts, no early CTA, captions for sound-off).
 - Previous (FILE 009): 14 plays, 9.1% watched, 76.9% skip, 0 saves, 0 shares.
+
+### 2026-10-23 16:49 – FILE 011 – Email tracking pixels (style DNA PAPER variant, 26.2 s) · https://www.instagram.com/reel/De1w195jnHq/
+- File: HL_Reel_20261023_1649_email-tracking-pixel.mp4 · Raw URL HTTP 200. Today's 2nd Reel (1st: FILE 010 ChatGPT, dark variant).
+- New vs FILE 010: paper "Fine Print" look (light frame-0 pattern break in a dark feed); concrete consequence hook "This email knows you opened it." (FILE 006/008 pattern) with a real taped photo + pulsing pixel from frame 0; new `pixel` mechanism animation (the proof happens on screen by second 3); redaction-reveal on the Gmail quote; 70% stat with highlighter bar + real desk print; tighter voice (1.12x, 67 words).
+- Analysis (free; vidIQ balance 0 until 29 Oct): owner insights (FILE 010 100% skip vs FILE 008 45% watched -> concrete consequence + on-screen action beats abstract claims); opus.pro hook formulas (1–2 s interrupt then 2–3 s context, make frame 0 look different from neighbouring Reels, high-contrast single pop colour, bold text repeating the spoken hook).
+- Previous (FILE 010): 21 plays, 8.8% watched, 100% skip, 0 saves, 0 shares.
+- Photos: run 33 (late) -> hand_0 (crop of CC BY "Business and technology concept hand holding smartphone…" by Jernej Furman) + fallback CC0 laptop_1 (20261019-0249) as desk_0; rejected phone_0 (app UI), laptop_0 (Facebook UI + watermark), laptop_1 new (watermark/clock text), letters (readable text).
