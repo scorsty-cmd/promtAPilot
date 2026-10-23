@@ -1,0 +1,23 @@
+{
+ "id": "20261023-0249",
+ "items": [
+  {
+   "key": "typing",
+   "query": "hands typing on laptop keyboard at night",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "phone",
+   "query": "hands holding smartphone in the dark",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "server",
+   "query": "server room data center corridor",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
