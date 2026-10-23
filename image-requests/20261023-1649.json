@@ -1,0 +1,23 @@
+{
+ "id": "20261023-1649",
+ "items": [
+  {
+   "key": "phone",
+   "query": "hands holding smartphone",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "laptop",
+   "query": "laptop on wooden desk",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "letters",
+   "query": "pile of envelopes letters",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
