@@ -1,0 +1,9 @@
+This email knows you opened it. Save this before you forget.
+Many emails hide a 1x1 "tracking pixel". Open the email, the image loads from the sender's server, and they may learn you opened it.
+Gmail's own help page: "Sometimes, senders may know whether you've opened an email that has an image."
+A Princeton study (Englehardt, Han & Narayanan, PoPETs 2018) found trackers in 70% of 12,618 mailing-list emails.
+Block it in Gmail: Settings > See all settings > Images > "Ask before displaying external images" > Save Changes. On Apple Mail: turn on Protect Mail Activity.
+Sources: Gmail Help "Turn images on or off in Gmail" (support.google.com/mail/answer/145919, read 23 Oct 2026) · "I never signed up for this! Privacy implications of email tracking" (petsymposium.org, PoPETs 2018) · Apple "Mail Privacy Protection & Privacy" (apple.com/legal/privacy)
+Photo: "Business and technology concept hand holding smartphone and search bar" by Jernej Furman, CC BY 2.0, via Wikimedia Commons (cropped). Desk photo: CC0.
+Follow @hiddenlayerdecoded for the hidden rules.
+#hiddenlayer #emailprivacy #privacytips #gmailtips #techtips
