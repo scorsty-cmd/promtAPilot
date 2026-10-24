@@ -238,6 +238,14 @@ def main():
     log(f'Bağlı Instagram hesabı: @{username} ({me.get("account_type")})')
     if username.lower() in FORBIDDEN_USERNAMES:
         sys.exit(f'KRİTİK GÜVENLİK ENGELİ: token @{username} hesabına ait; hayvan içerikleri oraya paylaşılmaz.')
+    # media token self-check (prints only its type and length, never the value)
+    if MEDIA_PAT:
+        kind_ = 'fine-grained' if MEDIA_PAT.startswith('github_pat_') else 'classic' if MEDIA_PAT.startswith('ghp_') else 'BİLİNMEYEN biçim'
+        r = gh('GET', f'/repos/{MEDIA_REPO}', token=MEDIA_PAT)
+        w = r.json().get('permissions', {}).get('push') if r.status_code == 200 else None
+        log(f'IG_MEDIA_PAT: {kind_}, {len(MEDIA_PAT)} karakter; {MEDIA_REPO} erişimi HTTP {r.status_code}, yazma={w}')
+    else:
+        log('IG_MEDIA_PAT boş: secret bulunamadı (adı tam olarak IG_MEDIA_PAT olmalı, Repository secret).')
     if os.environ.get('REFRESH_TOKEN') == '1':
         refresh_token()
 
