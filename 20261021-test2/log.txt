@@ -1,0 +1,12 @@
+pexels key present: False
+commons incategory:"Videos of cats" filetype:video usable results 14
+saved cat_0 commons-124368968 cc by 3.0
+saved cat_1 commons-135718485 cc by 3.0
+saved cat_2 commons-148466901 cc by 4.0
+saved cat_3 commons-98962781 cc by 4.0
+item cat: 4/4
+commons incategory:"Videos of dogs" filetype:video usable results 15
+saved dog_0 commons-141676633 cc by 3.0
+saved dog_1 commons-134327184 cc by 4.0
+saved dog_2 commons-181213938 cc by 3.0
+item dog: 3/3

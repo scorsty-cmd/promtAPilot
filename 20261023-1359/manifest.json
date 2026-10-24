@@ -1,0 +1,53 @@
+[
+ {
+  "source_id": "commons-102567961",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Kitten_playing_-_Tokyo_-_Jan_7_2020.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "duration": 8.008000000000001,
+  "title": "File:Kitten playing - Tokyo - Jan 7 2020.webm",
+  "creator": "Nesnad",
+  "license": "cc by 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kitten_playing_-_Tokyo_-_Jan_7_2020.webm",
+  "needs_credit": true,
+  "attribution": "Kitten playing - Tokyo - Jan 7 2020.webm by Nesnad (cc by 4.0), via Wikimedia Commons",
+  "file": "backup_0.mp4",
+  "preview": "backup_0.jpg",
+  "key": "backup",
+  "query": "kitten playful running",
+  "clip_duration": 7.97
+ },
+ {
+  "source_id": "commons-20301970",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Whisky-Iswed_%2827_sec%29.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "duration": 27.536,
+  "title": "File:Whisky-Iswed (27 sec).ogv",
+  "creator": "Image details\n\n  Sony DSC W270\n\n  Orikrin1998\n\n  CC-BY-3.0",
+  "license": "cc by 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Whisky-Iswed_(27_sec).ogv",
+  "needs_credit": true,
+  "attribution": "Whisky-Iswed (27 sec).ogv by Image details\n\n  Sony DSC W270\n\n  Orikrin1998\n\n  CC-BY-3.0 (cc by 3.0), via Wikimedia Commons",
+  "file": "backup_1.mp4",
+  "preview": "backup_1.jpg",
+  "key": "backup",
+  "query": "kitten playful running",
+  "clip_duration": 25.0
+ },
+ {
+  "source_id": "commons-18787246",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Sphynx_kitten_from_Belarus_-_March_2012_-_HD.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "duration": 56.169333333333334,
+  "title": "File:Sphynx kitten from Belarus - March 2012 - HD.ogv",
+  "creator": "Vitaly Zdanevich",
+  "license": "cc0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sphynx_kitten_from_Belarus_-_March_2012_-_HD.ogv",
+  "needs_credit": false,
+  "attribution": null,
+  "file": "backup_2.mp4",
+  "preview": "backup_2.jpg",
+  "key": "backup",
+  "query": "kitten playful running",
+  "clip_duration": 25.0
+ }
+]

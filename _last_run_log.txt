@@ -1,0 +1,10 @@
+2026-10-24T11:02:11.509224Z
+pexels key present: False
+commons incategory:"Videos of dogs" filetype:video usable results 12
+saved main_0 commons-27169177 cc0
+saved main_1 commons-120546779 cc by 3.0
+saved main_2 commons-84556292 public domain
+saved main_3 commons-84557962 public domain
+item main: 4/4
+commons incategory:"Videos of puppies" filetype:video usable results 0
+item backup: 0/4
