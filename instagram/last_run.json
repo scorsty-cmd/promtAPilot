@@ -1,18 +1,17 @@
 {
- "at": "2026-10-24T14:25:59.548569+03:00",
+ "at": "2026-10-24T14:33:33.209873+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
-  "animals-2026-10-22-yavas-goz-kirpma#0 hikâye 46 saat gecikmiş, atlandı.",
-  "animals-2026-10-22-yavas-goz-kirpma#2 hikâye 44 saat gecikmiş, atlandı.",
-  "animals-2026-10-22-yavas-goz-kirpma#4 hikâye 41 saat gecikmiş, atlandı.",
-  "animals-2026-10-23-cuma-aksami-kardesimle#0 hikâye 22 saat gecikmiş, atlandı.",
-  "animals-2026-10-23-cuma-aksami-kardesimle#2 hikâye 20 saat gecikmiş, atlandı.",
-  "❌ animals-2026-10-23-cuma-aksami-kardesimle#3 reel paylaşılamadı: Instagram API 17841453660100555/media: {'message': 'The parameter video_url is required', 'type': 'IGApiException', 'code': 100, 'fbtrace_id': 'A5W3XUxADQOrx12TmS-4NZu'}",
+  "❌ animals-2026-10-23-cuma-aksami-kardesimle#3 reel paylaşılamadı: medya deposuna yüklenemedi: 401 {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}",
+  "   (kurulum hatası: IG_MEDIA_PAT kontrol edilmeli; içerik sırada bekliyor)",
   "❌ animals-2026-10-23-cuma-aksami-kardesimle#1 post paylaşılamadı: medya deposuna yüklenemedi: 401 {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}",
-  "❌ animals-2026-10-22-yavas-goz-kirpma#3 reel paylaşılamadı: Instagram API 17841453660100555/media: {'message': 'The parameter video_url is required', 'type': 'IGApiException', 'code': 100, 'fbtrace_id': 'AHXSEj9D_9IeWjgTXvVZBp_'}",
-  "❌ animals-2026-10-22-yavas-goz-kirpma#1 post paylaşılamadı: medya deposuna yüklenemedi: 401 {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}"
+  "   (kurulum hatası: IG_MEDIA_PAT kontrol edilmeli; içerik sırada bekliyor)",
+  "❌ animals-2026-10-22-yavas-goz-kirpma#3 reel paylaşılamadı: medya deposuna yüklenemedi: 401 {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}",
+  "   (kurulum hatası: IG_MEDIA_PAT kontrol edilmeli; içerik sırada bekliyor)",
+  "❌ animals-2026-10-22-yavas-goz-kirpma#1 post paylaşılamadı: medya deposuna yüklenemedi: 401 {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}",
+  "   (kurulum hatası: IG_MEDIA_PAT kontrol edilmeli; içerik sırada bekliyor)"
  ]
 }
