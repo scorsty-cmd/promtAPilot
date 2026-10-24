@@ -79,3 +79,11 @@
 - Analysis (free; vidIQ balance 0 until 29 Oct): owner insights (FILE 010 100% skip vs FILE 008 45% watched -> concrete consequence + on-screen action beats abstract claims); opus.pro hook formulas (1–2 s interrupt then 2–3 s context, make frame 0 look different from neighbouring Reels, high-contrast single pop colour, bold text repeating the spoken hook).
 - Previous (FILE 010): 21 plays, 8.8% watched, 100% skip, 0 saves, 0 shares.
 - Photos: run 33 (late) -> hand_0 (crop of CC BY "Business and technology concept hand holding smartphone…" by Jernej Furman) + fallback CC0 laptop_1 (20261019-0249) as desk_0; rejected phone_0 (app UI), laptop_0 (Facebook UI + watermark), laptop_1 new (watermark/clock text), letters (readable text).
+
+### 2026-10-24 16:49 – FILE 012 – Android advertising ID (dark DNA variant, 24.0 s)
+- File: HL_Reel_20261024_1649_android-ad-id.mp4 · Raw URL HTTP 200 check before publish. Renderer: reels/renderer/reel2_v9.py (+ reel_audio_v7.py unchanged). Fonts must be copied NEXT TO reel2.py (cp fonts/*.ttf .), else "cannot open resource".
+- New vs FILE 011: `adid` beat (one example advertising ID read by 3 generic apps -> AD NETWORK "MATCHED: 1 device" -> ID struck through/DELETED -> links cut, NO MATCH; avoid unicode glyphs like ✕ in mono font = tofu); toggle `button=True` (last row shows TAP instead of a switch, for actions like "Delete ..."); hook = consequence statement naming the viewer's phone; honest "other tracking remains" compare beat; dark variant after the paper one.
+- Sources: Google Play Console Help "Advertising ID" (support.google.com/googleplay/android-developer/answer/6048248, read 24 Oct 2026); ghacks.net path Settings > Privacy > Ads > Delete advertising ID.
+- Previous (FILE 011): 4 plays, 4.3% watched, 100% skip (very early). FILE 008 still best (71 plays, 45.0% / 67.2%); FILE 006 24.9% / 61.6%.
+- Photos: run 20261024-1649 OK in ~3 min (CC0 hand_0 phone in hand, CC0 street_0 night street used as blurred plate; hand_1/street_1 unused).
+- Not Sunday: no competitor analysis, 0 vidIQ credits.

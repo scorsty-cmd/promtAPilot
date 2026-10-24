@@ -1,0 +1,7 @@
+Advertisers know your phone by a number. Save this before you forget.
+Android gives every phone an advertising ID. Apps and advertisers can use it to recognize your device.
+Google's own page: "The advertising ID is a unique, user-resettable, and user-deletable ID for advertising, provided by Google Play services."
+Delete it: Settings > Privacy > Ads > Delete advertising ID. It won't end all tracking, but it cuts one big link.
+Sources: Google Play Console Help "Advertising ID" (support.google.com/googleplay/android-developer/answer/6048248, read 24 Oct 2026) · ghacks.net "How to delete the Advertising ID on Android"
+Follow @hiddenlayerdecoded for the hidden rules.
+#hiddenlayer #androidtips #privacytips #techtips #adtracking
