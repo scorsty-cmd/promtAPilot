@@ -112,7 +112,7 @@ def ig(method, path, **params):
     return j
 
 
-def wait_ready(cid, timeout=600):
+def wait_ready(cid, timeout=900):
     t0 = time.time()
     while time.time() - t0 < timeout:
         st = ig('GET', cid, fields='status_code,status').get('status_code')
@@ -153,14 +153,18 @@ def public_url(data, name):
     return url, delete
 
 
-def post_reel(user_id, data, caption):
-    c = ig('POST', f'{user_id}/media', media_type='REELS', upload_type='resumable',
-           caption=caption, share_to_feed='true')
-    up = requests.post(c['uri'], data=data, timeout=600, headers={
-        'Authorization': f'OAuth {IG_TOKEN}', 'offset': '0', 'file_size': str(len(data))})
-    if up.status_code >= 400:
-        raise RuntimeError(f'video yüklenemedi: {up.status_code} {up.text[:200]}')
-    return publish(user_id, c['id'])
+def post_reel(user_id, data, caption, name='reel.mp4'):
+    """Instagram Login API needs a public video_url (resumable upload is refused)."""
+    url, delete = public_url(data, name)
+    try:
+        cid = ig('POST', f'{user_id}/media', media_type='REELS', video_url=url,
+                 caption=caption, share_to_feed='true')['id']
+        return publish(user_id, cid)
+    finally:
+        try:
+            delete()
+        except Exception as e:
+            log('UYARI: geçici video silinemedi', e)
 
 
 def post_images(user_id, kind, images, caption=None):
@@ -268,7 +272,7 @@ def main():
                     done_kind.add(kind)
                 continue
             if kind == 'reel':
-                mid, link = post_reel(user_id, asset_bytes(rel, it['file']), it.get('caption', ''))
+                mid, link = post_reel(user_id, asset_bytes(rel, it['file']), it.get('caption', ''), it['file'])
             elif kind == 'post':
                 imgs = [(n, asset_bytes(rel, n)) for n in it['files']]
                 mid, link = post_images(user_id, 'post', imgs, it.get('caption', ''))
