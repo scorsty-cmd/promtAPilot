@@ -298,5 +298,32 @@ def main():
         open(path, 'a', encoding='utf-8').write('### Instagram paylaşımları\n\n' + '\n'.join(f'- {s}' for s in SUMMARY) + '\n')
 
 
+def write_last_run(ok, err=''):
+    """Readable diagnostics (no secrets) on the state branch: instagram/last_run.json."""
+    try:
+        if gh('GET', f'/repos/{REPO}/branches/{STATE_BRANCH}').status_code == 404:
+            main_sha = gh('GET', f'/repos/{REPO}/git/ref/heads/main').json()['object']['sha']
+            gh('POST', f'/repos/{REPO}/git/refs', json={'ref': f'refs/heads/{STATE_BRANCH}', 'sha': main_sha})
+        path = 'instagram/last_run.json'
+        cur = gh('GET', f'/repos/{REPO}/contents/{path}?ref={STATE_BRANCH}')
+        body = {'message': 'Instagram last run', 'branch': STATE_BRANCH, 'content': base64.b64encode(json.dumps(
+            {'at': dt.datetime.now(IST).isoformat(), 'ok': ok, 'dry_run': DRY,
+             'error': err.replace(IG_TOKEN, '***') if IG_TOKEN else err, 'log': SUMMARY[-40:]},
+            ensure_ascii=False, indent=1).encode()).decode()}
+        if cur.status_code == 200:
+            body['sha'] = cur.json()['sha']
+        gh('PUT', f'/repos/{REPO}/contents/{path}', json=body)
+    except Exception as e:
+        print('last_run yazılamadı:', e)
+
+
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+        write_last_run(True)
+    except BaseException as e:
+        import traceback
+        msg = f'{type(e).__name__}: {e}'
+        print(traceback.format_exc())
+        write_last_run(False, msg[:1500])
+        raise
