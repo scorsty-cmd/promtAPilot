@@ -1,14 +1,11 @@
 {
- "at": "2026-10-24T19:29:28.416628+03:00",
+ "at": "2026-10-24T21:20:22.617129+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "✅ animals-2026-10-24-kopek-burnu#0 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4015117580290289448",
-  "   not: Teaser: yeni video 20:00'de",
-  "✅ animals-2026-10-24-kopek-burnu#2 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4015117765066132529",
-  "   not: Instagram soru çıkartması eklenebilir: Köpeğin en çok neyi koklamayı seviyor?"
+  "Şu an paylaşım zamanı gelmiş yeni içerik yok."
  ]
 }
