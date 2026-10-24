@@ -1,0 +1,17 @@
+{
+ "id": "20261024-1649",
+ "items": [
+  {
+   "key": "hand",
+   "query": "hand holding smartphone",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "street",
+   "query": "city street at night",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
