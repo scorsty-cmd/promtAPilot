@@ -1,17 +1,12 @@
 {
- "at": "2026-10-24T14:33:33.209873+03:00",
+ "at": "2026-10-24T14:34:14.068211+03:00",
  "ok": true,
- "dry_run": false,
+ "dry_run": true,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
-  "❌ animals-2026-10-23-cuma-aksami-kardesimle#3 reel paylaşılamadı: medya deposuna yüklenemedi: 401 {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}",
-  "   (kurulum hatası: IG_MEDIA_PAT kontrol edilmeli; içerik sırada bekliyor)",
-  "❌ animals-2026-10-23-cuma-aksami-kardesimle#1 post paylaşılamadı: medya deposuna yüklenemedi: 401 {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}",
-  "   (kurulum hatası: IG_MEDIA_PAT kontrol edilmeli; içerik sırada bekliyor)",
-  "❌ animals-2026-10-22-yavas-goz-kirpma#3 reel paylaşılamadı: medya deposuna yüklenemedi: 401 {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}",
-  "   (kurulum hatası: IG_MEDIA_PAT kontrol edilmeli; içerik sırada bekliyor)",
-  "❌ animals-2026-10-22-yavas-goz-kirpma#1 post paylaşılamadı: medya deposuna yüklenemedi: 401 {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}",
-  "   (kurulum hatası: IG_MEDIA_PAT kontrol edilmeli; içerik sırada bekliyor)"
+  "IG_MEDIA_PAT: BİLİNMEYEN biçim, 69 karakter; scorsty-cmd/uoa-media erişimi HTTP 401, yazma=None",
+  "[DRY] animals-2026-10-23-cuma-aksami-kardesimle#3 reel (planlanan 23.10 20:00)",
+  "[DRY] animals-2026-10-23-cuma-aksami-kardesimle#1 post (planlanan 23.10 17:00)"
  ]
 }
