@@ -288,7 +288,11 @@ def main():
                 log(f'   not: {it["note"]}')
         except Exception as e:
             log(f'❌ {key} {kind} paylaşılamadı: {e}')
-            fails = state.setdefault('fails', {})
+            # setup problems (missing/bad media token) must not use up an item's attempts
+            if 'medya deposu' in str(e) or 'IG_MEDIA' in str(e):
+                log('   (kurulum hatası: IG_MEDIA_PAT kontrol edilmeli; içerik sırada bekliyor)')
+                continue
+            fails = state.setdefault('fails_v2', {})
             fails[key] = fails.get(key, 0) + 1
             if fails[key] >= 3:
                 state['posted'][key] = {'status': 'failed', 'error': str(e)[:300], 'at': now.isoformat()}
