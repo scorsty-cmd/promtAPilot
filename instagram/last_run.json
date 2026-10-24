@@ -1,11 +1,12 @@
 {
- "at": "2026-10-24T21:20:22.617129+03:00",
+ "at": "2026-10-24T22:20:17.512349+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "Şu an paylaşım zamanı gelmiş yeni içerik yok."
+  "✅ animals-2026-10-24-kopek-burnu#4 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4015203661073172068",
+  "   not: promo — Evde Köpek Bakım Rehberi, link profilde"
  ]
 }
