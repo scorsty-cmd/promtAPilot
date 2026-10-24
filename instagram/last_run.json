@@ -1,7 +1,16 @@
 {
- "at": "2026-10-24T12:32:18.964094+03:00",
- "ok": false,
+ "at": "2026-10-24T14:24:38.192653+03:00",
+ "ok": true,
  "dry_run": true,
- "error": "RuntimeError: Instagram API me: {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'A6NgbKzkhRSxcTK1XkEuJzi'}",
- "log": []
+ "error": "",
+ "log": [
+  "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
+  "animals-2026-10-22-yavas-goz-kirpma#0 hikâye 46 saat gecikmiş, atlandı.",
+  "animals-2026-10-22-yavas-goz-kirpma#2 hikâye 44 saat gecikmiş, atlandı.",
+  "animals-2026-10-22-yavas-goz-kirpma#4 hikâye 41 saat gecikmiş, atlandı.",
+  "animals-2026-10-23-cuma-aksami-kardesimle#0 hikâye 22 saat gecikmiş, atlandı.",
+  "animals-2026-10-23-cuma-aksami-kardesimle#2 hikâye 20 saat gecikmiş, atlandı.",
+  "[DRY] animals-2026-10-23-cuma-aksami-kardesimle#3 reel (planlanan 23.10 20:00)",
+  "[DRY] animals-2026-10-23-cuma-aksami-kardesimle#1 post (planlanan 23.10 17:00)"
+ ]
 }
