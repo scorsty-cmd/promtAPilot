@@ -1,12 +1,12 @@
 {
- "at": "2026-10-24T14:34:14.068211+03:00",
+ "at": "2026-10-24T14:38:24.527802+03:00",
  "ok": true,
- "dry_run": true,
+ "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
-  "IG_MEDIA_PAT: BİLİNMEYEN biçim, 69 karakter; scorsty-cmd/uoa-media erişimi HTTP 401, yazma=None",
-  "[DRY] animals-2026-10-23-cuma-aksami-kardesimle#3 reel (planlanan 23.10 20:00)",
-  "[DRY] animals-2026-10-23-cuma-aksami-kardesimle#1 post (planlanan 23.10 17:00)"
+  "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
+  "✅ animals-2026-10-23-cuma-aksami-kardesimle#3 reel paylaşıldı: https://www.instagram.com/reel/De4CmwAFUCG/",
+  "✅ animals-2026-10-23-cuma-aksami-kardesimle#1 post paylaşıldı: https://www.instagram.com/p/De4CvjLlUN-/"
  ]
 }
