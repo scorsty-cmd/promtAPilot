@@ -20,9 +20,9 @@
 ## Yayın kaydı
 | Tarih | Release etiketi | Format | Hayvan | Başlık | YouTube ID | 24s izlenme | 7g izlenme | Beğeni | Yorum | Instagram (Reel paylaşım tarihi + link) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-22 | animals-2026-10-22-yavas-goz-kirpma | B | kedi | Kedin sana yavaşça göz kırpıyor mu? 😺 #kedi #kediler | yüklenmedi (YOUTUBE_TOKEN_JSON_ANIMALS yok; queue dalı duruyor) | – | – | – | – | Antigravity 20:00 |
-| 2026-10-23 | animals-2026-10-23-cuma-aksami-kardesimle | A | kedi (2 yavru) | Cuma akşamı kardeşimle ben 😹 #kedi #komikhayvanlar | yüklenmedi (YOUTUBE_TOKEN_JSON_ANIMALS yok; queue dalı duruyor) | – | – | – | – | Antigravity 20:00 |
-| 2026-10-24 | animals-2026-10-24-kopek-burnu | B | köpek | Köpeğin burnu süper güç mü? 🐶 #köpek #hayvanlar #shorts | yüklenmedi (YOUTUBE_TOKEN_JSON_ANIMALS yok; queue dalı duruyor) | – | – | – | – | Antigravity 20:00 |
+| 2026-10-22 | animals-2026-10-22-yavas-goz-kirpma | B | kedi | Kedin sana yavaşça göz kırpıyor mu? 😺 #kedi #kediler | yüklenmedi (YOUTUBE_TOKEN_JSON_ANIMALS yok; queue dalı duruyor) | – | – | – | – | (Antigravity'ye bırakılmıştı) |
+| 2026-10-23 | animals-2026-10-23-cuma-aksami-kardesimle | A | kedi (2 yavru) | Cuma akşamı kardeşimle ben 😹 #kedi #komikhayvanlar | yüklenmedi (YOUTUBE_TOKEN_JSON_ANIMALS yok; queue dalı duruyor) | – | – | – | – | 24 Eki: https://www.instagram.com/reel/De4CmwAFUCG/ + gönderi https://www.instagram.com/p/De4CvjLlUN-/ (GitHub) |
+| 2026-10-24 | animals-2026-10-24-kopek-burnu | B | köpek | Köpeğin burnu süper güç mü? 🐶 #köpek #hayvanlar #shorts | yüklenmedi (YOUTUBE_TOKEN_JSON_ANIMALS yok; queue dalı duruyor) | – | – | – | – | GitHub Instagram Publish, plan saatlerinde |
 
 ## Kullanılmış başlıklar
 - Kedin sana yavaşça göz kırpıyor mu? 😺 #kedi #kediler (2026-10-22)

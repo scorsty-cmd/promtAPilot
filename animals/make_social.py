@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Instagram feed carousel + story images for Universe Of Animals (posted by the user's
-Antigravity agent through Buffer).
+"Instagram Publish" GitHub workflow, tools/instagram_publisher.py).
 
     python animals/make_social.py social.json out_dir
 

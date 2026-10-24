@@ -56,9 +56,9 @@ Kurallar:
    `animals_<YYYY-MM-DD>_<slug>_shorts.mp4`, `thumb_B.jpg`, `YOUTUBE_METADATA.txt`. Önce draft, varlıkları
    kontrol et, sonra yayınla → "Daily YouTube Upload & Schedule" kanala yükler ve 19:00'a zamanlar.
 
-## 4b. Instagram (Antigravity + Buffer yönetir)
+## 4b. Instagram (GitHub "Instagram Publish" iş akışı otomatik paylaşır)
 - Her gün: 1 Reels (20:00), 1 kaydırmalı gönderi (17:00), 2–3 hikâye (16:00 / 18:30 / 21:30); görev 14:00 civarı bittiği için saatler öğleden sonraya göre.
-- Claude dosyaları ve INSTAGRAM_PLAN.json'u release'e koyar; Antigravity planı Buffer'a aynen işler.
+- Claude dosyaları ve INSTAGRAM_PLAN.json'u kuyruk üzerinden release'e koyar; "Instagram Publish (Universe Of Animals)" iş akışı (tools/instagram_publisher.py) resmi Instagram API ile @hayvanlaralemleri'ye plan saatlerinde paylaşır (16:05/17:05/18:35/20:05/21:35 kontrol). 6 saatten geç hikâye atlanır; geç kalan Reels/gönderi bir sonraki çalışmada paylaşılır. Sonuçlar: instagram-state dalında instagram/state.json ve last_run.json. Gerekli: IG_ACCESS_TOKEN (pazar günleri yenilenir) ve IG_MEDIA_PAT (~22 Oca 2027'de süresi dolar).
 - Gönderi Reels'in tekrarı olmaz: ek bilgi, mini rehber veya "hangisi sensin?" verir (kaydedilme ve paylaşılma getirir).
 - E-kitap: biyografide link; promo hikâyesi ve "kitaptan bir sayfa" gönderisi bölüm 5.2 takvimine göre (haftada 4 promo hikâyesi).
 
