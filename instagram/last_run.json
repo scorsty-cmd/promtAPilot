@@ -1,16 +1,12 @@
 {
- "at": "2026-10-25T20:02:29.901963+03:00",
+ "at": "2026-10-25T21:32:45.462538+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "✅ animals-2026-10-25-pazar-aksami-kedi#0 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4015857991152893300",
-  "   not: Teaser: Pazar akşamı her kedi — yeni video 20:00",
-  "✅ animals-2026-10-25-pazar-aksami-kedi#2 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4015858154420307016",
-  "   not: Instagram soru/anket çıkartması eklenebilir: Pazar akşamı sen ne yapıyorsun?",
-  "✅ animals-2026-10-25-pazar-aksami-kedi#1 post paylaşıldı: https://www.instagram.com/p/De7MgoGlOJ4/",
-  "✅ animals-2026-10-24-kopek-burnu#3 reel paylaşıldı: https://www.instagram.com/reel/De7MnLDiAdy/"
+  "✅ animals-2026-10-25-pazar-aksami-kedi#4 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4015904527148806837",
+  "   not: promo — Kedi Davranışları Bilimi, link profilde"
  ]
 }
