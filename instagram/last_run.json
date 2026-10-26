@@ -1,12 +1,11 @@
 {
- "at": "2026-10-26T22:07:05.486593+03:00",
+ "at": "2026-10-26T23:43:42.152141+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "✅ animals-2026-10-25-pazar-aksami-kedi#3 reel paylaşıldı: https://www.instagram.com/reel/De9_jHqG-eB/",
-  "✅ animals-2026-10-24-kopek-burnu#1 post paylaşıldı: https://www.instagram.com/p/De9_rohoMkn/"
+  "Şu an paylaşım zamanı gelmiş yeni içerik yok."
  ]
 }
