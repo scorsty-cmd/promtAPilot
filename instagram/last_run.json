@@ -1,11 +1,12 @@
 {
- "at": "2026-10-26T23:43:42.152141+03:00",
+ "at": "2026-10-27T21:38:42.134094+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "Şu an paylaşım zamanı gelmiş yeni içerik yok."
+  "✅ animals-2026-10-22-yavas-goz-kirpma#3 reel paylaşıldı: https://www.instagram.com/reel/DfAhGh0ASaW/",
+  "✅ animals-2026-10-22-yavas-goz-kirpma#1 post paylaşıldı: https://www.instagram.com/p/DfAhOrEHQBH/"
  ]
 }
