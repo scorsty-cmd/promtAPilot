@@ -1,18 +1,11 @@
 {
- "at": "2026-10-28T21:45:44.466023+03:00",
+ "at": "2026-10-28T23:33:08.087475+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "✅ animals-2026-10-28-kedi-yalanma-sirri#0 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4018084156630755670",
-  "   not: Yeni Reels duyurusu: Kedin neden sürekli yalanıyor?",
-  "✅ animals-2026-10-28-kedi-yalanma-sirri#2 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4018084325250117089",
-  "   not: Instagram soru/anket çıkartması eklenebilir: Kedin seni hiç yalıyor mu? (Evet sürekli / Nadiren)",
-  "✅ animals-2026-10-28-kedi-yalanma-sirri#4 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4018084499598969210",
-  "   not: promo — Kedi Davranışları Bilimi e-kitabı link profilde",
-  "✅ animals-2026-10-28-kedi-yalanma-sirri#3 reel paylaşıldı: https://www.instagram.com/reel/DfDGsnXE2GR/",
-  "✅ animals-2026-10-28-kedi-yalanma-sirri#1 post paylaşıldı: https://www.instagram.com/p/DfDG1HxmU90/"
+  "Şu an paylaşım zamanı gelmiş yeni içerik yok."
  ]
 }
