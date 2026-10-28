@@ -87,3 +87,10 @@
 - Previous (FILE 011): 4 plays, 4.3% watched, 100% skip (very early). FILE 008 still best (71 plays, 45.0% / 67.2%); FILE 006 24.9% / 61.6%.
 - Photos: run 20261024-1649 OK in ~3 min (CC0 hand_0 phone in hand, CC0 street_0 night street used as blurred plate; hand_1/street_1 unused).
 - Not Sunday: no competitor analysis, 0 vidIQ credits.
+
+### 2026-10-28 16:49 – FILE 013 – Chrome "Do Not Track" is only a request (PAPER variant, 24.2 s) · https://www.instagram.com/reel/DfCnBx9jVgc/
+- File: HL_Reel_20261028_1649_chrome-do-not-track.mp4 · Renderer reels/renderer/reel2_v10.py (+ reel_audio_v7.py unchanged), scenes_FILE013.py. Fonts next to reel2.py.
+- New vs FILE 012: new `dnt` beat (request card "DNT: 1" sent along dashed lines to 3 example sites, each answers IGNORED stamp + TRACKING: ON; "A request, not a rule" footer); consequence hook "Most sites ignore this Chrome switch." (true, from Chrome Help); paper variant after the dark one; blurred real photo plate under compare.
+- Source: support.google.com/chrome/answer/2790761 (read 28 Oct 2026): "Most websites and web services, including Google's, don't change their behavior when they receive a Do Not Track request."; path Settings > Privacy and security > Third-party cookies > Send a "Do not track" request.
+- Previous (FILE 012, 24 Oct): 129 plays, 17.4% watched, 64.1% skip, 0 saves/shares (most plays so far). FILE 008 still best watch % (44.6%). FILE 011 4 plays/34.9% watched/100% skip.
+- Photos: run 36 OK in ~6 min (hand_0, hand_1 CC BY 2.0 Shixart1985; "desk" found 0). vidIQ balance 0 until 29 Oct. Not Sunday: no competitor analysis. Run was Wed 28 Oct 13:54 UTC (no runs 25–27 Oct in Gmail).
