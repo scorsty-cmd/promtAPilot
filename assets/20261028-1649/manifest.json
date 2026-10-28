@@ -1,0 +1,42 @@
+{
+ "id": "20261028-1649",
+ "images": [
+  {
+   "file": "hand_0.jpg",
+   "key": "hand",
+   "query": "hands typing on laptop keyboard",
+   "width": 1280,
+   "height": 854,
+   "title": "File:Hands are typing on a laptop keyboard while a clock rests next to the device.jpg",
+   "creator": "Shixart1985",
+   "license": "by",
+   "license_version": "cc by 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Hands_are_typing_on_a_laptop_keyboard_while_a_clock_rests_next_to_the_device.jpg",
+   "attribution_required": true,
+   "attribution": "File:Hands are typing on a laptop keyboard while a clock rests next to the device.jpg by Shixart1985 (cc by 2.0), via Wikimedia Commons"
+  },
+  {
+   "file": "hand_1.jpg",
+   "key": "hand",
+   "query": "hands typing on laptop keyboard",
+   "width": 1201,
+   "height": 1800,
+   "title": "File:Hands are seen typing on a laptop keyboard.jpg",
+   "creator": "Shixart1985",
+   "license": "by",
+   "license_version": "cc by 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Hands_are_seen_typing_on_a_laptop_keyboard.jpg",
+   "attribution_required": true,
+   "attribution": "File:Hands are seen typing on a laptop keyboard.jpg by Shixart1985 (cc by 2.0), via Wikimedia Commons"
+  }
+ ],
+ "missing": [
+  {
+   "key": "desk",
+   "query": "laptop computer on a desk",
+   "found": 0
+  }
+ ]
+}
