@@ -1,0 +1,17 @@
+{
+ "id": "20261028-1649",
+ "items": [
+  {
+   "key": "hand",
+   "query": "hands typing on laptop keyboard",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "desk",
+   "query": "laptop computer on a desk",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
