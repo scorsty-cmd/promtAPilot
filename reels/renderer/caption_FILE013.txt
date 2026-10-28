@@ -1,0 +1,9 @@
+Most sites ignore this Chrome switch. Save this before you forget.
+
+Chrome's "Do Not Track" only sends a request asking sites not to track you. Chrome's own help page says most websites and web services, including Google's, don't change their behavior when they receive it. It's off by default.
+
+Sources: Google Chrome Help, "Turn 'Do Not Track' on or off" (support.google.com/chrome/answer/2790761), read 28 Oct 2026.
+Photos: "Hands are typing on a laptop keyboard while a clock rests next to the device" and "Hands are seen typing on a laptop keyboard" by Shixart1985, CC BY 2.0, via Wikimedia Commons.
+
+Follow for the hidden rules.
+#hiddenlayer #chrome #privacy #donottrack #techfacts
