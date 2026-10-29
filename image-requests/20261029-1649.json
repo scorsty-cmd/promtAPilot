@@ -1,0 +1,23 @@
+{
+ "id": "20261029-1649",
+ "items": [
+  {
+   "key": "hand",
+   "query": "hands holding smartphone in dark room",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "office",
+   "query": "office building windows at night",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "router",
+   "query": "network cables switch server rack",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
