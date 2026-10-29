@@ -30,17 +30,26 @@ jobs:
           pip install -q faster-whisper
       - name: Transcribe
         run: |
-          python3 - <<'PY'
-          import json, pathlib
-          from faster_whisper import WhisperModel
-          m = WhisperModel('medium', device='cpu', compute_type='int8')
+          python3 - <<'PY' 2>&1 | tee animals/voice/_transcribe_log.txt
+          import json, pathlib, subprocess, traceback
+          try:
+              from faster_whisper import WhisperModel
+              m = WhisperModel('small', device='cpu', compute_type='int8')
+          except Exception:
+              traceback.print_exc(); raise SystemExit(0)
           for f in sorted(pathlib.Path('animals/voice').iterdir()):
               if f.suffix.lower() not in ('.aac', '.m4a', '.mp3', '.wav', '.ogg', '.opus'):
                   continue
               out = f.with_suffix('.json')
               if out.exists():
                   continue
-              segs, info = m.transcribe(str(f), language='tr', word_timestamps=True, vad_filter=True)
+              wav = f'/tmp/{f.stem}.wav'
+              subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', str(f), '-ac', '1', '-ar', '16000', wav], check=True)
+              try:
+                  segs, info = m.transcribe(wav, language='tr', word_timestamps=True)
+                  segs = list(segs)
+              except Exception:
+                  traceback.print_exc(); continue
               data = {'file': f.name, 'segments': []}
               for s in segs:
                   data['segments'].append({'start': round(s.start, 2), 'end': round(s.end, 2), 'text': s.text.strip(),
@@ -53,5 +62,5 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add animals/voice/*.json animals/voice/*.txt 2>/dev/null || true
+          git add animals/voice/ 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "Ses kaydı yazıya çevrildi" && git pull --rebase && git push)
