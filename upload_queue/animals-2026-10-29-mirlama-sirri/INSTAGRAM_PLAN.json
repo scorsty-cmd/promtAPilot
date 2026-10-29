@@ -1,0 +1,44 @@
+{
+ "date": "2026-10-29",
+ "account": "Universe Of Animals Instagram (@hayvanlaralemleri)",
+ "items": [
+  {
+   "type": "story",
+   "file": "IG_story_01.jpg",
+   "time": "16:00",
+   "note": "Reel teaser"
+  },
+  {
+   "type": "post",
+   "files": [
+    "IG_post_01.jpg",
+    "IG_post_02.jpg",
+    "IG_post_03.jpg",
+    "IG_post_04.jpg",
+    "IG_post_05.jpg"
+   ],
+   "time": "17:00",
+   "caption": "Kedin mırlıyor ama mutlu mu, stresli mi? 🐱\nMırlama tek başına cevap değil: rahatken de, korkmuşken ya da canı yanarken de olabilir. Bedene, kuyruğa ve kulaklara bak; davranışı değişirse veterinere danış.\nSenin kedin en çok ne zaman mırlıyor? Yorumlara yaz 👇\nKedinin aklından geçenleri merak ediyorsan link profilde 📘\n\n#kedi #kediler #kedimırlaması #kedidavranışları #kedisahipleri #hayvanlar #komikhayvanlar #evcilhayvan"
+  },
+  {
+   "type": "story",
+   "file": "IG_story_02.jpg",
+   "time": "18:30",
+   "note": "Instagram soru çıkartması eklenebilir: Kedin en çok ne zaman mırlıyor?"
+  },
+  {
+   "type": "reel",
+   "file": "animals_2026-10-29_mirlama-sirri_shorts.mp4",
+   "time": "20:00",
+   "caption": "Kedin mırlıyorsa her zaman mutlu mu? 🐱\nMırlama stresli ya da canı yanan kedilerde de olabilir. Bedenine de bak!\nSence kedin en çok ne zaman mırlıyor? 👇\n📘 E-kitap linki profilde\n\n#kedi #kediler #komikhayvanlar #hayvanlar #reels #kedimırlaması"
+  },
+  {
+   "type": "story",
+   "file": "IG_story_03.jpg",
+   "time": "21:30",
+   "note": "promo — Kedi Davranışları Bilimi, link profilde"
+  }
+ ],
+ "bio_link": "https://www.shopier.com/dijitalstor/34803776",
+ "rules": "Only the animal page, never Hidden Layer; post captions exactly as written; max 1 reel, 1 post and 3 stories per day."
+}
