@@ -2,7 +2,8 @@ name: Fetch animal clips (Universe Of Animals)
 
 # A Universe Of Animals Short run pushes animal-requests/<id>.json; this workflow downloads
 # free-licence animal clips (Pexels first if PEXELS_API_KEY exists, then Wikimedia Commons
-# CC0/PD/CC BY), normalises them to vertical 1080x1920 silent MP4s and stores them on the
+# CC0/PD/CC BY), normalises them to vertical 1080x1920 MP4s (own sound kept),
+# optionally makes natural Turkish neural-voice lines ("tts" in the request) and stores them on the
 # separate branch "animal-assets" (one squashed commit, so the repo does not grow).
 on:
   push:
@@ -29,7 +30,7 @@ jobs:
       - name: Install tools
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-          pip install -q requests
+          pip install -q requests edge-tts
       - name: Load existing asset store
         run: |
           mkdir -p store

@@ -148,9 +148,11 @@ def normalise(src, dst, jpg):
         vf = ('split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,'
               'boxblur=30:2,eq=brightness=-0.10[bg];[b]scale=-2:1150,crop=min(iw\\,1080):1150[fg];'
               '[bg][fg]overlay=(W-w)/2:(H-h)/2')
-    r = subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', src, '-t', f'{length:.2f}', '-an',
-                        '-filter_complex', vf + ',fps=30,format=yuv420p', '-c:v', 'libx264', '-preset', 'veryfast',
-                        '-crf', '25', '-movflags', '+faststart', dst], capture_output=True, text=True)
+    # keep the clip's own sound (meows, barks) when it has one; the renderer decides how loud
+    r = subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', src, '-t', f'{length:.2f}',
+                        '-filter_complex', vf + ',fps=30,format=yuv420p[v]', '-map', '[v]', '-map', '0:a:0?',
+                        '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '25', '-c:a', 'aac', '-b:a', '128k',
+                        '-ac', '1', '-movflags', '+faststart', dst], capture_output=True, text=True)
     if r.returncode != 0:
         log('ffmpeg error', r.stderr[-300:]); return False
     # preview strip: 3 frames side by side (start / middle / end)
@@ -198,6 +200,32 @@ def ensure_voice():
         if ok:
             open(os.path.join(d, 'VOICE.txt'), 'w').write(name)
             return
+
+
+def make_tts(lines, out_dir):
+    """Natural Turkish neural voice (Microsoft Edge read-aloud voices, via the edge-tts package) for the
+    occasional fact video: request {"tts": [{"name": "l1", "text": "...", "voice": "tr-TR-EmelNeural",
+    "rate": "+0%", "pitch": "+0Hz"}]} -> <id>/tts_<name>.mp3. Voices: tr-TR-EmelNeural, tr-TR-AhmetNeural."""
+    done = []
+    if not lines:
+        return done
+    try:
+        import asyncio, edge_tts
+    except ImportError:
+        log('edge-tts missing'); return done
+    for ln in lines:
+        name = re.sub(r'[^a-z0-9_-]', '', str(ln.get('name', 'l')).lower()) or 'l'
+        out = os.path.join(out_dir, f'tts_{name}.mp3')
+        for attempt in range(3):
+            try:
+                comm = edge_tts.Communicate(ln['text'], ln.get('voice', 'tr-TR-EmelNeural'),
+                                            rate=ln.get('rate', '+0%'), pitch=ln.get('pitch', '+0Hz'))
+                asyncio.run(comm.save(out))
+                if os.path.getsize(out) > 1000:
+                    done.append(os.path.basename(out)); break
+            except Exception as e:  # noqa: BLE001
+                log('tts error', name, str(e)[:200]); time.sleep(3)
+    return done
 
 
 def main():
@@ -249,6 +277,9 @@ def main():
                 seen.add(c['source_id']); got += 1
                 log('saved', name, c['source_id'], c['license'])
             log(f'item {key}: {got}/{n}')
+        tts_done = make_tts(req.get('tts', []), out_dir)
+        if tts_done:
+            log('tts files:', ', '.join(tts_done))
         with open(os.path.join(out_dir, 'manifest.json'), 'w', encoding='utf-8') as f:
             json.dump(manifest, f, ensure_ascii=False, indent=1)
         with open(os.path.join(out_dir, 'log.txt'), 'w', encoding='utf-8') as f:
