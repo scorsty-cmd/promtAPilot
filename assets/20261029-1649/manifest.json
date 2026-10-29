@@ -1,0 +1,62 @@
+{
+ "id": "20261029-1649",
+ "images": [
+  {
+   "file": "office_0.jpg",
+   "key": "office",
+   "query": "office building windows at night",
+   "width": 1280,
+   "height": 1601,
+   "title": "File:Los Angeles City Hall at night with office lights turned on in the form on a cross for Christmas, 1947.jpg",
+   "creator": "Los Angeles Times",
+   "license": "by",
+   "license_version": "cc by 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Los_Angeles_City_Hall_at_night_with_office_lights_turned_on_in_the_form_on_a_cross_for_Christmas,_1947.jpg",
+   "attribution_required": true,
+   "attribution": "File:Los Angeles City Hall at night with office lights turned on in the form on a cross for Christmas, 1947.jpg by Los Angeles Times (cc by 4.0), via Wikimedia Commons"
+  },
+  {
+   "file": "router_0.jpg",
+   "key": "router",
+   "query": "network cables switch server rack",
+   "width": 1152,
+   "height": 768,
+   "title": "File:EFTA00002523 - Cluttered server rack with numerous colorful cables connected to a UniFi switch and other networking equipment.jpg",
+   "creator": "Federal Bureau of Investigation",
+   "license": "pdm",
+   "license_version": "public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:EFTA00002523_-_Cluttered_server_rack_with_numerous_colorful_cables_connected_to_a_UniFi_switch_and_other_networking_equipment.jpg",
+   "attribution_required": false,
+   "attribution": null
+  },
+  {
+   "file": "router_1.jpg",
+   "key": "router",
+   "query": "network cables switch server rack",
+   "width": 1280,
+   "height": 848,
+   "title": "File:Behind the Screens- A 378th ECS Portrait Series (9037565).jpg",
+   "creator": "U.S. Air Force photo by Senior Airman Kevin Dunkleberger",
+   "license": "pdm",
+   "license_version": "public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Behind_the_Screens-_A_378th_ECS_Portrait_Series_(9037565).jpg",
+   "attribution_required": false,
+   "attribution": null
+  }
+ ],
+ "missing": [
+  {
+   "key": "hand",
+   "query": "hands holding smartphone in dark room",
+   "found": 0
+  },
+  {
+   "key": "office",
+   "query": "office building windows at night",
+   "found": 1
+  }
+ ]
+}
