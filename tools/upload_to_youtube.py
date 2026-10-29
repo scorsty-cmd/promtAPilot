@@ -326,6 +326,7 @@ def get_candidate_video_from_cloud(work_dir: str) -> dict[str, Any]:
         meta_desc = f"{meta_title}\n\nFull animated history documentary.\n#History #Documentary"
         meta_tags = ["History", "Documentary", "Educational"]
         is_shorts = "shorts" in base_name.lower()
+        publish_at_override = None
 
         meta_json_path = os.path.join(scan_dir, f"{base_name}.json")
         meta_txt_path = os.path.join(scan_dir, "YOUTUBE_METADATA.txt")
@@ -338,6 +339,7 @@ def get_candidate_video_from_cloud(work_dir: str) -> dict[str, Any]:
                     meta_desc = jdata.get("description", meta_desc)
                     meta_tags = jdata.get("tags", meta_tags)
                     is_shorts = jdata.get("is_shorts", is_shorts)
+                    publish_at_override = jdata.get("publish_at")
             except Exception as e:
                 print(f"[UYARI] JSON metadata okunamadı: {e}")
         elif os.path.exists(meta_txt_path):
@@ -365,6 +367,7 @@ def get_candidate_video_from_cloud(work_dir: str) -> dict[str, Any]:
             "tags": meta_tags,
             "thumbnail_path": thumb_path,
             "is_shorts": is_shorts,
+            "publish_at": publish_at_override,
             "drive_file_id": None,
         }
 
@@ -660,6 +663,19 @@ def main():
         schedule_label = "Manuel / Anında"
         if auto_schedule:
             publish_at_utc, schedule_label = calculate_next_publish_time(target_channel, is_shorts)
+            # İsteğe bağlı: JSON'daki "publish_at" (UTC ISO, örn. 2026-10-30T09:00:00Z) en az 30 dk sonraysa onu kullan
+            override = candidate.get("publish_at")
+            if override:
+                try:
+                    o_dt = datetime.datetime.strptime(override, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=datetime.timezone.utc)
+                    if o_dt >= datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(minutes=30):
+                        publish_at_utc = o_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+                        tsi = o_dt + datetime.timedelta(hours=3)
+                        schedule_label = f"Özel saat {tsi.strftime('%H:%M')} TSİ ({tsi.strftime('%d.%m.%Y')})"
+                    else:
+                        print(f"[UYARI] publish_at çok yakın/geçmiş, otomatik slot kullanılıyor: {override}")
+                except ValueError:
+                    print(f"[UYARI] publish_at biçimi geçersiz, otomatik slot kullanılıyor: {override}")
             body["status"]["privacyStatus"] = "private"
             body["status"]["publishAt"] = publish_at_utc
             print(f"📅 Otomatik Yayın Planı ({target_channel}): {schedule_label} (UTC: {publish_at_utc})")
