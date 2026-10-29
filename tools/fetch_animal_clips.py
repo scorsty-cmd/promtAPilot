@@ -49,6 +49,8 @@ def get_stream(url, dest, limit_mb=300, tries=4):
                 return True
         except Exception as e:
             log('download error', url[:120], e)
+            if 'too big' in str(e):
+                return False
             time.sleep(5)
     return False
 
@@ -90,16 +92,29 @@ def search_pexels(query, seen):
     return out
 
 
-def search_commons(query, seen):
+def search_commons(query, seen, want=12, max_pages=5):
+    """Page through the search (50 per page) until enough unseen, reusable clips are found."""
+    out = []
+    for page in range(max_pages):
+        got = _commons_page(query, seen, page * 50, out)
+        if got is None or len(out) >= want:
+            break
+        time.sleep(1)
+    log('commons', query, 'usable results', len(out))
+    return out
+
+
+def _commons_page(query, seen, offset, out):
     params = {'action': 'query', 'format': 'json', 'generator': 'search', 'gsrnamespace': 6,
-              'gsrsearch': query if 'filetype:' in query else query + ' filetype:video', 'gsrlimit': 40, 'prop': 'imageinfo',
-              'iiprop': 'url|extmetadata|size|mediatype'}
+              'gsrsearch': query if 'filetype:' in query else query + ' filetype:video', 'gsrlimit': 50,
+              'gsroffset': offset, 'prop': 'imageinfo', 'iiprop': 'url|extmetadata|size|mediatype'}
     try:
         r = requests.get(COMMONS, params=params, headers=UA, timeout=30)
         pages = r.json().get('query', {}).get('pages', {}).values()
     except Exception as e:
-        log('commons error', query, e); return []
-    out = []
+        log('commons error', query, e); return None
+    if not pages:
+        return None
     for pg in sorted(pages, key=lambda p: p.get('index', 99)):
         ii = (pg.get('imageinfo') or [{}])[0]; md = ii.get('extmetadata', {})
         sid = f"commons-{pg.get('pageid')}"
@@ -122,8 +137,17 @@ def search_commons(query, seen):
                     'creator': artist, 'license': lic, 'license_url': md.get('LicenseUrl', {}).get('value'),
                     'source_page': ii.get('descriptionurl'), 'needs_credit': credit,
                     'attribution': f"{pg.get('title', '').replace('File:', '')} by {artist} ({lic}), via Wikimedia Commons" if credit else None})
-    log('commons', query, 'usable results', len(out))
-    return out
+    return len(out)
+
+
+def commons_small(url):
+    """Wikimedia's own 720p/480p transcode of a large original (same file, same licence)."""
+    m = re.match(r'https://upload\.wikimedia\.org/wikipedia/commons/(\w)/(\w\w)/(.+)$', url)
+    if not m:
+        return []
+    a, ab, name = m.groups()
+    base = f'https://upload.wikimedia.org/wikipedia/commons/transcoded/{a}/{ab}/{name}/{name}'
+    return [base + '.720p.vp9.webm', base + '.480p.vp9.webm']
 
 
 def probe(path):
@@ -263,7 +287,13 @@ def main():
                 url = c['url'].split('?utm_')[0]
                 if c['source_id'].startswith('commons-'):
                     time.sleep(3)
-                if not get_stream(url, tmp):
+                ok_dl = get_stream(url, tmp)
+                if not ok_dl and c['source_id'].startswith('commons-'):
+                    for alt in commons_small(url):
+                        time.sleep(2)
+                        if get_stream(alt, tmp, tries=2):
+                            ok_dl = True; break
+                if not ok_dl:
                     log('download failed', url[:120]); continue
                 name = f'{key}_{got}'
                 ok = normalise(tmp, os.path.join(out_dir, name + '.mp4'), os.path.join(out_dir, name + '.jpg'))

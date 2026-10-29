@@ -2,7 +2,7 @@
 
 Kanal: **Universe Of Animals** (@universeofanimals4356, kanal ID `UCaej4bsMXb0-tgggDZS18aQ`)
 Dil: **Türkçe** (başlık, açıklama, seslendirme, ekran yazıları). Kullanıcıyla iletişim de Türkçe.
-Yayın: **her gün 1 Short, 19:00 TSİ** (uploader `animals-` etiketli release'i otomatik bu slota zamanlar).
+Yayın: **her gün 1 Short (30–60 sn derleme ağırlıklı), 19:00 TSİ** (uploader `animals-` etiketli release'i otomatik bu slota zamanlar).
 
 ## 1. Neden bu format?
 - 25–26 Eylül 2026'da en çok izlenen 3 video (378 / 297 / 153 izlenme) Türkçe, ilişki kurulabilir,
@@ -12,25 +12,52 @@ Yayın: **her gün 1 Short, 19:00 TSİ** (uploader `animals-` etiketli release'i
 - Başkalarının TikTok/Instagram/YouTube kliplerini ASLA kullanma (telif + "yeniden kullanılan içerik").
   Sadece `animal-assets` dalındaki serbest lisanslı klipler (Pexels License, CC0, PD, CC BY).
 
-## 2. Video formülü (12–25 sn, en fazla 35 sn)
-Her gün şu üç formatı sırayla döndür (LEARNINGS'teki sonuçlara göre ağırlığı değiştir):
-- **A — İç ses:** Hayvanın aklından geçenler, gündelik Türk hayatından espriler
-  (Pazartesi sabahı, maaş günü, diyet, anne baba, kargo, misafir, sınav, trafik). 3–5 kısa cümle.
-- **B — Bunu biliyor muydun?:** Klipteki hayvanla ilgili doğru, şaşırtıcı bilgi (en az 2 güvenilir kaynakla doğrula,
-  efsaneyi gerçek gibi anlatma). 3–4 cümle, son cümle soru.
-- **C — Hangisi sensin?:** İki/üç davranışı karşılaştır, sonunda izleyiciye yorumda seçtir.
+## 2. Video formülü — komik kurgu (29 Eki 2026'dan itibaren)
+Kullanıcı (29 Eki 2026): "Yapay zekâ sesi çok yapmacık; komik editler yap, komik kedi videolarını birleştir,
+1 dakikaya kadar uzun olabilir; benim sesimi de kullanabilirsin." → Varsayılan artık **AI seslendirmesiz komik kurgu**.
+Motor: `animals/render_edit.py` (docstring'deki spec). Görünüm: universe-of-animals-style (krem/mandalina sticker,
+kakao çerçeve, Bricolage Grotesque; üstte başlık, ortada büyütülmüş video, alt-orta sticker'lar).
 
-Kurallar:
-- **Hook (üst banner):** 2–6 kelime, merak veya özdeşlik ("Pazartesi sabahı her kedi:", "Kediniz bunu yapıyorsa…").
-  Tüm video boyunca ekranda kalır.
-- İlk satır en geç 0,5 sn'de başlar; ilk 1 sn'de klipteki en hareketli an görünmeli (klibin `start`'ını buna göre seç).
-- Satırlar kısa (en fazla ~8 kelime), konuşma dilinde. Vurgulanacak kelimeyi `*böyle*` yaz (sarı görünür).
-- Seslendirme metninde kısaltma, rakam, emoji kullanma; sayıları yazıyla yaz ("on altı saat").
-- Son satır ya bir soru (yorum getirir) ya da başa saran bir espri (loop).
-- Bitiş kartı: "ABONE OL" + "Her gün yeni komik hayvan videosu"; haftada en az 2 videoda (tercihen B) `promo.json` ürününün `end_card_line` satırı da.
-- Müzik: A ve C için `bouncy`, B için `calm`.
-- Klip: içerikle gerçekten eşleşen, net, hayvanın yüzü/hareketi görünen klip seç. Önizleme şeritlerine BAK.
-  Logo, filigran, okunur yazı, tanınabilir insan yüzü veya hayvana eziyet/tehlike içeren klibi reddet.
+Formatlar:
+- **D — Komik derleme (ana format):** "Kedilerin en dramatik 5 anı", "Kediler fizik kurallarını tanımıyor",
+  "Kedi kardeşler vs. sabır" gibi tek temalı başlık. 4–6 klip, numaralı (`number`), toplam **30–60 sn**.
+  Her klipte: iç ses (`inner`) veya özdeşlik sticker'ı ("Annem markete gidince biz:"), en komik anda bir
+  dondurma (`freeze` + metin + ses efekti) VEYA ağır çekim tekrarı (`replay`), uygun ses efekti.
+  En güçlü an 1. klipte, ilk 1 sn içinde (hook); en komik/şaşırtıcı klip sona (izleyiciyi tutar).
+- **A — İç ses (tek klip, 12–25 sn):** aynı motor, tek klip; 2–4 sticker/iç ses, bir dondurma veya tekrar.
+- **B — Bunu biliyor muydun? (haftada en fazla 1–2):** doğal Türkçe sinir ağı sesi — klip isteğine
+  `"tts": [{"name": "l1", "text": "...", "voice": "tr-TR-EmelNeural"}]` ekle (iş akışı `<id>/tts_l1.mp3` üretir,
+  `tr-TR-AhmetNeural` da var); render_edit'te `voice` olayı + aynı cümle sticker olarak. tts üretilemezse
+  sesi tamamen bırak, bilgiyi sticker'larla ver (eski robotik Piper sesine geri dönme).
+- **C — Hangisi sensin?:** 2–3 klip numaralı, sonda "Sen hangisisin? 1, 2, 3 — yorumlara yaz".
+
+Haftalık sıra (İstanbul günü): Pzt D · Sal A · Çar D · Per B · Cum D · Cmt C · Paz D.
+D günü için klip isteğinde 2 öğe × n=5 iste; kullanılmamış uygun klip 4'ten azsa o gün A veya C yap.
+
+Kurgu kuralları:
+- Espri Türk gündelik hayatından ve hayvanın "iç sesinden" gelir (anne, market, maaş, Pazartesi, kardeş, misafir,
+  diyet, sınav). Sticker metni ≤ 8 kelime, emoji yok (font çizemez). Kurulum krem, punchline mandalina.
+- Yazılar hayvanın yüzünü kapatmasın: `y` ile oynat (varsayılan 1300; video penceresi y≈330–1710).
+- Klip başına en fazla 1 dondurma + 1 tekrar; ses efektini espriyle eşleştir (bonk=çarpma, scratch=şok,
+  dun=dram, boing=zıplama, slide_up=heves, ding=fikir, drumroll=gerilim, rewind otomatik).
+- Klibin kendi sesi (miyav vb.) varsa `clip_audio: 0.5–0.8`; insan konuşması/yabancı müzik varsa 0.
+- Müzik `bouncy` (D/A/C), `calm` (B); `music_vol` 0.18–0.25.
+- Bitiş kartı: "ABONE OL" + "Her gün yeni komik hayvan videosu" (+ promo günlerinde `promo`).
+- Kontrol: contact.jpg + en az 8 kare (her dondurma/tekrar anı dahil), Türkçe karakterler, yüz kapanmıyor,
+  ses -14 LUFS civarı (±1,5).
+
+Kullanıcının kendi sesi (`animals/voice/`):
+- Kullanıcının gönderdiği kayıtlar buraya konur; "Transcribe owner voice" iş akışı her kayıt için
+  `<ad>.json` / `<ad>.txt` (cümle ve kelime zamanları) üretir. Videoda `voice` olayıyla bir cümleyi kes,
+  `caption` ile aynı cümleyi sticker yap. Haftada en fazla 2–3 videoda, video başına 1–2 cümle; aynı cümleyi
+  7 gün içinde tekrar kullanma (LEARNINGS'e yaz).
+- `kullanici_ses_01` (24 Eki) bir ChatGPT anlatımı: hayvan videosuna uyan cümleler sadece
+  "Birinci adım." (13.30–14.25, 29 Eki derlemesinde kullanıldı) ve "Ekranı kısaca tanıyalım." (24.50–25.90).
+  Hayvanlara özel yeni kayıtlar geldikçe onları tercih et.
+
+Klip seçimi: içerikle eşleşen, net, hayvanın yüzü/hareketi görünen klip. Önizleme şeritlerine BAK.
+Logo, filigran, okunur yazı, tanınabilir insan yüzü veya hayvana eziyet/tehlike/kavga içeren klibi reddet.
+Eski format (`render_short.py`, Piper sesi) artık kullanılmaz; sadece motor bozulursa yedek.
 
 ## 3. Başlık, açıklama, etiket
 - **Başlık:** Türkçe, ≤ 60 karakter, en fazla 1 emoji, sonunda 2–3 hashtag. Kalıplar:
@@ -43,15 +70,15 @@ Kurallar:
   3. "🐾 Her gün 19:00'da yeni komik hayvan videosu — abone olmayı unutma!"
   4. Klip kaynağı (manifest'ten): "Görüntü: <creator> / <Pexels | Wikimedia Commons> (<lisans>)" — CC BY ise
      manifest'teki `attribution` metnini aynen yaz.
-  5. "Seslendirme yapay zekâ ile üretilmiştir. Müzik kanala özel üretilmiştir."
+  5. "Müzik ve ses efektleri kanala özel üretilmiştir." (+ B formatında: "Seslendirme yapay zekâ ile üretilmiştir.")
   6. 3–5 hashtag: #kedi #köpek #komikhayvanlar #hayvanlar #shorts (konuya göre).
 - **Etiketler (TAGS):** 8–15 Türkçe etiket + "Universe Of Animals".
 - CHAPTERS bölümü boş bırakılabilir ama başlığı yazılmalı (uploader formatı).
 
 ## 4. Teslim (cloud)
 1. `animal-requests/<YYYYMMDD>-<HHMM>.json` push → "Fetch animal clips" iş akışı klipleri `animal-assets` dalına koyar.
-2. Dalı çek, önizlemelere bak, `spec.json` yaz, `PIPER_VOICE=<store>/tts/<tts/VOICE.txt'deki dosya>
-   python animals/render_short.py spec.json out/` çalıştır, `contact.jpg`'ye ve en az 6 kareye bak.
+2. Dalı çek, önizlemelere bak, `spec.json` yaz, `python animals/render_edit.py spec.json out/` çalıştır,
+   `contact.jpg`'ye ve en az 8 kareye bak.
 3. Release etiketi `animals-<YYYY-MM-DD>-<slug>` (asla "history"/"hidden" içermez). Varlıklar:
    `animals_<YYYY-MM-DD>_<slug>_shorts.mp4`, `thumb_B.jpg`, `YOUTUBE_METADATA.txt`. Önce draft, varlıkları
    kontrol et, sonra yayınla → "Daily YouTube Upload & Schedule" kanala yükler ve 19:00'a zamanlar.

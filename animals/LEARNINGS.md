@@ -15,6 +15,8 @@
 - 25 Eki 2026: hâlâ yüklenmiş Short yok, vidIQ bakiye 0 (29 Eki sıfırlanır) → veri yok. Instagram Publish son çalışma ok (@hayvanlaralemleri bağlı). Klip: kareleri bütün klip boyunca kontrol et; hayvanın kafası bazı bölümlerde kare dışına çıkıyor → yüzü görünen aralığı seç (ör. ilk 10 sn). Hikâye fotoğrafı için yatay/bulanık kareyi dikeye büyütme: çirkin çıkarsa düz tasarım kullan. loudnorm tek geçiş -15,7 verdi → +1,6 dB + alimiter ile -13,7 LUFS.
 - 29 Eki 2026: vidIQ bakiye hâlâ 0 (sıfırlanma 14:30 UTC) → izlenme verisi yok; YouTube yüklemesi hâlâ yok. Commons'ta 'Videos of cats/kittens' kategorileri tükendi (0 sonuç): serbest arama 'cat filetype:video' 12 yeni klip verdi → bundan sonra bunu kullan. Klibin başında yazı olabilir (start'ı kaydır), klip döngüye girip kavga/ısırma karesi gösterirse end'i uzat.
 
+- 29 Eki 2026: Kullanıcı yapay zekâ sesini yapmacık buldu → komik kurgu motoru (render_edit.py), 30–60 sn derlemeler, sesiz iç ses/sticker, dondurma, ağır çekim tekrar, ses efektleri. Commons araması artık sayfalı (50'şer, 5 sayfa) ve büyük dosyalarda Wikimedia 720p/480p kopyasını indirir. Pexels anahtarı hâlâ yok → derleme için klip az; kullanıcıya hatırlat.
+
 ## Uygulanan iyileştirmeler
 - 2026-10-22: Hook doğrudan izleyiciye soru ("Kedin sana…?") + B formatında bilimsel kaynak açıklamaya yazıldı + 3 klip ile döngüsüz akış (tek klibin başa sarması engellendi).
 - 2026-10-23: Tek, baştan sona hareketli klip (iki yavru boğuşuyor) + orta bant 1,3x yakınlaştırıldı (yatay klipte hayvanlar küçük kalıyordu) + Türk aile hayatından özdeşlik hook'u ("Cuma akşamı kardeşimle ben:", kumanda kavgası) + yayın gününe denk gelen konu (Cuma 19:00) + 17 sn'lik kısa süre ve sonda yorum sorusu. Ses -13,8 LUFS'a çekildi.
