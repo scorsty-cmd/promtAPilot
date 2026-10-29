@@ -1,0 +1,6 @@
+{"id": "20261029-1130", "items": [
+  {"key": "main", "query": "cat purring", "commons_query": "incategory:\"Videos of domestic cats\" filetype:video", "n": 6},
+  {"key": "backup", "query": "sleeping cat", "commons_query": "incategory:\"Videos of sleeping cats\" filetype:video", "n": 6},
+  {"key": "alt1", "query": "cat", "commons_query": "cat filetype:video", "n": 6},
+  {"key": "alt2", "query": "kitten", "commons_query": "kitten filetype:video", "n": 6}
+]}
