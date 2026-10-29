@@ -1,18 +1,11 @@
 {
- "at": "2026-10-29T21:53:44.967114+03:00",
+ "at": "2026-10-29T23:31:24.874569+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "✅ animals-2026-10-29-mirlama-sirri#0 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4018813031698482672",
-  "   not: Reel teaser",
-  "✅ animals-2026-10-29-mirlama-sirri#2 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4018813213009894068",
-  "   not: Instagram soru çıkartması eklenebilir: Kedin en çok ne zaman mırlıyor?",
-  "✅ animals-2026-10-29-mirlama-sirri#4 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4018813381864136898",
-  "   not: promo — Kedi Davranışları Bilimi, link profilde",
-  "✅ animals-2026-10-29-mirlama-sirri#3 reel paylaşıldı: https://www.instagram.com/reel/DfFsaeyDrRI/",
-  "✅ animals-2026-10-29-mirlama-sirri#1 post paylaşıldı: https://www.instagram.com/p/DfFsiqzmcDG/"
+  "Şu an paylaşım zamanı gelmiş yeni içerik yok."
  ]
 }
