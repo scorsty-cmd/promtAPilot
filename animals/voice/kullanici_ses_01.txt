@@ -1,0 +1,13 @@
+  2.32-  5.26  Chpd hiç kullanmadıysanız hiç enişelenmeyin.
+  5.54-  9.10  Bu videoda gerçek ekran üzerinden adım adım birlikte kullanacağız.
+  9.68- 12.78  Videoyu bittiğinde ilk sorunuzu kendinizi sorabileceksiniz.
+ 13.38- 14.12  Birinci adım.
+ 14.56- 17.42  Bilgisayarınızda Chrome ya da herhangi bir tarayıcı açın.
+ 17.94- 22.22  Üstteki adres çubuğuna chpd.com yazın ve enter tuşuna basın.
+ 22.62- 23.92  Karşınızda boyukran gelecek.
+ 24.58- 25.82  Ekranı kısaca tanıyalım.
+ 26.46- 30.14  Sol üstteki yeni sohbet düğmesiyle her zaman temiz bir sayfa açabilirsiniz.
+ 30.92- 33.64  Ortadaki bu kutlu sorularınızı yazacağınız yer.
+ 34.04- 37.50  Soldaki artış haritayla dosya ya da fotoğraf ekleyebilirsiniz.
+ 38.22- 41.40  Mikrofon simgesiyle yazmadan sesli konuşabilirsiniz.
+ 41.78- 43.82  En sadeki ok ise gönder düğmesi.

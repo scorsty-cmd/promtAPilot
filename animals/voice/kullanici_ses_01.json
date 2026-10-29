@@ -1,0 +1,506 @@
+{
+ "file": "kullanici_ses_01.aac",
+ "segments": [
+  {
+   "start": 2.32,
+   "end": 5.26,
+   "text": "Chpd hiç kullanmadıysanız hiç enişelenmeyin.",
+   "words": [
+    {
+     "w": "Chpd",
+     "s": 2.32,
+     "e": 3.2
+    },
+    {
+     "w": "hiç",
+     "s": 3.2,
+     "e": 3.34
+    },
+    {
+     "w": "kullanmadıysanız",
+     "s": 3.34,
+     "e": 4.14
+    },
+    {
+     "w": "hiç",
+     "s": 4.14,
+     "e": 4.52
+    },
+    {
+     "w": "enişelenmeyin.",
+     "s": 4.52,
+     "e": 5.26
+    }
+   ]
+  },
+  {
+   "start": 5.54,
+   "end": 9.1,
+   "text": "Bu videoda gerçek ekran üzerinden adım adım birlikte kullanacağız.",
+   "words": [
+    {
+     "w": "Bu",
+     "s": 5.54,
+     "e": 5.72
+    },
+    {
+     "w": "videoda",
+     "s": 5.72,
+     "e": 6.16
+    },
+    {
+     "w": "gerçek",
+     "s": 6.16,
+     "e": 6.62
+    },
+    {
+     "w": "ekran",
+     "s": 6.62,
+     "e": 7.0
+    },
+    {
+     "w": "üzerinden",
+     "s": 7.0,
+     "e": 7.42
+    },
+    {
+     "w": "adım",
+     "s": 7.42,
+     "e": 7.86
+    },
+    {
+     "w": "adım",
+     "s": 7.86,
+     "e": 8.04
+    },
+    {
+     "w": "birlikte",
+     "s": 8.04,
+     "e": 8.42
+    },
+    {
+     "w": "kullanacağız.",
+     "s": 8.42,
+     "e": 9.1
+    }
+   ]
+  },
+  {
+   "start": 9.68,
+   "end": 12.78,
+   "text": "Videoyu bittiğinde ilk sorunuzu kendinizi sorabileceksiniz.",
+   "words": [
+    {
+     "w": "Videoyu",
+     "s": 9.68,
+     "e": 10.14
+    },
+    {
+     "w": "bittiğinde",
+     "s": 10.14,
+     "e": 10.7
+    },
+    {
+     "w": "ilk",
+     "s": 10.7,
+     "e": 11.0
+    },
+    {
+     "w": "sorunuzu",
+     "s": 11.0,
+     "e": 11.58
+    },
+    {
+     "w": "kendinizi",
+     "s": 11.58,
+     "e": 11.96
+    },
+    {
+     "w": "sorabileceksiniz.",
+     "s": 11.96,
+     "e": 12.78
+    }
+   ]
+  },
+  {
+   "start": 13.38,
+   "end": 14.12,
+   "text": "Birinci adım.",
+   "words": [
+    {
+     "w": "Birinci",
+     "s": 13.38,
+     "e": 13.88
+    },
+    {
+     "w": "adım.",
+     "s": 13.88,
+     "e": 14.12
+    }
+   ]
+  },
+  {
+   "start": 14.56,
+   "end": 17.42,
+   "text": "Bilgisayarınızda Chrome ya da herhangi bir tarayıcı açın.",
+   "words": [
+    {
+     "w": "Bilgisayarınızda",
+     "s": 14.56,
+     "e": 15.42
+    },
+    {
+     "w": "Chrome",
+     "s": 15.42,
+     "e": 15.9
+    },
+    {
+     "w": "ya",
+     "s": 15.9,
+     "e": 16.12
+    },
+    {
+     "w": "da",
+     "s": 16.12,
+     "e": 16.22
+    },
+    {
+     "w": "herhangi",
+     "s": 16.22,
+     "e": 16.5
+    },
+    {
+     "w": "bir",
+     "s": 16.5,
+     "e": 16.66
+    },
+    {
+     "w": "tarayıcı",
+     "s": 16.66,
+     "e": 17.16
+    },
+    {
+     "w": "açın.",
+     "s": 17.16,
+     "e": 17.42
+    }
+   ]
+  },
+  {
+   "start": 17.94,
+   "end": 22.22,
+   "text": "Üstteki adres çubuğuna chpd.com yazın ve enter tuşuna basın.",
+   "words": [
+    {
+     "w": "Üstteki",
+     "s": 17.94,
+     "e": 18.3
+    },
+    {
+     "w": "adres",
+     "s": 18.3,
+     "e": 18.58
+    },
+    {
+     "w": "çubuğuna",
+     "s": 18.58,
+     "e": 19.04
+    },
+    {
+     "w": "chpd",
+     "s": 19.04,
+     "e": 20.0
+    },
+    {
+     "w": ".com",
+     "s": 20.0,
+     "e": 20.52
+    },
+    {
+     "w": "yazın",
+     "s": 20.52,
+     "e": 21.08
+    },
+    {
+     "w": "ve",
+     "s": 21.08,
+     "e": 21.3
+    },
+    {
+     "w": "enter",
+     "s": 21.3,
+     "e": 21.48
+    },
+    {
+     "w": "tuşuna",
+     "s": 21.48,
+     "e": 21.88
+    },
+    {
+     "w": "basın.",
+     "s": 21.88,
+     "e": 22.22
+    }
+   ]
+  },
+  {
+   "start": 22.62,
+   "end": 23.92,
+   "text": "Karşınızda boyukran gelecek.",
+   "words": [
+    {
+     "w": "Karşınızda",
+     "s": 22.62,
+     "e": 23.24
+    },
+    {
+     "w": "boyukran",
+     "s": 23.24,
+     "e": 23.62
+    },
+    {
+     "w": "gelecek.",
+     "s": 23.62,
+     "e": 23.92
+    }
+   ]
+  },
+  {
+   "start": 24.58,
+   "end": 25.82,
+   "text": "Ekranı kısaca tanıyalım.",
+   "words": [
+    {
+     "w": "Ekranı",
+     "s": 24.58,
+     "e": 25.1
+    },
+    {
+     "w": "kısaca",
+     "s": 25.1,
+     "e": 25.38
+    },
+    {
+     "w": "tanıyalım.",
+     "s": 25.38,
+     "e": 25.82
+    }
+   ]
+  },
+  {
+   "start": 26.46,
+   "end": 30.14,
+   "text": "Sol üstteki yeni sohbet düğmesiyle her zaman temiz bir sayfa açabilirsiniz.",
+   "words": [
+    {
+     "w": "Sol",
+     "s": 26.24,
+     "e": 26.64
+    },
+    {
+     "w": "üstteki",
+     "s": 26.64,
+     "e": 27.04
+    },
+    {
+     "w": "yeni",
+     "s": 27.04,
+     "e": 27.22
+    },
+    {
+     "w": "sohbet",
+     "s": 27.22,
+     "e": 27.6
+    },
+    {
+     "w": "düğmesiyle",
+     "s": 27.6,
+     "e": 28.24
+    },
+    {
+     "w": "her",
+     "s": 28.24,
+     "e": 28.46
+    },
+    {
+     "w": "zaman",
+     "s": 28.46,
+     "e": 28.72
+    },
+    {
+     "w": "temiz",
+     "s": 28.72,
+     "e": 29.08
+    },
+    {
+     "w": "bir",
+     "s": 29.08,
+     "e": 29.22
+    },
+    {
+     "w": "sayfa",
+     "s": 29.22,
+     "e": 29.54
+    },
+    {
+     "w": "açabilirsiniz.",
+     "s": 29.54,
+     "e": 30.14
+    }
+   ]
+  },
+  {
+   "start": 30.92,
+   "end": 33.64,
+   "text": "Ortadaki bu kutlu sorularınızı yazacağınız yer.",
+   "words": [
+    {
+     "w": "Ortadaki",
+     "s": 30.92,
+     "e": 31.48
+    },
+    {
+     "w": "bu",
+     "s": 31.48,
+     "e": 31.7
+    },
+    {
+     "w": "kutlu",
+     "s": 31.7,
+     "e": 32.04
+    },
+    {
+     "w": "sorularınızı",
+     "s": 32.04,
+     "e": 32.84
+    },
+    {
+     "w": "yazacağınız",
+     "s": 32.84,
+     "e": 33.48
+    },
+    {
+     "w": "yer.",
+     "s": 33.48,
+     "e": 33.64
+    }
+   ]
+  },
+  {
+   "start": 34.04,
+   "end": 37.5,
+   "text": "Soldaki artış haritayla dosya ya da fotoğraf ekleyebilirsiniz.",
+   "words": [
+    {
+     "w": "Soldaki",
+     "s": 34.04,
+     "e": 34.54
+    },
+    {
+     "w": "artış",
+     "s": 34.54,
+     "e": 34.88
+    },
+    {
+     "w": "haritayla",
+     "s": 34.88,
+     "e": 35.5
+    },
+    {
+     "w": "dosya",
+     "s": 35.5,
+     "e": 36.24
+    },
+    {
+     "w": "ya",
+     "s": 36.24,
+     "e": 36.34
+    },
+    {
+     "w": "da",
+     "s": 36.34,
+     "e": 36.42
+    },
+    {
+     "w": "fotoğraf",
+     "s": 36.42,
+     "e": 36.78
+    },
+    {
+     "w": "ekleyebilirsiniz.",
+     "s": 36.78,
+     "e": 37.5
+    }
+   ]
+  },
+  {
+   "start": 38.22,
+   "end": 41.4,
+   "text": "Mikrofon simgesiyle yazmadan sesli konuşabilirsiniz.",
+   "words": [
+    {
+     "w": "Mikrofon",
+     "s": 38.22,
+     "e": 38.7
+    },
+    {
+     "w": "simgesiyle",
+     "s": 38.7,
+     "e": 39.3
+    },
+    {
+     "w": "yazmadan",
+     "s": 39.3,
+     "e": 40.08
+    },
+    {
+     "w": "sesli",
+     "s": 40.08,
+     "e": 40.66
+    },
+    {
+     "w": "konuşabilirsiniz.",
+     "s": 40.66,
+     "e": 41.4
+    }
+   ]
+  },
+  {
+   "start": 41.78,
+   "end": 43.82,
+   "text": "En sadeki ok ise gönder düğmesi.",
+   "words": [
+    {
+     "w": "En",
+     "s": 41.78,
+     "e": 41.94
+    },
+    {
+     "w": "sadeki",
+     "s": 41.94,
+     "e": 42.36
+    },
+    {
+     "w": "ok",
+     "s": 42.36,
+     "e": 42.56
+    },
+    {
+     "w": "ise",
+     "s": 42.56,
+     "e": 42.8
+    },
+    {
+     "w": "gönder",
+     "s": 42.8,
+     "e": 43.44
+    },
+    {
+     "w": "düğmesi.",
+     "s": 43.44,
+     "e": 43.82
+    }
+   ]
+  }
+ ]
+}
