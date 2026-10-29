@@ -207,8 +207,8 @@ def calculate_next_publish_time(channel: str = "history", is_shorts: bool = Fals
         slots = [(d, 16, 0, "Her gün 19:00 TSİ") for d in range(7)]
     elif channel == "hidden_layer":
         if is_shorts:
-            # Hidden Layer Shorts: Çarşamba 14:00 TSİ, Cuma 16:00 TSİ, Cumartesi 12:00 TSİ
-            slots = [(2, 11, 0, "Çarşamba 14:00 TSİ"), (4, 13, 0, "Cuma 16:00 TSİ"), (5, 9, 0, "Cumartesi 12:00 TSİ")]
+            # Hidden Layer Shorts: her gün 20:00 TSİ (17:00 UTC) — günlük Instagram Reel'in YouTube kopyası
+            slots = [(d, 17, 0, "Her gün 20:00 TSİ") for d in range(7)]
         else:
             # Hidden Layer Uzun Video: Salı 21:30 TSİ (18:30 UTC), Pazar 18:00 TSİ (15:00 UTC)
             slots = [(1, 18, 30, "Salı 21:30 TSİ"), (6, 15, 0, "Pazar 18:00 TSİ")]
