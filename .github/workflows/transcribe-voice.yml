@@ -27,7 +27,7 @@ jobs:
           python-version: '3.12'
       - run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-          pip install -q faster-whisper
+          pip install -q faster-whisper soundfile
       - name: Transcribe
         run: |
           python3 - <<'PY' 2>&1 | tee animals/voice/_transcribe_log.txt
@@ -46,7 +46,9 @@ jobs:
               wav = f'/tmp/{f.stem}.wav'
               subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', str(f), '-ac', '1', '-ar', '16000', wav], check=True)
               try:
-                  segs, info = m.transcribe(wav, language='tr', word_timestamps=True)
+                  import soundfile as sf
+                  audio, _ = sf.read(wav, dtype='float32')
+                  segs, info = m.transcribe(audio, language='tr', word_timestamps=True)
                   segs = list(segs)
               except Exception:
                   traceback.print_exc(); continue
