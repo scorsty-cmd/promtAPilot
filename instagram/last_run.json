@@ -1,11 +1,16 @@
 {
- "at": "2026-10-29T23:31:24.874569+03:00",
+ "at": "2026-10-30T21:31:06.818475+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "Şu an paylaşım zamanı gelmiş yeni içerik yok."
+  "✅ animals-2026-10-30-cuma-enerjisi-4-kedi#0 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4019526421537824150",
+  "   not: Teaser: Cuma enerjisi: 4 kedi, video 20:00'de",
+  "✅ animals-2026-10-30-cuma-enerjisi-4-kedi#2 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4019526603360914257",
+  "   not: Instagram soru çıkartması eklenebilir: Kedin Cuma akşamı ne yapar?",
+  "✅ animals-2026-10-30-cuma-enerjisi-4-kedi#3 reel paylaşıldı: https://www.instagram.com/reel/DfIOlpRCihV/",
+  "✅ animals-2026-10-30-cuma-enerjisi-4-kedi#1 post paylaşıldı: https://www.instagram.com/p/DfIOvjXD-rj/"
  ]
 }
