@@ -1,0 +1,32 @@
+{
+ "id": "20261030-1649",
+ "images": [
+  {
+   "file": "remote_0.jpg",
+   "key": "remote",
+   "query": "hand holding tv remote control",
+   "width": 1200,
+   "height": 1800,
+   "title": "File:Person uses remote control to watch TV at home.jpg",
+   "creator": "Shixart1985",
+   "license": "by",
+   "license_version": "cc by 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Person_uses_remote_control_to_watch_TV_at_home.jpg",
+   "attribution_required": true,
+   "attribution": "File:Person uses remote control to watch TV at home.jpg by Shixart1985 (cc by 2.0), via Wikimedia Commons"
+  }
+ ],
+ "missing": [
+  {
+   "key": "remote",
+   "query": "hand holding tv remote control",
+   "found": 1
+  },
+  {
+   "key": "tv",
+   "query": "television in dark living room",
+   "found": 0
+  }
+ ]
+}
