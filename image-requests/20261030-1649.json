@@ -1,0 +1,17 @@
+{
+ "id": "20261030-1649",
+ "items": [
+  {
+   "key": "remote",
+   "query": "hand holding tv remote control",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "tv",
+   "query": "television in dark living room",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
