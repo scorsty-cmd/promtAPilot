@@ -1,0 +1,17 @@
+{
+ "id": "20261031-1649",
+ "items": [
+  {
+   "key": "speaker",
+   "query": "smart speaker on a wooden shelf",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "hand",
+   "query": "hand holding smartphone",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
