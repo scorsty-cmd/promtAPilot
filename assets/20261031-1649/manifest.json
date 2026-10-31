@@ -1,0 +1,42 @@
+{
+ "id": "20261031-1649",
+ "images": [
+  {
+   "file": "hand_0.jpg",
+   "key": "hand",
+   "query": "hand holding smartphone",
+   "width": 1280,
+   "height": 889,
+   "title": "File:Business and technology concept hand holding smartphone and search bar (52917310335).jpg",
+   "creator": "Jernej Furman from Slovenia",
+   "license": "by",
+   "license_version": "cc by 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Business_and_technology_concept_hand_holding_smartphone_and_search_bar_(52917310335).jpg",
+   "attribution_required": true,
+   "attribution": "File:Business and technology concept hand holding smartphone and search bar (52917310335).jpg by Jernej Furman from Slovenia (cc by 2.0), via Wikimedia Commons"
+  },
+  {
+   "file": "hand_1.jpg",
+   "key": "hand",
+   "query": "hand holding smartphone",
+   "width": 1280,
+   "height": 761,
+   "title": "File:Hand holding smartphone with OpenAI Chat GPT against pride flag (52917076159).jpg",
+   "creator": "Jernej Furman",
+   "license": "by",
+   "license_version": "cc by 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Hand_holding_smartphone_with_OpenAI_Chat_GPT_against_pride_flag_(52917076159).jpg",
+   "attribution_required": true,
+   "attribution": "File:Hand holding smartphone with OpenAI Chat GPT against pride flag (52917076159).jpg by Jernej Furman (cc by 2.0), via Wikimedia Commons"
+  }
+ ],
+ "missing": [
+  {
+   "key": "speaker",
+   "query": "smart speaker on a wooden shelf",
+   "found": 0
+  }
+ ]
+}
