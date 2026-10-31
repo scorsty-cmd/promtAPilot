@@ -1,0 +1,16 @@
+pexels key present: False
+commons incategory:"Videos of domestic cats" filetype:video usable results 0
+item main: 0/6
+commons incategory:"Videos of sleeping cats" filetype:video usable results 0
+item backup: 0/6
+commons cat filetype:video usable results 12
+saved alt1_0 commons-11136217 public domain
+saved alt1_1 commons-59471337 cc by 3.0
+saved alt1_2 commons-59471454 cc by 3.0
+saved alt1_3 commons-145638721 cc0
+saved alt1_4 commons-149606635 cc0
+saved alt1_5 commons-109487074 public domain
+item alt1: 6/6
+commons kitten filetype:video usable results 1
+saved alt2_0 commons-110215517 cc0
+item alt2: 1/6
