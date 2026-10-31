@@ -109,3 +109,12 @@
 - Previous (FILE 014): 58 plays, 23.6% watched, 80.4% skip, 0 saves/shares (FILE 013: 49 plays, 9.4%, 82.2%; FILE 012 129 plays, 17.4%, 64.1%).
 - Photos: run 20261030-1649 gave remote_0 (hand + Samsung remote with readable logo + UI) -> rejected; reused CC0 street_0 (20261024-1649) as blurred compare plate. vidIQ balance 27 (<40): no paid tools. Not Sunday: no competitor analysis.
 - YouTube Short: tag hiddenlayer-reel-2026-10-30-smart-tv-acr via tools/queue_publish.py FAILED: YouTube 400 invalidDescription — the description contained '>' characters (settings path 'A > B'). RULE: never use < or > in YouTube titles/descriptions (write 'A, B, C' or 'A → B' is also risky: use commas). Not resubmitted (one per day); run https://github.com/scorsty-cmd/promtAPilot/actions/runs/41070667440, release hiddenlayer-reel-2026-10-30-smart-tv-acr, queue branch kept.
+
+### 2026-10-31 16:49 – FILE 016 – Echo "Do Not Send Voice Recordings" removed (violet/mint dark DNA, 25.1 s) · https://www.instagram.com/reel/DfKVtAeD7j3/
+- File: HL_Reel_20261031_1649_echo-local-voice.mp4 · Renderer reels/renderer/reel2_v12.py unchanged (+ reel_audio_v7.py), scenes_FILE016.py.
+- New vs FILE 015: first `stat` count-up as beat 2 (3 models) before the doc receipt; doc quote from Amazon's email (via TechCrunch); BEFORE/SINCE compare with dates; PUNCH_EVERY 2; new violet/mint palette, no new animation (cheap run).
+- Sources: TechCrunch 15 Mar 2025, Tom's Guide 17 Mar 2025, AJC/AP (read 31 Oct 2026). Amazon help pages and support.google.com were NOT fetchable this run (WebFetch permission unanswered in unattended run) - only URLs that came from WebSearch results can be fetched.
+- Previous (FILE 015, 30 Oct): 125 plays, 33.1% watched, 53.1% skip, 1 save (best skip so far). FILE 014: 58 plays, 23.8%, 80.4%.
+- Photos: run 20261031-1649 delivered only phone-with-UI hands (rejected), speaker found 0 -> built without photos.
+- YouTube Short OK: https://youtu.be/99MuN8XEriA (tag hiddenlayer-reel-2026-10-31-echo-local-voice, 20:00 slot). No '<' or '>' in description.
+- vidIQ balance 2 (<40): no paid tools. Not Sunday: no competitor analysis.
