@@ -1,0 +1,11 @@
+{
+  "name": "hs-one-year-one-body",
+  "private": true,
+  "dependencies": {
+    "remotion": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}
