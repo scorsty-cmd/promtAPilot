@@ -1,16 +1,12 @@
 {
- "at": "2026-10-31T20:36:16.299741+03:00",
+ "at": "2026-10-31T22:31:07.968265+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "✅ animals-2026-10-31-hangi-kedi-sensin#0 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4020223790915407028",
-  "   not: Reel teaser",
-  "✅ animals-2026-10-31-hangi-kedi-sensin#2 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4020223963217404354",
-  "   not: Instagram soru çıkartması eklenebilir: Kedin en çok neye bayılıyor?",
-  "✅ animals-2026-10-31-hangi-kedi-sensin#3 reel paylaşıldı: https://www.instagram.com/reel/DfKtJNUkatr/",
-  "✅ animals-2026-10-31-hangi-kedi-sensin#1 post paylaşıldı: https://www.instagram.com/p/DfKtRC_Fk1x/"
+  "✅ animals-2026-10-31-hangi-kedi-sensin#4 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4020282560764865498",
+  "   not: promo — Kediler ve Bebekler rehberi, link profilde"
  ]
 }
