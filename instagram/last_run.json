@@ -1,16 +1,12 @@
 {
- "at": "2026-11-01T21:23:02.788263+03:00",
+ "at": "2026-11-01T22:53:27.401350+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "✅ animals-2026-11-01-pazartesi-geliyor-4-kedi#0 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4020971692713587277",
-  "   not: Teaser: bugünkü Reel 20:00'de",
-  "✅ animals-2026-11-01-pazartesi-geliyor-4-kedi#2 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4020971860544501157",
-  "   not: Instagram soru/anket çıkartması eklenebilir: Kedin Pazartesi'yi sever mi?",
-  "✅ animals-2026-11-01-pazartesi-geliyor-4-kedi#3 reel paylaşıldı: https://www.instagram.com/reel/DfNXQe3Cvui/",
-  "✅ animals-2026-11-01-pazartesi-geliyor-4-kedi#1 post paylaşıldı: https://www.instagram.com/p/DfNXaUGmKQg/"
+  "✅ animals-2026-11-01-pazartesi-geliyor-4-kedi#4 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4021018584344198815",
+  "   not: promo — Kedi Davranışları Bilimi, link profilde"
  ]
 }
