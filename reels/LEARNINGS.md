@@ -32,6 +32,10 @@
 - reel2_v8 (reels/renderer/reel2_v8.py; audio = reel_audio_v7.py unchanged): PAPER=True "Fine Print" paper variant of the style DNA (paper bg with ghost document lines + margin rule, ink caption pills with highlighter word, ink chips, ink numerals with highlighter bar, paper cards with ink outline), `pixel` beat (email card -> magnifier on a 1x1 pixel -> dashed ping line -> SENDER SERVER log types OPENED), hook `print=` taped real photo + `ping=` sonar rings from frame 0, stat `print=`/`count_y`/`source_y`, doc `redact=True` (bars slide off before highlighter). Helper: render chosen frames by importing reel2.py with importlib (exec() breaks __file__).
 - Fetch workflow run 33 (23 Oct 16:49) delivered after ~11 min (photos.py gives up at 9) -> after "NO PHOTOS" just `git pull` and copy assets/<id>/. Openverse junk again for "pile of envelopes" (old letters with text) and "laptop on desk" (UI/watermarks); a text bar can be cropped out (hand_0 = crop of phone_1).
 
+## Weekly competitor findings (1 Nov 2026, free web sources; vidIQ balance 2)
+- revid.ai 2026 short-form study: hook in the first 10-15 words, written after the payoff is known; a question the viewer already has beats a rhetorical one; 16-30 s videos had the highest median views; shorter speech density (visual carries beats) correlated with more views; 86.6% of exports use captions, 96.8% of those animated word/phrase reveals (static blocks make people read ahead).
+- Takeaways applied: keep 20-30 s, let the animation carry the beat (gpc tiles flip OFF) instead of extra words, keep animated phrase captions.
+
 ## Entries
 ### 2026-10-19 16:49 – FILE 005 – iPhone Significant Locations (P2 amber/blue, 27.9 s)
 - File: HL_Reel_20261019_1649_iphone-significant-locations.mp4 · https://www.instagram.com/reel/Dercfl2DG4H/
@@ -118,3 +122,12 @@
 - Photos: run 20261031-1649 delivered only phone-with-UI hands (rejected), speaker found 0 -> built without photos.
 - YouTube Short OK: https://youtu.be/99MuN8XEriA (tag hiddenlayer-reel-2026-10-31-echo-local-voice, 20:00 slot). No '<' or '>' in description.
 - vidIQ balance 2 (<40): no paid tools. Not Sunday: no competitor analysis.
+
+### 2026-11-01 16:49 - FILE 017 - California Opt Me Out Act, browser opt-out signal (green/amber dark DNA, 26.5 s) - https://www.instagram.com/reel/DfM5zRegTLQ/
+- File: HL_Reel_20261101_1649_california-browser-opt-out.mp4 - Renderer reels/renderer/reel2_v13.py (+ reel_audio_v7.py), scenes_FILE017.py.
+- New vs FILE 016: `gpc` beat (dnt beat generalised: tile_before/tile_after, stamp, foot params; opt-out signal sent to 3 example sites, switches flip ON->OFF, HONORED stamps - deliberate reverse of the IGNORED Do Not Track beat); decimal count-up stat ($1.2M); consequence/order hook naming the actor; new green/amber palette; 3-image stories pack from frames.
+- Sources: CPPA announcement 8 Oct 2025 (cppa.ca.gov/announcements/2025/20251008_2.html), Hunton (operative 1 Jan 2027), Faegre Drinker (Sephora $1.2M, 24 Aug 2022). Read 1 Nov 2026. Firefox GPC help page not fetchable (permission), so no practical-setting beat.
+- Previous (FILE 016, 31 Oct): 54 plays, 10.6% watched, 86.3% skip, 0 saves/shares. FILE 015: 125 plays, 32.8%, 53.1% skip, 1 save (still the best recent). Recurring pattern: numeric/news hooks with a visible mechanism (FILE 015) beat quieter "lost a switch" hooks.
+- Photos: workflow run 20261101-1649 delivered nothing within ~10 min -> built without photos. NOTE: `pkill -f photos.py` kills the calling shell if the command line contains 'photos.py'.
+- YouTube Short OK: https://youtu.be/LV-ONc8bXYA (tag hiddenlayer-reel-2026-11-01-california-browser-opt-out, 20:00 slot).
+- vidIQ balance 2 (<40): no paid tools.
