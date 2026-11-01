@@ -1,0 +1,8 @@
+California is ordering browsers to add a privacy switch. Save this before you forget.
+
+California's AB 566 (the Opt Me Out Act) requires browsers operating in California to offer easy-to-use opt-out preference signals. Unlike Do Not Track, covered businesses are expected to honor them; Sephora settled for $1.2M in 2022 after California said its site ignored the signal. The law starts in January 2027.
+
+Sources: California Privacy Protection Agency announcement, 8 Oct 2025 (cppa.ca.gov); Hunton Andrews Kurth on AB 566 (operative 1 Jan 2027); Faegre Drinker on the Sephora settlement, 13 Sep 2022. Read 1 Nov 2026. Not legal advice.
+
+Follow for the hidden rules.
+#hiddenlayer #privacy #california #browser #techfacts
