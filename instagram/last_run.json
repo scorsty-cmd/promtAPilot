@@ -1,15 +1,11 @@
 {
- "at": "2026-11-03T01:15:42.567425+03:00",
+ "at": "2026-11-03T02:13:18.631879+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "animals-2026-11-02-pazartesi-4-kedi-hali#0 hikâye 9 saat gecikmiş, atlandı.",
-  "animals-2026-11-02-pazartesi-4-kedi-hali#2 hikâye 7 saat gecikmiş, atlandı.",
-  "❌ animals-2026-11-02-pazartesi-4-kedi-hali#3 reel paylaşılamadı: medya deposuna yüklenemedi: 403 {\"message\":\"The rule did not run because of a timeout.\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"403\"}",
-  "   (kurulum hatası: IG_MEDIA_PAT kontrol edilmeli; içerik sırada bekliyor)",
-  "✅ animals-2026-11-02-pazartesi-4-kedi-hali#1 post paylaşıldı: https://www.instagram.com/p/DfQW2NPFtZD/"
+  "✅ animals-2026-11-02-pazartesi-4-kedi-hali#3 reel paylaşıldı: https://www.instagram.com/reel/DfQdZ2ojwm-/"
  ]
 }
