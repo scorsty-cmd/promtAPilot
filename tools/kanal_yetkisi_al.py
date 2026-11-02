@@ -1,22 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Universe Of Animals (YOUTUBE_TOKEN_JSON_ANIMALS) veya Hidden Layer
-(YOUTUBE_TOKEN_JSON_HIDDEN_LAYER) kanalı için YouTube yetkisi üretir.
+History Sourced (YOUTUBE_TOKEN_JSON), Universe Of Animals (YOUTUBE_TOKEN_JSON_ANIMALS) veya
+Hidden Layer (YOUTUBE_TOKEN_JSON_HIDDEN_LAYER) kanalı için YouTube yetkisi üretir.
 
 Bilgisayarında kanal başına BİR KEZ çalıştır:
     pip install google-auth-oauthlib google-api-python-client
     python tools/kanal_yetkisi_al.py client_secret.json                      (Universe Of Animals)
     python tools/kanal_yetkisi_al.py client_secret.json --kanal hiddenlayer  (Hidden Layer)
+    python tools/kanal_yetkisi_al.py client_secret.json --kanal history      (History Sourced)
 
 - client_secret.json: diğer kanallar için kullandığın Google Cloud OAuth istemci dosyası
   (yoksa: YOUTUBE_CLIENT_ID ve YOUTUBE_CLIENT_SECRET ortam değişkenlerini ayarla, dosya verme).
 - Tarayıcı açılınca scorsty@gmail.com ile giriş yap ve kanal seçiminde
-  "Universe Of Animals" kanalını seç.
+  ilgili kanalı seç (ör. "History Sourced").
 - Script bağlanan kanalın adını kontrol eder; yanlış kanalsa token vermez.
-- Çıkan youtube_token_animals.json dosyasının TÜM içeriğini GitHub'da
-  promtAPilot → Settings → Secrets and variables → Actions → New repository secret
-  adı: YOUTUBE_TOKEN_JSON_ANIMALS olarak yapıştır. Sonra dosyayı sil.
+- Çıkan youtube_token_<kanal>.json dosyasının TÜM içeriğini GitHub'da
+  promtAPilot → Settings → Secrets and variables → Actions içinde ilgili secret'a
+  (YOUTUBE_TOKEN_JSON / YOUTUBE_TOKEN_JSON_ANIMALS / YOUTUBE_TOKEN_JSON_HIDDEN_LAYER) yapıştır.
+  Sonra dosyayı sil.
 """
 import json
 import os
@@ -31,6 +33,7 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.force-ssl",  # açıklama güncelleme ve yorum için
 ]
 KANALLAR = {
+    "history": ("history sourced", "History Sourced", "youtube_token_history.json", "YOUTUBE_TOKEN_JSON"),
     "animals": ("universe of animals", "Universe Of Animals", "youtube_token_animals.json", "YOUTUBE_TOKEN_JSON_ANIMALS"),
     "hiddenlayer": ("hidden layer", "Hidden Layer", "youtube_token_hidden_layer.json", "YOUTUBE_TOKEN_JSON_HIDDEN_LAYER"),
 }
