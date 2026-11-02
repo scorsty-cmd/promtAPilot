@@ -61,7 +61,7 @@ def main():
                            "token_uri": "https://oauth2.googleapis.com/token",
                            "redirect_uris": ["http://localhost"]}}, SCOPES)
 
-    creds = flow.run_local_server(port=0, prompt="consent", access_type="offline")
+    creds = flow.run_local_server(port=8080, prompt="consent", access_type="offline")
     yt = build("youtube", "v3", credentials=creds)
     items = yt.channels().list(part="snippet", mine=True).execute().get("items", [])
     title = items[0]["snippet"]["title"] if items else "?"
