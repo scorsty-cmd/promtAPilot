@@ -23,6 +23,7 @@
 - 31 Eki 2026: vidIQ bakiye 27 (ücretli çağrı yok); YouTube ID'li animals Short'u hâlâ yok → izlenme verisi yok. Instagram 30 Eki: Reel https://www.instagram.com/reel/DfIOlpRCihV/ , gönderi https://www.instagram.com/p/DfIOvjXD-rj/ ; son çalışma ok. Commons 'cat filetype:video' + 'domestic cat filetype:video' 10 klip verdi (yalnız 3'ü derlemeye uygun). queue_publish.py'yi tek kez başlat (iki süreç yarışıyor; yine de tek release oluştu).
 
 - 1 Kas 2026: vidIQ bakiye 2 (ücretli çağrı yok), YouTube ID'li animals Short'u hâlâ yok → izlenme verisi yok. Instagram 31 Eki: Reel https://www.instagram.com/reel/DfKtJNUkatr/ , gönderi https://www.instagram.com/p/DfKtRC_Fk1x/ ; son çalışma ok. Commons 'cat jumping filetype:video' çoğunlukla atlet kliplerı (1900 filmi) verdi, 'cats playing filetype:video' 2 işe yarar kedi klibi (Larry/Chloé, Moomin) → derleme için eski klasörlerden (Burmese yavru) tamamlandı. queue_publish.py: sleep'li ilk çağrıda log boş kalsa da gönderim yapılmıştı; ikinci kez çalıştırma ('dal zaten var' diye reddeder). Ses: tek geçiş -15,2 → +1,3 dB + alimiter(0.89) ile -14,1 LUFS.
+- 2 Kas 2026: vidIQ bakiye 2 (ücretli çağrı yok, Pzt rakip analizi atlandı); YouTube ID'li animals Short'u hâlâ yok → izlenme verisi yok. Instagram 1 Kas: Reel https://www.instagram.com/reel/DfNXQe3Cvui/ , gönderi https://www.instagram.com/p/DfNXaUGmKQg/ ; son çalışma ok. Commons 'kitten filetype:video' çoğu uygunsuz (havai fişek, puma); 'cat filetype:video' 4 işe yarar klip verdi (esneyen yavru, siyah kedi, Abyssinian, mama). Yatay/uzak çekim klipler (güvercin, raylı yavrular) derlemeye yaramaz: kedi kareyi doldurmalı. Ses: tek geçiş -15,2 → +1,3 dB + alimiter(0.89) ile -13,1. queue_publish.py --wait ile 2 dk içinde bitti.
 
 ## Uygulanan iyileştirmeler
 - 2026-10-22: Hook doğrudan izleyiciye soru ("Kedin sana…?") + B formatında bilimsel kaynak açıklamaya yazıldı + 3 klip ile döngüsüz akış (tek klibin başa sarması engellendi).
@@ -33,6 +34,7 @@
 - 2026-10-30: İlk komik derleme (D): 4 klip, 36 sn, AI sesi yok; Cuma günü özdeşliği ('Cuma 18:00 mesai bitti'), 1. klipte ilk saniyede hareket, her klipte dondurma + 4. klipte ağır çekim tekrar, en komik klip (akvaryum pençesi) sona; başlık ≤ 60 karakter (53); kaydırmalı gönderi 4 garip alışkanlık (2'şer kaynakla doğrulandı: LiveScience+VetVerified, phys.org+zooplus, PetMD+The Conversation, VCA+PetMD).
 - 2026-10-31: C formatı (Hangi kedi sensin?), 3 numaralı klip, 28,6 sn, AI sesi yok; sonda 'Sen hangisisin? 1, 2, 3?' yorum çağrısı; ses -13,2 LUFS; kaydırmalı gönderi kedi+bebek rehberi (5 adım; Wood Green + PetMD ile doğrulandı) ve cat_baby promo hikâyesi (kapak dosyası yok).
 - 2026-11-01: D derleme, 4 klip 36 sn; haftanın günü/saati temalı hook (Pazar gecesi → Pazartesi), 1. klipte ilk saniyede zıplama, her klipte dondurma/iç ses, son klipte dil çıkarma anı dondurma + ağır çekim tekrar; freeze ile çakışan sticker'ı kaldırıp tek metin kullan; kaydırmalı gönderi kedi beden dili 'kaydet' rehberi (PetMD + NAWT ile doğrulandı) ve cat_behaviour kapaklı promo hikâyesi.
+- 2026-11-02: D derleme, 4 klip 33 sn; tek günün akışı (sabah/öğle/akşam/maaş) olarak sıralı hikâye (önceki günlerdeki bağımsız espriler yerine anlatı), 1. klipte kedi kameraya yürüyor (ilk saniyede hareket), esneme ağır çekim tekrarı, en komik "mama başında kaçamak bakış" sona; yalnız kareyi dolduran yakın çekimler seçildi; kaydırmalı gönderi kedi kuyruğu rehberi (PetMD + WebVet ile doğrulandı).
 
 ## Yayın kaydı
 | Tarih | Release etiketi | Format | Hayvan | Başlık | YouTube ID | 24s izlenme | 7g izlenme | Beğeni | Yorum | Instagram (Reel paylaşım tarihi + link) |
@@ -45,6 +47,7 @@
 | 2026-10-30 | animals-2026-10-30-cuma-enerjisi-4-kedi | D | kedi (4 klip) | Cuma enerjisi: 4 kedi 😹 #kedi #komikhayvanlar #shorts | yüklenmedi (YouTube bağlı değil; run 41046917873) | – | – | – | – | GitHub Instagram Publish, plan saatlerinde |
 | 2026-10-31 | animals-2026-10-31-hangi-kedi-sensin | C | kedi (3 klip) | Hangi kedi sensin? 😹 #kedi #komikhayvanlar #shorts | yüklenmedi (YouTube bağlı değil; run 41195872346) | – | – | – | – | GitHub Instagram Publish, plan saatlerinde |
 | 2026-11-01 | animals-2026-11-01-pazartesi-geliyor-4-kedi | D | kedi (4 klip) | Pazartesi geliyor: 4 kedi 😹 #kedi #komikhayvanlar #shorts | yüklenmedi (YouTube bağlı değil; run 41300880050) | – | – | – | – | GitHub Instagram Publish, plan saatlerinde |
+| 2026-11-02 | animals-2026-11-02-pazartesi-4-kedi-hali | D | kedi (4 klip) | Pazartesi günü 4 kedi hâli 😹 #kedi #komikhayvanlar #shorts | yüklenmedi (YouTube bağlı değil; run 41435586453) | – | – | – | – | GitHub Instagram Publish, plan saatlerinde |
 
 ## Kullanılmış başlıklar
 - Kedin sana yavaşça göz kırpıyor mu? 😺 #kedi #kediler (2026-10-22)
@@ -55,6 +58,7 @@
 - Cuma enerjisi: 4 kedi 😹 #kedi #komikhayvanlar #shorts (2026-10-30)
 - Hangi kedi sensin? 😹 #kedi #komikhayvanlar #shorts (2026-10-31)
 - Pazartesi geliyor: 4 kedi 😹 #kedi #komikhayvanlar #shorts (2026-11-01)
+- Pazartesi günü 4 kedi hâli 😹 #kedi #komikhayvanlar #shorts (2026-11-02)
 - sizin kediniz de böyle mi😹😹 (eski)
 - kutsal bir ayin gerçekleşiyor😹😹😹 (eski)
 - şımarık minnoşlar (eski)
@@ -69,3 +73,4 @@
 - Reddedilen: commons-121875682 (Rus filmi), commons-29606065 (röportaj), commons-74026787 (karanlık), commons-191852272 (insan yüzleri); kalan kullanılmamış: commons-80168679 (Burmese yavru tımar), commons-165956046 (puma yavrusu), commons-110215517 (turuncu yavrular), commons-11136217 (su içen kedi); commons-79784181 (Maršov kedi, yolda küçük kedi); commons-102567961 ("Pet Plus" marka yazısı), commons-18787246 (videoda yazı)
 - commons-42812508 (çantadaki kedi), commons-44912755 (kuşa bağıran beyaz kedi), commons-35498016 (kum kabı kedisi) — 2026-10-31; kalan: commons-79013639 (güvercin kovalayan kedi, CC0), commons-44907045 (Tayvan, 90 sn), 20074545, 122683669, 123259847, 121736105
 - commons-92838543 (Salto kedi zıplaması), commons-97411267 (Larry & Chloé boğuşma), commons-99462733 (Moomin, çubuk), commons-80168679 (Burmese yavru tımar) — 2026-11-01; kalan: commons-126415176 (kedi yavruları, raylar, küçük), commons-44907045, 20074545, 122683669, 123259847, 121736105
+- commons-182639090 (siyah kedi yürüyor, CC0), commons-22623990 (esneyen yavru, PD), commons-49560175 (Abyssinian kanepe, CC BY 2.0), commons-161641517 (mama başındaki kediler, CC BY 4.0) — 2026-11-02; kalan: commons-79013639 (güvercin, uzak), commons-126415176, commons-44907045, 20074545, 122683669, 123259847, 121736105
