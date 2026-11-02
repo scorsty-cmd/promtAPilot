@@ -13,6 +13,13 @@ Owner's standing order (31 Oct 2026): **the animation must get clearly better wi
 - `make_voice.py` — Kokoro TTS line(s) → `public/voice_*.wav` + `src/lipsync.json` (per-frame mouth envelope + caption timings). Use a different Kokoro voice per character (narrator bm_george; barber bm_lewis; pick others for new characters).
 - `make_audio_barber.py` — original SFX bed (room tone, crackle, creaks, metal, heartbeat, gulp, footsteps, record scratch) + voice; then `ffmpeg -af loudnorm=I=-14:TP=-1.5:LRA=11`.
 
+- **Kit v3 (Ep 1, 2 Nov 2026)** — full-episode pipeline:
+  - `src/rig.tsx` v3: viseme mouths `E | S | M` (+ `talk`/`O`), `frown`, `gap` (missing tooth); eyes `happy | dizzy | half`; hand poses `point | open | fist` (`poseF/poseB`), back-hand props (`propB`); looks `cap: coif | baker | tall | felt`, `skirt`, `gown`, `beard`, `wrinkles`; cast `AGNES, HOLLIS, WATCHMAN, PHYSICIAN, SEARCHER, BOY`, `extraLook(seed)` crowd extras; props `Pelican, Cup, Bottle, Root, Bread, Funnel, Halberd, Lantern, Candle, Peel, Sponge, Pipe, Birch, ToothProp, Dentures`; `visMouth()`.
+  - `src/motion.ts`: `walk, tiptoe, run, stagger, flinch, shiver, collapse/sitLegs, idle, gesture, knead, spring, blinkAuto`.
+  - `episodes/<ep>/script.py` (SHOTS with speaker lines) → `make_episode_voice.py <ep> <key>` → `public/<key>_voice.wav` + `src/<key>/timeline.json` (shot/line frames + per-frame visemes from energy/centroid/ZCR; TTS cached).
+  - `src/ep01/kit.tsx` (Cam with cuts/push-ins/dutch/shake, `Actor`, `mkPose` with auto blink+breathing, `speech()` lip sync, Caption, FreezeLabel, Tag, BigWord, Stamp, CureCard, Throb, Post), `sets.tsx` (Attic, Bakery, Street day/dawn/night + lamps, Shopfront, MapLondon, Parchment, DarkTable, Hall, Fair, ToothCut, Worm), `shots1-3.tsx` (one function per shot), `Episode.tsx`, `Thumb.tsx` (3 thumbnail variants).
+  - `make_audio_ep01.py` (ambience beds per set + ~150 synced SFX cues + procedural score per chapter mood + ducking), `make_subs.py`, `stills.mjs` + `shotframes.py` + `sheet.py` (contact sheets), `render_chunks.sh` (resumable 600-frame chunks).
+
 ## Render
 ```
 npm i
@@ -49,18 +56,19 @@ Score 1–5 honestly from rendered frames (not from intentions). Each new video 
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | v1 test 2026-10-31 (street) | 3 | 1 | 3 | 2 | 2 | 3 | 1 | 2 | – | 3 | 20 |
 | v2 test 2026-10-31 (barber) | 4 | 3 | 3 | 4 | 4 | 4 | 4 | 4 | – | 3 | 33 |
+| Ep 1 2026-11-02 Toothache 1665 (8:26) | 4 | 4 | 4 | 4 | 5 | 4 | 4 | 4 | 3 | 4 | 40 |
 
 ## Improvement backlog (take at least one per video; move done items to the log)
-- Viseme mouth shapes (M/B closed, F/V lip bite, O, E) from phoneme timing instead of only amplitude
-- Head turn to full profile and back, with hair/ear swap
-- Proper walk/run library: walk, tiptoe, run, flinch, shiver, collapse into chair
-- Hand poses: point, fist, open palm, hold cup/candle
-- Crowd extras: reuse rig with randomised looks, background idle loops
-- Camera: over-the-shoulder and low-angle shots, rack-focus (blur foreground/background)
-- Weather/time: rain on windows, snow, night street with lantern light pools
-- Painted map transition with Tom's silhouette walking along the route
-- Thumbnail system: character at peak emotion, 3 words, colour-contrast test at 160 px width
+- Head turn to full profile and back, with hair/ear swap; back view for walking away
+- True phoneme visemes (forced alignment of the script text) instead of audio-feature visemes; F/V lip-bite shape
+- Speed: pre-render static set plates (PNG at 2x) and draw only live layers (~2 fps now on 2 CPUs)
+- Rack focus (animated blur between foreground and background layers) and low-angle shots
+- Rain on windows; parallax depth layers in the street set; whip-pan transitions between shots
+- Prop physics helper (fall + bounce + settle) and eye darts/saccades during dialogue
+- Crowd idle loops with small interactions (nudges, pointing, talking pairs)
+- Thumbnail A/B tracker: record which variant YouTube Test & Compare picked
 
 ## Improvement log
 - 2026-10-31 v1: walk cycle, twinge, hand-to-cheek IK, pain face, throb rings, title card.
+- 2026-11-02 Ep 1 (You Have a Toothache in 1665 London, 8:26, 50 shots): DONE backlog — audio-driven viseme mouths (lip sync 3→4); motion library walk/tiptoe/run/stagger/flinch/shiver/collapse/knead (body 3→4); hand poses point/open/fist + back-hand props; crowd extras `extraLook(seed)`; camera OTS (blurred barber shoulder), dutch angle, crash zoom, push-ins in every cut; time/weather: moonlit attic, dawn and lantern-lit night street, snow in the window; painted London map with Tom's silhouette walking the route; thumbnail system (3 variants, 160-px check). New cast Agnes, Master Hollis, watchman, physician, searcher, schoolboys; 10 painted sets; procedural score + ~150 SFX cues; -14 LUFS. Weak spots seen: some long holds on inserts (bill, scales), map labels small, physician/searcher walk is the same cycle as everyone, Tom's head never turns to full profile; in the coach shot the fleeing extras' bundles sit in front of their faces (hold props lower).
 - 2026-10-31 v2: reusable rig module; barber character; interior set with period props; lip sync from Kokoro voice; mitten hands holding props; fear eyes with spring pop; sweat + gulp; anticipation/overshoot; 4-shot cutting; freeze-frame comedy label; captions; full original SFX mix at -14 LUFS.

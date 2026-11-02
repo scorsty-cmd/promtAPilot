@@ -1,5 +1,9 @@
 node_modules/
-out/
-frames/
 models/
+out/
+chunks/
 public/*.wav
+episodes/*/tts_cache.pkl
+render.log
+*.mp4
+frames/

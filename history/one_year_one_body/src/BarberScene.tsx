@@ -64,11 +64,11 @@ const Defs: React.FC<{f: number; frozen: boolean}> = ({f, frozen}) => (
   </defs>
 );
 
-const Tooth: React.FC<{x: number; y: number; r: number}> = ({x, y, r}) => (
+export const Tooth: React.FC<{x: number; y: number; r: number}> = ({x, y, r}) => (
   <path transform={`translate(${x} ${y}) rotate(${r})`} d="M-7 -8 Q0 -12 7 -8 Q9 2 5 4 L3 14 L0 6 L-3 14 L-5 4 Q-9 2 -7 -8 Z" fill="#F4EEDD" stroke="#2B1D14" strokeWidth={2.5} />
 );
 
-const Interior: React.FC<{f: number; flick: number}> = ({f, flick}) => {
+export const Interior: React.FC<{f: number; flick: number}> = ({f, flick}) => {
   const boards = Array.from({length: 23}, (_, i) => {
     const c = 0.85 + random(`b${i}`) * 0.22;
     return <rect key={i} x={i * 88 - 40} y={0} width={88} height={FLOOR} fill={`rgb(${Math.round(92 * c)},${Math.round(63 * c)},${Math.round(43 * c)})`} stroke="#2E1F15" strokeWidth={4} />;
@@ -147,7 +147,7 @@ const Interior: React.FC<{f: number; flick: number}> = ({f, flick}) => {
   );
 };
 
-const Chair: React.FC<{x: number; y: number; part: 'back' | 'front'}> = ({x, y, part}) => (
+export const Chair: React.FC<{x: number; y: number; part: 'back' | 'front'}> = ({x, y, part}) => (
   part === 'back' ? (
     <g filter="url(#soft)" stroke="#2B1D14" strokeWidth={5} strokeLinejoin="round">
       <rect x={x - 82} y={y - 230} width={22} height={230 + 205} fill="#4E3421" />

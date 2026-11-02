@@ -10,10 +10,16 @@ export type Look = {
   moustache?: string; specs?: boolean; band?: string; bandDark?: string;
   belly?: number; // 0 slim .. 1 stout
   blush?: string;
+  // v3 additions
+  cap?: 'coif' | 'baker' | 'tall' | 'felt'; capColor?: string;
+  skirt?: string; skirtShade?: string; // long skirt hides the legs (women)
+  gown?: string; // long coat to the knees (physician, schoolmaster)
+  beard?: string; // short full beard
+  wrinkles?: boolean; scale?: number;
 };
 
-export type Mouth = 'line' | 'smile' | 'grin' | 'zigzag' | 'talk' | 'O' | 'fear';
-export type Eyes = 'dot' | 'squeeze' | 'fear' | 'sly';
+export type Mouth = 'line' | 'smile' | 'grin' | 'zigzag' | 'talk' | 'O' | 'fear' | 'E' | 'S' | 'M' | 'frown' | 'gap';
+export type Eyes = 'dot' | 'squeeze' | 'fear' | 'sly' | 'happy' | 'dizzy' | 'half';
 
 export type HeadPose = {
   tilt: number; turn: number; // turn 0 = front, 1 = 3/4 toward +x
@@ -59,13 +65,19 @@ const Seg: React.FC<{p: number[][]; w: number; c: string; w2?: number; c2?: stri
   </g>
 );
 
-// mitten hand: palm + thumb, oriented along the forearm; children = held prop
-const Hand: React.FC<{x: number; y: number; ang: number; skin: string; ink: string; grip?: boolean; children?: React.ReactNode; propAng?: number}> = ({x, y, ang, skin, ink, grip, children, propAng = 0}) => (
+// mitten hand: palm + thumb, oriented along the forearm; children = held prop.
+// v3 hand poses: mitt (default), point (index finger), open (spread palm), fist
+export type HandPose = 'mitt' | 'point' | 'open' | 'fist';
+const Hand: React.FC<{x: number; y: number; ang: number; skin: string; ink: string; grip?: boolean; children?: React.ReactNode; propAng?: number; pose?: HandPose}> = ({x, y, ang, skin, ink, grip, children, propAng = 0, pose = 'mitt'}) => (
   <g transform={`translate(${x} ${y}) rotate(${ang})`}>
     {children && <g transform={`rotate(${propAng})`}>{children}</g>}
-    <ellipse cx={7} cy={0} rx={17} ry={14} fill={skin} stroke={ink} strokeWidth={5} />
-    <ellipse cx={grip ? 10 : 4} cy={grip ? -10 : -13} rx={7} ry={grip ? 6 : 9} transform={`rotate(${grip ? 10 : -30} 4 -12)`} fill={skin} stroke={ink} strokeWidth={4.5} />
-    {grip && <path d="M14 -6 q6 6 0 12" stroke={ink} strokeWidth={3} fill="none" />}
+    {pose === 'point' && <rect x={10} y={-6} width={34} height={12} rx={6} fill={skin} stroke={ink} strokeWidth={4.5} />}
+    {pose === 'open' && [-14, -4, 6].map((yy, i) => <rect key={i} x={12} y={yy - 3} width={26 - i * 2} height={10} rx={5} fill={skin} stroke={ink} strokeWidth={4} transform={`rotate(${(i - 1) * 16} 12 ${yy})`} />)}
+    <ellipse cx={7} cy={0} rx={pose === 'fist' ? 15 : 17} ry={pose === 'fist' ? 15 : 14} fill={skin} stroke={ink} strokeWidth={5} />
+    {pose === 'fist' ? <path d="M12 -8 q6 8 0 16 M4 -10 q6 10 0 20" stroke={ink} strokeWidth={3} fill="none" /> : (
+      <ellipse cx={grip ? 10 : 4} cy={grip ? -10 : -13} rx={7} ry={grip ? 6 : 9} transform={`rotate(${grip ? 10 : -30} 4 -12)`} fill={skin} stroke={ink} strokeWidth={4.5} />
+    )}
+    {grip && pose === 'mitt' && <path d="M14 -6 q6 6 0 12" stroke={ink} strokeWidth={3} fill="none" />}
   </g>
 );
 
@@ -89,6 +101,26 @@ export const Head: React.FC<{h: HeadPose; L: Look; frame: number}> = ({h, L, fra
         <g transform={`translate(${cx} ${ey}) scale(${sx * pop} ${pop})`}>
           <ellipse rx={15} ry={19} fill="#FFFDF6" stroke={ink} strokeWidth={4.5} />
           <circle cx={h.lookX * 6 + trem} cy={h.lookY * 7} r={4.2} fill={ink} />
+        </g>
+      );
+    }
+    if (h.eyes === 'happy') {
+      return <path transform={`translate(${cx} ${ey}) scale(${sx} 1)`} d="M-11 4 Q0 -12 11 4" stroke={ink} strokeWidth={6} fill="none" strokeLinecap="round" />;
+    }
+    if (h.eyes === 'dizzy') {
+      const r0 = frame * 0.35 * (far ? -1 : 1);
+      return (
+        <g transform={`translate(${cx} ${ey}) scale(${sx} 1) rotate(${(r0 * 180) / Math.PI})`}>
+          <path d="M0 0 m-2 0 a2 2 0 1 1 4 0 a5 5 0 1 1 -9 0 a8 8 0 1 1 15 0 a11 11 0 1 1 -21 0" stroke={ink} strokeWidth={3.5} fill="none" strokeLinecap="round" />
+        </g>
+      );
+    }
+    if (h.eyes === 'half') {
+      return (
+        <g transform={`translate(${cx + h.lookX * 3} ${ey + h.lookY * 3}) scale(${sx} 1)`}>
+          <ellipse rx={7} ry={11} fill={ink} />
+          <rect x={-11} y={-16} width={22} height={13} fill={L.skin} />
+          <path d="M-11 -3 H11" stroke={ink} strokeWidth={5} strokeLinecap="round" />
         </g>
       );
     }
@@ -137,6 +169,37 @@ export const Head: React.FC<{h: HeadPose; L: Look; frame: number}> = ({h, L, fra
         <path d={`M${mx - 18} 42 Q${mx} 47 ${mx + 18} 42 L${mx + 16} 47 Q${mx} 51 ${mx - 16} 47 Z`} fill="#F7F1E4" />
       </g>
     );
+  } else if (h.mouth === 'E') {
+    // wide "ee": stretched, teeth visible
+    const w = 17 + 5 * o, hh = 3 + 8 * o;
+    mouth = (
+      <g>
+        <rect x={mx - w} y={47 - hh} width={2 * w} height={2 * hh} rx={hh} fill="#4A1A14" stroke={ink} strokeWidth={4.5} />
+        <rect x={mx - w + 5} y={47 - hh + 1.5} width={2 * w - 10} height={Math.min(5, hh)} rx={2} fill="#F7F1E4" />
+      </g>
+    );
+  } else if (h.mouth === 'S') {
+    // s/f/th: teeth together, lips slightly apart
+    const w = 13 + 2 * o;
+    mouth = (
+      <g>
+        <rect x={mx - w} y={41} width={2 * w} height={12} rx={6} fill="#F7F1E4" stroke={ink} strokeWidth={4.5} />
+        <path d={`M${mx - w + 3} 47 H${mx + w - 3}`} stroke="#B9AE98" strokeWidth={2} />
+      </g>
+    );
+  } else if (h.mouth === 'M') {
+    mouth = <path d={`M${mx - 12} 46 Q${mx} 50 ${mx + 12} 46`} stroke={ink} strokeWidth={7} fill="none" strokeLinecap="round" />;
+  } else if (h.mouth === 'frown') {
+    mouth = <path d={`M${mx - 13} 52 Q${mx} 40 ${mx + 13} 52`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />;
+  } else if (h.mouth === 'gap') {
+    // big grin with one missing tooth (after the extraction)
+    mouth = (
+      <g>
+        <path d={`M${mx - 24} 40 Q${mx} ${66 + o * 6} ${mx + 24} 40 Z`} fill="#4A1A14" stroke={ink} strokeWidth={4.5} strokeLinejoin="round" />
+        <path d={`M${mx - 20} 42 Q${mx} 47 ${mx + 20} 42 L${mx + 18} 48 Q${mx} 52 ${mx - 18} 48 Z`} fill="#F7F1E4" />
+        <rect x={mx + 3} y={42} width={9} height={8} fill="#4A1A14" />
+      </g>
+    );
   } else {
     const c = h.mouth === 'smile' ? 10 : 4;
     mouth = <path d={`M${mx - 11} 45 Q${mx} ${45 + c} ${mx + 11} 45`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />;
@@ -167,6 +230,8 @@ export const Head: React.FC<{h: HeadPose; L: Look; frame: number}> = ({h, L, fra
       {t < 0.25 && <ellipse cx={66} cy={10} rx={10} ry={15} fill={L.skin} stroke={ink} strokeWidth={4.5} />}
       {swell > 0 && <ellipse cx={56 + 4 * t} cy={32} rx={18 + 5 * swell} ry={14 + 5 * swell} fill="#D96A55" opacity={0.25 + 0.4 * swell} />}
       {L.blush && <ellipse cx={exF + 12} cy={24} rx={11} ry={7} fill={L.blush} opacity={0.55} />}
+      {L.beard && <path d={`M-60 20 Q-58 96 ${mx} 104 Q${70 + 4 * t} 96 ${66 - 4 * (1 - t)} 20 Q${50} 64 ${mx} 66 Q-40 64 -60 20 Z`} fill={L.beard} stroke={ink} strokeWidth={4.5} strokeLinejoin="round" />}
+      {L.wrinkles && <g stroke={ink} strokeWidth={2.5} fill="none" opacity={0.55}><path d={`M${exF + 14} 6 q8 4 10 12`} /><path d={`M${exB - 18} 6 q-6 4 -8 12`} /><path d={`M-20 -52 q20 -6 40 0`} /></g>}
       {eye(exB, true)}
       {eye(exF, false)}
       <g stroke={ink} strokeWidth={6} strokeLinecap="round">
@@ -184,6 +249,32 @@ export const Head: React.FC<{h: HeadPose; L: Look; frame: number}> = ({h, L, fra
       {mouth}
       {L.moustache && (
         <path transform={`translate(${mx} ${36 - o * 3})`} d="M0 -2 C-10 -10 -26 -8 -34 2 C-38 8 -44 6 -46 0 C-42 14 -24 14 -12 6 C-6 2 -2 2 0 4 C2 2 6 2 12 6 C24 14 42 14 46 0 C44 6 38 8 34 2 C26 -8 10 -10 0 -2 Z" fill={L.moustache} stroke={ink} strokeWidth={4.5} strokeLinejoin="round" />
+      )}
+      {L.cap === 'coif' && (
+        <g stroke={ink} strokeWidth={5} strokeLinejoin="round">
+          <path d={`M-78 30 C-96 -60 -40 -104 4 -102 C52 -100 ${92 - 10 * t} -60 ${70 - 6 * t} 26 C${56} -30 30 -62 0 -62 C-34 -62 -60 -30 -64 30 Z`} fill={L.capColor ?? '#F4EFE4'} />
+          <path d={`M-70 0 C-60 -50 -20 -70 10 -70`} stroke="#CFC6B4" strokeWidth={3} fill="none" />
+        </g>
+      )}
+      {L.cap === 'baker' && (
+        <g stroke={ink} strokeWidth={5} strokeLinejoin="round">
+          <path d="M-70 -46 C-80 -110 -20 -132 6 -120 C40 -138 86 -110 72 -46 Q0 -30 -70 -46 Z" fill={L.capColor ?? '#F2EDE2'} />
+          <path d="M-72 -50 Q0 -32 74 -50 L72 -36 Q0 -18 -70 -36 Z" fill="#E2DACB" />
+          <path d="M-20 -110 q6 30 0 58 M24 -116 q6 30 2 62" stroke="#CFC6B4" strokeWidth={3} fill="none" />
+        </g>
+      )}
+      {L.cap === 'tall' && (
+        <g stroke={ink} strokeWidth={5} strokeLinejoin="round">
+          <ellipse cx={0} cy={-66} rx={104} ry={20} fill={L.capColor ?? '#1F1A18'} />
+          <path d="M-52 -70 L-44 -190 Q0 -200 44 -190 L56 -70 Z" fill={L.capColor ?? '#1F1A18'} />
+          <path d="M-50 -96 Q0 -88 52 -96 L52 -82 Q0 -74 -50 -82 Z" fill="#6B5A3A" />
+        </g>
+      )}
+      {L.cap === 'felt' && (
+        <g stroke={ink} strokeWidth={5} strokeLinejoin="round">
+          <path d="M-96 -52 Q0 -86 100 -52 Q0 -34 -96 -52 Z" fill={L.capColor ?? '#3E3328'} />
+          <path d="M-56 -60 Q-50 -128 4 -130 Q56 -128 58 -60 Q0 -48 -56 -60 Z" fill={L.capColor ?? '#3E3328'} />
+        </g>
       )}
       {L.band && (
         <g>
@@ -205,7 +296,7 @@ export const Head: React.FC<{h: HeadPose; L: Look; frame: number}> = ({h, L, fra
   );
 };
 
-export const Puppet: React.FC<{L: Look; p: Pose; propF?: React.ReactNode; propAngF?: number; gripF?: boolean; gripB?: boolean; front?: React.ReactNode}> = ({L, p, propF, propAngF, gripF, gripB}) => {
+export const Puppet: React.FC<{L: Look; p: Pose; propF?: React.ReactNode; propAngF?: number; gripF?: boolean; gripB?: boolean; front?: React.ReactNode; propB?: React.ReactNode; propAngB?: number; poseF?: HandPose; poseB?: HandPose}> = ({L, p, propF, propAngF, gripF, gripB, propB, propAngB, poseF, poseB}) => {
   const ink = L.outline;
   const belly = L.belly ?? 0;
   const lean = rad(p.lean);
@@ -237,12 +328,23 @@ export const Puppet: React.FC<{L: Look; p: Pose; propF?: React.ReactNode; propAn
       {/* back limbs */}
       <g opacity={0.93}>
         <Seg p={[shB, [aB.ex, aB.ey], [aB.hx, aB.hy]]} w={24} c={L.shirtShade} ink={ink} />
-        <Hand x={aB.hx} y={aB.hy} ang={angB} skin={L.shade} ink={ink} grip={gripB} />
+        <Hand x={aB.hx} y={aB.hy} ang={angB} skin={L.shade} ink={ink} grip={gripB} pose={poseB} propAng={propAngB}>{propB}</Hand>
         <Seg p={[[10, by * 0.5], lB.k, lB.f]} w={30} c={L.breeches} w2={22} c2={L.stocking} ink={ink} />
         {shoe(lB.f, lB.sa)}
       </g>
       <Seg p={[[-6, by * 0.5], lF.k, lF.f]} w={30} c={L.breeches} w2={22} c2={L.stocking} ink={ink} />
       {shoe(lF.f, lF.sa)}
+      {L.skirt && (
+        <g transform={`translate(0 ${by * 0.6})`}>
+          <path d={`M-44 -20 Q0 -30 48 -20 L${78 + (p.apronSway ?? 0) * 2} 178 Q0 196 ${-74 + (p.apronSway ?? 0) * 2} 178 Z`} fill={L.skirt} stroke={ink} strokeWidth={6} strokeLinejoin="round" />
+          <path d={`M-10 -10 L${-24 + (p.apronSway ?? 0)} 180 M22 -12 L${34 + (p.apronSway ?? 0)} 182`} stroke={L.skirtShade ?? ink} strokeWidth={4} opacity={0.5} />
+        </g>
+      )}
+      {L.gown && (
+        <g transform={`translate(0 ${by})`}>
+          <path d={`M-46 -130 Q0 -146 50 -130 L${64 + (p.apronSway ?? 0)} 110 Q0 122 ${-60 + (p.apronSway ?? 0)} 110 Z`} fill={L.gown} stroke={ink} strokeWidth={6} strokeLinejoin="round" transform={`rotate(${p.lean} 0 0)`} />
+        </g>
+      )}
       {/* torso */}
       <g transform={`translate(0 ${by}) rotate(${p.lean} 0 0)`}>
         <path d={`M-42 -138 Q0 -150 46 -138 C ${50 + belly * 34} -90, ${48 + belly * 40} -30, 40 8 Q0 18 -40 8 C -44 -40, -46 -100, -42 -138 Z`} fill={L.shirt} stroke={ink} strokeWidth={6} strokeLinejoin="round" />
@@ -265,7 +367,7 @@ export const Puppet: React.FC<{L: Look; p: Pose; propF?: React.ReactNode; propAn
         <Head h={p.head} L={L} frame={p.frame} />
       </g>
       <Seg p={[shF, [aF.ex, aF.ey], [aF.hx, aF.hy]]} w={24} c={L.shirt} ink={ink} />
-      <Hand x={aF.hx} y={aF.hy} ang={angF} skin={L.skin} ink={ink} grip={gripF} propAng={propAngF}>{propF}</Hand>
+      <Hand x={aF.hx} y={aF.hy} ang={angF} skin={L.skin} ink={ink} grip={gripF} propAng={propAngF} pose={poseF}>{propF}</Hand>
     </g>
   );
 };
@@ -301,3 +403,169 @@ export const BARBER: Look = {
 export const restHead = (o: Partial<HeadPose> = {}): HeadPose => ({
   tilt: 0, turn: 0.6, lookX: 0, lookY: 0, eyes: 'dot', blink: 0, browInner: 0, browHeight: 0, mouth: 'line', open: 0, ...o,
 });
+
+// ---------- v3: more cast ----------
+export const AGNES: Look = {
+  skin: '#F2E6D2', shade: '#E0CDB0', outline: '#2B1D14', shirt: '#7A3B32', shirtShade: '#5C2A23', breeches: '#3A2C24', stocking: '#B9AE98', shoe: '#1E1510',
+  apron: '#EDE6D6', apronLine: '#BFB49C', hair: 'none', hairColor: '#7A5236', cap: 'coif', capColor: '#F4EFE4',
+  skirt: '#5B4A3A', skirtShade: '#3C3025', belly: 0.5, blush: '#E39A85', wrinkles: true,
+};
+export const HOLLIS: Look = {
+  skin: '#EFDCC2', shade: '#DCC3A2', outline: '#2B1D14', shirt: '#E8E0CF', shirtShade: '#C6BBA5', breeches: '#4A3A2C', stocking: '#CFC4AE', shoe: '#1E1510',
+  apron: '#F1ECE2', apronLine: '#C9C0AE', hair: 'none', hairColor: '#3A2A20', cap: 'baker', beard: '#4A3426', belly: 1, blush: '#E2957C',
+};
+export const WATCHMAN: Look = {
+  skin: '#EBD9BF', shade: '#D6BF9E', outline: '#2B1D14', shirt: '#5A4B3E', shirtShade: '#40352B', vest: '#2E2722', breeches: '#2E2722', stocking: '#8A7E6A', shoe: '#1A120C',
+  hair: 'none', hairColor: '#2A1E16', cap: 'felt', capColor: '#2E2620', moustache: '#3A2A20', belly: 0.3,
+};
+export const PHYSICIAN: Look = {
+  skin: '#F0E4D2', shade: '#DCCAB0', outline: '#2B1D14', shirt: '#1F1A18', shirtShade: '#151110', breeches: '#1F1A18', stocking: '#2A2420', shoe: '#120C08',
+  hair: 'ring', hairColor: '#8C8478', cap: 'tall', gown: '#1B1716', beard: '#9A9286', belly: 0.4,
+};
+export const SEARCHER: Look = {
+  skin: '#EADBC6', shade: '#D4C0A4', outline: '#2B1D14', shirt: '#4E4A44', shirtShade: '#3A3732', breeches: '#3A2C24', stocking: '#8A7E6A', shoe: '#1A120C',
+  hair: 'none', hairColor: '#9A9286', cap: 'coif', capColor: '#D9D2C2', skirt: '#3D3934', wrinkles: true, belly: 0.2,
+};
+export const BOY: Look = {
+  skin: '#F3EAD8', shade: '#E4D4B8', outline: '#2B1D14', shirt: '#EDE3CC', shirtShade: '#CDBF9F', vest: '#2D3B52',
+  breeches: '#2D3B52', stocking: '#D6CAB2', shoe: '#231811', hair: 'tuft', hairColor: '#C99A5A', blush: '#E39A85',
+};
+// crowd extras: randomised looks from a seed (backlog: crowd extras)
+const PAL = ['#6B4A3A', '#4E5A44', '#3E4A5A', '#7A6248', '#5A3E44', '#8A7A5E', '#44403A'];
+export const extraLook = (seed: number): Look => {
+  const r = (k: number) => { const x = Math.sin(seed * 91.7 + k * 13.3) * 43758.5; return x - Math.floor(x); };
+  const woman = r(1) > 0.55;
+  const c1 = PAL[Math.floor(r(2) * PAL.length)], c2 = PAL[Math.floor(r(3) * PAL.length)];
+  const hairs = ['#3A2A20', '#6B4528', '#9A9286', '#C99A5A', '#2A1E16'];
+  return {
+    skin: ['#F3EAD8', '#EFDCC2', '#E8D2B4', '#D9B994'][Math.floor(r(4) * 4)], shade: '#D6BF9E', outline: '#2B1D14',
+    shirt: woman ? c1 : '#E6DCC6', shirtShade: '#BFB29A', vest: woman ? undefined : c1, breeches: c2, stocking: '#B9AE98', shoe: '#1E1510',
+    hair: woman ? 'none' : (r(5) > 0.5 ? 'tuft' : 'ring'), hairColor: hairs[Math.floor(r(6) * hairs.length)],
+    cap: woman ? 'coif' : (r(7) > 0.6 ? 'felt' : undefined), capColor: woman ? '#EEE8DA' : '#3E3328',
+    skirt: woman ? c2 : undefined, moustache: !woman && r(8) > 0.6 ? hairs[Math.floor(r(9) * 5)] : undefined,
+    belly: r(10) * 0.8, blush: r(11) > 0.5 ? '#E39A85' : undefined,
+  };
+};
+
+// ---------- v3: viseme lip sync ----------
+// vis track from make_episode_voice.py: per frame [viseme, open]; X closed, M pressed, A open, E wide, O round, S teeth
+export const visMouth = (v: [string, number] | undefined): {mouth: Mouth; open: number} => {
+  if (!v) return {mouth: 'line', open: 0};
+  const [k, o] = v;
+  if (k === 'X') return {mouth: 'line', open: 0};
+  if (k === 'M') return {mouth: 'M', open: 0};
+  if (k === 'O') return {mouth: 'O', open: Math.min(1, o * 1.1)};
+  if (k === 'E') return {mouth: 'E', open: Math.min(1, o)};
+  if (k === 'S') return {mouth: 'S', open: o};
+  return {mouth: 'talk', open: Math.min(1, o * 1.05)};
+};
+
+// ---------- v3: props ----------
+const INK = '#2B1D14';
+export const Forceps: React.FC<{glint?: number}> = ({glint = 0}) => <Pliers glint={glint} />;
+export const Pelican: React.FC = () => (
+  <g stroke={INK} strokeLinejoin="round">
+    <rect x={-50} y={-9} width={90} height={18} rx={8} fill="#6B4A2F" strokeWidth={4} />
+    <path d="M40 -4 L110 -4 Q132 -4 134 -26 Q120 -18 112 -14 L40 4 Z" fill="#8A8D92" strokeWidth={4} />
+    <path d="M40 6 L104 10 L108 22 L40 12 Z" fill="#6E7176" strokeWidth={4} />
+  </g>
+);
+export const Cup: React.FC<{tilt?: number; fill?: number}> = ({fill = 1}) => (
+  <g stroke={INK} strokeWidth={4} strokeLinejoin="round">
+    <path d="M-4 -26 L40 -26 L34 22 L2 22 Z" fill="#8C6B4A" />
+    {fill > 0 && <ellipse cx={18} cy={-24} rx={20} ry={5} fill="#5A2E1E" strokeWidth={2} />}
+    <path d="M38 -16 q18 2 14 18 q-4 10 -16 8" fill="none" strokeWidth={5} />
+  </g>
+);
+export const Bottle: React.FC<{label?: string}> = () => (
+  <g stroke={INK} strokeWidth={4} strokeLinejoin="round">
+    <path d="M-14 -50 h28 v14 q22 10 22 36 v40 q0 10 -10 10 h-52 q-10 0 -10 -10 v-40 q0 -26 22 -36 Z" fill="#7A5A2E" opacity={0.95} />
+    <rect x={-10} y={-64} width={20} height={16} rx={3} fill="#C9A35A" />
+    <rect x={-22} y={4} width={44} height={26} fill="#EFE3C6" strokeWidth={3} />
+    <path d="M-16 -30 q-6 20 -4 50" stroke="#fff" strokeWidth={4} opacity={0.35} fill="none" />
+  </g>
+);
+export const Root: React.FC = () => (
+  <g stroke={INK} strokeWidth={4} strokeLinejoin="round" strokeLinecap="round">
+    <path d="M-6 -4 C20 -10 46 -2 62 6 C70 10 66 16 58 14 C40 8 22 8 -4 8 Z" fill="#B88A5A" />
+    <path d="M58 12 l14 10 M44 10 l6 14 M24 8 l2 12" fill="none" strokeWidth={3} />
+  </g>
+);
+export const Bread: React.FC<{bite?: boolean}> = ({bite}) => (
+  <g stroke={INK} strokeWidth={4.5} strokeLinejoin="round">
+    <path d={bite ? 'M-10 -20 Q30 -40 70 -20 Q82 -2 70 14 Q66 4 58 10 Q52 0 44 8 Q30 22 -10 16 Q-26 -2 -10 -20 Z' : 'M-10 -20 Q30 -40 70 -20 Q86 -2 70 16 Q30 26 -10 16 Q-26 -2 -10 -20 Z'} fill="#C98A45" />
+    <path d="M6 -18 q8 10 4 22 M28 -24 q8 12 4 26 M50 -22 q6 10 2 22" stroke="#8E5A26" strokeWidth={3} fill="none" />
+  </g>
+);
+export const Funnel: React.FC = () => (
+  <g stroke={INK} strokeWidth={4} strokeLinejoin="round">
+    <path d="M0 -40 L70 -10 L70 10 L0 40 Z" fill="#8A8D92" />
+    <rect x={68} y={-6} width={46} height={12} fill="#7C7F84" />
+  </g>
+);
+export const Halberd: React.FC = () => (
+  <g stroke={INK} strokeWidth={4} strokeLinejoin="round">
+    <rect x={-4} y={-260} width={10} height={340} fill="#6B4A2F" />
+    <path d="M1 -260 L-6 -300 L8 -300 Z M6 -250 Q46 -240 50 -210 Q30 -220 6 -214 Z M-4 -244 L-26 -232 L-4 -226 Z" fill="#9A9DA2" />
+  </g>
+);
+export const Lantern: React.FC<{lit?: number}> = ({lit = 1}) => (
+  <g stroke={INK} strokeWidth={4} strokeLinejoin="round">
+    <path d="M0 -56 v14" />
+    <path d="M-20 -42 h40 l-6 12 h-28 Z" fill="#3A2C24" />
+    <rect x={-16} y={-30} width={32} height={40} fill="#FFD27A" opacity={0.4 + 0.6 * lit} />
+    <path d="M-16 -30 v40 M16 -30 v40 M0 -30 v40" />
+    <path d="M-20 10 h40 l-4 8 h-32 Z" fill="#3A2C24" />
+  </g>
+);
+export const Candle: React.FC<{flick?: number}> = ({flick = 0}) => (
+  <g>
+    <rect x={-9} y={-50} width={18} height={50} fill="#EDE3CC" stroke={INK} strokeWidth={4} />
+    <ellipse cx={0} cy={2} rx={22} ry={6} fill="#8C6B3A" stroke={INK} strokeWidth={4} />
+    <g transform={`translate(0 -54) scale(${1 + flick * 0.08} ${1 + flick * 0.15})`}>
+      <path d="M0 -26 Q10 -9 5 0 Q0 4 -5 0 Q-10 -9 0 -26 Z" fill="#FFD27A" />
+      <path d="M0 -16 Q4 -6 2 -1 Q0 1 -2 -1 Q-4 -6 0 -16 Z" fill="#FFF5D6" />
+    </g>
+  </g>
+);
+export const Peel: React.FC<{loaf?: boolean}> = ({loaf}) => (
+  <g stroke={INK} strokeWidth={4} strokeLinejoin="round">
+    <rect x={-60} y={-5} width={190} height={10} rx={5} fill="#8C6B4A" />
+    <path d="M128 -26 h70 q10 0 10 10 v32 q0 10 -10 10 h-70 Z" fill="#A8845E" />
+    {loaf && <g transform="translate(150 -30) scale(0.7)"><Bread /></g>}
+  </g>
+);
+export const Sponge: React.FC = () => (
+  <g stroke={INK} strokeWidth={3.5}>
+    <ellipse cx={10} cy={0} rx={18} ry={14} fill="#D8C27A" />
+    {[[4, -4], [14, 4], [16, -6], [6, 6]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r={2.5} fill="#A88E48" strokeWidth={0} />)}
+  </g>
+);
+export const Pipe: React.FC<{smoke?: number}> = () => (
+  <g stroke={INK} strokeWidth={3.5} strokeLinejoin="round">
+    <path d="M0 -3 L50 -6 L50 0 L0 3 Z" fill="#EDE6D6" />
+    <path d="M48 -6 h14 v-14 h-14 Z" fill="#EDE6D6" />
+  </g>
+);
+export const Birch: React.FC = () => (
+  <g stroke="#4A3A28" strokeWidth={3} strokeLinecap="round" fill="none">
+    <path d="M0 0 L90 -10" strokeWidth={7} stroke="#6B4A2F" />
+    {[0, 1, 2, 3, 4].map((i) => <path key={i} d={`M70 -8 L${130 + i * 6} ${-40 + i * 16}`} />)}
+  </g>
+);
+export const ToothProp: React.FC<{s?: number}> = ({s = 1}) => (
+  <path transform={`scale(${s})`} d="M-14 -16 Q0 -24 14 -16 Q18 4 10 8 L6 28 L0 12 L-6 28 L-10 8 Q-18 4 -14 -16 Z" fill="#F4EEDD" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
+);
+export const Dentures: React.FC<{open?: number}> = ({open = 0}) => (
+  <g stroke={INK} strokeWidth={4} strokeLinejoin="round">
+    <g transform={`translate(0 ${-open * 14})`}>
+      <path d="M-60 0 Q0 -40 60 0 Z" fill="#D98A8A" />
+      <path d="M-50 -2 Q0 -24 50 -2 L50 6 L-50 6 Z" fill="#F2E9D0" />
+      {[-36, -18, 0, 18, 36].map((x) => <path key={x} d={`M${x} -12 v18`} stroke="#B9AE98" strokeWidth={2} />)}
+    </g>
+    <g transform={`translate(0 ${open * 14})`}>
+      <path d="M-60 10 Q0 50 60 10 Z" fill="#D98A8A" />
+      <path d="M-50 10 L50 10 L50 16 Q0 32 -50 16 Z" fill="#F2E9D0" />
+    </g>
+  </g>
+);
