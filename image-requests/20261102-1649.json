@@ -1,0 +1,23 @@
+{
+ "id": "20261102-1649",
+ "items": [
+  {
+   "key": "receipt",
+   "query": "grocery store receipt in hand",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "cart",
+   "query": "shopping cart in supermarket aisle",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "phone",
+   "query": "hand holding smartphone shopping groceries",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
