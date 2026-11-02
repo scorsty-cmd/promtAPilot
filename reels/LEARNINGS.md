@@ -131,3 +131,12 @@
 - Photos: workflow run 20261101-1649 delivered nothing within ~10 min -> built without photos. NOTE: `pkill -f photos.py` kills the calling shell if the command line contains 'photos.py'.
 - YouTube Short OK: https://youtu.be/LV-ONc8bXYA (tag hiddenlayer-reel-2026-11-01-california-browser-opt-out, 20:00 slot).
 - vidIQ balance 2 (<40): no paid tools.
+
+### 2026-11-02 16:49 - FILE 018 - MONEY ANGLE #1: same cart, prices up to 23% apart (Instacart test + FTC proposal; plum/rose/gold dark DNA, 24.4 s) - https://www.instagram.com/reel/DfPk3FeCXAU/
+- File: HL_Reel_20261102_1649_same-cart-different-price.mp4 - Renderer reels/renderer/reel2_v14.py (+ reel_audio_v7.py), scenes_FILE018.py, caption_FILE018.txt.
+- New vs FILE 017: money direction; numeric hook ("23% apart"); new `cart` beat (two identical example carts, right-hand prices appear higher row by row, +23% chip, totals count up, EXAMPLE label); FTC doc receipt with PROPOSED stamp; payoff tip beat; kit's setup.sh pip install is slow (~4 min) - start it first.
+- Sources: Engadget 9 Dec 2025 (Consumer Reports/Groundwork: 437 shoppers, ~75% of items multiple prices, avg 13%, max 23% gap; Instacart: limited, randomized), Hunton (FTC proposal 19 Aug 2026, not final; Ferguson quote). Read 2 Nov 2026.
+- Previous (FILE 017, 1 Nov): 111 plays, 18.7% watched, 64.6% skip, 0 saves/shares. FILE 015 still best (125 plays, 32.8%, 53.1% skip).
+- Photos: workflow run 20261102-1649 delivered nothing within ~8 min -> built without photos.
+- YouTube Short OK: https://youtu.be/Nwn38iaIPl0 (tag hiddenlayer-reel-2026-11-02-same-cart-different-price, 20:00 slot).
+- vidIQ balance 2: no paid tools. Not Sunday: no competitor analysis.
