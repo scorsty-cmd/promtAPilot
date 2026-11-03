@@ -140,3 +140,12 @@
 - Photos: workflow run 20261102-1649 delivered nothing within ~8 min -> built without photos.
 - YouTube Short OK: https://youtu.be/Nwn38iaIPl0 (tag hiddenlayer-reel-2026-11-02-same-cart-different-price, 20:00 slot).
 - vidIQ balance 2: no paid tools. Not Sunday: no competitor analysis.
+
+### 2026-11-03 16:49 - FILE 019 - MONEY ANGLE #2: NYC click-to-cancel, fine ladder $525/$1,050/$3,500 (navy/cyan/amber dark DNA, 26.2 s) - https://www.instagram.com/reel/DfSDSMtEeDR/
+- File: HL_Reel_20261103_1649_nyc-click-to-cancel.mp4 - Renderer reels/renderer/reel2_v15.py (+ reel_audio_v7.py), scenes_FILE019.py, caption_FILE019.txt.
+- New vs FILE 018: stat beat `tiers=[(tag, value),...]` chips that stamp in under the count-up (fine ladder); question+consequence hook naming the fine; doc receipt = Commissioner quote with IN EFFECT stamp; practical "keep proof" beat; new palette. Keep source_y ~1255 so the caption pill doesn't cover it.
+- Sources: nyc.gov Mayor's Office release 1 Oct 2026 (in effect, fines from $525, Levine quote), Inside Privacy (schedule 525/1,050/3,500 under 20-703, restitution after first cancel attempt). Read 3 Nov 2026. NYC only.
+- Previous (FILE 018, 2 Nov): 45 plays, 19.1% watched, 77.3% skip, 0 saves/shares. FILE 017: 111 plays, 18.7%, 64.6%. FILE 015 still best (125 plays, 32.8%, 53.1%).
+- Photos: workflow delivered in ~5 min but only a card terminal with brand logo/face and a bike-share kiosk with logos -> rejected, built without photos. "receipt" query found 0.
+- YouTube Short OK: https://youtu.be/5nN2H0W2MVI (tag hiddenlayer-reel-2026-11-03-nyc-click-to-cancel, 20:00 slot).
+- vidIQ balance 2: no paid tools. Not Sunday: no competitor analysis.
