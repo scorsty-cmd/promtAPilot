@@ -1,0 +1,42 @@
+{
+ "id": "20261103-1649",
+ "images": [
+  {
+   "file": "card_0.jpg",
+   "key": "card",
+   "query": "credit card payment terminal",
+   "width": 1280,
+   "height": 1707,
+   "title": "File:Adyen card payment terminal (9607998259).jpg",
+   "creator": "Alper \u00c7u\u011fun from Berlin, Germany",
+   "license": "by",
+   "license_version": "cc by 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Adyen_card_payment_terminal_(9607998259).jpg",
+   "attribution_required": true,
+   "attribution": "File:Adyen card payment terminal (9607998259).jpg by Alper \u00c7u\u011fun from Berlin, Germany (cc by 2.0), via Wikimedia Commons"
+  },
+  {
+   "file": "card_1.jpg",
+   "key": "card",
+   "query": "credit card payment terminal",
+   "width": 1280,
+   "height": 1707,
+   "title": "File:LACMTA Bike Share payment station at Bagley and Venice.jpg",
+   "creator": "Facewizard",
+   "license": "by",
+   "license_version": "cc by 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:LACMTA_Bike_Share_payment_station_at_Bagley_and_Venice.jpg",
+   "attribution_required": true,
+   "attribution": "File:LACMTA Bike Share payment station at Bagley and Venice.jpg by Facewizard (cc by 4.0), via Wikimedia Commons"
+  }
+ ],
+ "missing": [
+  {
+   "key": "receipt",
+   "query": "paper receipt on store counter",
+   "found": 0
+  }
+ ]
+}
