@@ -1,0 +1,17 @@
+{
+ "id": "20261103-1649",
+ "items": [
+  {
+   "key": "receipt",
+   "query": "paper receipt on store counter",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "card",
+   "query": "credit card payment terminal",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
