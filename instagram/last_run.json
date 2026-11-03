@@ -1,11 +1,17 @@
 {
- "at": "2026-11-03T02:13:18.631879+03:00",
+ "at": "2026-11-03T23:03:45.126444+03:00",
  "ok": true,
  "dry_run": false,
  "error": "",
  "log": [
   "Bağlı Instagram hesabı: @hayvanlaralemleri (MEDIA_CREATOR)",
   "IG_MEDIA_PAT: fine-grained, 93 karakter; scorsty-cmd/uoa-media erişimi HTTP 200, yazma=True",
-  "✅ animals-2026-11-02-pazartesi-4-kedi-hali#3 reel paylaşıldı: https://www.instagram.com/reel/DfQdZ2ojwm-/"
+  "animals-2026-11-03-sali-sabahi-yogurma#0 hikâye 7 saat gecikmiş, atlandı.",
+  "✅ animals-2026-11-03-sali-sabahi-yogurma#2 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4022472018390634551",
+  "   not: Instagram soru/anket çıkartması eklenebilir: Sabah seni kim uyandırıyor? Kedi / Alarm / Kendim",
+  "✅ animals-2026-11-03-sali-sabahi-yogurma#4 story paylaşıldı: https://www.instagram.com/stories/hayvanlaralemleri/4022472207327266579",
+  "   not: promo — Kedi Davranışları Bilimi, link profilde",
+  "✅ animals-2026-11-03-sali-sabahi-yogurma#3 reel paylaşıldı: https://www.instagram.com/reel/DfSsZFjDWt8/",
+  "✅ animals-2026-11-03-sali-sabahi-yogurma#1 post paylaşıldı: https://www.instagram.com/p/DfSshvtH4_P/"
  ]
 }
