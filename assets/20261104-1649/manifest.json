@@ -1,0 +1,42 @@
+{
+ "id": "20261104-1649",
+ "images": [
+  {
+   "file": "calendar_0.jpg",
+   "key": "calendar",
+   "query": "paper wall calendar with pen",
+   "width": 1280,
+   "height": 881,
+   "title": "File:Ruins of castle wall and tower by Jazep Drazdovic (1928).jpg",
+   "creator": "Jazep Drazdovi\u010d",
+   "license": "pdm",
+   "license_version": "public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Ruins_of_castle_wall_and_tower_by_Jazep_Drazdovic_(1928).jpg",
+   "attribution_required": false,
+   "attribution": null
+  },
+  {
+   "file": "calendar_1.jpg",
+   "key": "calendar",
+   "query": "paper wall calendar with pen",
+   "width": 1280,
+   "height": 926,
+   "title": "File:AMH-8570-NA Map of part of Brazil.jpg",
+   "creator": "Georg Marcgrave / Cornelis Golijath",
+   "license": "pdm",
+   "license_version": "public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:AMH-8570-NA_Map_of_part_of_Brazil.jpg",
+   "attribution_required": false,
+   "attribution": null
+  }
+ ],
+ "missing": [
+  {
+   "key": "card",
+   "query": "hand holding credit card at checkout counter",
+   "found": 0
+  }
+ ]
+}
