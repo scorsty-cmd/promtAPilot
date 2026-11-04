@@ -149,3 +149,11 @@
 - Photos: workflow delivered in ~5 min but only a card terminal with brand logo/face and a bike-share kiosk with logos -> rejected, built without photos. "receipt" query found 0.
 - YouTube Short OK: https://youtu.be/5nN2H0W2MVI (tag hiddenlayer-reel-2026-11-03-nyc-click-to-cancel, 20:00 slot).
 - vidIQ balance 2: no paid tools. Not Sunday: no competitor analysis.
+
+### 2026-11-04 16:49 - FILE 020 - MONEY ANGLE #3: Pay-in-4 (BNPL) loan stacking, CFPB 63% overlapping loans + 10.5% late fee (coral/lime dark DNA, 26.1 s) - https://www.instagram.com/reel/DfUnWsAoLHC/
+- File: HL_Reel_20261104_1649_bnpl-stacking.mp4 - Renderer reels/renderer/reel2_v16.py (+ reel_audio_v7.py), scenes_FILE020.py, caption_FILE020.txt.
+- New vs FILE 019: new `stack` beat (3 example pay-in-4 loans fill a 3x4 installment grid row by row, column totals count up to $75 per date, "Looks small. Adds up." footer, EXAMPLE label); first decimal stat (10.5%); varied narration pauses (0.1-0.3 s, longest before the CFPB receipt); numeric+consequence hook.
+- Sources: CFPB press release 13 Jan 2025 ("Approximately 63 percent of borrowers originated multiple simultaneous loans at some point during the year", 2022 data, 6 lenders); CFPB report 15 Sep 2022 (10.5% of unique users charged >=1 late fee in 2021, 5 lenders). Read 4 Nov 2026. Data is old (2021/2022) - labelled with years on screen.
+- Previous (FILE 019, 3 Nov): 90 plays, 20.1% watched, 60.7% skip, 0 saves/shares. FILE 018: 45 plays, 19.1%, 77.3%. Money Reels so far ~ older Reels (FILE 015 still best 32.8% / 53.1%).
+- Photos: workflow returned an ink drawing and an old map (calendar) and 0 for card -> rejected, built without photos. vidIQ balance 2: no paid tools. Not Sunday.
+- YouTube Short OK: https://youtu.be/UIYk2k6duTY (tag hiddenlayer-reel-2026-11-04-bnpl-stacking, 20:00 slot).
