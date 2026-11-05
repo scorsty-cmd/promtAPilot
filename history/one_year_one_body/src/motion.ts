@@ -75,3 +75,27 @@ export const knead = (f: number, speed = 0.22): {hF: [number, number]; hB: [numb
   const a = f * speed;
   return {hF: [92 + Math.sin(a) * 18, -40 + Math.max(0, Math.cos(a)) * 22], hB: [82 + Math.sin(a + 0.6) * 18, -36 + Math.max(0, Math.cos(a + 0.6)) * 22], bob: Math.max(0, Math.cos(a)) * 3, lean: 10 + Math.sin(a) * 4};
 };
+
+// ---------- kit v4 ----------
+// eye darts / saccades: piecewise-constant gaze jumps every 0.6–1.6 s with a 2-frame snap (never a smooth drift)
+const h1 = (k: number) => { const x = Math.sin(k * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+export const saccade = (f: number, seed = 0, amt = 1): [number, number] => {
+  let t = 0, k = 0;
+  while (true) { const d = 18 + h1(seed * 31 + k) * 30; if (t + d > f) break; t += d; k++; if (k > 4000) break; }
+  const tgt = (j: number): [number, number] => [(h1(seed * 7 + j * 3.1) - 0.5) * 0.9 * amt, (h1(seed * 5 + j * 2.3) - 0.5) * 0.5 * amt];
+  const a = tgt(k - 1), b = tgt(k);
+  const s = clamp01((f - t) / 2);
+  return [lerp(a[0], b[0], s), lerp(a[1], b[1], s)];
+};
+// prop physics: fall from y0 to the floor y1 with gravity, bounce (restitution e), then settle; t = frames since release
+export const drop = (t: number, y0: number, y1: number, g = 2.2, e = 0.42, spin = 0) => {
+  if (t <= 0) return {y: y0, rot: 0, landed: false, impact: -1};
+  let y = y0, v = 0, rot = 0, landed = false, impact = -1, bounces = 0;
+  for (let i = 0; i < t; i++) {
+    v += g; y += v; rot += spin * (landed ? 0.2 : 1);
+    if (y >= y1) { y = y1; v = -v * e; bounces++; if (impact < 0) impact = i; landed = true; if (Math.abs(v) < 2.5) { v = 0; } }
+  }
+  return {y, rot, landed, impact, bounces};
+};
+// ship roll / pitch for set rotation (degrees) and heave (px)
+export const roll = (f: number, amt = 1, seed = 0) => ({rot: (Math.sin(f * 0.035 + seed) * 2.2 + Math.sin(f * 0.083 + seed * 2) * 0.8) * amt, heave: (Math.sin(f * 0.05 + seed) * 10 + Math.sin(f * 0.11) * 4) * amt});

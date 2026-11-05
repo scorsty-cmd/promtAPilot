@@ -3,8 +3,8 @@ import {bundle} from '@remotion/bundler';
 import {renderStill, selectComposition, openBrowser} from '@remotion/renderer';
 import path from 'path';
 const [comp, outDir, ...frames] = process.argv.slice(2);
-const serveUrl = await bundle({entryPoint: path.resolve('src/index.tsx')});
-const browser = await openBrowser('chrome', {browserExecutable: '/usr/bin/google-chrome'});
+const serveUrl = process.env.BUNDLE || await bundle({entryPoint: path.resolve('src/index.tsx')});
+const browser = await openBrowser('chrome', {browserExecutable: process.env.CHROME || '/usr/bin/google-chrome', chromiumOptions: {gl: process.env.GL || null}});
 const composition = await selectComposition({serveUrl, id: comp, puppeteerInstance: browser});
 for (const f of frames) {
   const t = Date.now();

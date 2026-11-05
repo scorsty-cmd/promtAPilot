@@ -6,7 +6,11 @@ KEY, OUT = sys.argv[1], sys.argv[2]
 T = json.load(open(f"src/{KEY}/timeline.json"))
 NUMS = {"sixteen sixty-five": "1665", "sixteen sixty-six": "1666", "sixty-eight thousand, five hundred and ninety-six": "68,596",
         "two thousand, six hundred and fourteen": "2,614", "one hundred thousand": "100,000", "forty days": "40 days",
-        "fifteen years old": "15 years old", "seven-year": "seven-year"}
+        "fifteen years old": "15 years old", "seven-year": "seven-year",
+        "eighteen seventy-two": "1872", "one thousand, seven hundred and one": "1,701", "one thousand seven hundred pounds": "£1,700",
+        "three and a half feet": "3½ feet", "twenty twenty-six": "2026", "eighteen eighty-five": "1885", "two thousand and one": "2001",
+        "eighteen nineties": "1890s", "twenty-fifth of November": "25th of November", "thirteenth of December": "13th of December",
+        "seventh of November": "7th of November", "December the fourth": "4 December"}
 def display(s):
     for k in sorted(NUMS, key=len, reverse=True): s = re.sub(re.escape(k), NUMS[k], s, flags=re.I)
     return s
@@ -46,7 +50,7 @@ def ts(x):
 cues = []
 for sh in T["shots"]:
     for l in sh["lines"]:
-        a, b, txt = l["t0"], l["t1"], l["text"]
+        a, b, txt = l["t0"], l["t1"], display(l["text"])
         sents = [p.strip() for p in re.split(r"(?<=[.!?])\s+", txt) if p.strip()]
         pieces = []
         for c in [c for s_ in sents for c in chunks(s_)]:

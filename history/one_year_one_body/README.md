@@ -20,6 +20,15 @@ Owner's standing order (31 Oct 2026): **the animation must get clearly better wi
   - `src/ep01/kit.tsx` (Cam with cuts/push-ins/dutch/shake, `Actor`, `mkPose` with auto blink+breathing, `speech()` lip sync, Caption, FreezeLabel, Tag, BigWord, Stamp, CureCard, Throb, Post), `sets.tsx` (Attic, Bakery, Street day/dawn/night + lamps, Shopfront, MapLondon, Parchment, DarkTable, Hall, Fair, ToothCut, Worm), `shots1-3.tsx` (one function per shot), `Episode.tsx`, `Thumb.tsx` (3 thumbnail variants).
   - `make_audio_ep01.py` (ambience beds per set + ~150 synced SFX cues + procedural score per chapter mood + ducking), `make_subs.py`, `stills.mjs` + `shotframes.py` + `sheet.py` (contact sheets), `render_chunks.sh` (resumable 600-frame chunks).
 
+- **Kit v4 (You Were There Ep 1, 5 Nov 2026)** — Mary Celeste episode:
+  - `make_episode_voice.py` now builds **true phoneme visemes**: the script text is phonemized (espeak via kokoro_onnx `Tokenizer.phonemize`), split into phrases at punctuation, aligned to the voiced runs of each line, and mapped to `M` (p/b/m), `F` (f/v lip-bite, new mouth in rig), `O`, `E`, `S`, `C` (small consonant), `A`; the audio envelope still drives openness.
+  - `src/motion.ts`: `saccade()` eye darts (piecewise gaze jumps with 2-frame snaps, on by default in `ep02/kit` `mkPose`, `dart` amount per actor), `drop()` prop physics (gravity, bounce, settle, impact frame for SFX), `roll()` ship roll/heave.
+  - `src/ep02/kit.tsx`: `Focus` + `rack()` rack focus between layers, `Whip` whip-pan transitions (motion-blur streak; `WHIP_IN` set in `ep02/Episode.tsx`), low-angle shots (camera `rot` + figure against the sky), `Rain` (2 parallax sheets), `lightning()`, `Spray`, letterbox `Bars`, pinned `Card`; per-chapter colour grade in Episode.
+  - `src/ep02/sets.tsx`: parallax `Sea` (4 depth bands that shift with camX), `Sky` modes (day/storm/night/dusk/sepia/tropic), brigantine `Ship` sprite (torn/dark/lights), `Yawl`, `Deck` (rolling horizon, Mary Celeste variant with open hatches, empty boat chocks, ropes over the side), `Cabin` (skylight light shaft + dust, swinging lamp, water on the floor), `Hold` (barrels, vapour, blue flash), `Galley`, New York `Pier`, Gibraltar `Rock` + `Court`, Doyle's `Study`, `MapAtlantic`, Haiti `Reef`, cork `Board`.
+  - rig v4: caps `souwester | peaked | knit`, `sideburns`, `monocle`, `collar`, `buttons`, `noStrap`; cast `DEVEAU, WRIGHT, MOREHOUSE, FLOOD, BRIGGS, SARAH, SOPHIA, DOYLE`.
+  - **Render speed (important):** the default Chrome GL backend (`swangle`) was the bottleneck (GPU process at 100 %). Use `--gl=swiftshader` and a Chrome wrapper with `--disable-gpu --disable-gpu-compositing` (`chrome-nogpu.sh`; run `./render_worker2.sh 0 & ./render_worker2.sh 1` — one browser each, concurrency 1): 5–7× faster on simple shots, ~1.5× on busy deck shots.
+  - `make_audio_ep02.py` (sea/cabin/court/storm beds, ~180 cues, A-aeolian score), `make_subs.py` NUMS applied before cue splitting (numbers never split across cues), `shotframes2.py`, `stills.mjs` (`BUNDLE`, `CHROME`, `GL` env vars).
+
 ## Render
 ```
 npm i
@@ -57,18 +66,20 @@ Score 1–5 honestly from rendered frames (not from intentions). Each new video 
 | v1 test 2026-10-31 (street) | 3 | 1 | 3 | 2 | 2 | 3 | 1 | 2 | – | 3 | 20 |
 | v2 test 2026-10-31 (barber) | 4 | 3 | 3 | 4 | 4 | 4 | 4 | 4 | – | 3 | 33 |
 | Ep 1 2026-11-02 Toothache 1665 (8:26) | 4 | 4 | 4 | 4 | 5 | 4 | 4 | 4 | 3 | 4 | 40 |
+| You Were There 1 2026-11-05 Mary Celeste 1872 (8:30) | 4 | 4 | 4 | 5 | 5 | 5 | 4 | 4 | 4 | 4 | 43 |
 
 ## Improvement backlog (take at least one per video; move done items to the log)
 - Head turn to full profile and back, with hair/ear swap; back view for walking away
-- True phoneme visemes (forced alignment of the script text) instead of audio-feature visemes; F/V lip-bite shape
-- Speed: pre-render static set plates (PNG at 2x) and draw only live layers (~2 fps now on 2 CPUs)
-- Rack focus (animated blur between foreground and background layers) and low-angle shots
-- Rain on windows; parallax depth layers in the street set; whip-pan transitions between shots
-- Prop physics helper (fall + bounce + settle) and eye darts/saccades during dialogue
+- Speed: pre-render static set plates (PNG at 2x) and draw only live layers (busy deck shots still ~1 fps on 2 CPUs even with swiftshader)
+- Rain streaks running down windows/skylights (interior weather)
 - Crowd idle loops with small interactions (nudges, pointing, talking pairs)
 - Thumbnail A/B tracker: record which variant YouTube Test & Compare picked
+- Sou'wester reads a bit like a helmet at close range: softer brim droop + oilskin creases
+- Characters sitting inside boats/behind desks: add a `behind` mask layer helper so props overlap bodies correctly
+- Real seated pose + chair helper (Doyle at the desk floats in front of it)
 
 ## Improvement log
+- 2026-11-05 You Were There Ep 1 (You Board the Mary Celeste, 8:30, 54 shots, ~95 camera set-ups): DONE backlog — true phoneme visemes from the script text + F/V lip-bite; eye darts/saccades on every actor; prop physics `drop()` (sounding rod clatter, Solly-Flood's monocle); rack focus (`Focus`/`rack`) in 3 shots + low-angle climb/shroud shots + telescope POV + letterbox; whip-pan transitions (10 cuts); parallax 4-band sea; rain + lightning storm; per-chapter colour grade; render speed fix (`--gl=swiftshader`, no-GPU Chrome wrapper, two single-browser workers: 15,290 frames in ~2 h 40 min instead of an estimated 6 h+). New cast Deveau (yellow sou'wester), Wright, Morehouse, Solly-Flood (monocle), Briggs family, Doyle; 13 new sets. Scorecard 40 → 43 (shot variety 4→5, light/atmos 4→5, thumbnail 3→4; nothing lower). Weak spots seen: the deck set carries too many shots; Doyle floats in front of his desk; Briggs on the New York ship stands in front of the sails; rowers/boat sitters need a proper seated-in-boat mask; lab test shots hold ~8 s on one composition.
 - 2026-10-31 v1: walk cycle, twinge, hand-to-cheek IK, pain face, throb rings, title card.
 - 2026-11-02 Ep 1 (You Have a Toothache in 1665 London, 8:26, 50 shots): DONE backlog — audio-driven viseme mouths (lip sync 3→4); motion library walk/tiptoe/run/stagger/flinch/shiver/collapse/knead (body 3→4); hand poses point/open/fist + back-hand props; crowd extras `extraLook(seed)`; camera OTS (blurred barber shoulder), dutch angle, crash zoom, push-ins in every cut; time/weather: moonlit attic, dawn and lantern-lit night street, snow in the window; painted London map with Tom's silhouette walking the route; thumbnail system (3 variants, 160-px check). New cast Agnes, Master Hollis, watchman, physician, searcher, schoolboys; 10 painted sets; procedural score + ~150 SFX cues; -14 LUFS. Weak spots seen: some long holds on inserts (bill, scales), map labels small, physician/searcher walk is the same cycle as everyone, Tom's head never turns to full profile; in the coach shot the fleeing extras' bundles sit in front of their faces (hold props lower).
 - 2026-10-31 v2: reusable rig module; barber character; interior set with period props; lip sync from Kokoro voice; mitten hands holding props; fear eyes with spring pop; sweat + gulp; anticipation/overshoot; 4-shot cutting; freeze-frame comedy label; captions; full original SFX mix at -14 LUFS.
