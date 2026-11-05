@@ -11,6 +11,18 @@ Antigravity bu klasörü okuyup aynı görevleri kendi zamanlanmış görevleri 
 | `kitler/history_sourced_toolkit/` | History Sourced harita/portre motoru, ses, altyazı, eski bölümlerin sahneleri |
 | `skills/` | Kanalların görsel kimlik kuralları (font, renk, kurgu) |
 | `ANTIGRAVITY_UYARLAMA.md` | Claude'a özel araçların Antigravity'deki karşılıkları |
+| `KALITE_REHBERI.md` | Videoların kalitesinin nereden geldiği: en yeni motorlar, çalışma döngüsü, yasaklar |
+| `tools/kalite_kontrol.py` | Yayından önce otomatik kalite kontrolü (süre, ses seviyesi, donuk bölüm, ilk kare) + kontrol görselleri |
+
+## Kalite nasıl korunur
+Antigravity'deki yapay zekâ "eğitilemez" (modelin kendisi değiştirilemez), ama kaliteyi zaten modelin
+kafası değil şu üç şey belirliyor ve üçü de repoda:
+1. **Render motorları** (kod): Reels için `reels/renderer/reel2_v16.py`, uzun video için `videos/renderer/v3/`,
+   History Sourced için `history/one_year_one_body/`. Her yeni video bunların en yenisinden başlar.
+2. **Öğrenilen kurallar**: her kanalın LEARNINGS dosyası — hangi kanca tuttu, hangi hata bir daha yapılmayacak.
+3. **Kontrol döngüsü**: önce tek tek kareler çizilip bakılır, sorunlar düzeltilir, sonra video render edilir;
+   en sonda `kalite_kontrol.py` geçmezse video yayınlanmaz.
+`KALITE_REHBERI.md` Antigravity'ye bunları adım adım anlatıyor.
 
 ## Görev takvimi (İstanbul saati)
 | Görev | Ne zaman | Claude'daki durum |
@@ -32,7 +44,10 @@ Antigravity bu klasörü okuyup aynı görevleri kendi zamanlanmış görevleri 
 
 ## Antigravity'ye yapıştırılacak metin
 ```
-Read antigravity/BASLA_BURADAN.md, antigravity/ANTIGRAVITY_UYARLAMA.md and every file in antigravity/gorevler/.
+Read antigravity/BASLA_BURADAN.md, antigravity/ANTIGRAVITY_UYARLAMA.md, antigravity/KALITE_REHBERI.md
+and every file in antigravity/gorevler/. Add KALITE_REHBERI.md as a permanent rule for every video task:
+always start from the newest engine it lists, render preview stills and look at them before the full
+render, and never publish a video that fails antigravity/tools/kalite_kontrol.py.
 These are my video automations that ran as scheduled tasks in Claude. Recreate them in Antigravity:
 
 1. Install the skills in antigravity/skills/ into your skills location (show me first if anything

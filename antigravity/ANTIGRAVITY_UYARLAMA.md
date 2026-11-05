@@ -20,7 +20,7 @@ Universe Of Animals, OperisAI: Türkçe).
 ## 2. Kitler ve skill'ler
 | Claude'da | Antigravity'de |
 |---|---|
-| Artifact "Hidden Layer Video Calendar" (`kit/` dosyaları) | `antigravity/kitler/hidden_layer_kit/` |
+| Artifact "Hidden Layer Video Calendar" (`kit/` dosyaları) | `antigravity/kitler/hidden_layer_kit/` — ama render için **en yeni** sürümler: Reels `reels/renderer/`, uzun video `videos/renderer/v3/` (bkz. `KALITE_REHBERI.md` bölüm 2) |
 | Artifact "History Sourced Toolkit" | `antigravity/kitler/history_sourced_toolkit/` |
 | Talimatta "republish the toolkit artifact" | Değişen kit dosyalarını aynı klasöre yaz, commit + push et |
 | Skill aracı: `hidden-layer-style`, `history-sourced-style`, `universe-of-animals-style`, `illustrated-story-explainer`, `diy-hack-shorts`, `video-making` | `antigravity/skills/<ad>/SKILL.md` — Antigravity'nin skill klasörüne kurulu olmalı; değilse dosyayı doğrudan oku ve uygula |
