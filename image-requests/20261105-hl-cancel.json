@@ -1,0 +1,101 @@
+{
+ "id": "20261105-hl-cancel",
+ "items": [
+  {
+   "key": "card",
+   "query": "credit card on table",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "laptop",
+   "query": "laptop on desk at night",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "maze",
+   "query": "hedge maze from above",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "calendar",
+   "query": "paper calendar on desk",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "wallet",
+   "query": "leather wallet with cash",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "coins",
+   "query": "stack of coins",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "calculator",
+   "query": "calculator and bills",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "pen",
+   "query": "signing contract pen",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "door",
+   "query": "locked door handle",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "clock",
+   "query": "wall clock",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "mailbox",
+   "query": "envelope letters",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "city",
+   "query": "new york city street",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "vase",
+   "query": "ancient greek pottery amphora",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "keyboard",
+   "query": "computer keyboard closeup",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "scissors",
+   "query": "scissors cutting paper",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "courthouse",
+   "query": "courthouse columns",
+   "n": 3,
+   "orientation": "wide"
+  }
+ ]
+}
