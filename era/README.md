@@ -35,15 +35,24 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
 7. Save the episode's `shots.tsx`, `timeline.json` and QC contact sheet in `episodes/epNN_<topic>/`, add a log line below.
 
 ## Improvement backlog (implement at least one per episode)
-1. Better hands: 3–4 finger mitten shapes with a thumb instead of circles (needle and hand-stencil scenes looked basic).
-2. Arms with elbows (2-part IK) for gestures and holding objects.
+1. ~~Better hands~~ — DONE in ep02 (thumb-mitten hands, `episodes/ep02_maya/src/chars.tsx`).
+2. ~~Arms with elbows~~ — DONE in ep02 (`elbowF` / `elbowB` pose params, props held in hand).
 3. Mouth sync to the narrator for the "talk" mouth (amplitude envelope from the voice).
 4. Side-view walk with proper heel–toe foot motion; run cycle.
 5. Painted texture layer on backgrounds (gouache brush noise) for more depth.
-6. Thumbnail generator from the hero close-up (big face + 2–3 words).
-7. Long-form version (8–10 min) with chapters reusing the same characters.
+6. ~~Thumbnail generator~~ — DONE in ep02 (`Thumb` composition, 1280x720).
+7. ~~Long-form version~~ — DONE in ep02 (8:12, 11 chapters, 74 shots).
+8. Long-form: plan secondary motion for every explanatory graphic (QC flags shots static > 4 s). ep02 fixed it with a
+   `DRIFT` wrapper (slow push-in + travelling light) in `Video.tsx`; next time build it in from the start.
+9. Render long videos in 4 resumable chunks (`runall.sh`), ~0.5 s/frame on 2 cores (8 min ≈ 2 h).
+10. Burned-in English captions as an option (currently a separate `.srt`).
 
 ## Log
 - 2026-11-05 · ep01 Stone Age — "If You Were Born 20,000 Years Ago" (51 s). QC passed first time (−14.5 LUFS).
   Weak spots: simple hands/arm in the needle and hand-stencil shots. Sources: Volk & Atkinson 2013 (child mortality),
   Gurven & Kaplan 2007 (forager life spans).
+- 2026-11-05 · ep02 Maya — "If You Were Born Maya" (8:12, 1920x1080, long-form, 11 chapters). New: rig v2 (elbows,
+  thumb hands, outfits, headwear, props), 20-character cast, Maya map from Natural Earth, 8 English infographics with
+  on-screen sources, chapter cards, Maya score (ocarina, turtle-shell drum, slit drum, rattles, conch) + per-chapter SFX,
+  thumbnail, SRT, YouTube metadata. QC: first pass failed (11 static graphic shots) → DRIFT fix → passed (−14.3 LUFS).
+  Sources: Canuto 2018, Estrada-Belli 2025, Medina-Elizalde & Rohling 2012, Baron 2018, Martin & Grube 2008.
