@@ -157,3 +157,12 @@
 - Previous (FILE 019, 3 Nov): 90 plays, 20.1% watched, 60.7% skip, 0 saves/shares. FILE 018: 45 plays, 19.1%, 77.3%. Money Reels so far ~ older Reels (FILE 015 still best 32.8% / 53.1%).
 - Photos: workflow returned an ink drawing and an old map (calendar) and 0 for card -> rejected, built without photos. vidIQ balance 2: no paid tools. Not Sunday.
 - YouTube Short OK: https://youtu.be/UIYk2k6duTY (tag hiddenlayer-reel-2026-11-04-bnpl-stacking, 20:00 slot).
+
+### 2026-11-05 16:49 - FILE 021 - MONEY ANGLE #4: credit score, salary is 0% of it, FICO weights 35/30/15/10/10 (indigo/pale-yellow dark DNA, 25.3 s) - https://www.instagram.com/reel/DfXNRUfGQAx/
+- File: HL_Reel_20261105_1649_credit-score-salary.mp4 - Renderer reels/renderer/reel2_v17.py (+ reel_audio_v7.py), scenes_FILE021.py, caption_FILE021.txt.
+- New vs FILE 020: new `weights` beat (panel of category bars growing in sync with the narration via at=[...] list, first two highlighted, then a dashed empty SALARY row 0% + tilted stamp NOT IN THE FORMULA + italic footer); myth-bust "zero percent" hook; doc receipt = Experian quote; compare beat YOU THINK vs REALITY; new indigo/pale-yellow palette, curious mood.
+- Sources: Experian blog 1 Oct 2021 (income "doesn't impact your credit score in any way"; FICO weights), CFPB "What is a credit report?" (reviewed 29 Oct 2026; no income in report contents). myfico.com not fetchable (permission): only URLs returned by WebSearch can be fetched.
+- Previous (FILE 020, 4 Nov): 68 plays, 26.5% watched, 58.1% skip, 0 saves/shares (FILE 019: 91 plays, 19.9%, 61.2%). Money Reels now slightly better than FILE 016-018; FILE 015 still best (32.8%, 53.1%).
+- Photos: skipped (workflow delivered junk 5 days in a row). vidIQ balance 2: no paid tools. Not Sunday.
+- YouTube Short: NOT submitted - the queue_publish.py step was blocked by the auto-mode permission classifier ([Create Public Surface]); not worked around. MP4 + json ready to submit manually (title "Your salary is 0% of your credit score #Shorts").
+- Tip: never `pkill -f reel2.py` inside the same shell command chain (kills the shell).
