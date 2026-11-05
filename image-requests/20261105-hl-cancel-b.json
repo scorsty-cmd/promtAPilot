@@ -1,0 +1,53 @@
+{
+ "id": "20261105-hl-cancel-b",
+ "items": [
+  {
+   "key": "door",
+   "query": "locked door handle",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "clock",
+   "query": "wall clock",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "mailbox",
+   "query": "envelope letters",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "city",
+   "query": "new york city street",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "vase",
+   "query": "ancient greek pottery amphora",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "keyboard",
+   "query": "computer keyboard closeup",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "scissors",
+   "query": "scissors cutting paper",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "courthouse",
+   "query": "courthouse columns",
+   "n": 3,
+   "orientation": "wide"
+  }
+ ]
+}
