@@ -1,0 +1,71 @@
+{
+ "lines": [
+  {
+   "key": "hook",
+   "text": "Born twenty thousand years ago? This is your life.",
+   "start": 0.25,
+   "end": 3.397
+  },
+  {
+   "key": "ice",
+   "text": "It's the Ice Age. Your whole world is a few dozen people, and you know every single one.",
+   "start": 3.847,
+   "end": 9.467
+  },
+  {
+   "key": "kids",
+   "text": "Almost half the kids you grow up with won't make it to adulthood.",
+   "start": 9.867,
+   "end": 13.463
+  },
+  {
+   "key": "learn",
+   "text": "So you learn fast. Fire. Tracking. Stitching furs with a bone needle.",
+   "start": 13.963,
+   "end": 18.528
+  },
+  {
+   "key": "hunt",
+   "text": "Winter is the boss. You follow the reindeer, or you go hungry.",
+   "start": 18.928,
+   "end": 22.734
+  },
+  {
+   "key": "mammoth",
+   "text": "A mammoth? Sometimes. It takes the whole group, and nobody forgets that day.",
+   "start": 23.084,
+   "end": 27.782
+  },
+  {
+   "key": "fire",
+   "text": "At night, everyone gathers at the fire. Stories are the only books you'll ever have.",
+   "start": 28.232,
+   "end": 33.284
+  },
+  {
+   "key": "old",
+   "text": "Make it past childhood, and you could live into your sixties, or even seventies.",
+   "start": 33.734,
+   "end": 38.334
+  },
+  {
+   "key": "hand",
+   "text": "You won't leave a name. Just your hand, outlined in red on a cave wall.",
+   "start": 38.783,
+   "end": 43.154
+  },
+  {
+   "key": "end",
+   "text": "Hand stencils like that are still there today. Maybe one is yours.",
+   "start": 43.554,
+   "end": 47.562
+  },
+  {
+   "key": "cta",
+   "text": "Which era should you be born in next?",
+   "start": 48.012,
+   "end": 49.982
+  }
+ ],
+ "voice_end": 49.982
+}
