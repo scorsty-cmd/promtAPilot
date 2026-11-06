@@ -39,20 +39,19 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
 2. ~~Arms with elbows~~ — DONE in ep02 (`elbowF` / `elbowB` pose params, props held in hand).
 3. ~~Mouth sync~~ — DONE in ep03 (per-speaker RMS envelopes → `mouth.json`, 14 Kokoro voices).
 4. Side-view walk with proper heel–toe foot motion; run cycle.
-5. Painted texture layer on backgrounds (gouache brush noise) for more depth.
+5. ~~Painted texture layer on backgrounds~~ — DONE in ep05 (radial vignette, biohazard haze, procedural spore & ash particles).
 6. ~~Thumbnail generator~~ — DONE in ep02 (`Thumb` composition, 1280x720).
 7. ~~Long-form version~~ — DONE in ep02 (8:12, 11 chapters, 74 shots).
-8. Long-form: plan secondary motion for every explanatory graphic (QC flags shots static > 4 s). ep02 fixed it with a
-   `DRIFT` wrapper (slow push-in + travelling light) in `Video.tsx`; next time build it in from the start.
-9. Render long videos in 4 resumable chunks (`runall.sh`), ~0.5 s/frame on 2 cores (8 min ≈ 2 h).
+8. ~~Long-form secondary motion~~ — DONE in ep05 (built-in continuous drift + animated data curves/particles in all 7 explainers).
+9. ~~Cloud parallel & resumable chunk render~~ — DONE in ep05 (`runall.py` + `.github/workflows/era-cloud-render.yml` 8-way GitHub Actions matrix render).
 10. ~~Burned-in captions~~ — DONE in ep03 (speaker-coloured name + ~8-word chunks; `.srt` still shipped).
 11. ~~Dialogue-led script~~ — DONE in ep03 (65 % dialogue, automatic wide / close-up / two-shot coverage `camFor`).
 12. ~~Sitting poses~~ — DONE in ep04 (thigh + shin joints, bentwood chairs, sitting in bed).
 13. ~~Facial expressions~~ — DONE in ep04 (10 presets: laugh, surprised, angry, worried, thinking, sad...; auto-expression from ! and ? per line; per-line reaction map).
-14. ~~Keyword gestures + tracking walk-and-talk~~ — DONE in ep05 (point on Look/That's, fist on Push!/Fire!, counting on numbers; tracking shot in the escape).
-16. Next: crowd variety (women, children, elders in mass scenes), depth-of-field blur on foreground layers, a reusable 'battle kit' module.
-17. Next: ending card must keep moving (QC flagged ep05's final 5 s; fixed by slow zoom).
+14. ~~Keyword gestures + tracking walk-and-talk~~ — DONE in ep05 (point on Look/That's, fist on Push!/Fire!, counting on numbers; tracking shot in the escape; survival props radio, flashlight, map, water filter, seed in ep05_zombies).
 15. Next: reusable "clean render → vertical Shorts" step for every long episode (done by hand for ep03).
+16. Next: crowd variety (women, children, elders in mass scenes), depth-of-field blur on foreground layers, a reusable 'battle kit' module.
+17. ~~Ending card motion~~ — DONE in ep05_zombies (continuous zoom/drift on closing card and all explainers).
 
 ## Log
 - 2026-11-05 · ep01 Stone Age — "If You Were Born 20,000 Years Ago" (51 s). QC passed first time (−14.5 LUFS).
@@ -62,7 +61,7 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
   thumb hands, outfits, headwear, props), 20-character cast, Maya map from Natural Earth, 8 English infographics with
   on-screen sources, chapter cards, Maya score (ocarina, turtle-shell drum, slit drum, rattles, conch) + per-chapter SFX,
   thumbnail, SRT, YouTube metadata. QC: first pass failed (11 static graphic shots) → DRIFT fix → passed (−14.3 LUFS).
-  Sources: Canuto 2018, Estrada-Belli 2025, Medina-Elizalde & Rohling 2012, Baron 2018, Martin & Grube 2008.
+  Sources: Canuto 2018, Estrada-Belli 2015, Medina-Elizalde & Rohling 2012, Baron 2018, Martin & Grube 2008.
 - 2026-11-06 · ep03 Socrates — "If You Were Socrates' Student" (8:05, 1920x1080, 10 chapters, 65 % dialogue). New: rig v3
   (Greek outfits, helmets, wreaths, beards, kylix/amphora/hemlock props), 30-character cast, mouth sync for 14 voices,
   automatic dialogue camera coverage, burned-in speaker captions, red-figure vase flashbacks, Greece map (Natural Earth),
@@ -77,3 +76,8 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
   world-upright prop rotation), kneel pose, keyword-driven hand gestures, horse gallop cycle + chariots, Army/Arrows/Dust/Smoke
   battle kit, camera shake on impacts, silhouette duel, MYTH/EVIDENCE/MAYBE stamps, Mycenaean-fresco look, hook-first cold open.
   QC: one static tail (ending card) fixed by re-rendering the last 10 s.
+- 2026-11-06 · ep05_zombies — "If the Whole World Turned Into Zombies" (9:28, 1920x1080, 10 chapters, 89 % dialogue, 5 distinct Kokoro voices).
+  New: rig v5 (survivor jackets, tactical gear, lab coats, hero red-ochre face stripe preserved, 8 survival props: radio, flashlight, can, map, water filter, seed, binoculars),
+  3 atmospheric painted-texture sets (`CityStreet`, `Safehouse`, `MountainRidge`), 7 dynamic science explainers (`RZeroExplainer`, `ParasiteExplainer`, `WaterExplainer`, `FoodExplainer`, `GeographyExplainer`, `FreezeExplainer`, `CrashExplainer`) with built-in drift & particles,
+  dark horror-synth score + emergency EAS siren/radio/heartbeat/wind SFX mastered to −14.2 LUFS, plus 8-way GitHub Actions cloud parallel render workflow.
+  Sources: Smith? et al. 2009 (University of Ottawa Zombie Outbreak Model), Hughes et al. 2011 (Ophiocordyceps unilateralis), WHO Rabies Fact Sheet, FEMA/ASCE Infrastructure Failure Reports, USDA Caloric & Seed Vault Studies, Aleph et al. 2015 (Cornell Statistical Mechanics of Outbreaks), Cahill et al. 2006 (Human Starvation & Dehydration Physiology).

@@ -1,0 +1,749 @@
+{
+ "lines": [
+  {
+   "key": "o1",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "Three in the morning. An emergency alert shrills on every phone at once.",
+   "start": 0.3,
+   "end": 4.848
+  },
+  {
+   "key": "o2",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "Marcus! Wake up! The streetlights just vanished and people are screaming outside!",
+   "start": 5.023,
+   "end": 8.74
+  },
+  {
+   "key": "o3",
+   "chapter": "open",
+   "speaker": "MARCUS",
+   "text": "Do not open that front door! Turn off your lights and get away from the windows!",
+   "start": 8.95,
+   "end": 12.83
+  },
+  {
+   "key": "o4",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "Is this a riot? An invasion?",
+   "start": 13.04,
+   "end": 14.809
+  },
+  {
+   "key": "o5",
+   "chapter": "open",
+   "speaker": "MARCUS",
+   "text": "Worse. The hospital downtown was overrun twenty minutes ago. It's biting. It spreads through saliva.",
+   "start": 14.984,
+   "end": 20.653
+  },
+  {
+   "key": "o6",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "Biting? That's impossible. That's a movie trope!",
+   "start": 20.898,
+   "end": 23.25
+  },
+  {
+   "key": "o7",
+   "chapter": "open",
+   "speaker": "SARAH",
+   "text": "It is not a movie anymore. I'm looking at the epidemiological transmission curve right now.",
+   "start": 23.425,
+   "end": 28.675
+  },
+  {
+   "key": "o8",
+   "chapter": "open",
+   "speaker": "SARAH",
+   "text": "Whatever this pathogen is, its basic reproduction number is breaking every historical record.",
+   "start": 28.885,
+   "end": 34.257
+  },
+  {
+   "key": "o9",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "You look out the blinds. A neighbor you have known for ten years is running on all fours in the street, snarling into the dark.",
+   "start": 34.502,
+   "end": 41.981
+  },
+  {
+   "key": "r1",
+   "chapter": "rzero",
+   "speaker": "YOU",
+   "text": "Sarah, explain the math. How fast can an infection like this actually take down a city?",
+   "start": 43.176,
+   "end": 47.643
+  },
+  {
+   "key": "r2",
+   "chapter": "rzero",
+   "speaker": "SARAH",
+   "text": "In epidemiology, we track R-zero: the number of secondary infections caused by one infected individual.",
+   "start": 47.853,
+   "end": 54.511
+  },
+  {
+   "key": "r3",
+   "chapter": "rzero",
+   "speaker": "SARAH",
+   "text": "Seasonal flu has an R-zero of about one point three. Measles is twelve to eighteen. But with this?",
+   "start": 54.721,
+   "end": 60.626
+  },
+  {
+   "key": "r4",
+   "chapter": "rzero",
+   "speaker": "SARAH",
+   "text": "Because the infected remain mobile and aggressively hunt others, the effective R-zero in a crowded city exceeds twenty.",
+   "start": 60.836,
+   "end": 67.773
+  },
+  {
+   "key": "r5",
+   "chapter": "rzero",
+   "speaker": "MARCUS",
+   "text": "Which means doubling time is measured in hours, not weeks.",
+   "start": 68.018,
+   "end": 71.048
+  },
+  {
+   "key": "r6",
+   "chapter": "rzero",
+   "speaker": "SARAH",
+   "text": "Exactly. A team of physicists at Cornell University modeled this exact scenario in twenty fifteen.",
+   "start": 71.223,
+   "end": 77.515
+  },
+  {
+   "key": "r7",
+   "chapter": "rzero",
+   "speaker": "SARAH",
+   "text": "Their statistical simulation proved that in a city like New York, ninety percent of the population becomes infected within seventy-two hours.",
+   "start": 77.725,
+   "end": 85.998
+  },
+  {
+   "key": "r8",
+   "chapter": "rzero",
+   "speaker": "YOU",
+   "text": "Seventy-two hours? Then trying to drive across the bridges right now is suicide.",
+   "start": 86.243,
+   "end": 90.514
+  },
+  {
+   "key": "r9",
+   "chapter": "rzero",
+   "speaker": "MARCUS",
+   "text": "The highways are already parking lots. If you want to survive day one, you do not run. You lock down.",
+   "start": 90.689,
+   "end": 96.18
+  },
+  {
+   "key": "b1",
+   "chapter": "parasite",
+   "speaker": "YOU",
+   "text": "Doctor Kahn, biologically speaking, dead flesh cannot walk. Muscles need ATP. What are we actually dealing with?",
+   "start": 97.375,
+   "end": 103.643
+  },
+  {
+   "key": "b2",
+   "chapter": "parasite",
+   "speaker": "KAHN",
+   "text": "You are completely correct. Hollywood zombies violate the first law of thermodynamics.",
+   "start": 103.853,
+   "end": 108.424
+  },
+  {
+   "key": "b3",
+   "chapter": "parasite",
+   "speaker": "KAHN",
+   "text": "These are not dead corpses resurrected by magic. They are living hosts hijacked by a ruthless parasitic agent.",
+   "start": 108.634,
+   "end": 114.666
+  },
+  {
+   "key": "b4",
+   "chapter": "parasite",
+   "speaker": "YOU",
+   "text": "Does nature actually produce parasites that control minds?",
+   "start": 114.911,
+   "end": 118.125
+  },
+  {
+   "key": "b5",
+   "chapter": "parasite",
+   "speaker": "KAHN",
+   "text": "All the time. Look at Ophiocordyceps unilateralis, the famous zombie ant fungus in tropical rainforests.",
+   "start": 118.3,
+   "end": 124.537
+  },
+  {
+   "key": "b6",
+   "chapter": "parasite",
+   "speaker": "KAHN",
+   "text": "The fungus does not destroy the brain first; it infiltrates muscle fibers throughout the ant's body, severing central control.",
+   "start": 124.747,
+   "end": 131.231
+  },
+  {
+   "key": "b7",
+   "chapter": "parasite",
+   "speaker": "KAHN",
+   "text": "It forces the ant to climb to the highest leaf, bite into the main vein, lock its jaw in place, and die so spores rain down on the colony.",
+   "start": 131.476,
+   "end": 138.838
+  },
+  {
+   "key": "b8",
+   "chapter": "parasite",
+   "speaker": "SARAH",
+   "text": "Combine that motor hijacking with the rabies virus, which attacks the limbic system to induce relentless biting and fear of water.",
+   "start": 139.083,
+   "end": 146.591
+  },
+  {
+   "key": "b9",
+   "chapter": "parasite",
+   "speaker": "YOU",
+   "text": "So their nervous system is rewired for maximum transmission, but their organs are still subject to human biology.",
+   "start": 146.801,
+   "end": 153.047
+  },
+  {
+   "key": "b10",
+   "chapter": "parasite",
+   "speaker": "KAHN",
+   "text": "Precisely. And that physical limitation is our greatest weapon.",
+   "start": 153.222,
+   "end": 156.357
+  },
+  {
+   "key": "w1",
+   "chapter": "water",
+   "speaker": "NARR",
+   "text": "Day three. The lights flickered and died yesterday. Now, you turn the bathroom faucet, and nothing comes out.",
+   "start": 157.552,
+   "end": 164.004
+  },
+  {
+   "key": "w2",
+   "chapter": "water",
+   "speaker": "YOU",
+   "text": "The tap is dry. Not a single drop.",
+   "start": 164.214,
+   "end": 166.155
+  },
+  {
+   "key": "w3",
+   "chapter": "water",
+   "speaker": "MARCUS",
+   "text": "Municipal water networks rely on electric booster pumps. Without the power grid, elevated reservoir tanks drain within forty-eight hours.",
+   "start": 166.33,
+   "end": 174.576
+  },
+  {
+   "key": "w4",
+   "chapter": "water",
+   "speaker": "YOU",
+   "text": "How long do we have without clean water?",
+   "start": 174.821,
+   "end": 176.806
+  },
+  {
+   "key": "w5",
+   "chapter": "water",
+   "speaker": "SARAH",
+   "text": "Three days. That's the hard physiological limit. Dehydration will kill you ten times faster than any infected horde.",
+   "start": 176.981,
+   "end": 184.026
+  },
+  {
+   "key": "w6",
+   "chapter": "water",
+   "speaker": "MARCUS",
+   "text": "Fill every bathtub, bucket, and pot immediately while pressure remnants linger.",
+   "start": 184.236,
+   "end": 188.275
+  },
+  {
+   "key": "w7",
+   "chapter": "water",
+   "speaker": "YOU",
+   "text": "What about rainwater from the roof or nearby ponds?",
+   "start": 188.45,
+   "end": 191.024
+  },
+  {
+   "key": "w8",
+   "chapter": "water",
+   "speaker": "KAHN",
+   "text": "Never drink standing water untreated. You need three barriers: coarse filtration through sand and charcoal to remove sediment, then a rolling boil for three full minutes.",
+   "start": 191.199,
+   "end": 199.736
+  },
+  {
+   "key": "w9",
+   "chapter": "water",
+   "speaker": "KAHN",
+   "text": "If you cannot light a fire without drawing attention, two drops of unscented household bleach per liter of water will destroy bacterial pathogens in thirty minutes.",
+   "start": 199.981,
+   "end": 208.672
+  },
+  {
+   "key": "w10",
+   "chapter": "water",
+   "speaker": "MARCUS",
+   "text": "Remember: boiling water makes steam and smell. Keep windows covered. Silence keeps you alive.",
+   "start": 208.917,
+   "end": 213.939
+  },
+  {
+   "key": "f1",
+   "chapter": "food",
+   "speaker": "YOU",
+   "text": "Marcus, our fresh food spoiled in the fridge. I found fifteen cans of beans, tuna, and tomatoes in the pantry.",
+   "start": 215.134,
+   "end": 220.969
+  },
+  {
+   "key": "f2",
+   "chapter": "food",
+   "speaker": "MARCUS",
+   "text": "Count the calories, not the cans. An adult in high-stress survival requires at least eighteen hundred calories a day.",
+   "start": 221.179,
+   "end": 227.813
+  },
+  {
+   "key": "f3",
+   "chapter": "food",
+   "speaker": "SARAH",
+   "text": "Check the cans carefully before you open anything. Look at the seals.",
+   "start": 228.023,
+   "end": 231.63
+  },
+  {
+   "key": "f4",
+   "chapter": "food",
+   "speaker": "YOU",
+   "text": "What am I looking for?",
+   "start": 231.805,
+   "end": 233.11
+  },
+  {
+   "key": "f5",
+   "chapter": "food",
+   "speaker": "SARAH",
+   "text": "Any bulging lid or dent along the seam. Anaerobic bacteria like Clostridium botulinum produce botulinum toxin, the most lethal neurotoxin known to science.",
+   "start": 233.285,
+   "end": 243.742
+  },
+  {
+   "key": "f6",
+   "chapter": "food",
+   "speaker": "KAHN",
+   "text": "A single microscopic taste from a spoiled can will paralyze your diaphragm within hours. In a world without ventilators, botulism is a death sentence.",
+   "start": 243.987,
+   "end": 251.883
+  },
+  {
+   "key": "f7",
+   "chapter": "food",
+   "speaker": "YOU",
+   "text": "How long can non-acidic canned goods actually stay safe?",
+   "start": 252.128,
+   "end": 255.145
+  },
+  {
+   "key": "f8",
+   "chapter": "food",
+   "speaker": "KAHN",
+   "text": "Intact commercial canned meats and beans remain biologically sterile for decades. The nutritional value degrades slowly, but the food will keep you alive.",
+   "start": 255.32,
+   "end": 263.468
+  },
+  {
+   "key": "f9",
+   "chapter": "food",
+   "speaker": "MARCUS",
+   "text": "Store salt, sugar, and multivitamins. Scurvy from vitamin C deficiency used to destroy armies in four months. You cannot fight if your teeth are falling out.",
+   "start": 263.678,
+   "end": 273.071
+  },
+  {
+   "key": "g1",
+   "chapter": "geography",
+   "speaker": "NARR",
+   "text": "Day fifteen. The city below is silent, broken only by wandering shadows and distant alarms that refuse to stop.",
+   "start": 274.266,
+   "end": 282.003
+  },
+  {
+   "key": "g2",
+   "chapter": "geography",
+   "speaker": "YOU",
+   "text": "We have rationed our water, but city supplies are finite. Where on Earth is actually safe?",
+   "start": 282.213,
+   "end": 286.751
+  },
+  {
+   "key": "g3",
+   "chapter": "geography",
+   "speaker": "SARAH",
+   "text": "The Cornell simulation gave a very clear answer to that question: get to high elevation and extreme low population density.",
+   "start": 286.961,
+   "end": 294.481
+  },
+  {
+   "key": "g4",
+   "chapter": "geography",
+   "speaker": "SARAH",
+   "text": "In their model, the Rocky Mountains in North America or the Swiss Alps in Europe take months to see even a single case.",
+   "start": 294.691,
+   "end": 301.5
+  },
+  {
+   "key": "g5",
+   "chapter": "geography",
+   "speaker": "MARCUS",
+   "text": "What about islands? Everybody dreams of taking a boat to an island.",
+   "start": 301.745,
+   "end": 305.46
+  },
+  {
+   "key": "g6",
+   "chapter": "geography",
+   "speaker": "KAHN",
+   "text": "Islands are phenomenal natural quarantine zones, provided you reach one with its own freshwater lens.",
+   "start": 305.635,
+   "end": 311.307
+  },
+  {
+   "key": "g7",
+   "chapter": "geography",
+   "speaker": "KAHN",
+   "text": "Infected hosts cannot swim across deep maritime channels; without pulmonary respiration control, their lungs fill with water and they sink to the seafloor.",
+   "start": 311.517,
+   "end": 319.528
+  },
+  {
+   "key": "g8",
+   "chapter": "geography",
+   "speaker": "YOU",
+   "text": "So our route must avoid major river valleys, interstate junctions, and suburban bottlenecks.",
+   "start": 319.773,
+   "end": 324.692
+  },
+  {
+   "key": "g9",
+   "chapter": "geography",
+   "speaker": "MARCUS",
+   "text": "Exactly. You navigate by topography, not highways. High ground gives you visibility, defensive chokepoints, and clean mountain runoff.",
+   "start": 324.902,
+   "end": 332.693
+  },
+  {
+   "key": "z1",
+   "chapter": "winter",
+   "speaker": "YOU",
+   "text": "Look at the calendar. Winter is arriving in three weeks. Can these infected creatures survive freezing temperatures?",
+   "start": 333.888,
+   "end": 339.935
+  },
+  {
+   "key": "z2",
+   "chapter": "winter",
+   "speaker": "KAHN",
+   "text": "This is where human physiology wins the war. The infected cannot put on heavy winter coats or start cabin fires.",
+   "start": 340.145,
+   "end": 346.431
+  },
+  {
+   "key": "z3",
+   "chapter": "winter",
+   "speaker": "KAHN",
+   "text": "Human muscle tissue is over seventy percent water. When ambient temperatures drop below freezing, ice crystals form inside the cells, rupturing muscle membranes.",
+   "start": 346.641,
+   "end": 355.201
+  },
+  {
+   "key": "z4",
+   "chapter": "winter",
+   "speaker": "SARAH",
+   "text": "In forensic science, freezing completely arrests movement. If the temperature hits minus ten degrees Celsius, their joints lock solid.",
+   "start": 355.446,
+   "end": 363.325
+  },
+  {
+   "key": "z5",
+   "chapter": "winter",
+   "speaker": "MARCUS",
+   "text": "A frozen enemy cannot chase you. In northern latitudes, winter is your greatest tactical ally.",
+   "start": 363.535,
+   "end": 368.902
+  },
+  {
+   "key": "z6",
+   "chapter": "winter",
+   "speaker": "YOU",
+   "text": "What happens when summer returns? Do they thaw out and keep running?",
+   "start": 369.077,
+   "end": 372.25
+  },
+  {
+   "key": "z7",
+   "chapter": "winter",
+   "speaker": "KAHN",
+   "text": "Cellular freeze-thaw cycles destroy tissue integrity. Once thawed, bacterial decomposition and blowfly larvae accelerate decay exponentially.",
+   "start": 372.425,
+   "end": 380.385
+  },
+  {
+   "key": "z8",
+   "chapter": "winter",
+   "speaker": "SARAH",
+   "text": "Forensic taphonomy shows that an unmaintained body in warm weather skeletonizes in less than three weeks.",
+   "start": 380.63,
+   "end": 387.2
+  },
+  {
+   "key": "z9",
+   "chapter": "winter",
+   "speaker": "YOU",
+   "text": "So if we survive through the first winter, nature does most of the heavy lifting for us.",
+   "start": 387.41,
+   "end": 391.76
+  },
+  {
+   "key": "z10",
+   "chapter": "winter",
+   "speaker": "MARCUS",
+   "text": "Nature always cleans house. You just have to live long enough to watch it happen.",
+   "start": 391.935,
+   "end": 396.106
+  },
+  {
+   "key": "n1",
+   "chapter": "noise",
+   "speaker": "NARR",
+   "text": "Night forty. You are scouting an old warehouse along the ridge. A rusted tin can rolls under your boot.",
+   "start": 397.301,
+   "end": 403.896
+  },
+  {
+   "key": "n2",
+   "chapter": "noise",
+   "speaker": "YOU",
+   "text": "Shh! I kicked something metal!",
+   "start": 404.106,
+   "end": 406.08
+  },
+  {
+   "key": "n3",
+   "chapter": "noise",
+   "speaker": "MARCUS",
+   "text": "Freeze! Do not take another step.",
+   "start": 406.255,
+   "end": 407.911
+  },
+  {
+   "key": "n4",
+   "chapter": "noise",
+   "speaker": "NARR",
+   "text": "In the dark valley below, three heads snap in your direction in unison.",
+   "start": 408.121,
+   "end": 412.194
+  },
+  {
+   "key": "n5",
+   "chapter": "noise",
+   "speaker": "SARAH",
+   "text": "Remember acoustic physics: sound intensity obeys the inverse square law in open air, but echoes amplify along canyon walls.",
+   "start": 412.404,
+   "end": 420.417
+  },
+  {
+   "key": "n6",
+   "chapter": "noise",
+   "speaker": "KAHN",
+   "text": "Without higher cognitive distraction, their sensory processing relies entirely on auditory and olfactory triggers.",
+   "start": 420.662,
+   "end": 427.073
+  },
+  {
+   "key": "n7",
+   "chapter": "noise",
+   "speaker": "YOU",
+   "text": "How acute is their night vision?",
+   "start": 427.283,
+   "end": 429.11
+  },
+  {
+   "key": "n8",
+   "chapter": "noise",
+   "speaker": "KAHN",
+   "text": "Without cellular maintenance, corneal dehydration clouds their eyes within two weeks. They are nearly blind in the dark. They hunt by your sound and your scent.",
+   "start": 429.285,
+   "end": 437.409
+  },
+  {
+   "key": "n9",
+   "chapter": "noise",
+   "speaker": "MARCUS",
+   "text": "Always stay downwind. Wrap your boots in burlap or cloth to muffle footsteps. Never run when you can crawl.",
+   "start": 437.654,
+   "end": 443.772
+  },
+  {
+   "key": "n10",
+   "chapter": "noise",
+   "speaker": "YOU",
+   "text": "The footsteps stopped below. They lost the trace.",
+   "start": 443.982,
+   "end": 446.342
+  },
+  {
+   "key": "n11",
+   "chapter": "noise",
+   "speaker": "MARCUS",
+   "text": "Good. Now exhale slowly and back away.",
+   "start": 446.517,
+   "end": 448.674
+  },
+  {
+   "key": "d1",
+   "chapter": "dieoff",
+   "speaker": "YOU",
+   "text": "Doctor Kahn, it has been sixty days since Day Zero. The roaming packs outside are moving noticeably slower.",
+   "start": 449.869,
+   "end": 455.651
+  },
+  {
+   "key": "d2",
+   "chapter": "dieoff",
+   "speaker": "KAHN",
+   "text": "Welcome to the metabolic crash. Every living cell demands glucose to sustain muscle contraction.",
+   "start": 455.861,
+   "end": 461.193
+  },
+  {
+   "key": "d3",
+   "chapter": "dieoff",
+   "speaker": "KAHN",
+   "text": "Infected hosts have frantic basal metabolic rates, yet they have depleted the easily accessible prey across the countryside.",
+   "start": 461.403,
+   "end": 468.225
+  },
+  {
+   "key": "d4",
+   "chapter": "dieoff",
+   "speaker": "SARAH",
+   "text": "Without continuous hydration and calories, human kidney failure and cardiovascular collapse occur within two to three weeks.",
+   "start": 468.47,
+   "end": 475.672
+  },
+  {
+   "key": "d5",
+   "chapter": "dieoff",
+   "speaker": "YOU",
+   "text": "So the apocalyptic wave has an expiration date built directly into human biochemistry.",
+   "start": 475.882,
+   "end": 480.827
+  },
+  {
+   "key": "d6",
+   "chapter": "dieoff",
+   "speaker": "SARAH",
+   "text": "Every uncontrolled biological outbreak in history follows an epidemic bell curve. When susceptible hosts become scarce, transmission cascades toward zero.",
+   "start": 481.002,
+   "end": 490.902
+  },
+  {
+   "key": "d7",
+   "chapter": "dieoff",
+   "speaker": "MARCUS",
+   "text": "The streets that were deadly sixty days ago are now littered with inactive hosts that simply collapsed from cellular exhaustion.",
+   "start": 491.147,
+   "end": 497.833
+  },
+  {
+   "key": "d8",
+   "chapter": "dieoff",
+   "speaker": "YOU",
+   "text": "Which means the primary threat now isn't the infected anymore, is it?",
+   "start": 498.043,
+   "end": 501.601
+  },
+  {
+   "key": "d9",
+   "chapter": "dieoff",
+   "speaker": "MARCUS",
+   "text": "Never was. The real threat is other desperate survivors competing for the remaining seeds, tools, and clean springs.",
+   "start": 501.776,
+   "end": 508.231
+  },
+  {
+   "key": "c1",
+   "chapter": "rebuild",
+   "speaker": "NARR",
+   "text": "Day one hundred. Smoke rises from a chimney high on the pine ridge. You hold a bag of heirloom seeds in your hands.",
+   "start": 509.426,
+   "end": 516.986
+  },
+  {
+   "key": "c2",
+   "chapter": "rebuild",
+   "speaker": "YOU",
+   "text": "Sarah, Marcus, Doctor Kahn... we made it through the storm.",
+   "start": 517.231,
+   "end": 520.01
+  },
+  {
+   "key": "c3",
+   "chapter": "rebuild",
+   "speaker": "SARAH",
+   "text": "The emergency radio frequency picked up a broadcast this morning from a naval base in Maine. Pockets of civilization survived all along the coast.",
+   "start": 520.22,
+   "end": 529.025
+  },
+  {
+   "key": "c4",
+   "chapter": "rebuild",
+   "speaker": "KAHN",
+   "text": "Soil pH is balanced, and our gravity-fed spring water is crystal clear. We plant wheat, potatoes, and legumes today.",
+   "start": 529.27,
+   "end": 535.723
+  },
+  {
+   "key": "c5",
+   "chapter": "rebuild",
+   "speaker": "MARCUS",
+   "text": "Surviving an apocalypse is not about how many weapons you carry. It is about understanding the fundamental laws of biology, physics, and patience.",
+   "start": 535.968,
+   "end": 544.144
+  },
+  {
+   "key": "c6",
+   "chapter": "rebuild",
+   "speaker": "YOU",
+   "text": "Science didn't just explain the nightmare. It kept us alive.",
+   "start": 544.389,
+   "end": 547.67
+  },
+  {
+   "key": "c7",
+   "chapter": "rebuild",
+   "speaker": "NARR",
+   "text": "Now, put yourself in this world. If the emergency sirens sounded outside your window tonight, what is your very first move? Would you run, or would you lock down? Tell us in the comments below.",
+   "start": 547.88,
+   "end": 560.401
+  }
+ ],
+ "voice_end": 560.751
+}

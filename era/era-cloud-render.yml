@@ -1,0 +1,147 @@
+name: ERA Cloud Parallel Render & QC
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode directory under era/episodes/"
+        required: true
+        default: "ep05_zombies"
+      comp_id:
+        description: "Remotion Composition ID"
+        required: true
+        default: "Zombies"
+      start_frame:
+        description: "Start frame (default 0)"
+        required: false
+        default: "0"
+      end_frame:
+        description: "End frame (0 = auto from timeline.json)"
+        required: false
+        default: "0"
+      full_pipeline:
+        description: "Run full TTS + Audio + Mux + QC in cloud (true/false)"
+        required: false
+        default: "false"
+
+jobs:
+  render_matrix:
+    name: "Render Chunk ${{ matrix.idx }}/8"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        idx: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github
+            antigravity
+            era/episodes/${{ inputs.episode }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        working-directory: era/episodes/${{ inputs.episode }}
+        run: npm install --no-audit --no-fund
+
+      - name: Calculate frame range and render chunk
+        working-directory: era/episodes/${{ inputs.episode }}
+        run: |
+          python3 - << 'EOF'
+          import json, os, subprocess, sys
+          tl = json.load(open("src/timeline.json"))
+          total_frames = int((tl["voice_end"] + 8) * 30)
+          sf = int("${{ inputs.start_frame }}" or "0")
+          ef = int("${{ inputs.end_frame }}" or "0")
+          if ef <= 0:
+              ef = total_frames - 1
+          idx = int("${{ matrix.idx }}")
+          n = 8
+          span = ef - sf + 1
+          c_start = sf + (span * idx) // n
+          c_end = sf + (span * (idx + 1)) // n - 1
+          if idx == n - 1:
+              c_end = ef
+          os.makedirs("chunks", exist_ok=True)
+          out_path = f"chunks/part_{idx}.mp4"
+          print(f"Rendering part {idx}: frames {c_start}..{c_end} ({c_end - c_start + 1} frames)")
+          cmd = [
+              "npx", "remotion", "render",
+              "${{ inputs.comp_id }}",
+              out_path,
+              f"--frames={c_start}-{c_end}",
+              "--concurrency=4",
+              "--muted",
+              "--jpeg-quality=90",
+              "--crf=16"
+          ]
+          res = subprocess.run(cmd)
+          sys.exit(res.returncode)
+          EOF
+
+      - name: Upload chunk artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.idx }}
+          path: era/episodes/${{ inputs.episode }}/chunks/part_${{ matrix.idx }}.mp4
+          retention-days: 2
+
+  assemble:
+    name: "Assemble Video & Optional QC"
+    needs: render_matrix
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github
+            antigravity
+            era/episodes/${{ inputs.episode }}
+
+      - name: Download all 8 chunks
+        uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: era/episodes/${{ inputs.episode }}/chunks
+          merge-multiple: true
+
+      - name: Concatenate 8 chunks seamlessly
+        working-directory: era/episodes/${{ inputs.episode }}
+        run: |
+          mkdir -p out
+          > chunks/list.txt
+          for i in 0 1 2 3 4 5 6 7; do
+            echo "file 'part_${i}.mp4'" >> chunks/list.txt
+          done
+          ffmpeg -y -f concat -safe 0 -i chunks/list.txt -c copy out/merged_video.mp4
+          ls -lh out/merged_video.mp4
+
+      - name: Full Audio + Mux + QC (when full_pipeline is true)
+        if: ${{ inputs.full_pipeline == 'true' }}
+        working-directory: era/episodes/${{ inputs.episode }}
+        run: |
+          pip install kokoro-onnx soundfile scipy numpy opencv-python-headless
+          mkdir -p models
+          curl -L -s https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o models/kokoro-v1.0.onnx
+          curl -L -s https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o models/voices-v1.0.bin
+          python3 tts.py
+          python3 audio.py
+          ffmpeg -y -i out/merged_video.mp4 -i public/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest out/final.mp4
+          python3 ../../../antigravity/tools/kalite_kontrol.py out/final.mp4 --profile long
+
+      - name: Upload merged output
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-output-${{ inputs.episode }}
+          path: |
+            era/episodes/${{ inputs.episode }}/out/merged_video.mp4
+            era/episodes/${{ inputs.episode }}/out/final.mp4
+            era/episodes/${{ inputs.episode }}/out/final_QC/
+          retention-days: 5

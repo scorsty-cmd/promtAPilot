@@ -1,0 +1,7 @@
+node_modules/
+chunks/
+out/
+models/
+public/*.wav
+*.mp4
+*.log
