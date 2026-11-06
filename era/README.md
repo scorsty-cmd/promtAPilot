@@ -47,8 +47,10 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
 9. Render long videos in 4 resumable chunks (`runall.sh`), ~0.5 s/frame on 2 cores (8 min ≈ 2 h).
 10. ~~Burned-in captions~~ — DONE in ep03 (speaker-coloured name + ~8-word chunks; `.srt` still shipped).
 11. ~~Dialogue-led script~~ — DONE in ep03 (65 % dialogue, automatic wide / close-up / two-shot coverage `camFor`).
-12. Proper sitting and reclining poses (symposium couches, court benches) instead of standing behind props.
-13. More facial expressions (anger, disgust, laughter, tears) and eyebrow acting per line.
+12. ~~Sitting poses~~ — DONE in ep04 (thigh + shin joints, bentwood chairs, sitting in bed).
+13. ~~Facial expressions~~ — DONE in ep04 (10 presets: laugh, surprised, angry, worried, thinking, sad...; auto-expression from ! and ? per line; per-line reaction map).
+14. Next: hand gestures tied to keywords (pointing, counting on fingers), and walk-and-talk shots with tracking camera.
+15. Next: reusable "clean render → vertical Shorts" step for every long episode (done by hand for ep03).
 
 ## Log
 - 2026-11-05 · ep01 Stone Age — "If You Were Born 20,000 Years Ago" (51 s). QC passed first time (−14.5 LUFS).
@@ -64,3 +66,7 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
   automatic dialogue camera coverage, burned-in speaker captions, red-figure vase flashbacks, Greece map (Natural Earth),
   8 infographics with drift built in, Greek score (aulos, Karplus-Strong lyre, tympanon, krotala). QC passed first time
   (−13.8 LUFS). Sources: Plato (Apology, Crito, Phaedo, Symposium, Laches), Xenophon, Thucydides, Hansen 1991.
+- 2026-11-06 · ep04 Einstein — "If You Were Einstein's Student" (8:20, 10 chapters, ~60 % dialogue, 11 voices incl. Italian/Spanish-accented).
+  New: rig v4 (1900s suits, wild hair, moustaches, glasses), real sitting pose, expression system, sepia + chalkboard look,
+  13 chalkboard explainers (time dilation, E=mc², equivalence, Mercury, light bending, double slit, GPS), salon piano/violin score
+  with clock-tick pulse, typewriter/Morse/chalk SFX. QC passed first time (−14.0 LUFS).

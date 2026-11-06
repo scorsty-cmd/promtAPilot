@@ -1,0 +1,733 @@
+{
+ "lines": [
+  {
+   "key": "o1",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "Princeton, New Jersey. April, nineteen fifty-five. An old man in a hospital bed asks for only one thing.",
+   "start": 0.3,
+   "end": 8.081
+  },
+  {
+   "key": "o2",
+   "chapter": "open",
+   "speaker": "EIN",
+   "text": "My papers, please. And my glasses. I am not finished.",
+   "start": 8.431,
+   "end": 12.018
+  },
+  {
+   "key": "o3",
+   "chapter": "open",
+   "speaker": "DOC",
+   "text": "Professor Einstein, you need to rest.",
+   "start": 12.318,
+   "end": 14.23
+  },
+  {
+   "key": "o4",
+   "chapter": "open",
+   "speaker": "EIN",
+   "text": "Rest? I have rested enough. There is still one equation missing.",
+   "start": 14.53,
+   "end": 18.548
+  },
+  {
+   "key": "o5",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "That's him. And you've known him for fifty years. To see how, we go back to a newspaper ad.",
+   "start": 18.898,
+   "end": 24.895
+  },
+  {
+   "key": "d1",
+   "chapter": "ad",
+   "speaker": "NARR",
+   "text": "Bern, Switzerland. Nineteen-oh-two. You're a broke young student, and a tiny ad catches your eye.",
+   "start": 27.095,
+   "end": 33.507
+  },
+  {
+   "key": "d2",
+   "chapter": "ad",
+   "speaker": "YOU",
+   "text": "Private lessons in mathematics and physics. Trial lesson free. Albert Einstein. Free? I'll take it.",
+   "start": 33.807,
+   "end": 39.385
+  },
+  {
+   "key": "d3",
+   "chapter": "ad",
+   "speaker": "NARR",
+   "text": "A young man with wild dark hair opens the door. He's twenty-three, and he has no job.",
+   "start": 39.735,
+   "end": 45.748
+  },
+  {
+   "key": "d4",
+   "chapter": "ad",
+   "speaker": "EIN",
+   "text": "Come in, come in! You want to learn physics? Good. Then tell me first: what is time?",
+   "start": 46.048,
+   "end": 51.07
+  },
+  {
+   "key": "d5",
+   "chapter": "ad",
+   "speaker": "YOU",
+   "text": "Time? It's, um, what clocks measure?",
+   "start": 51.37,
+   "end": 53.296
+  },
+  {
+   "key": "d6",
+   "chapter": "ad",
+   "speaker": "EIN",
+   "text": "Ha! And what do clocks measure? Time! You see? We are already in trouble.",
+   "start": 53.546,
+   "end": 58.045
+  },
+  {
+   "key": "d6b",
+   "chapter": "ad",
+   "speaker": "YOU",
+   "text": "So what is time, really?",
+   "start": 58.345,
+   "end": 59.925
+  },
+  {
+   "key": "d6c",
+   "chapter": "ad",
+   "speaker": "EIN",
+   "text": "I don't know yet. That is the fun part!",
+   "start": 60.175,
+   "end": 62.769
+  },
+  {
+   "key": "d7",
+   "chapter": "ad",
+   "speaker": "NARR",
+   "text": "The trial lesson lasts four hours. He never asks you for a single franc.",
+   "start": 63.119,
+   "end": 67.812
+  },
+  {
+   "key": "d8",
+   "chapter": "ad",
+   "speaker": "EIN",
+   "text": "Forget the lessons. Come back tomorrow. Talking is better than teaching.",
+   "start": 68.112,
+   "end": 72.541
+  },
+  {
+   "key": "k1",
+   "chapter": "academy",
+   "speaker": "NARR",
+   "text": "Soon you're part of a tiny club with his friends, Maurice Solovine and Conrad Habicht. They give it a grand name.",
+   "start": 74.741,
+   "end": 82.003
+  },
+  {
+   "key": "k2",
+   "chapter": "academy",
+   "speaker": "HAB",
+   "text": "I hereby open the session of the Olympia Academy! Tonight's feast: one sausage, some cheese, and tea.",
+   "start": 82.303,
+   "end": 88.436
+  },
+  {
+   "key": "k3",
+   "chapter": "academy",
+   "speaker": "SOL",
+   "text": "And tonight's book is David Hume. Albert, you start.",
+   "start": 88.736,
+   "end": 91.5
+  },
+  {
+   "key": "k4",
+   "chapter": "academy",
+   "speaker": "EIN",
+   "text": "Hume says we never see a cause. We see one thing, and then another. So, can we be sure of anything?",
+   "start": 91.75,
+   "end": 97.978
+  },
+  {
+   "key": "k5",
+   "chapter": "academy",
+   "speaker": "YOU",
+   "text": "We can be sure the sausage is gone.",
+   "start": 98.278,
+   "end": 100.215
+  },
+  {
+   "key": "k6",
+   "chapter": "academy",
+   "speaker": "HAB",
+   "text": "Psst. For his birthday, we bought real caviar. Watch this.",
+   "start": 100.565,
+   "end": 103.691
+  },
+  {
+   "key": "k7",
+   "chapter": "academy",
+   "speaker": "NARR",
+   "text": "He's busy explaining Galileo's law of inertia. He eats the whole plate, and never notices.",
+   "start": 103.991,
+   "end": 110.23
+  },
+  {
+   "key": "k8",
+   "chapter": "academy",
+   "speaker": "EIN",
+   "text": "So that was caviar? Well. Fine food is wasted on a peasant like me.",
+   "start": 110.53,
+   "end": 115.293
+  },
+  {
+   "key": "k9",
+   "chapter": "academy",
+   "speaker": "NARR",
+   "text": "He needs money, so a friend helps him get a job: Technical Expert, Third Class, at the Swiss Patent Office. Soon after, he marries Mileva Mari\u0107, a physics student from his university.",
+   "start": 115.643,
+   "end": 128.247
+  },
+  {
+   "key": "k10",
+   "chapter": "academy",
+   "speaker": "MIL",
+   "text": "Albert, you'll be reading patents for electric clocks all day.",
+   "start": 128.547,
+   "end": 132.124
+  },
+  {
+   "key": "k11",
+   "chapter": "academy",
+   "speaker": "EIN",
+   "text": "Exactly, Mileva! Clocks! How do you make two clocks in two cities agree? That is a deep question.",
+   "start": 132.374,
+   "end": 138.801
+  },
+  {
+   "key": "m1",
+   "chapter": "miracle",
+   "speaker": "NARR",
+   "text": "Nineteen-oh-five. A warm evening in May. He drags you and his best friend, Michele Besso, to a caf\u00e9.",
+   "start": 141.001,
+   "end": 148.216
+  },
+  {
+   "key": "m2",
+   "chapter": "miracle",
+   "speaker": "EIN",
+   "text": "Besso, you must help me. I think I am going mad.",
+   "start": 148.516,
+   "end": 151.652
+  },
+  {
+   "key": "m3",
+   "chapter": "miracle",
+   "speaker": "BES",
+   "text": "Calm down, Albert. Which problem is it this time?",
+   "start": 151.902,
+   "end": 154.506
+  },
+  {
+   "key": "m4",
+   "chapter": "miracle",
+   "speaker": "EIN",
+   "text": "Light! If I chase a beam of light, does it slow down for me? It cannot. Light always moves at the same speed.",
+   "start": 154.756,
+   "end": 162.05
+  },
+  {
+   "key": "m5",
+   "chapter": "miracle",
+   "speaker": "BES",
+   "text": "Then something else must give way.",
+   "start": 162.35,
+   "end": 164.203
+  },
+  {
+   "key": "m6",
+   "chapter": "miracle",
+   "speaker": "EIN",
+   "text": "But what? Space? Time?",
+   "start": 164.453,
+   "end": 166.39
+  },
+  {
+   "key": "m7",
+   "chapter": "miracle",
+   "speaker": "NARR",
+   "text": "The next morning, at the patent office, he walks straight up to Besso. No hello.",
+   "start": 166.74,
+   "end": 171.475
+  },
+  {
+   "key": "m8",
+   "chapter": "miracle",
+   "speaker": "EIN",
+   "text": "Thank you. I've completely solved the problem.",
+   "start": 171.775,
+   "end": 174.375
+  },
+  {
+   "key": "m9",
+   "chapter": "miracle",
+   "speaker": "EIN",
+   "text": "Time is not the same for everyone. Two clocks, moving differently, do not agree.",
+   "start": 174.675,
+   "end": 179.863
+  },
+  {
+   "key": "m10",
+   "chapter": "miracle",
+   "speaker": "YOU",
+   "text": "So my now and your now aren't the same?",
+   "start": 180.163,
+   "end": 182.22
+  },
+  {
+   "key": "m11",
+   "chapter": "miracle",
+   "speaker": "EIN",
+   "text": "Not if we are moving. Isn't it wonderful?",
+   "start": 182.47,
+   "end": 185.001
+  },
+  {
+   "key": "m11b",
+   "chapter": "miracle",
+   "speaker": "YOU",
+   "text": "Albert, how many papers did you send out this year?",
+   "start": 185.351,
+   "end": 187.942
+  },
+  {
+   "key": "m11c",
+   "chapter": "miracle",
+   "speaker": "EIN",
+   "text": "Five! Light, atoms, relativity, and my doctorate. Not bad for a clerk, no?",
+   "start": 188.192,
+   "end": 193.572
+  },
+  {
+   "key": "m12",
+   "chapter": "miracle",
+   "speaker": "NARR",
+   "text": "That year, a twenty-six-year-old patent clerk publishes papers on light, on atoms, and on relativity. They call it his miracle year.",
+   "start": 193.922,
+   "end": 202.971
+  },
+  {
+   "key": "e1",
+   "chapter": "emc2",
+   "speaker": "YOU",
+   "text": "You wrote one more paper? It's only three pages!",
+   "start": 205.171,
+   "end": 207.867
+  },
+  {
+   "key": "e2",
+   "chapter": "emc2",
+   "speaker": "EIN",
+   "text": "Short, but important. Mass and energy are the same thing, in different clothes.",
+   "start": 208.117,
+   "end": 213.206
+  },
+  {
+   "key": "e3",
+   "chapter": "emc2",
+   "speaker": "YOU",
+   "text": "So how much energy is in, say, one raisin?",
+   "start": 213.506,
+   "end": 215.945
+  },
+  {
+   "key": "e4",
+   "chapter": "emc2",
+   "speaker": "EIN",
+   "text": "Take its mass. Multiply by the speed of light, squared. A very, very big number.",
+   "start": 216.195,
+   "end": 221.775
+  },
+  {
+   "key": "e5",
+   "chapter": "emc2",
+   "speaker": "NARR",
+   "text": "E equals m c squared. One gram of matter holds the energy of about twenty thousand tons of explosives. In nineteen-oh-five, nobody imagines where this leads.",
+   "start": 222.125,
+   "end": 234.572
+  },
+  {
+   "key": "h1",
+   "chapter": "happy",
+   "speaker": "NARR",
+   "text": "Nineteen-oh-seven. He's still at the patent office, staring out of the window.",
+   "start": 236.772,
+   "end": 241.481
+  },
+  {
+   "key": "h2",
+   "chapter": "happy",
+   "speaker": "EIN",
+   "text": "Ach! I just had the happiest thought of my life.",
+   "start": 241.781,
+   "end": 244.588
+  },
+  {
+   "key": "h3",
+   "chapter": "happy",
+   "speaker": "YOU",
+   "text": "They finally promoted you?",
+   "start": 244.838,
+   "end": 246.519
+  },
+  {
+   "key": "h4",
+   "chapter": "happy",
+   "speaker": "EIN",
+   "text": "Better! A man falling from a roof does not feel his own weight.",
+   "start": 246.769,
+   "end": 250.753
+  },
+  {
+   "key": "h5",
+   "chapter": "happy",
+   "speaker": "YOU",
+   "text": "Until he hits the ground.",
+   "start": 251.003,
+   "end": 252.463
+  },
+  {
+   "key": "h6",
+   "chapter": "happy",
+   "speaker": "EIN",
+   "text": "Before that! Falling and floating are the same. So gravity is not a pull at all. It is space and time, bending.",
+   "start": 252.763,
+   "end": 260.396
+  },
+  {
+   "key": "h7",
+   "chapter": "happy",
+   "speaker": "NARR",
+   "text": "Turning that one thought into mathematics takes him years. By nineteen twelve, he begs an old classmate for help.",
+   "start": 260.746,
+   "end": 268.237
+  },
+  {
+   "key": "h8",
+   "chapter": "happy",
+   "speaker": "EIN",
+   "text": "Grossmann, you must help me, or I'll go crazy!",
+   "start": 268.537,
+   "end": 271.58
+  },
+  {
+   "key": "h9",
+   "chapter": "happy",
+   "speaker": "GRO",
+   "text": "Riemann's geometry? Albert, it's a terrible mess. Physicists should stay away from it.",
+   "start": 271.83,
+   "end": 276.515
+  },
+  {
+   "key": "h10",
+   "chapter": "happy",
+   "speaker": "EIN",
+   "text": "Then I will make a mess, my friend.",
+   "start": 276.765,
+   "end": 278.958
+  },
+  {
+   "key": "s1",
+   "chapter": "eclipse",
+   "speaker": "NARR",
+   "text": "November, nineteen fifteen. Berlin. He tests his finished theory on an old puzzle: the strange orbit of Mercury.",
+   "start": 281.158,
+   "end": 289.14
+  },
+  {
+   "key": "s2",
+   "chapter": "eclipse",
+   "speaker": "EIN",
+   "text": "It fits. Exactly! My heart is racing. I am beside myself with joy!",
+   "start": 289.44,
+   "end": 294.626
+  },
+  {
+   "key": "s3",
+   "chapter": "eclipse",
+   "speaker": "EIN",
+   "text": "But the real test needs the Sun. If I'm right, starlight bends around it. We can only see that during a total eclipse.",
+   "start": 294.976,
+   "end": 302.844
+  },
+  {
+   "key": "s4",
+   "chapter": "eclipse",
+   "speaker": "NARR",
+   "text": "May, nineteen nineteen. The British astronomer Arthur Eddington photographs the eclipse from an island off Africa.",
+   "start": 303.144,
+   "end": 310.614
+  },
+  {
+   "key": "s5",
+   "chapter": "eclipse",
+   "speaker": "EDD",
+   "text": "The stars have shifted. Just as Einstein predicted.",
+   "start": 310.914,
+   "end": 314.579
+  },
+  {
+   "key": "s6",
+   "chapter": "eclipse",
+   "speaker": "YOU",
+   "text": "Professor, they confirmed it! But what if the photos had proved you wrong?",
+   "start": 314.929,
+   "end": 318.642
+  },
+  {
+   "key": "s7",
+   "chapter": "eclipse",
+   "speaker": "EIN",
+   "text": "Then I would have felt sorry for the dear Lord. The theory is correct.",
+   "start": 318.892,
+   "end": 322.944
+  },
+  {
+   "key": "s8",
+   "chapter": "eclipse",
+   "speaker": "NARR",
+   "text": "Overnight, he's the most famous scientist on Earth. Newspapers call it a revolution in science.",
+   "start": 323.294,
+   "end": 329.706
+  },
+  {
+   "key": "s9",
+   "chapter": "eclipse",
+   "speaker": "YOU",
+   "text": "And now the Nobel Prize! For relativity, right?",
+   "start": 330.056,
+   "end": 332.765
+  },
+  {
+   "key": "s10",
+   "chapter": "eclipse",
+   "speaker": "EIN",
+   "text": "No! For my little paper on light, from nineteen-oh-five. They still don't trust relativity.",
+   "start": 333.015,
+   "end": 339.3
+  },
+  {
+   "key": "q1",
+   "chapter": "bohr",
+   "speaker": "NARR",
+   "text": "Brussels, nineteen twenty-seven. The greatest physicists alive meet to argue about the strange rules of atoms.",
+   "start": 341.5,
+   "end": 349.22
+  },
+  {
+   "key": "q2",
+   "chapter": "bohr",
+   "speaker": "BOHR",
+   "text": "At the smallest scales, nature is a game of chance. We can only know probabilities.",
+   "start": 349.52,
+   "end": 354.263
+  },
+  {
+   "key": "q3",
+   "chapter": "bohr",
+   "speaker": "EIN",
+   "text": "I cannot believe that. God does not play dice.",
+   "start": 354.513,
+   "end": 357.78
+  },
+  {
+   "key": "q4",
+   "chapter": "bohr",
+   "speaker": "BOHR",
+   "text": "Einstein, stop telling God what to do!",
+   "start": 358.03,
+   "end": 360.429
+  },
+  {
+   "key": "q5",
+   "chapter": "bohr",
+   "speaker": "NARR",
+   "text": "At every meeting, he brings a new thought experiment to break the theory. And every time, Bohr finds an answer.",
+   "start": 360.779,
+   "end": 368.057
+  },
+  {
+   "key": "q5b",
+   "chapter": "bohr",
+   "speaker": "EIN",
+   "text": "Bohr! A box full of light, with a clock inside. Weigh the box, and your uncertainty is broken!",
+   "start": 368.357,
+   "end": 374.598
+  },
+  {
+   "key": "q5c",
+   "chapter": "bohr",
+   "speaker": "BOHR",
+   "text": "Ah, but a clock that moves in gravity runs differently, Albert. Your own relativity saves me!",
+   "start": 374.848,
+   "end": 380.334
+  },
+  {
+   "key": "q6",
+   "chapter": "bohr",
+   "speaker": "YOU",
+   "text": "So who's winning?",
+   "start": 380.634,
+   "end": 381.854
+  },
+  {
+   "key": "q7",
+   "chapter": "bohr",
+   "speaker": "EIN",
+   "text": "Bohr, today. Tomorrow? We shall see.",
+   "start": 382.104,
+   "end": 384.758
+  },
+  {
+   "key": "q8",
+   "chapter": "bohr",
+   "speaker": "NARR",
+   "text": "Experiments mostly side with Bohr. But Einstein's objections lead to quantum entanglement, the idea behind today's quantum computers.",
+   "start": 385.058,
+   "end": 394.739
+  },
+  {
+   "key": "x1",
+   "chapter": "exile",
+   "speaker": "NARR",
+   "text": "Nineteen thirty-three. Hitler takes power. Einstein is visiting America, and he never goes back.",
+   "start": 396.939,
+   "end": 403.636
+  },
+  {
+   "key": "x2",
+   "chapter": "exile",
+   "speaker": "EIN",
+   "text": "I will not live in a country where people are not equal before the law.",
+   "start": 403.936,
+   "end": 408.007
+  },
+  {
+   "key": "x3",
+   "chapter": "exile",
+   "speaker": "NARR",
+   "text": "The Nazis seize his home and burn his books. He settles in Princeton. Six years later, a visitor brings a warning.",
+   "start": 408.357,
+   "end": 415.991
+  },
+  {
+   "key": "x4",
+   "chapter": "exile",
+   "speaker": "SZI",
+   "text": "German scientists have split the uranium atom. A chain reaction could make a bomb of enormous power.",
+   "start": 416.291,
+   "end": 421.962
+  },
+  {
+   "key": "x5",
+   "chapter": "exile",
+   "speaker": "EIN",
+   "text": "I never even thought of that.",
+   "start": 422.212,
+   "end": 424.007
+  },
+  {
+   "key": "x6",
+   "chapter": "exile",
+   "speaker": "YOU",
+   "text": "What will you do?",
+   "start": 424.307,
+   "end": 425.492
+  },
+  {
+   "key": "x7",
+   "chapter": "exile",
+   "speaker": "EIN",
+   "text": "Then we must warn the President. Before Hitler gets there first.",
+   "start": 425.742,
+   "end": 429.746
+  },
+  {
+   "key": "x8",
+   "chapter": "exile",
+   "speaker": "NARR",
+   "text": "His letter to Roosevelt helps start the atomic bomb project. Einstein never works on it himself.",
+   "start": 430.096,
+   "end": 436.395
+  },
+  {
+   "key": "x9",
+   "chapter": "exile",
+   "speaker": "EIN",
+   "text": "I made one great mistake in my life, when I signed that letter. But there was the danger that the Germans would make it first.",
+   "start": 436.695,
+   "end": 444.497
+  },
+  {
+   "key": "c1",
+   "chapter": "legacy",
+   "speaker": "NARR",
+   "text": "Back to that hospital bed. April eighteenth, nineteen fifty-five. He dies in his sleep, at seventy-six. His last calculations lie beside him.",
+   "start": 446.697,
+   "end": 457.317
+  },
+  {
+   "key": "c2",
+   "chapter": "legacy",
+   "speaker": "YOU",
+   "text": "He never found the equation he was looking for.",
+   "start": 457.667,
+   "end": 460.083
+  },
+  {
+   "key": "c3",
+   "chapter": "legacy",
+   "speaker": "NARR",
+   "text": "But the GPS in your phone corrects for relativity every day. Without it, your position would drift by about ten kilometers a day.",
+   "start": 460.383,
+   "end": 469.314
+  },
+  {
+   "key": "c4",
+   "chapter": "legacy",
+   "speaker": "NARR",
+   "text": "Lasers, solar panels, even the first photo of a black hole, all trace back to his ideas.",
+   "start": 469.614,
+   "end": 475.941
+  },
+  {
+   "key": "c5a",
+   "chapter": "legacy",
+   "speaker": "YOU",
+   "text": "Professor, what should I tell my own students one day?",
+   "start": 476.241,
+   "end": 478.928
+  },
+  {
+   "key": "c5",
+   "chapter": "legacy",
+   "speaker": "EIN",
+   "text": "The important thing is not to stop questioning. I have no special talents. I am only passionately curious.",
+   "start": 479.178,
+   "end": 485.983
+  },
+  {
+   "key": "c6",
+   "chapter": "legacy",
+   "speaker": "NARR",
+   "text": "So, if you were his student, which question would you chase for fifty years? Tell me in the comments.",
+   "start": 486.333,
+   "end": 491.935
+  }
+ ],
+ "voice_end": 492.435
+}
