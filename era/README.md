@@ -50,7 +50,10 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
 13. ~~Facial expressions~~ — DONE in ep04 (10 presets: laugh, surprised, angry, worried, thinking, sad...; auto-expression from ! and ? per line; per-line reaction map).
 14. ~~Keyword gestures + tracking walk-and-talk~~ — DONE in ep05 (point on Look/That's, fist on Push!/Fire!, counting on numbers; tracking shot in the escape; survival props radio, flashlight, map, water filter, seed in ep05_zombies).
 15. Next: reusable "clean render → vertical Shorts" step for every long episode (done by hand for ep03).
-16. Next: crowd variety (women, children, elders in mass scenes), depth-of-field blur on foreground layers, a reusable 'battle kit' module.
+16. ~~Crowd variety + depth of field~~ — DONE in ep06 (women, elders, children in crowds; animated arena stands of ~170 people; blurred foreground layer `near`).
+18. ~~Fight choreography~~ — DONE in ep06 (`fight()` move library: guard, step, thrust, wind, slash, block, dodge, low, hit, fall, beg, bash; blended moves, impact sparks, flash + camera punch; timings in `src/fights.json` shared with audio.py so every clash is in sync).
+19. ~~One-click cloud render~~ — DONE in ep06 (`.github/workflows/era-render.yml`: voices + mix → 16 parallel chunks → join → GitHub Release; nothing runs on the owner's computer).
+20. Next: split-screen choices reused for every 'who do you follow?' moment; proper side-view run cycle; vertical Shorts from the clean render.
 17. ~~Ending card motion~~ — DONE in ep05_zombies (continuous zoom/drift on closing card and all explainers).
 
 ## Log
@@ -81,3 +84,8 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
   3 atmospheric painted-texture sets (`CityStreet`, `Safehouse`, `MountainRidge`), 7 dynamic science explainers (`RZeroExplainer`, `ParasiteExplainer`, `WaterExplainer`, `FoodExplainer`, `GeographyExplainer`, `FreezeExplainer`, `CrashExplainer`) with built-in drift & particles,
   dark horror-synth score + emergency EAS siren/radio/heartbeat/wind SFX mastered to −14.2 LUFS, plus 8-way GitHub Actions cloud parallel render workflow.
   Sources: Smith? et al. 2009 (University of Ottawa Zombie Outbreak Model), Hughes et al. 2011 (Ophiocordyceps unilateralis), WHO Rabies Fact Sheet, FEMA/ASCE Infrastructure Failure Reports, USDA Caloric & Seed Vault Studies, Aleph et al. 2015 (Cornell Statistical Mechanics of Outbreaks), Cahill et al. 2006 (Human Starvation & Dehydration Physiology).
+- 2026-11-06 · ep06 Spartacus — "If You Were Spartacus's Best Friend" (11:50, 10 chapters, 107 of 156 lines dialogue, 14 voices incl. Italian-accented herald).
+  New: rig v6 (gladiator kit: Thracian griffin helmet, Samnite plumed helmet, Gallic helmet, parmula/scutum/oval shields, manica, greaves; togas, mail lorica, cloaks, rags; Gallic moustache + torque, scars, tattoos; world-angle blades gladius/sica/rudis/cleaver/spit), hero face stripe restored,
+  fight choreography system, arena with reacting crowd + editor's box, ludus/cell/kitchen/Vesuvius cliff/Roman camp/coast/Crassus's ditch/Appian Way/Pompeii fresco sets, split-screen decision shot, Pompeian-wall explainers (Italy route map from Natural Earth),
+  Roman score (hydraulis water organ, tuba fanfares, cornu, frame drums, cithara) + hit-synced SFX. Rendered in the cloud with era-render.yml.
+  Sources: Plutarch (Crassus 8–11), Appian (BC 1.116–120), Vegetius 1.11, Lösch et al. 2014, Ville 1981.

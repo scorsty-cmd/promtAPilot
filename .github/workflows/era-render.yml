@@ -1,0 +1,180 @@
+name: ERA Episode Render (cloud)
+
+# Renders an "If You Were…" episode completely on GitHub's servers — no computer needs to be on.
+#   prep     : voices (Kokoro) + music/SFX mix  -> timeline.json, mouth.json, mix.wav
+#   render   : N parallel chunks of the Remotion composition
+#   assemble : join chunks, add audio, subtitles, thumbnail -> GitHub Release (+ workflow artifact)
+# Start it from the Actions tab ("Run workflow") or: gh workflow run era-render.yml -f episode=ep06_spartacus -f comp=Spartacus
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode folder under era/episodes/"
+        required: true
+        default: "ep06_spartacus"
+      comp:
+        description: "Remotion composition id"
+        required: true
+        default: "Spartacus"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: era-render-${{ inputs.episode }}
+  cancel-in-progress: false
+
+env:
+  EP: era/episodes/${{ inputs.episode }}
+
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            era/episodes/${{ inputs.episode }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Cache voice model
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.EP }}/models
+          key: kokoro-v1.0
+      - name: Install audio tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q kokoro-onnx soundfile scipy numpy
+      - name: Download voice model
+        working-directory: ${{ env.EP }}
+        run: |
+          mkdir -p models
+          [ -s models/kokoro-v1.0.onnx ] || curl -sSL -o models/kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+          [ -s models/voices-v1.0.bin ] || curl -sSL -o models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+      - name: Voices + timeline
+        working-directory: ${{ env.EP }}
+        run: python3 tts.py
+      - name: Music + sound design + mix
+        working-directory: ${{ env.EP }}
+        run: |
+          python3 audio.py
+          [ -f srt.py ] && python3 srt.py || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: prep
+          retention-days: 3
+          path: |
+            ${{ env.EP }}/public/mix.wav
+            ${{ env.EP }}/src/timeline.json
+            ${{ env.EP }}/src/mouth.json
+            ${{ env.EP }}/subtitles_en.srt
+
+  render:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            era/episodes/${{ inputs.episode }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/download-artifact@v4
+        with:
+          name: prep
+          path: ${{ env.EP }}
+      - name: Install
+        working-directory: ${{ env.EP }}
+        run: npm ci --no-audit --no-fund || npm install --no-audit --no-fund
+      - name: Render chunk ${{ matrix.idx }}
+        working-directory: ${{ env.EP }}
+        env:
+          COMP: ${{ inputs.comp }}
+          GL: swangle
+          CONC: "4"
+          CHROME: /usr/bin/google-chrome
+        run: |
+          N=16; I=${{ matrix.idx }}
+          TOTAL=$(python3 -c "import json,math;t=json.load(open('src/timeline.json'));print(math.ceil((t['voice_end']+8)*30))")
+          S=$(( TOTAL * I / N )); E=$(( TOTAL * (I + 1) / N - 1 ))
+          echo "chunk $I: frames $S..$E of $TOTAL"
+          mkdir -p chunks
+          node render.mjs $S $E chunks/part_$(printf %02d $I).mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.idx }}
+          retention-days: 2
+          path: ${{ env.EP }}/chunks/part_*.mp4
+
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            era/episodes/${{ inputs.episode }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/download-artifact@v4
+        with:
+          name: prep
+          path: ${{ env.EP }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: ${{ env.EP }}/chunks
+          merge-multiple: true
+      - name: Join chunks + audio
+        working-directory: ${{ env.EP }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          mkdir -p out
+          ls chunks/part_*.mp4 | sort | sed "s/.*/file '&'/" | sed "s#file 'chunks/#file '#" > chunks/list.txt
+          cat chunks/list.txt
+          ffmpeg -y -hide_banner -loglevel error -f concat -safe 0 -i chunks/list.txt -c copy out/video.mp4
+          ffmpeg -y -hide_banner -loglevel error -i out/video.mp4 -i public/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart out/${{ inputs.episode }}.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 out/${{ inputs.episode }}.mp4
+      - name: Thumbnail
+        working-directory: ${{ env.EP }}
+        env:
+          GL: swangle
+          CHROME: /usr/bin/google-chrome
+        run: |
+          npm ci --no-audit --no-fund || npm install --no-audit --no-fund
+          mkdir -p stills && node tstill.mjs Thumb && cp stills/Thumb.png out/thumbnail_1280x720.png || echo "thumbnail skipped"
+      - name: Collect files
+        working-directory: ${{ env.EP }}
+        run: |
+          cp -f subtitles_en.srt out/ 2>/dev/null || true
+          cp -f youtube_metadata.txt out/ 2>/dev/null || true
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ inputs.episode }}
+          retention-days: 7
+          path: |
+            ${{ env.EP }}/out/${{ inputs.episode }}.mp4
+            ${{ env.EP }}/out/thumbnail_1280x720.png
+            ${{ env.EP }}/out/subtitles_en.srt
+            ${{ env.EP }}/out/youtube_metadata.txt
+      - name: Publish as GitHub Release
+        working-directory: ${{ env.EP }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="era-${{ inputs.episode }}-r${{ github.run_number }}"
+          gh release create "$TAG" out/${{ inputs.episode }}.mp4 $(ls out/thumbnail_1280x720.png out/subtitles_en.srt out/youtube_metadata.txt 2>/dev/null) \
+            --repo "${{ github.repository }}" --title "ERA ${{ inputs.episode }} (run ${{ github.run_number }})" --notes "Rendered in the cloud by era-render.yml" --target "${{ github.sha }}"

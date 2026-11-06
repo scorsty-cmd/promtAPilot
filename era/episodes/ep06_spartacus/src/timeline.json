@@ -1,0 +1,1253 @@
+{
+ "lines": [
+  {
+   "key": "o1",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "Southern Italy. Seventy-one BC. The last morning of the slave war.",
+   "start": 0.3,
+   "end": 5.272
+  },
+  {
+   "key": "o2",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "Spartacus! What are you doing? That's your horse!",
+   "start": 5.572,
+   "end": 7.846
+  },
+  {
+   "key": "o3",
+   "chapter": "open",
+   "speaker": "SPA",
+   "text": "If we win today, brother, I'll have a thousand Roman horses.",
+   "start": 8.096,
+   "end": 11.589
+  },
+  {
+   "key": "o4",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "And if we lose?",
+   "start": 11.839,
+   "end": 13.055
+  },
+  {
+   "key": "o5",
+   "chapter": "open",
+   "speaker": "SPA",
+   "text": "Then I won't need one.",
+   "start": 13.355,
+   "end": 14.81
+  },
+  {
+   "key": "o6",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "Across the valley, eight Roman legions are forming lines. They're led by the richest man in Rome.",
+   "start": 15.26,
+   "end": 21.81
+  },
+  {
+   "key": "o7",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "Two years ago we were slaves in a gladiator school. Look at us now.",
+   "start": 22.06,
+   "end": 25.621
+  },
+  {
+   "key": "o8",
+   "chapter": "open",
+   "speaker": "SPA",
+   "text": "Look at them. They're afraid of us. Remember that.",
+   "start": 25.871,
+   "end": 28.259
+  },
+  {
+   "key": "o9",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "You are a gladiator. You are Spartacus's closest friend. And you were there from the very first night. To see how it began, go back two years.",
+   "start": 28.609,
+   "end": 38.173
+  },
+  {
+   "key": "l1",
+   "chapter": "ludus",
+   "speaker": "NARR",
+   "text": "Capua, seventy-three BC. One of the gladiator schools in this city belongs to a man named Lentulus Batiatus.",
+   "start": 40.373,
+   "end": 49.346
+  },
+  {
+   "key": "l2",
+   "chapter": "ludus",
+   "speaker": "BAT",
+   "text": "Teeth. Shoulders. Turn around. Hm. This one is strong. Put him with the Thracian.",
+   "start": 49.596,
+   "end": 54.947
+  },
+  {
+   "key": "l3",
+   "chapter": "ludus",
+   "speaker": "YOU",
+   "text": "I'm not a slave! I was a farmer. Pirates took me off a ship!",
+   "start": 55.197,
+   "end": 58.536
+  },
+  {
+   "key": "l4",
+   "chapter": "ludus",
+   "speaker": "BAT",
+   "text": "And now you belong to me. Swear the oath, boy.",
+   "start": 58.786,
+   "end": 62.1
+  },
+  {
+   "key": "l5",
+   "chapter": "ludus",
+   "speaker": "DOC",
+   "text": "Every man here swore it. To be burned, chained, beaten, and killed by the sword. Say it!",
+   "start": 62.4,
+   "end": 68.237
+  },
+  {
+   "key": "l6",
+   "chapter": "ludus",
+   "speaker": "NARR",
+   "text": "The gladiator's oath is real. Roman writers quote it word for word.",
+   "start": 68.537,
+   "end": 73.029
+  },
+  {
+   "key": "l7",
+   "chapter": "ludus",
+   "speaker": "YOU",
+   "text": "I swear to be burned, chained, beaten, and killed by the sword.",
+   "start": 73.279,
+   "end": 76.283
+  },
+  {
+   "key": "l8",
+   "chapter": "ludus",
+   "speaker": "NARR",
+   "text": "That night, they lock you in a stone cell, smaller than a horse stall. Your cellmate is a Thracian.",
+   "start": 76.783,
+   "end": 82.773
+  },
+  {
+   "key": "l9",
+   "chapter": "ludus",
+   "speaker": "SPA",
+   "text": "First night?",
+   "start": 83.073,
+   "end": 83.853
+  },
+  {
+   "key": "l10",
+   "chapter": "ludus",
+   "speaker": "YOU",
+   "text": "Is it that obvious?",
+   "start": 84.103,
+   "end": 85.543
+  },
+  {
+   "key": "l11",
+   "chapter": "ludus",
+   "speaker": "SPA",
+   "text": "You're shaking. I'm Spartacus. I was a soldier once. Then a deserter. Then a slave.",
+   "start": 85.793,
+   "end": 90.42
+  },
+  {
+   "key": "l12",
+   "chapter": "ludus",
+   "speaker": "YOU",
+   "text": "How long have you been here?",
+   "start": 90.67,
+   "end": 92.224
+  },
+  {
+   "key": "l13",
+   "chapter": "ludus",
+   "speaker": "SPA",
+   "text": "Long enough to count the guards. Get some sleep. Tomorrow, the doctore will try to break you.",
+   "start": 92.474,
+   "end": 97.431
+  },
+  {
+   "key": "l14",
+   "chapter": "ludus",
+   "speaker": "CRI",
+   "text": "Thracian! Teaching the new puppy to bark?",
+   "start": 97.731,
+   "end": 99.839
+  },
+  {
+   "key": "l15",
+   "chapter": "ludus",
+   "speaker": "SPA",
+   "text": "Crixus. Go back to your corner.",
+   "start": 100.089,
+   "end": 102.103
+  },
+  {
+   "key": "l16",
+   "chapter": "ludus",
+   "speaker": "CRI",
+   "text": "Ha! Welcome to the house of Batiatus, puppy. Most of you don't last a season.",
+   "start": 102.353,
+   "end": 107.616
+  },
+  {
+   "key": "t1",
+   "chapter": "school",
+   "speaker": "NARR",
+   "text": "Your days begin at dawn. Every single day.",
+   "start": 109.816,
+   "end": 112.757
+  },
+  {
+   "key": "t2",
+   "chapter": "school",
+   "speaker": "DOC",
+   "text": "Wooden swords! To the post! Strike! Again! Again!",
+   "start": 113.007,
+   "end": 116.56
+  },
+  {
+   "key": "t3",
+   "chapter": "school",
+   "speaker": "DOC",
+   "text": "Twice the weight of a real sword! In the arena, the real one will feel like a feather!",
+   "start": 116.86,
+   "end": 122.271
+  },
+  {
+   "key": "t3b",
+   "chapter": "school",
+   "speaker": "NARR",
+   "text": "The post was called the palus. Roman writers say recruits used weapons twice as heavy as real ones.",
+   "start": 122.521,
+   "end": 129.919
+  },
+  {
+   "key": "t4",
+   "chapter": "school",
+   "speaker": "YOU",
+   "text": "My arms. I can't lift them anymore.",
+   "start": 130.169,
+   "end": 132.205
+  },
+  {
+   "key": "t5",
+   "chapter": "school",
+   "speaker": "DOC",
+   "text": "The crowd pays to see you fight, not to see you rest! Shield up! Again!",
+   "start": 132.455,
+   "end": 137.247
+  },
+  {
+   "key": "t6",
+   "chapter": "school",
+   "speaker": "OEN",
+   "text": "Here. Eat. You'll need it.",
+   "start": 137.747,
+   "end": 138.796
+  },
+  {
+   "key": "t7",
+   "chapter": "school",
+   "speaker": "YOU",
+   "text": "What is this?",
+   "start": 139.046,
+   "end": 140.059
+  },
+  {
+   "key": "t8",
+   "chapter": "school",
+   "speaker": "OEN",
+   "text": "Barley and beans. Every day. They call us the barley men.",
+   "start": 140.309,
+   "end": 143.29
+  },
+  {
+   "key": "t9",
+   "chapter": "school",
+   "speaker": "NARR",
+   "text": "That nickname is real: hordearii. Bones from a gladiator graveyard in Ephesus show they ate mostly grains and beans.",
+   "start": 143.59,
+   "end": 152.959
+  },
+  {
+   "key": "t9b",
+   "chapter": "school",
+   "speaker": "OEN",
+   "text": "And drink this after training. Plant ash in water.",
+   "start": 153.209,
+   "end": 155.96
+  },
+  {
+   "key": "t9c",
+   "chapter": "school",
+   "speaker": "YOU",
+   "text": "Ugh! It's bitter!",
+   "start": 156.21,
+   "end": 157.242
+  },
+  {
+   "key": "t9d",
+   "chapter": "school",
+   "speaker": "OEN",
+   "text": "Bitter, but it makes your bones strong. The doctors swear by it.",
+   "start": 157.492,
+   "end": 160.516
+  },
+  {
+   "key": "t10",
+   "chapter": "school",
+   "speaker": "OEN",
+   "text": "They want us fat, too. Fat protects you. A cut bleeds, but you keep fighting.",
+   "start": 160.816,
+   "end": 165.013
+  },
+  {
+   "key": "t11",
+   "chapter": "school",
+   "speaker": "YOU",
+   "text": "So they feed us like prize horses.",
+   "start": 165.263,
+   "end": 167.345
+  },
+  {
+   "key": "t12",
+   "chapter": "school",
+   "speaker": "SPA",
+   "text": "We are prize horses. Batiatus paid a lot for us. He doesn't want us dead. He wants us bleeding in front of a crowd.",
+   "start": 167.595,
+   "end": 174.226
+  },
+  {
+   "key": "t13",
+   "chapter": "school",
+   "speaker": "DOC",
+   "text": "You! New one! Curved sword, small shield. You'll fight in the Thracian style.",
+   "start": 174.726,
+   "end": 179.506
+  },
+  {
+   "key": "t14",
+   "chapter": "school",
+   "speaker": "YOU",
+   "text": "Like Spartacus?",
+   "start": 179.756,
+   "end": 181.018
+  },
+  {
+   "key": "t15",
+   "chapter": "school",
+   "speaker": "SPA",
+   "text": "Like my people. The Romans named a whole way of fighting after us.",
+   "start": 181.268,
+   "end": 185.062
+  },
+  {
+   "key": "t16",
+   "chapter": "school",
+   "speaker": "NARR",
+   "text": "Back then, the three main styles were named after peoples Rome had beaten: the Samnite, the Gaul, and the Thracian.",
+   "start": 185.362,
+   "end": 192.641
+  },
+  {
+   "key": "t17",
+   "chapter": "school",
+   "speaker": "CRI",
+   "text": "And I'm the Gaul. Big shield, straight sword. When we meet in the arena, puppy, try not to cry.",
+   "start": 192.941,
+   "end": 198.447
+  },
+  {
+   "key": "a1",
+   "chapter": "arena",
+   "speaker": "NARR",
+   "text": "Three months later. Your first games.",
+   "start": 200.647,
+   "end": 202.94
+  },
+  {
+   "key": "a2",
+   "chapter": "arena",
+   "speaker": "HER",
+   "text": "People of Capua! The house of Batiatus presents ten pairs of gladiators!",
+   "start": 203.19,
+   "end": 207.294
+  },
+  {
+   "key": "a3",
+   "chapter": "arena",
+   "speaker": "OEN",
+   "text": "First the parade. Animal hunts in the morning. Criminals at noon. We fight in the afternoon.",
+   "start": 207.594,
+   "end": 212.669
+  },
+  {
+   "key": "a4",
+   "chapter": "arena",
+   "speaker": "YOU",
+   "text": "There are thousands of them. Women. Children. Old men eating bread.",
+   "start": 212.919,
+   "end": 216.276
+  },
+  {
+   "key": "a5",
+   "chapter": "arena",
+   "speaker": "SPA",
+   "text": "They're not here for you. They're here for a good fight. Give them one, and you live.",
+   "start": 216.526,
+   "end": 220.56
+  },
+  {
+   "key": "a6",
+   "chapter": "arena",
+   "speaker": "NARR",
+   "text": "First, a warm-up with blunt weapons. Then the real swords come out.",
+   "start": 220.86,
+   "end": 225.21
+  },
+  {
+   "key": "a7",
+   "chapter": "arena",
+   "speaker": "REF",
+   "text": "Gladiators! Fight clean. When I raise my stick, you stop. Begin!",
+   "start": 225.46,
+   "end": 228.656
+  },
+  {
+   "key": "a8",
+   "chapter": "arena",
+   "speaker": "NARR",
+   "text": "Yes, there was a referee. Roman mosaics show him with a long stick, right between the fighters.",
+   "start": 228.956,
+   "end": 235.266
+  },
+  {
+   "key": "a9",
+   "chapter": "arena",
+   "speaker": "OPP",
+   "text": "Come on, Thracian! Show me that little sword!",
+   "start": 235.516,
+   "end": 237.918
+  },
+  {
+   "key": "a10",
+   "chapter": "arena",
+   "speaker": "YOU",
+   "text": "Shield up. Watch his feet. Watch his feet.",
+   "start": 238.168,
+   "end": 240.349
+  },
+  {
+   "key": "a11",
+   "chapter": "arena",
+   "speaker": "SPA",
+   "text": "His shield covers everything! Go low! Go for the legs!",
+   "start": 240.649,
+   "end": 243.842
+  },
+  {
+   "key": "a12",
+   "chapter": "arena",
+   "speaker": "OPP",
+   "text": "Agh! My leg!",
+   "start": 244.142,
+   "end": 245.058
+  },
+  {
+   "key": "a13",
+   "chapter": "arena",
+   "speaker": "HER",
+   "text": "He is down! He is down!",
+   "start": 245.308,
+   "end": 246.883
+  },
+  {
+   "key": "a14",
+   "chapter": "arena",
+   "speaker": "REF",
+   "text": "Stop! He raises a finger! He asks for mercy! The editor decides!",
+   "start": 247.183,
+   "end": 250.677
+  },
+  {
+   "key": "a14b",
+   "chapter": "arena",
+   "speaker": "NARR",
+   "text": "The editor was the rich man who paid for the games. The loser's life was in his hands.",
+   "start": 250.927,
+   "end": 256.249
+  },
+  {
+   "key": "a15",
+   "chapter": "arena",
+   "speaker": "YOU",
+   "text": "Do I have to kill him?",
+   "start": 256.499,
+   "end": 257.899
+  },
+  {
+   "key": "a16",
+   "chapter": "arena",
+   "speaker": "SPA",
+   "text": "Look at the crowd. Watch the editor's hand.",
+   "start": 258.149,
+   "end": 260.555
+  },
+  {
+   "key": "a17",
+   "chapter": "arena",
+   "speaker": "NARR",
+   "text": "Movies show a thumb pointing down for death. That idea comes from a painting made in eighteen seventy-two. Nobody knows exactly what the Roman gesture looked like.",
+   "start": 260.855,
+   "end": 271.703
+  },
+  {
+   "key": "a18",
+   "chapter": "arena",
+   "speaker": "HER",
+   "text": "The editor grants mercy! Missio!",
+   "start": 272.003,
+   "end": 273.976
+  },
+  {
+   "key": "a19",
+   "chapter": "arena",
+   "speaker": "YOU",
+   "text": "He lives. I live.",
+   "start": 274.226,
+   "end": 275.558
+  },
+  {
+   "key": "a20",
+   "chapter": "arena",
+   "speaker": "NARR",
+   "text": "Most fights did not end in death. Gladiators were expensive. Records from a century later suggest about one fight in five ended with a dead man.",
+   "start": 275.908,
+   "end": 286.284
+  },
+  {
+   "key": "a21",
+   "chapter": "arena",
+   "speaker": "SPA",
+   "text": "One in five, brother. Fight ten times, and do the math.",
+   "start": 286.534,
+   "end": 289.688
+  },
+  {
+   "key": "a22",
+   "chapter": "arena",
+   "speaker": "YOU",
+   "text": "That's not a life. That's a slow execution.",
+   "start": 289.938,
+   "end": 292.36
+  },
+  {
+   "key": "a23",
+   "chapter": "arena",
+   "speaker": "SPA",
+   "text": "Exactly. So let's not stay.",
+   "start": 292.61,
+   "end": 294.534
+  },
+  {
+   "key": "e1",
+   "chapter": "escape",
+   "speaker": "NARR",
+   "text": "Summer, seventy-three BC. Two hundred gladiators are planning an escape.",
+   "start": 296.734,
+   "end": 301.607
+  },
+  {
+   "key": "e2",
+   "chapter": "escape",
+   "speaker": "SPA",
+   "text": "Tonight. The kitchen. Knives, cleavers, roasting spits. Anything with an edge.",
+   "start": 301.857,
+   "end": 306.127
+  },
+  {
+   "key": "e3",
+   "chapter": "escape",
+   "speaker": "CRI",
+   "text": "Kitchen knives against Roman swords? You're mad, Thracian.",
+   "start": 306.377,
+   "end": 309.802
+  },
+  {
+   "key": "e4",
+   "chapter": "escape",
+   "speaker": "SPA",
+   "text": "You have a better plan, Gaul? Or do you want to die for Batiatus's money?",
+   "start": 310.052,
+   "end": 314.228
+  },
+  {
+   "key": "e5",
+   "chapter": "escape",
+   "speaker": "CRI",
+   "text": "Hm. I'm in.",
+   "start": 314.528,
+   "end": 315.599
+  },
+  {
+   "key": "e6",
+   "chapter": "escape",
+   "speaker": "NARR",
+   "text": "But someone talks. The guards find out.",
+   "start": 315.949,
+   "end": 318.418
+  },
+  {
+   "key": "e7",
+   "chapter": "escape",
+   "speaker": "YOU",
+   "text": "They know! Spartacus, they know!",
+   "start": 318.668,
+   "end": 320.444
+  },
+  {
+   "key": "e8",
+   "chapter": "escape",
+   "speaker": "SPA",
+   "text": "Then it's now or never! Go! Go!",
+   "start": 320.644,
+   "end": 322.749
+  },
+  {
+   "key": "e9",
+   "chapter": "escape",
+   "speaker": "NARR",
+   "text": "Of two hundred, only about seventy make it out, armed with kitchen tools.",
+   "start": 323.099,
+   "end": 327.627
+  },
+  {
+   "key": "e10",
+   "chapter": "escape",
+   "speaker": "OEN",
+   "text": "Look! On the road! A wagon!",
+   "start": 327.927,
+   "end": 329.134
+  },
+  {
+   "key": "e11",
+   "chapter": "escape",
+   "speaker": "YOU",
+   "text": "It's full of gladiator weapons! Real swords!",
+   "start": 329.384,
+   "end": 331.996
+  },
+  {
+   "key": "e12",
+   "chapter": "escape",
+   "speaker": "SPA",
+   "text": "Throw away the kitchen knives, brothers. We're gladiators again. But this time, we fight for ourselves.",
+   "start": 332.246,
+   "end": 338.067
+  },
+  {
+   "key": "v1",
+   "chapter": "vesuv",
+   "speaker": "NARR",
+   "text": "They hide on a mountain near Naples. You know it today as Vesuvius. In seventy-three BC, it's just a quiet, green mountain.",
+   "start": 340.267,
+   "end": 349.186
+  },
+  {
+   "key": "v2",
+   "chapter": "vesuv",
+   "speaker": "GLA",
+   "text": "Three thousand men. One road up. We don't attack. We wait until they starve.",
+   "start": 349.436,
+   "end": 353.419
+  },
+  {
+   "key": "v3",
+   "chapter": "vesuv",
+   "speaker": "NARR",
+   "text": "The praetor Claudius Glaber blocks the only path. Behind the rebels, there are only cliffs.",
+   "start": 353.719,
+   "end": 359.789
+  },
+  {
+   "key": "v4",
+   "chapter": "vesuv",
+   "speaker": "WIFE",
+   "text": "Spartacus. I dreamed of you. A snake was coiled around your face while you slept.",
+   "start": 360.289,
+   "end": 364.943
+  },
+  {
+   "key": "v5",
+   "chapter": "vesuv",
+   "speaker": "SPA",
+   "text": "Is that good, or bad?",
+   "start": 365.193,
+   "end": 366.633
+  },
+  {
+   "key": "v6",
+   "chapter": "vesuv",
+   "speaker": "WIFE",
+   "text": "Both. Great power. And a terrible end.",
+   "start": 366.883,
+   "end": 368.947
+  },
+  {
+   "key": "v7",
+   "chapter": "vesuv",
+   "speaker": "NARR",
+   "text": "Plutarch really tells this story. Spartacus's wife was a Thracian prophetess.",
+   "start": 369.247,
+   "end": 374.829
+  },
+  {
+   "key": "v8",
+   "chapter": "vesuv",
+   "speaker": "YOU",
+   "text": "These wild vines. Look how thick they are. Spartacus, we could make ladders!",
+   "start": 375.329,
+   "end": 379.482
+  },
+  {
+   "key": "v9",
+   "chapter": "vesuv",
+   "speaker": "SPA",
+   "text": "Ladders. Down the cliff. Brother, you're a genius.",
+   "start": 379.732,
+   "end": 382.617
+  },
+  {
+   "key": "v10",
+   "chapter": "vesuv",
+   "speaker": "NARR",
+   "text": "That night they weave ladders from wild grapevines, and climb down the cliffs in the dark.",
+   "start": 382.917,
+   "end": 388.272
+  },
+  {
+   "key": "v11",
+   "chapter": "vesuv",
+   "speaker": "GLA",
+   "text": "What's that noise? Who's out there?",
+   "start": 388.572,
+   "end": 390.471
+  },
+  {
+   "key": "v12",
+   "chapter": "vesuv",
+   "speaker": "SPA",
+   "text": "Now! Attack!",
+   "start": 390.671,
+   "end": 391.669
+  },
+  {
+   "key": "v13",
+   "chapter": "vesuv",
+   "speaker": "YOU",
+   "text": "They're running! Take their swords! Take their armor!",
+   "start": 391.969,
+   "end": 394.34
+  },
+  {
+   "key": "v14",
+   "chapter": "vesuv",
+   "speaker": "NARR",
+   "text": "Attacked from behind, the Romans flee. The slaves take their weapons, and their whole camp.",
+   "start": 394.59,
+   "end": 400.205
+  },
+  {
+   "key": "w1",
+   "chapter": "army",
+   "speaker": "NARR",
+   "text": "Word spreads. Slaves run away from farms and villas all over southern Italy.",
+   "start": 402.405,
+   "end": 407.786
+  },
+  {
+   "key": "w2",
+   "chapter": "army",
+   "speaker": "YOU",
+   "text": "Spartacus, look! There are hundreds more on the road. Women. Old men. Children.",
+   "start": 408.036,
+   "end": 412.208
+  },
+  {
+   "key": "w3",
+   "chapter": "army",
+   "speaker": "SPA",
+   "text": "Let them come. Every one of them was chained, like us.",
+   "start": 412.458,
+   "end": 415.35
+  },
+  {
+   "key": "w4",
+   "chapter": "army",
+   "speaker": "OEN",
+   "text": "We need iron. Swords, armor, horses.",
+   "start": 415.65,
+   "end": 417.621
+  },
+  {
+   "key": "w5",
+   "chapter": "army",
+   "speaker": "SPA",
+   "text": "Then we take iron. But no gold. No silver. Gold makes men lazy.",
+   "start": 417.871,
+   "end": 421.944
+  },
+  {
+   "key": "w6",
+   "chapter": "army",
+   "speaker": "NARR",
+   "text": "Appian writes that Spartacus banned merchants from bringing gold or silver into the camp, and shared the loot equally.",
+   "start": 422.244,
+   "end": 429.659
+  },
+  {
+   "key": "w7",
+   "chapter": "army",
+   "speaker": "NARR",
+   "text": "Not everyone lived to see what came next. Oenomaus, who gave you his bowl on your first day, was killed in the first year.",
+   "start": 429.959,
+   "end": 437.824
+  },
+  {
+   "key": "w8",
+   "chapter": "army",
+   "speaker": "NARR",
+   "text": "But the army keeps growing. Seventy thousand people, led by gladiators. They beat one Roman army after another.",
+   "start": 438.224,
+   "end": 446.165
+  },
+  {
+   "key": "w9",
+   "chapter": "army",
+   "speaker": "YOU",
+   "text": "We beat them again! Two praetors! Two consuls!",
+   "start": 446.415,
+   "end": 448.712
+  },
+  {
+   "key": "w10",
+   "chapter": "army",
+   "speaker": "SPA",
+   "text": "And every time we win, they send a bigger army.",
+   "start": 448.962,
+   "end": 451.662
+  },
+  {
+   "key": "x1",
+   "chapter": "split",
+   "speaker": "NARR",
+   "text": "Seventy-two BC. The leaders argue about what to do next.",
+   "start": 453.862,
+   "end": 458.161
+  },
+  {
+   "key": "x2",
+   "chapter": "split",
+   "speaker": "SPA",
+   "text": "We go north. Over the Alps. Then everyone goes home. Thrace. Gaul. Free.",
+   "start": 458.411,
+   "end": 462.565
+  },
+  {
+   "key": "x3",
+   "chapter": "split",
+   "speaker": "CRI",
+   "text": "Home? Why run? Rome is weak! We should burn every villa from here to the sea!",
+   "start": 462.815,
+   "end": 467.144
+  },
+  {
+   "key": "x4",
+   "chapter": "split",
+   "speaker": "SPA",
+   "text": "And then what? Rome never runs out of soldiers, Crixus. We do.",
+   "start": 467.394,
+   "end": 471.098
+  },
+  {
+   "key": "x5",
+   "chapter": "split",
+   "speaker": "CRI",
+   "text": "Then I'll take my Gauls and do it myself.",
+   "start": 471.348,
+   "end": 473.467
+  },
+  {
+   "key": "x6",
+   "chapter": "split",
+   "speaker": "YOU",
+   "text": "Crixus, don't. Together we're seventy thousand. Apart, we're two easy targets.",
+   "start": 473.717,
+   "end": 477.936
+  },
+  {
+   "key": "x7",
+   "chapter": "split",
+   "speaker": "CRI",
+   "text": "You're his dog, puppy. You always were. Come with me, and be a wolf.",
+   "start": 478.186,
+   "end": 481.937
+  },
+  {
+   "key": "x8",
+   "chapter": "split",
+   "speaker": "NARR",
+   "text": "So, who do you follow? Your best friend, or the man who wants revenge?",
+   "start": 482.337,
+   "end": 486.652
+  },
+  {
+   "key": "x9",
+   "chapter": "split",
+   "speaker": "YOU",
+   "text": "I stay with Spartacus.",
+   "start": 487.052,
+   "end": 488.585
+  },
+  {
+   "key": "x10",
+   "chapter": "split",
+   "speaker": "CRI",
+   "text": "Then good luck. Both of you.",
+   "start": 488.835,
+   "end": 490.295
+  },
+  {
+   "key": "x11",
+   "chapter": "split",
+   "speaker": "NARR",
+   "text": "Crixus left with about thirty thousand men. Near Mount Garganus, a consul caught them. Crixus and two thirds of his men were killed.",
+   "start": 490.795,
+   "end": 500.717
+  },
+  {
+   "key": "x12",
+   "chapter": "split",
+   "speaker": "YOU",
+   "text": "He's dead. Crixus is dead.",
+   "start": 501.067,
+   "end": 502.869
+  },
+  {
+   "key": "x13",
+   "chapter": "split",
+   "speaker": "SPA",
+   "text": "Then Rome will pay for him. The way they made us pay.",
+   "start": 503.169,
+   "end": 506.101
+  },
+  {
+   "key": "x14",
+   "chapter": "split",
+   "speaker": "NARR",
+   "text": "Appian writes that Spartacus held funeral games for Crixus. Three hundred Roman prisoners were forced to fight each other, like gladiators.",
+   "start": 506.401,
+   "end": 515.723
+  },
+  {
+   "key": "x15",
+   "chapter": "split",
+   "speaker": "YOU",
+   "text": "Now they know what it feels like.",
+   "start": 516.023,
+   "end": 517.776
+  },
+  {
+   "key": "x16",
+   "chapter": "split",
+   "speaker": "SPA",
+   "text": "Now they know.",
+   "start": 518.076,
+   "end": 519.049
+  },
+  {
+   "key": "c1",
+   "chapter": "crassus",
+   "speaker": "NARR",
+   "text": "Rome is terrified. The richest man in the city, Marcus Licinius Crassus, takes command.",
+   "start": 521.249,
+   "end": 527.523
+  },
+  {
+   "key": "c2",
+   "chapter": "crassus",
+   "speaker": "CRA",
+   "text": "Some of my men ran away from slaves. Line them up. Every tenth man dies.",
+   "start": 527.773,
+   "end": 533.05
+  },
+  {
+   "key": "c3",
+   "chapter": "crassus",
+   "speaker": "NARR",
+   "text": "This was called decimation. Plutarch says fifty soldiers were killed by their own comrades.",
+   "start": 533.35,
+   "end": 539.535
+  },
+  {
+   "key": "c4",
+   "chapter": "crassus",
+   "speaker": "YOU",
+   "text": "His soldiers are more afraid of him than of us now.",
+   "start": 539.785,
+   "end": 542.538
+  },
+  {
+   "key": "c5",
+   "chapter": "crassus",
+   "speaker": "NARR",
+   "text": "Spartacus heads for the sea. He wants to cross to Sicily, where thousands of slaves could join him.",
+   "start": 543.038,
+   "end": 549.477
+  },
+  {
+   "key": "c6",
+   "chapter": "crassus",
+   "speaker": "PIR",
+   "text": "Pay us, and our ships will carry your army across. You have my word.",
+   "start": 549.727,
+   "end": 554.151
+  },
+  {
+   "key": "c7",
+   "chapter": "crassus",
+   "speaker": "SPA",
+   "text": "Then we have a deal.",
+   "start": 554.401,
+   "end": 555.638
+  },
+  {
+   "key": "c8",
+   "chapter": "crassus",
+   "speaker": "NARR",
+   "text": "The pirates take the money, and sail away. They never come back.",
+   "start": 555.988,
+   "end": 559.83
+  },
+  {
+   "key": "c9",
+   "chapter": "crassus",
+   "speaker": "YOU",
+   "text": "They're gone! The ships are gone!",
+   "start": 560.08,
+   "end": 561.802
+  },
+  {
+   "key": "c10",
+   "chapter": "crassus",
+   "speaker": "CRA",
+   "text": "Dig. A ditch from sea to sea, and a wall behind it. Let them starve.",
+   "start": 562.202,
+   "end": 566.995
+  },
+  {
+   "key": "c10b",
+   "chapter": "crassus",
+   "speaker": "NARR",
+   "text": "Crassus cut off the whole toe of Italy. Plutarch says the ditch was about fifty-five kilometers long.",
+   "start": 567.245,
+   "end": 573.932
+  },
+  {
+   "key": "c11",
+   "chapter": "crassus",
+   "speaker": "YOU",
+   "text": "He's trapped us. Sea on three sides, a wall on the fourth.",
+   "start": 574.182,
+   "end": 577.005
+  },
+  {
+   "key": "c12",
+   "chapter": "crassus",
+   "speaker": "SPA",
+   "text": "Then we wait for the right night.",
+   "start": 577.255,
+   "end": 578.971
+  },
+  {
+   "key": "c13",
+   "chapter": "crassus",
+   "speaker": "NARR",
+   "text": "On a snowy winter night, the rebels fill part of the ditch with earth and branches, and break through.",
+   "start": 579.271,
+   "end": 585.162
+  },
+  {
+   "key": "c14",
+   "chapter": "crassus",
+   "speaker": "YOU",
+   "text": "We're out! We're through the wall!",
+   "start": 585.412,
+   "end": 586.977
+  },
+  {
+   "key": "f1",
+   "chapter": "last",
+   "speaker": "NARR",
+   "text": "Spring, seventy-one BC. And now you're back on that last morning.",
+   "start": 589.177,
+   "end": 593.588
+  },
+  {
+   "key": "f2",
+   "chapter": "last",
+   "speaker": "YOU",
+   "text": "Spartacus. If this is the end, thank you. For the night in the kitchen. For all of it.",
+   "start": 593.888,
+   "end": 598.008
+  },
+  {
+   "key": "f3",
+   "chapter": "last",
+   "speaker": "SPA",
+   "text": "Don't thank me, brother. You were free before you met me. They just forgot to tell you.",
+   "start": 598.258,
+   "end": 602.381
+  },
+  {
+   "key": "f4",
+   "chapter": "last",
+   "speaker": "SPA",
+   "text": "Today, I want Crassus. Only Crassus.",
+   "start": 602.681,
+   "end": 605.078
+  },
+  {
+   "key": "f5",
+   "chapter": "last",
+   "speaker": "NARR",
+   "text": "Plutarch writes that Spartacus fought his way toward Crassus himself. He killed two centurions. He never reached him.",
+   "start": 605.478,
+   "end": 613.036
+  },
+  {
+   "key": "f6",
+   "chapter": "last",
+   "speaker": "YOU",
+   "text": "Spartacus! Where are you? Spartacus!",
+   "start": 613.286,
+   "end": 615.357
+  },
+  {
+   "key": "f7",
+   "chapter": "last",
+   "speaker": "NARR",
+   "text": "He was surrounded and cut down. His body was never found.",
+   "start": 615.707,
+   "end": 619.459
+  },
+  {
+   "key": "f8",
+   "chapter": "last",
+   "speaker": "NARR",
+   "text": "Six thousand captured rebels were crucified along the Appian Way, the road from Capua to Rome. For about two hundred kilometers, the crosses lined the road.",
+   "start": 620.059,
+   "end": 631.126
+  },
+  {
+   "key": "f9",
+   "chapter": "last",
+   "speaker": "YOU",
+   "text": "I run into the mountains. A few of us made it. Most of us didn't.",
+   "start": 631.526,
+   "end": 634.907
+  },
+  {
+   "key": "f10",
+   "chapter": "last",
+   "speaker": "NARR",
+   "text": "Pompey caught five thousand more running north, and told Rome he had ended the war. Crassus never forgave him.",
+   "start": 635.207,
+   "end": 642.493
+  },
+  {
+   "key": "r1",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "So, how much of this is true?",
+   "start": 644.693,
+   "end": 646.342
+  },
+  {
+   "key": "r2",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "Almost everything we know comes from two Greek writers, Plutarch and Appian. They wrote more than a century and a half later.",
+   "start": 646.592,
+   "end": 654.416
+  },
+  {
+   "key": "r3",
+   "chapter": "real",
+   "speaker": "YOU",
+   "text": "So nobody who was there wrote it down?",
+   "start": 654.666,
+   "end": 656.843
+  },
+  {
+   "key": "r4",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "Nothing that survived. But in Pompeii, archaeologists found a painted fight on a wall. Above one rider, someone wrote a name: Spartaks.",
+   "start": 657.093,
+   "end": 666.891
+  },
+  {
+   "key": "r5",
+   "chapter": "real",
+   "speaker": "YOU",
+   "text": "Spartaks. Painted while people still remembered him?",
+   "start": 667.141,
+   "end": 669.906
+  },
+  {
+   "key": "r6",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "Maybe. It's written in Oscan, an old language of the region, and the painting may be from his own lifetime.",
+   "start": 670.156,
+   "end": 677.252
+  },
+  {
+   "key": "r7",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "And the famous scene where every slave stands up and shouts, I'm Spartacus? That's from a movie made in nineteen sixty. It never happened.",
+   "start": 677.552,
+   "end": 686.274
+  },
+  {
+   "key": "r8",
+   "chapter": "real",
+   "speaker": "YOU",
+   "text": "Two years. A stone cell, a kitchen knife, and a ladder made of vines. And the most powerful city on Earth was afraid of us.",
+   "start": 686.574,
+   "end": 692.892
+  },
+  {
+   "key": "r9",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "So, if you'd been there in seventy-two BC, would you have followed Spartacus north, or Crixus into the fight? Tell me in the comments.",
+   "start": 693.242,
+   "end": 702.174
+  }
+ ],
+ "voice_end": 702.674
+}

@@ -1,0 +1,18 @@
+{
+  "_doc": "Fight choreography shared by shots.tsx (animation) and audio.py (sword/shield SFX). Each move: [lineKey, secondsAfterLineStart, move]. Hits: [lineKey, dt, kind, x, y]. kind: clash | block | flesh | wood | whoosh | thud",
+  "arena": {
+    "you": [["a7", 2.6, "guard"], ["a8", 1.5, "block"], ["a8", 2.0, "guard"], ["a8", 2.6, "thrust"], ["a8", 3.1, "guard"], ["a8", 4.05, "hit"], ["a8", 4.7, "guard"], ["a9", 1.85, "dodge"], ["a9", 2.4, "guard"], ["a10", 1.45, "block"], ["a10", 2.0, "guard"], ["a11", 1.45, "dodge"], ["a11", 2.0, "guard"], ["a11", 2.55, "low"], ["a12", 0.6, "guard"], ["a13", 0.3, "victory"], ["a14", 0.4, "rest"]],
+    "opp": [["a7", 2.6, "guard"], ["a8", 0.5, "step"], ["a8", 1.15, "wind"], ["a8", 1.45, "slash"], ["a8", 2.0, "guard"], ["a8", 2.65, "block"], ["a8", 3.2, "guard"], ["a8", 3.95, "bash"], ["a8", 4.6, "guard"], ["a9", 1.5, "wind"], ["a9", 1.85, "slash"], ["a9", 2.4, "guard"], ["a10", 1.1, "wind"], ["a10", 1.4, "thrust"], ["a10", 2.0, "guard"], ["a11", 1.15, "wind"], ["a11", 1.45, "slash"], ["a11", 2.0, "guard"], ["a11", 2.7, "hit"], ["a12", 0.15, "fall"], ["a14", 0.6, "beg"]],
+    "hits": [["a8", 1.5, "clash", 940, 700], ["a8", 2.7, "block", 1000, 760], ["a8", 4.05, "thud", 900, 760], ["a9", 1.9, "whoosh", 880, 680], ["a10", 1.45, "clash", 930, 720], ["a11", 1.5, "whoosh", 880, 700], ["a11", 2.72, "flesh", 1040, 900], ["a12", 0.4, "thud", 1120, 960]]
+  },
+  "train": {
+    "hits": [["t2", 0.9, "wood", 0, 0], ["t2", 1.5, "wood", 0, 0], ["t2", 2.1, "wood", 0, 0], ["t2", 2.7, "wood", 0, 0], ["t2", 3.3, "wood", 0, 0], ["t3", 0.6, "wood", 0, 0], ["t3", 1.4, "wood", 0, 0], ["t3", 2.2, "wood", 0, 0], ["t3", 3.0, "wood", 0, 0], ["t3", 3.8, "wood", 0, 0], ["t3", 4.6, "wood", 0, 0], ["t3b", 0.8, "wood", 0, 0], ["t3b", 2.0, "wood", 0, 0], ["t3b", 3.2, "wood", 0, 0], ["t3b", 4.4, "wood", 0, 0], ["t3b", 5.6, "wood", 0, 0], ["t5", 3.0, "wood", 0, 0], ["t5", 3.7, "wood", 0, 0], ["t5", 4.4, "wood", 0, 0]]
+  },
+  "last": {
+    "spa": [["f5", 0.0, "guard"], ["f5", 1.2, "wind"], ["f5", 1.5, "slash"], ["f5", 2.0, "guard"], ["f5", 3.4, "thrust"], ["f5", 3.9, "guard"], ["f5", 5.0, "wind"], ["f5", 5.3, "slash"], ["f5", 5.8, "guard"]],
+    "hits": [["f5", 1.55, "clash", 0, 0], ["f5", 3.45, "clash", 0, 0], ["f5", 5.35, "clash", 0, 0]]
+  },
+  "escape": {
+    "hits": [["e8", 0.8, "clash", 0, 0], ["e8", 1.3, "thud", 0, 0], ["e8", 1.8, "clash", 0, 0]]
+  }
+}
