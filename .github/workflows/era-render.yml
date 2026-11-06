@@ -17,6 +17,10 @@ on:
         description: "Remotion composition id"
         required: true
         default: "Spartacus"
+      chunks:
+        description: "Which chunks to render (JSON list; all 20 by default)"
+        required: false
+        default: "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]"
 
 permissions:
   contents: write
@@ -76,11 +80,11 @@ jobs:
   render:
     needs: prep
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 330
     strategy:
       fail-fast: false
       matrix:
-        idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+        idx: ${{ fromJSON(inputs.chunks) }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -100,11 +104,11 @@ jobs:
         working-directory: ${{ env.EP }}
         env:
           COMP: ${{ inputs.comp }}
-          GL: swangle
+          GL: angle
           CONC: "4"
           CHROME: /usr/bin/google-chrome
         run: |
-          N=16; I=${{ matrix.idx }}
+          N=20; I=${{ matrix.idx }}
           TOTAL=$(python3 -c "import json,math;t=json.load(open('src/timeline.json'));print(math.ceil((t['voice_end']+8)*30))")
           S=$(( TOTAL * I / N )); E=$(( TOTAL * (I + 1) / N - 1 ))
           echo "chunk $I: frames $S..$E of $TOTAL"
