@@ -51,7 +51,7 @@ jobs:
           key: kokoro-v1.0
       - name: Install audio tools
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          which ffmpeg || { pip install -q imageio-ffmpeg && sudo ln -sf "$(python3 -c 'import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg; }
           pip install -q kokoro-onnx soundfile scipy numpy
       - name: Download voice model
         working-directory: ${{ env.EP }}
@@ -141,16 +141,19 @@ jobs:
           pattern: chunk-*
           path: ${{ env.EP }}/chunks
           merge-multiple: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Join chunks + audio
         working-directory: ${{ env.EP }}
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          which ffmpeg || { pip install -q imageio-ffmpeg && sudo ln -sf "$(python3 -c 'import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg; }
           mkdir -p out
           ls chunks/part_*.mp4 | sort | sed "s/.*/file '&'/" | sed "s#file 'chunks/#file '#" > chunks/list.txt
           cat chunks/list.txt
           ffmpeg -y -hide_banner -loglevel error -f concat -safe 0 -i chunks/list.txt -c copy out/video.mp4
           ffmpeg -y -hide_banner -loglevel error -i out/video.mp4 -i public/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart out/${{ inputs.episode }}.mp4
-          ffprobe -v error -show_entries format=duration,size -of default=nw=1 out/${{ inputs.episode }}.mp4
+          ls -la out
       - name: Thumbnail
         working-directory: ${{ env.EP }}
         env:
