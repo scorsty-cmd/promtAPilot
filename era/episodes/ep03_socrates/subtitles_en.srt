@@ -1,0 +1,807 @@
+1
+00:00:00,300 --> 00:00:03,495
+Athens. The year three hundred ninety-nine B.C.
+
+2
+00:00:03,515 --> 00:00:05,959
+An old man is about to drink poison.
+
+3
+00:00:06,328 --> 00:00:08,144
+JAILER: Socrates. It's time.
+
+4
+00:00:08,464 --> 00:00:10,536
+SOCRATES: Then bring the cup, my friend.
+
+5
+00:00:10,556 --> 00:00:12,070
+And don't look so sad.
+
+6
+00:00:12,441 --> 00:00:14,031
+YOU: Teacher, please! There's still time.
+
+7
+00:00:14,051 --> 00:00:15,240
+We can get you out tonight!
+
+8
+00:00:15,660 --> 00:00:18,429
+That's you. And to understand why he won't run,
+
+9
+00:00:18,449 --> 00:00:20,387
+we need to go back to the day you
+
+10
+00:00:20,407 --> 00:00:20,981
+were born.
+
+11
+00:00:23,201 --> 00:00:26,988
+Four hundred thirty-five B.C. You're born in the potters'
+
+12
+00:00:27,008 --> 00:00:30,060
+quarter of Athens, the richest city in Greece.
+
+13
+00:00:30,431 --> 00:00:31,775
+FATHER: A boy! Ten days from now,
+
+14
+00:00:31,795 --> 00:00:34,013
+we name him in front of the whole family.
+
+15
+00:00:34,334 --> 00:00:36,473
+MOTHER: And one day, he'll vote in the Assembly.
+
+16
+00:00:36,493 --> 00:00:37,121
+Not like me.
+
+17
+00:00:37,442 --> 00:00:40,222
+She's right. In this famous democracy,
+
+18
+00:00:40,242 --> 00:00:42,727
+only adult male citizens can vote.
+
+19
+00:00:42,747 --> 00:00:45,306
+Women, slaves and foreigners can't.
+
+20
+00:00:45,627 --> 00:00:47,186
+MOTHER: At seven, he starts school.
+
+21
+00:00:47,206 --> 00:00:49,116
+Letters, the lyre, and wrestling.
+
+22
+00:00:49,436 --> 00:00:51,336
+FATHER: A slave walks him there and back.
+
+23
+00:00:51,356 --> 00:00:52,324
+Every single day.
+
+24
+00:00:52,645 --> 00:00:54,422
+YOU: And my sister? Does she go too?
+
+25
+00:00:54,692 --> 00:00:56,230
+MOTHER: She learns at home. Weaving,
+
+26
+00:00:56,250 --> 00:00:58,177
+and running a house. That's Athens.
+
+27
+00:00:59,097 --> 00:01:01,065
+FATHER: Then he'd better learn to speak well.
+
+28
+00:01:01,085 --> 00:01:02,623
+Words win votes in this city.
+
+29
+00:01:04,843 --> 00:01:08,070
+When you're five, a plague hits the crowded city.
+
+30
+00:01:08,090 --> 00:01:10,322
+Up to a quarter of the people die,
+
+31
+00:01:10,342 --> 00:01:12,906
+even Pericles, Athens' greatest leader.
+
+32
+00:01:13,275 --> 00:01:15,156
+MOTHER: Stay inside. Don't touch anyone.
+
+33
+00:01:15,176 --> 00:01:16,285
+The gods are angry.
+
+34
+00:01:16,704 --> 00:01:18,704
+You survive. And at seventeen,
+
+35
+00:01:18,724 --> 00:01:20,925
+you're running pots to the Agora,
+
+36
+00:01:20,945 --> 00:01:22,810
+the beating heart of Athens.
+
+37
+00:01:23,129 --> 00:01:24,820
+FATHER: Two jars for the olive seller.
+
+38
+00:01:24,840 --> 00:01:27,214
+And stay away from the barefoot man by the
+
+39
+00:01:27,234 --> 00:01:28,183
+shoemaker's shop.
+
+40
+00:01:28,504 --> 00:01:30,022
+YOU: Why? Is he dangerous?
+
+41
+00:01:30,292 --> 00:01:32,015
+FATHER: Worse. He asks questions.
+
+42
+00:01:32,935 --> 00:01:35,228
+YOU: Then why does everyone crowd around him?
+
+43
+00:01:35,498 --> 00:01:36,898
+FATHER: Because he's fun to watch.
+
+44
+00:01:36,918 --> 00:01:38,862
+Until he turns the questions on you.
+
+45
+00:01:41,082 --> 00:01:42,820
+SOCRATES: Young man. You carry pots.
+
+46
+00:01:42,840 --> 00:01:45,322
+Tell me, what makes a pot a good pot?
+
+47
+00:01:45,641 --> 00:01:47,114
+YOU: Easy. It doesn't leak.
+
+48
+00:01:47,384 --> 00:01:50,012
+SOCRATES: Good! And what makes a man a good man?
+
+49
+00:01:50,331 --> 00:01:52,585
+YOU: Um. He's rich? Strong? He wins arguments?
+
+50
+00:01:52,855 --> 00:01:54,510
+SOCRATES: Then a rich man who lies,
+
+51
+00:01:54,530 --> 00:01:56,319
+is good? Hmm. I'm not sure.
+
+52
+00:01:56,338 --> 00:01:56,855
+Are you?
+
+53
+00:01:57,174 --> 00:01:58,828
+YOU: I thought I knew. Now I'm not sure of
+
+54
+00:01:58,848 --> 00:01:59,234
+anything.
+
+55
+00:01:59,555 --> 00:02:02,252
+SOCRATES: Wonderful! That's where wisdom begins.
+
+56
+00:02:02,272 --> 00:02:03,968
+My mother was a midwife.
+
+57
+00:02:03,988 --> 00:02:06,400
+I help people give birth to ideas.
+
+58
+00:02:06,819 --> 00:02:10,574
+He's short, snub-nosed, wears the same cloak all year,
+
+59
+00:02:10,594 --> 00:02:12,741
+and never writes anything down.
+
+60
+00:02:12,761 --> 00:02:14,977
+Comedy writers love mocking him.
+
+61
+00:02:15,897 --> 00:02:17,600
+YOU: I saw a play about you when I was
+
+62
+00:02:17,620 --> 00:02:19,739
+twelve. The Clouds! You hung in a basket,
+
+63
+00:02:19,759 --> 00:02:20,730
+staring at the sky!
+
+64
+00:02:21,050 --> 00:02:23,066
+SOCRATES: Ha! I stood up in the theater,
+
+65
+00:02:23,086 --> 00:02:26,188
+so people could compare the mask with the real
+
+66
+00:02:26,208 --> 00:02:26,528
+face.
+
+67
+00:02:26,848 --> 00:02:28,941
+At least, that's how the legend goes.
+
+68
+00:02:31,162 --> 00:02:33,460
+Soon, you follow him everywhere.
+
+69
+00:02:33,480 --> 00:02:35,995
+Today, he corners a famous general,
+
+70
+00:02:36,015 --> 00:02:36,502
+Laches.
+
+71
+00:02:36,823 --> 00:02:39,119
+SOCRATES: Laches, you've fought in battles.
+
+72
+00:02:39,139 --> 00:02:40,242
+What is courage?
+
+73
+00:02:40,562 --> 00:02:43,374
+LACHES: Simple. A brave man stands his ground and never
+
+74
+00:02:43,394 --> 00:02:43,675
+runs.
+
+75
+00:02:43,996 --> 00:02:46,570
+SOCRATES: And soldiers who pull back on purpose,
+
+76
+00:02:46,590 --> 00:02:48,140
+to win the fight later?
+
+77
+00:02:48,160 --> 00:02:49,300
+Are they cowards?
+
+78
+00:02:49,621 --> 00:02:51,034
+LACHES: Well, no. Then courage is,
+
+79
+00:02:51,054 --> 00:02:52,302
+uh, being tough inside?
+
+80
+00:02:52,573 --> 00:02:56,319
+SOCRATES: Even tough and foolish? Is foolish stubbornness courage?
+
+81
+00:02:56,639 --> 00:02:59,144
+LACHES: By Zeus, Socrates! I know what courage is.
+
+82
+00:02:59,164 --> 00:03:00,346
+I just can't say it!
+
+83
+00:03:00,765 --> 00:03:03,456
+That's the Socratic method. No lectures.
+
+84
+00:03:03,476 --> 00:03:07,318
+Just question after question, until the weak answers fall
+
+85
+00:03:07,338 --> 00:03:07,724
+apart.
+
+86
+00:03:08,044 --> 00:03:10,180
+PLATO: Teacher, I came here to wrestle.
+
+87
+00:03:10,200 --> 00:03:12,200
+Can I stay and listen instead?
+
+88
+00:03:12,520 --> 00:03:14,267
+That young wrestler is Plato.
+
+89
+00:03:14,287 --> 00:03:16,521
+He'll write all of this down one day.
+
+90
+00:03:16,541 --> 00:03:18,165
+It's how we know any of it.
+
+91
+00:03:19,086 --> 00:03:21,503
+YOU: Father, are men good because the gods love them?
+
+92
+00:03:21,523 --> 00:03:23,838
+Or do the gods love them because they're good?
+
+93
+00:03:24,158 --> 00:03:25,294
+FATHER: Go to your room.
+
+94
+00:03:25,715 --> 00:03:29,156
+Questioning everything is not always popular at home.
+
+95
+00:03:31,377 --> 00:03:35,013
+Four sixteen B.C. You're invited to a symposium.
+
+96
+00:03:35,033 --> 00:03:37,374
+A drinking party, with couches,
+
+97
+00:03:37,394 --> 00:03:39,811
+music and wine mixed with water.
+
+98
+00:03:40,181 --> 00:03:42,021
+YOU: Why do we mix the wine with water?
+
+99
+00:03:42,292 --> 00:03:44,739
+SOCRATES: Only barbarians drink it straight.
+
+100
+00:03:44,759 --> 00:03:47,786
+And this way, the talking lasts till dawn.
+
+101
+00:03:48,106 --> 00:03:49,741
+ALCIBIADES: Make room! Where's Socrates?
+
+102
+00:03:50,062 --> 00:03:51,887
+YOU: Is that Alcibiades? The war hero?
+
+103
+00:03:51,907 --> 00:03:52,781
+He's very drunk.
+
+104
+00:03:53,102 --> 00:03:55,601
+ALCIBIADES: Friends, this man is like those little statues in
+
+105
+00:03:55,621 --> 00:03:57,194
+the shops. Ugly on the outside.
+
+106
+00:03:57,214 --> 00:03:59,200
+Open him up, and there are gods inside.
+
+107
+00:03:59,569 --> 00:04:00,926
+ALCIBIADES: At Potidaea, I was wounded.
+
+108
+00:04:00,946 --> 00:04:02,709
+He stood over me and saved my life.
+
+109
+00:04:02,729 --> 00:04:04,238
+Then he let me take the medal!
+
+110
+00:04:04,609 --> 00:04:06,965
+Everyone falls asleep before dawn.
+
+111
+00:04:06,985 --> 00:04:09,901
+Socrates simply gets up, and goes to wash,
+
+112
+00:04:09,921 --> 00:04:12,417
+and starts another day of questions.
+
+113
+00:04:14,638 --> 00:04:16,618
+CHAEREPHON: Want to hear why he does all this?
+
+114
+00:04:16,638 --> 00:04:18,441
+I went to the Oracle at Delphi,
+
+115
+00:04:18,461 --> 00:04:20,854
+and asked: is anyone wiser than Socrates?
+
+116
+00:04:21,173 --> 00:04:22,575
+CHAEREPHON: And the priestess said: no one!
+
+117
+00:04:22,894 --> 00:04:25,389
+SOCRATES: I was puzzled. I know that I know very
+
+118
+00:04:25,409 --> 00:04:28,300
+little. So I went looking for someone wiser.
+
+119
+00:04:28,620 --> 00:04:33,050
+SOCRATES: Politicians, poets, craftsmen. They all thought they knew everything.
+
+120
+00:04:33,070 --> 00:04:33,825
+They didn't.
+
+121
+00:04:34,144 --> 00:04:36,660
+SOCRATES: So perhaps I'm wiser in one small way.
+
+122
+00:04:36,680 --> 00:04:39,263
+I don't think I know what I don't know.
+
+123
+00:04:39,682 --> 00:04:42,978
+There's one problem. Proving powerful people wrong,
+
+124
+00:04:42,997 --> 00:04:45,448
+in public, makes you a lot of enemies.
+
+125
+00:04:46,367 --> 00:04:48,909
+XANTHIPPE: Socrates! You talk all day and earn nothing.
+
+126
+00:04:48,929 --> 00:04:50,480
+We have three sons to feed!
+
+127
+00:04:50,800 --> 00:04:53,772
+SOCRATES: She's right, of course. I never charge for a
+
+128
+00:04:53,792 --> 00:04:54,656
+conversation.
+
+129
+00:04:54,975 --> 00:04:57,335
+Unlike the paid teachers of his day,
+
+130
+00:04:57,355 --> 00:04:59,648
+the sophists, he never takes money.
+
+131
+00:04:59,668 --> 00:05:01,367
+His family pays the price.
+
+132
+00:05:03,586 --> 00:05:07,698
+Four hundred four B.C. After twenty-seven years of war,
+
+133
+00:05:07,718 --> 00:05:11,228
+Sparta beats Athens. Thirty tyrants grab power,
+
+134
+00:05:11,248 --> 00:05:12,581
+and kill hundreds.
+
+135
+00:05:12,951 --> 00:05:16,028
+HERALD: Socrates! Go to Salamis, arrest a man named Leon,
+
+136
+00:05:16,048 --> 00:05:17,672
+and bring him here to die.
+
+137
+00:05:17,992 --> 00:05:20,381
+SOCRATES: No. I won't do something unjust.
+
+138
+00:05:20,701 --> 00:05:22,682
+YOU: Teacher, weren't you afraid they'd kill you?
+
+139
+00:05:22,952 --> 00:05:25,178
+SOCRATES: No one knows if death is bad.
+
+140
+00:05:25,198 --> 00:05:27,501
+But doing wrong? That, I know,
+
+141
+00:05:27,521 --> 00:05:28,043
+is bad.
+
+142
+00:05:28,413 --> 00:05:31,580
+He just walks home. The tyrants fall before they
+
+143
+00:05:31,600 --> 00:05:34,302
+can punish him. But some of them had been
+
+144
+00:05:34,322 --> 00:05:36,627
+his students. And Athens remembers.
+
+145
+00:05:38,846 --> 00:05:41,854
+Three ninety-nine B.C. Democracy is back.
+
+146
+00:05:41,874 --> 00:05:43,552
+And so are the enemies.
+
+147
+00:05:43,572 --> 00:05:45,619
+Five hundred and one jurors.
+
+148
+00:05:45,639 --> 00:05:47,170
+One day. One verdict.
+
+149
+00:05:47,540 --> 00:05:50,633
+Jurors are picked at random by a stone machine
+
+150
+00:05:50,653 --> 00:05:53,746
+called a kleroterion, so no one can bribe them
+
+151
+00:05:53,766 --> 00:05:54,491
+in advance.
+
+152
+00:05:54,860 --> 00:05:57,139
+MELETUS: Socrates does not honor the city's gods.
+
+153
+00:05:57,159 --> 00:05:58,634
+And he corrupts the young!
+
+154
+00:05:58,954 --> 00:06:00,549
+YOU: He means us. His students.
+
+155
+00:06:00,869 --> 00:06:03,942
+SOCRATES: Meletus, tell us. Who makes the young better?
+
+156
+00:06:04,211 --> 00:06:05,151
+MELETUS: The laws!
+
+157
+00:06:05,420 --> 00:06:07,253
+SOCRATES: And who else? The jurors?
+
+158
+00:06:07,273 --> 00:06:09,699
+The Assembly? Everyone in Athens,
+
+159
+00:06:09,719 --> 00:06:10,441
+except me?
+
+160
+00:06:10,711 --> 00:06:11,670
+MELETUS: Exactly!
+
+161
+00:06:11,939 --> 00:06:14,002
+SOCRATES: Then the young are very lucky.
+
+162
+00:06:14,022 --> 00:06:17,127
+Only one corrupter, and thousands of helpers.
+
+163
+00:06:17,497 --> 00:06:21,221
+SOCRATES: Men of Athens, I will never stop asking questions.
+
+164
+00:06:21,241 --> 00:06:24,217
+The unexamined life is not worth living.
+
+165
+00:06:24,586 --> 00:06:27,486
+HERALD: The jury has voted. Two hundred and eighty,
+
+166
+00:06:27,506 --> 00:06:29,592
+guilty. Two hundred and twenty,
+
+167
+00:06:29,612 --> 00:06:30,338
+not guilty.
+
+168
+00:06:30,709 --> 00:06:33,264
+SOCRATES: Thirty more votes, and I'd be free.
+
+169
+00:06:33,284 --> 00:06:36,724
+As punishment, I propose free dinners for life,
+
+170
+00:06:36,744 --> 00:06:38,564
+like an Olympic champion.
+
+171
+00:06:38,934 --> 00:06:41,816
+The jury doesn't laugh. Even more of them vote
+
+172
+00:06:41,836 --> 00:06:42,448
+for death.
+
+173
+00:06:44,668 --> 00:06:46,876
+CRITO: Socrates, listen. The guards are paid.
+
+174
+00:06:46,896 --> 00:06:49,340
+A boat is ready. You can live in Thessaly.
+
+175
+00:06:49,660 --> 00:06:53,108
+SOCRATES: Crito, I've lived seventy years under the laws of
+
+176
+00:06:53,128 --> 00:06:55,303
+Athens. Shall I break them now,
+
+177
+00:06:55,323 --> 00:06:56,365
+to save myself?
+
+178
+00:06:56,735 --> 00:06:59,313
+XANTHIPPE: Oh Socrates! This is the last time you'll talk
+
+179
+00:06:59,333 --> 00:07:00,330
+with your friends!
+
+180
+00:07:00,649 --> 00:07:03,215
+SOCRATES: Crito, have someone take her home.
+
+181
+00:07:03,235 --> 00:07:03,747
+Gently.
+
+182
+00:07:04,168 --> 00:07:05,785
+YOU: How can you be so calm?
+
+183
+00:07:06,055 --> 00:07:08,365
+SOCRATES: Death is either a dreamless sleep,
+
+184
+00:07:08,385 --> 00:07:11,312
+or a journey to meet the great souls before
+
+185
+00:07:11,332 --> 00:07:13,232
+us. Either way, why fear it?
+
+186
+00:07:13,601 --> 00:07:15,544
+He drinks the hemlock calmly.
+
+187
+00:07:15,564 --> 00:07:18,117
+His legs grow heavy, and he lies down.
+
+188
+00:07:18,487 --> 00:07:21,208
+SOCRATES: Crito, we owe a rooster to Asclepius.
+
+189
+00:07:21,228 --> 00:07:22,765
+Pay it. Don't forget.
+
+190
+00:07:23,185 --> 00:07:24,823
+Those are his last words.
+
+191
+00:07:27,142 --> 00:07:29,139
+But the questions don't die.
+
+192
+00:07:29,159 --> 00:07:31,588
+Plato opens a school, the Academy.
+
+193
+00:07:31,608 --> 00:07:35,189
+His student Aristotle teaches Alexander the Great.
+
+194
+00:07:35,559 --> 00:07:39,020
+Today, law schools and classrooms still use the Socratic
+
+195
+00:07:39,040 --> 00:07:42,314
+method, nearly two thousand four hundred years later.
+
+196
+00:07:42,685 --> 00:07:44,209
+YOU: He never wrote a single word.
+
+197
+00:07:44,229 --> 00:07:45,381
+We wrote them for him.
+
+198
+00:07:45,750 --> 00:07:48,305
+PLATO: Everything I wrote, I put in his mouth.
+
+199
+00:07:48,325 --> 00:07:51,013
+He's the hero of almost all my dialogues.
+
+200
+00:07:51,382 --> 00:07:52,737
+So, if you'd been there,
+
+201
+00:07:52,757 --> 00:07:54,341
+would you have followed him?
+
+202
+00:07:54,361 --> 00:07:56,976
+Or voted against him? Tell me in the comments.

@@ -1,0 +1,773 @@
+{
+ "lines": [
+  {
+   "key": "o1",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "Athens. The year three hundred ninety-nine B.C. An old man is about to drink poison.",
+   "start": 0.3,
+   "end": 5.979
+  },
+  {
+   "key": "o2",
+   "chapter": "open",
+   "speaker": "JAIL",
+   "text": "Socrates. It's time.",
+   "start": 6.329,
+   "end": 8.164
+  },
+  {
+   "key": "o3",
+   "chapter": "open",
+   "speaker": "SOC",
+   "text": "Then bring the cup, my friend. And don't look so sad.",
+   "start": 8.464,
+   "end": 12.091
+  },
+  {
+   "key": "o4",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "Teacher, please! There's still time. We can get you out tonight!",
+   "start": 12.441,
+   "end": 15.26
+  },
+  {
+   "key": "o5",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "That's you. And to understand why he won't run, we need to go back to the day you were born.",
+   "start": 15.66,
+   "end": 21.001
+  },
+  {
+   "key": "b1",
+   "chapter": "born",
+   "speaker": "NARR",
+   "text": "Four hundred thirty-five B.C. You're born in the potters' quarter of Athens, the richest city in Greece.",
+   "start": 23.201,
+   "end": 30.081
+  },
+  {
+   "key": "b2",
+   "chapter": "born",
+   "speaker": "DAD",
+   "text": "A boy! Ten days from now, we name him in front of the whole family.",
+   "start": 30.431,
+   "end": 34.034
+  },
+  {
+   "key": "b3",
+   "chapter": "born",
+   "speaker": "MOM",
+   "text": "And one day, he'll vote in the Assembly. Not like me.",
+   "start": 34.334,
+   "end": 37.142
+  },
+  {
+   "key": "b4",
+   "chapter": "born",
+   "speaker": "NARR",
+   "text": "She's right. In this famous democracy, only adult male citizens can vote. Women, slaves and foreigners can't.",
+   "start": 37.442,
+   "end": 45.327
+  },
+  {
+   "key": "b6",
+   "chapter": "born",
+   "speaker": "MOM",
+   "text": "At seven, he starts school. Letters, the lyre, and wrestling.",
+   "start": 45.627,
+   "end": 49.137
+  },
+  {
+   "key": "b7",
+   "chapter": "born",
+   "speaker": "DAD",
+   "text": "A slave walks him there and back. Every single day.",
+   "start": 49.437,
+   "end": 52.345
+  },
+  {
+   "key": "b8",
+   "chapter": "born",
+   "speaker": "YOU",
+   "text": "And my sister? Does she go too?",
+   "start": 52.645,
+   "end": 54.443
+  },
+  {
+   "key": "b9",
+   "chapter": "born",
+   "speaker": "MOM",
+   "text": "She learns at home. Weaving, and running a house. That's Athens.",
+   "start": 54.693,
+   "end": 58.198
+  },
+  {
+   "key": "b5",
+   "chapter": "born",
+   "speaker": "DAD",
+   "text": "Then he'd better learn to speak well. Words win votes in this city.",
+   "start": 59.098,
+   "end": 62.644
+  },
+  {
+   "key": "a1",
+   "chapter": "agora",
+   "speaker": "NARR",
+   "text": "When you're five, a plague hits the crowded city. Up to a quarter of the people die, even Pericles, Athens' greatest leader.",
+   "start": 64.844,
+   "end": 72.926
+  },
+  {
+   "key": "a2",
+   "chapter": "agora",
+   "speaker": "MOM",
+   "text": "Stay inside. Don't touch anyone. The gods are angry.",
+   "start": 73.276,
+   "end": 76.305
+  },
+  {
+   "key": "a3",
+   "chapter": "agora",
+   "speaker": "NARR",
+   "text": "You survive. And at seventeen, you're running pots to the Agora, the beating heart of Athens.",
+   "start": 76.705,
+   "end": 82.83
+  },
+  {
+   "key": "a4",
+   "chapter": "agora",
+   "speaker": "DAD",
+   "text": "Two jars for the olive seller. And stay away from the barefoot man by the shoemaker's shop.",
+   "start": 83.13,
+   "end": 88.204
+  },
+  {
+   "key": "a5",
+   "chapter": "agora",
+   "speaker": "YOU",
+   "text": "Why? Is he dangerous?",
+   "start": 88.504,
+   "end": 90.042
+  },
+  {
+   "key": "a6",
+   "chapter": "agora",
+   "speaker": "DAD",
+   "text": "Worse. He asks questions.",
+   "start": 90.292,
+   "end": 92.035
+  },
+  {
+   "key": "a7",
+   "chapter": "agora",
+   "speaker": "YOU",
+   "text": "Then why does everyone crowd around him?",
+   "start": 92.935,
+   "end": 95.249
+  },
+  {
+   "key": "a8",
+   "chapter": "agora",
+   "speaker": "DAD",
+   "text": "Because he's fun to watch. Until he turns the questions on you.",
+   "start": 95.499,
+   "end": 98.883
+  },
+  {
+   "key": "s1",
+   "chapter": "barefoot",
+   "speaker": "SOC",
+   "text": "Young man. You carry pots. Tell me, what makes a pot a good pot?",
+   "start": 101.083,
+   "end": 105.342
+  },
+  {
+   "key": "s2",
+   "chapter": "barefoot",
+   "speaker": "YOU",
+   "text": "Easy. It doesn't leak.",
+   "start": 105.642,
+   "end": 107.134
+  },
+  {
+   "key": "s3",
+   "chapter": "barefoot",
+   "speaker": "SOC",
+   "text": "Good! And what makes a man a good man?",
+   "start": 107.384,
+   "end": 110.032
+  },
+  {
+   "key": "s4",
+   "chapter": "barefoot",
+   "speaker": "YOU",
+   "text": "Um. He's rich? Strong? He wins arguments?",
+   "start": 110.332,
+   "end": 112.605
+  },
+  {
+   "key": "s5",
+   "chapter": "barefoot",
+   "speaker": "SOC",
+   "text": "Then a rich man who lies, is good? Hmm. I'm not sure. Are you?",
+   "start": 112.855,
+   "end": 116.875
+  },
+  {
+   "key": "s6",
+   "chapter": "barefoot",
+   "speaker": "YOU",
+   "text": "I thought I knew. Now I'm not sure of anything.",
+   "start": 117.175,
+   "end": 119.255
+  },
+  {
+   "key": "s7",
+   "chapter": "barefoot",
+   "speaker": "SOC",
+   "text": "Wonderful! That's where wisdom begins. My mother was a midwife. I help people give birth to ideas.",
+   "start": 119.555,
+   "end": 126.42
+  },
+  {
+   "key": "s8",
+   "chapter": "barefoot",
+   "speaker": "NARR",
+   "text": "He's short, snub-nosed, wears the same cloak all year, and never writes anything down. Comedy writers love mocking him.",
+   "start": 126.82,
+   "end": 134.998
+  },
+  {
+   "key": "s9",
+   "chapter": "barefoot",
+   "speaker": "YOU",
+   "text": "I saw a play about you when I was twelve. The Clouds! You hung in a basket, staring at the sky!",
+   "start": 135.898,
+   "end": 140.751
+  },
+  {
+   "key": "s10",
+   "chapter": "barefoot",
+   "speaker": "SOC",
+   "text": "Ha! I stood up in the theater, so people could compare the mask with the real face.",
+   "start": 141.051,
+   "end": 146.548
+  },
+  {
+   "key": "s11",
+   "chapter": "barefoot",
+   "speaker": "NARR",
+   "text": "At least, that's how the legend goes.",
+   "start": 146.848,
+   "end": 148.962
+  },
+  {
+   "key": "q1",
+   "chapter": "questions",
+   "speaker": "NARR",
+   "text": "Soon, you follow him everywhere. Today, he corners a famous general, Laches.",
+   "start": 151.162,
+   "end": 156.523
+  },
+  {
+   "key": "q2",
+   "chapter": "questions",
+   "speaker": "SOC",
+   "text": "Laches, you've fought in battles. What is courage?",
+   "start": 156.823,
+   "end": 160.263
+  },
+  {
+   "key": "q3",
+   "chapter": "questions",
+   "speaker": "LACH",
+   "text": "Simple. A brave man stands his ground and never runs.",
+   "start": 160.563,
+   "end": 163.696
+  },
+  {
+   "key": "q4",
+   "chapter": "questions",
+   "speaker": "SOC",
+   "text": "And soldiers who pull back on purpose, to win the fight later? Are they cowards?",
+   "start": 163.996,
+   "end": 169.321
+  },
+  {
+   "key": "q5",
+   "chapter": "questions",
+   "speaker": "LACH",
+   "text": "Well, no. Then courage is, uh, being tough inside?",
+   "start": 169.621,
+   "end": 172.323
+  },
+  {
+   "key": "q6",
+   "chapter": "questions",
+   "speaker": "SOC",
+   "text": "Even tough and foolish? Is foolish stubbornness courage?",
+   "start": 172.573,
+   "end": 176.34
+  },
+  {
+   "key": "q7",
+   "chapter": "questions",
+   "speaker": "LACH",
+   "text": "By Zeus, Socrates! I know what courage is. I just can't say it!",
+   "start": 176.64,
+   "end": 180.366
+  },
+  {
+   "key": "q8",
+   "chapter": "questions",
+   "speaker": "NARR",
+   "text": "That's the Socratic method. No lectures. Just question after question, until the weak answers fall apart.",
+   "start": 180.766,
+   "end": 187.745
+  },
+  {
+   "key": "q9",
+   "chapter": "questions",
+   "speaker": "PLATO",
+   "text": "Teacher, I came here to wrestle. Can I stay and listen instead?",
+   "start": 188.045,
+   "end": 192.221
+  },
+  {
+   "key": "q10",
+   "chapter": "questions",
+   "speaker": "NARR",
+   "text": "That young wrestler is Plato. He'll write all of this down one day. It's how we know any of it.",
+   "start": 192.521,
+   "end": 198.186
+  },
+  {
+   "key": "q11",
+   "chapter": "questions",
+   "speaker": "YOU",
+   "text": "Father, are men good because the gods love them? Or do the gods love them because they're good?",
+   "start": 199.086,
+   "end": 203.859
+  },
+  {
+   "key": "q12",
+   "chapter": "questions",
+   "speaker": "DAD",
+   "text": "Go to your room.",
+   "start": 204.159,
+   "end": 205.315
+  },
+  {
+   "key": "q13",
+   "chapter": "questions",
+   "speaker": "NARR",
+   "text": "Questioning everything is not always popular at home.",
+   "start": 205.715,
+   "end": 209.177
+  },
+  {
+   "key": "y1",
+   "chapter": "symposium",
+   "speaker": "NARR",
+   "text": "Four sixteen B.C. You're invited to a symposium. A drinking party, with couches, music and wine mixed with water.",
+   "start": 211.377,
+   "end": 219.832
+  },
+  {
+   "key": "y1b",
+   "chapter": "symposium",
+   "speaker": "YOU",
+   "text": "Why do we mix the wine with water?",
+   "start": 220.182,
+   "end": 222.042
+  },
+  {
+   "key": "y1c",
+   "chapter": "symposium",
+   "speaker": "SOC",
+   "text": "Only barbarians drink it straight. And this way, the talking lasts till dawn.",
+   "start": 222.292,
+   "end": 227.807
+  },
+  {
+   "key": "y2",
+   "chapter": "symposium",
+   "speaker": "ALC",
+   "text": "Make room! Where's Socrates?",
+   "start": 228.107,
+   "end": 229.762
+  },
+  {
+   "key": "y3",
+   "chapter": "symposium",
+   "speaker": "YOU",
+   "text": "Is that Alcibiades? The war hero? He's very drunk.",
+   "start": 230.062,
+   "end": 232.802
+  },
+  {
+   "key": "y4",
+   "chapter": "symposium",
+   "speaker": "ALC",
+   "text": "Friends, this man is like those little statues in the shops. Ugly on the outside. Open him up, and there are gods inside.",
+   "start": 233.102,
+   "end": 239.22
+  },
+  {
+   "key": "y5",
+   "chapter": "symposium",
+   "speaker": "ALC",
+   "text": "At Potidaea, I was wounded. He stood over me and saved my life. Then he let me take the medal!",
+   "start": 239.57,
+   "end": 244.259
+  },
+  {
+   "key": "y6",
+   "chapter": "symposium",
+   "speaker": "NARR",
+   "text": "Everyone falls asleep before dawn. Socrates simply gets up, and goes to wash, and starts another day of questions.",
+   "start": 244.609,
+   "end": 252.438
+  },
+  {
+   "key": "r1",
+   "chapter": "oracle",
+   "speaker": "CHAER",
+   "text": "Want to hear why he does all this? I went to the Oracle at Delphi, and asked: is anyone wiser than Socrates?",
+   "start": 254.638,
+   "end": 260.874
+  },
+  {
+   "key": "r2",
+   "chapter": "oracle",
+   "speaker": "CHAER",
+   "text": "And the priestess said: no one!",
+   "start": 261.174,
+   "end": 262.595
+  },
+  {
+   "key": "r3",
+   "chapter": "oracle",
+   "speaker": "SOC",
+   "text": "I was puzzled. I know that I know very little. So I went looking for someone wiser.",
+   "start": 262.895,
+   "end": 268.32
+  },
+  {
+   "key": "r4",
+   "chapter": "oracle",
+   "speaker": "SOC",
+   "text": "Politicians, poets, craftsmen. They all thought they knew everything. They didn't.",
+   "start": 268.62,
+   "end": 273.845
+  },
+  {
+   "key": "r5",
+   "chapter": "oracle",
+   "speaker": "SOC",
+   "text": "So perhaps I'm wiser in one small way. I don't think I know what I don't know.",
+   "start": 274.145,
+   "end": 279.283
+  },
+  {
+   "key": "r6",
+   "chapter": "oracle",
+   "speaker": "NARR",
+   "text": "There's one problem. Proving powerful people wrong, in public, makes you a lot of enemies.",
+   "start": 279.683,
+   "end": 285.468
+  },
+  {
+   "key": "r7",
+   "chapter": "oracle",
+   "speaker": "XAN",
+   "text": "Socrates! You talk all day and earn nothing. We have three sons to feed!",
+   "start": 286.368,
+   "end": 290.501
+  },
+  {
+   "key": "r8",
+   "chapter": "oracle",
+   "speaker": "SOC",
+   "text": "She's right, of course. I never charge for a conversation.",
+   "start": 290.801,
+   "end": 294.676
+  },
+  {
+   "key": "r9",
+   "chapter": "oracle",
+   "speaker": "NARR",
+   "text": "Unlike the paid teachers of his day, the sophists, he never takes money. His family pays the price.",
+   "start": 294.976,
+   "end": 301.387
+  },
+  {
+   "key": "w1",
+   "chapter": "war",
+   "speaker": "NARR",
+   "text": "Four hundred four B.C. After twenty-seven years of war, Sparta beats Athens. Thirty tyrants grab power, and kill hundreds.",
+   "start": 303.587,
+   "end": 312.601
+  },
+  {
+   "key": "w2",
+   "chapter": "war",
+   "speaker": "HER",
+   "text": "Socrates! Go to Salamis, arrest a man named Leon, and bring him here to die.",
+   "start": 312.951,
+   "end": 317.692
+  },
+  {
+   "key": "w3",
+   "chapter": "war",
+   "speaker": "SOC",
+   "text": "No. I won't do something unjust.",
+   "start": 317.992,
+   "end": 320.401
+  },
+  {
+   "key": "w3b",
+   "chapter": "war",
+   "speaker": "YOU",
+   "text": "Teacher, weren't you afraid they'd kill you?",
+   "start": 320.701,
+   "end": 322.703
+  },
+  {
+   "key": "w3c",
+   "chapter": "war",
+   "speaker": "SOC",
+   "text": "No one knows if death is bad. But doing wrong? That, I know, is bad.",
+   "start": 322.953,
+   "end": 328.063
+  },
+  {
+   "key": "w4",
+   "chapter": "war",
+   "speaker": "NARR",
+   "text": "He just walks home. The tyrants fall before they can punish him. But some of them had been his students. And Athens remembers.",
+   "start": 328.413,
+   "end": 336.647
+  },
+  {
+   "key": "t1",
+   "chapter": "trial",
+   "speaker": "NARR",
+   "text": "Three ninety-nine B.C. Democracy is back. And so are the enemies. Five hundred and one jurors. One day. One verdict.",
+   "start": 338.847,
+   "end": 347.19
+  },
+  {
+   "key": "t1b",
+   "chapter": "trial",
+   "speaker": "NARR",
+   "text": "Jurors are picked at random by a stone machine called a kleroterion, so no one can bribe them in advance.",
+   "start": 347.54,
+   "end": 354.511
+  },
+  {
+   "key": "t2",
+   "chapter": "trial",
+   "speaker": "MEL",
+   "text": "Socrates does not honor the city's gods. And he corrupts the young!",
+   "start": 354.861,
+   "end": 358.654
+  },
+  {
+   "key": "t3",
+   "chapter": "trial",
+   "speaker": "YOU",
+   "text": "He means us. His students.",
+   "start": 358.954,
+   "end": 360.569
+  },
+  {
+   "key": "t2b",
+   "chapter": "trial",
+   "speaker": "SOC",
+   "text": "Meletus, tell us. Who makes the young better?",
+   "start": 360.869,
+   "end": 363.962
+  },
+  {
+   "key": "t2c",
+   "chapter": "trial",
+   "speaker": "MEL",
+   "text": "The laws!",
+   "start": 364.212,
+   "end": 365.171
+  },
+  {
+   "key": "t2d",
+   "chapter": "trial",
+   "speaker": "SOC",
+   "text": "And who else? The jurors? The Assembly? Everyone in Athens, except me?",
+   "start": 365.421,
+   "end": 370.461
+  },
+  {
+   "key": "t2e",
+   "chapter": "trial",
+   "speaker": "MEL",
+   "text": "Exactly!",
+   "start": 370.711,
+   "end": 371.69
+  },
+  {
+   "key": "t2f",
+   "chapter": "trial",
+   "speaker": "SOC",
+   "text": "Then the young are very lucky. Only one corrupter, and thousands of helpers.",
+   "start": 371.94,
+   "end": 377.147
+  },
+  {
+   "key": "t4",
+   "chapter": "trial",
+   "speaker": "SOC",
+   "text": "Men of Athens, I will never stop asking questions. The unexamined life is not worth living.",
+   "start": 377.497,
+   "end": 384.237
+  },
+  {
+   "key": "t5",
+   "chapter": "trial",
+   "speaker": "HER",
+   "text": "The jury has voted. Two hundred and eighty, guilty. Two hundred and twenty, not guilty.",
+   "start": 384.587,
+   "end": 390.359
+  },
+  {
+   "key": "t6",
+   "chapter": "trial",
+   "speaker": "SOC",
+   "text": "Thirty more votes, and I'd be free. As punishment, I propose free dinners for life, like an Olympic champion.",
+   "start": 390.709,
+   "end": 398.584
+  },
+  {
+   "key": "t7",
+   "chapter": "trial",
+   "speaker": "NARR",
+   "text": "The jury doesn't laugh. Even more of them vote for death.",
+   "start": 398.934,
+   "end": 402.468
+  },
+  {
+   "key": "h1",
+   "chapter": "hemlock",
+   "speaker": "CRITO",
+   "text": "Socrates, listen. The guards are paid. A boat is ready. You can live in Thessaly.",
+   "start": 404.668,
+   "end": 409.36
+  },
+  {
+   "key": "h2",
+   "chapter": "hemlock",
+   "speaker": "SOC",
+   "text": "Crito, I've lived seventy years under the laws of Athens. Shall I break them now, to save myself?",
+   "start": 409.66,
+   "end": 416.385
+  },
+  {
+   "key": "h3",
+   "chapter": "hemlock",
+   "speaker": "XAN",
+   "text": "Oh Socrates! This is the last time you'll talk with your friends!",
+   "start": 416.735,
+   "end": 420.35
+  },
+  {
+   "key": "h4",
+   "chapter": "hemlock",
+   "speaker": "SOC",
+   "text": "Crito, have someone take her home. Gently.",
+   "start": 420.65,
+   "end": 423.768
+  },
+  {
+   "key": "h3b",
+   "chapter": "hemlock",
+   "speaker": "YOU",
+   "text": "How can you be so calm?",
+   "start": 424.168,
+   "end": 425.805
+  },
+  {
+   "key": "h3c",
+   "chapter": "hemlock",
+   "speaker": "SOC",
+   "text": "Death is either a dreamless sleep, or a journey to meet the great souls before us. Either way, why fear it?",
+   "start": 426.055,
+   "end": 433.252
+  },
+  {
+   "key": "h5",
+   "chapter": "hemlock",
+   "speaker": "NARR",
+   "text": "He drinks the hemlock calmly. His legs grow heavy, and he lies down.",
+   "start": 433.602,
+   "end": 438.137
+  },
+  {
+   "key": "h6",
+   "chapter": "hemlock",
+   "speaker": "SOC",
+   "text": "Crito, we owe a rooster to Asclepius. Pay it. Don't forget.",
+   "start": 438.487,
+   "end": 442.785
+  },
+  {
+   "key": "h7",
+   "chapter": "hemlock",
+   "speaker": "NARR",
+   "text": "Those are his last words.",
+   "start": 443.185,
+   "end": 444.843
+  },
+  {
+   "key": "c1",
+   "chapter": "legacy",
+   "speaker": "NARR",
+   "text": "But the questions don't die. Plato opens a school, the Academy. His student Aristotle teaches Alexander the Great.",
+   "start": 447.143,
+   "end": 455.209
+  },
+  {
+   "key": "c2",
+   "chapter": "legacy",
+   "speaker": "NARR",
+   "text": "Today, law schools and classrooms still use the Socratic method, nearly two thousand four hundred years later.",
+   "start": 455.559,
+   "end": 462.335
+  },
+  {
+   "key": "c3",
+   "chapter": "legacy",
+   "speaker": "YOU",
+   "text": "He never wrote a single word. We wrote them for him.",
+   "start": 462.685,
+   "end": 465.401
+  },
+  {
+   "key": "c3b",
+   "chapter": "legacy",
+   "speaker": "PLATO",
+   "text": "Everything I wrote, I put in his mouth. He's the hero of almost all my dialogues.",
+   "start": 465.751,
+   "end": 471.033
+  },
+  {
+   "key": "c4",
+   "chapter": "legacy",
+   "speaker": "NARR",
+   "text": "So, if you'd been there, would you have followed him? Or voted against him? Tell me in the comments.",
+   "start": 471.383,
+   "end": 476.997
+  }
+ ],
+ "voice_end": 477.497
+}
