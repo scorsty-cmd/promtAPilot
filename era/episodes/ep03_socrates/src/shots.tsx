@@ -108,10 +108,10 @@ const Baby: React.FC<{ x: number; y: number; T: number; s?: number }> = ({ x, y,
 const amber = '#ffb347';
 
 /* ---------- the edit ---------- */
-type Item = { a: number; b: number; render: (T: number) => React.ReactNode };
+type Item = { a: number; b: number; g?: boolean; render: (T: number) => React.ReactNode };
 const scenes: Item[] = [];
 const sc = (s: Omit<Scene, 'b'> & { b?: number }) => scenes.push({ a: s.a, b: s.b ?? -1, render: (T) => <SceneShot sc={{ ...s, b: s.b ?? (scenes.find((x) => x.a === s.a)!.b) } as Scene} T={T} /> });
-const gfx = (C: React.FC<any>, a: number) => scenes.push({ a, b: -1, render: (T) => <Gfx C={C} T={T} a={a} b={scenes.find((x) => x.a === a)!.b} /> });
+const gfx = (C: React.FC<any>, a: number) => scenes.push({ a, b: -1, g: true, render: (T) => <Gfx C={C} T={T} a={a} b={scenes.find((x) => x.a === a)!.b} /> });
 
 // COLD OPEN — prison exterior, then the cell
 sc({ a: 0, bg: (T, t) => <AthensBG T={T} tone="night" px={-t * 12} smoke={false} />, actors: [], cam: (T, t) => ({ x: 960, y: 520, z: 1.04 + t * .02 }) });

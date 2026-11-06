@@ -87,13 +87,13 @@ const Ending: React.FC<{ T: number }> = ({ T }) => {
   </AbsoluteFill>;
 };
 
-export const Video: React.FC = () => {
+export const Video: React.FC<{ clean?: boolean }> = ({ clean }) => {
   const f = useCurrentFrame(); const T = f / FPS;
   return <AbsoluteFill style={{ background: '#000' }}>
     <style>{fontFace}</style>
     {SHOTS.map((s, i) => { const a = Math.round(s.a * FPS), b = Math.round(Math.min(s.b, 2000) * FPS); return <Sequence key={i} from={a} durationInFrames={Math.max(1, b - a)}><Inner render={s.render} a={s.a} /></Sequence>; })}
     <Paper /><Vignette />
-    <Captions T={T} /><Title T={T} /><ChapterCard T={T} /><EraChip T={T} /><Ending T={T} />
+    {!clean && <><Captions T={T} /><Title T={T} /><ChapterCard T={T} /><EraChip T={T} /><Ending T={T} /></>}
     <Grain f={f} />
     <Audio src={staticFile('mix.wav')} />
   </AbsoluteFill>;
