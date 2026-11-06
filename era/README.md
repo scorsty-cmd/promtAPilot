@@ -49,7 +49,9 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
 11. ~~Dialogue-led script~~ — DONE in ep03 (65 % dialogue, automatic wide / close-up / two-shot coverage `camFor`).
 12. ~~Sitting poses~~ — DONE in ep04 (thigh + shin joints, bentwood chairs, sitting in bed).
 13. ~~Facial expressions~~ — DONE in ep04 (10 presets: laugh, surprised, angry, worried, thinking, sad...; auto-expression from ! and ? per line; per-line reaction map).
-14. Next: hand gestures tied to keywords (pointing, counting on fingers), and walk-and-talk shots with tracking camera.
+14. ~~Keyword gestures + tracking walk-and-talk~~ — DONE in ep05 (point on Look/That's, fist on Push!/Fire!, counting on numbers; tracking shot in the escape).
+16. Next: crowd variety (women, children, elders in mass scenes), depth-of-field blur on foreground layers, a reusable 'battle kit' module.
+17. Next: ending card must keep moving (QC flagged ep05's final 5 s; fixed by slow zoom).
 15. Next: reusable "clean render → vertical Shorts" step for every long episode (done by hand for ep03).
 
 ## Log
@@ -70,3 +72,8 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
   New: rig v4 (1900s suits, wild hair, moustaches, glasses), real sitting pose, expression system, sepia + chalkboard look,
   13 chalkboard explainers (time dilation, E=mc², equivalence, Mercury, light bending, double slit, GPS), salon piano/violin score
   with clock-tick pulse, typewriter/Morse/chalk SFX. QC passed first time (−14.0 LUFS).
+- 2026-11-06 · ep05 Troy — "If You Were a Soldier at Troy" (8:03, Trojan POV, 10 chapters, ~55 % dialogue, 12 voices).
+  New: rig v5 (Bronze Age kit: cuirass, scale armour, greaves, crested & boar's-tusk helmets, 3 shield types, spears with
+  world-upright prop rotation), kneel pose, keyword-driven hand gestures, horse gallop cycle + chariots, Army/Arrows/Dust/Smoke
+  battle kit, camera shake on impacts, silhouette duel, MYTH/EVIDENCE/MAYBE stamps, Mycenaean-fresco look, hook-first cold open.
+  QC: one static tail (ending card) fixed by re-rendering the last 10 s.

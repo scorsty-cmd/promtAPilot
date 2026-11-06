@@ -1,0 +1,893 @@
+{
+ "lines": [
+  {
+   "key": "o1",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "This is the last night of Troy.",
+   "start": 0.3,
+   "end": 2.135
+  },
+  {
+   "key": "o2",
+   "chapter": "open",
+   "speaker": "ILOS",
+   "text": "They're gone! The Greeks are gone! Ten years, and they just sailed away!",
+   "start": 2.435,
+   "end": 5.7
+  },
+  {
+   "key": "o3",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "And they left us a giant wooden horse. Doesn't that seem strange to you?",
+   "start": 5.95,
+   "end": 9.758
+  },
+  {
+   "key": "o4",
+   "chapter": "open",
+   "speaker": "ILOS",
+   "text": "It's a gift to the gods, brother. Drink! We won!",
+   "start": 10.008,
+   "end": 12.236
+  },
+  {
+   "key": "o5",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "You are a Trojan soldier. You survived ten years of war. In six hours, your city will burn. To see how, go back ten years.",
+   "start": 12.585,
+   "end": 21.492
+  },
+  {
+   "key": "h1",
+   "chapter": "home",
+   "speaker": "NARR",
+   "text": "Troy. A rich city on the coast of Anatolia, guarding the sea road to the Black Sea. Today, its ruins lie in Turkey, near \u00c7anakkale.",
+   "start": 23.692,
+   "end": 33.319
+  },
+  {
+   "key": "h2",
+   "chapter": "home",
+   "speaker": "DAD",
+   "text": "Hold the reins steady, son. Troy breeds the finest horses in the world.",
+   "start": 33.619,
+   "end": 37.682
+  },
+  {
+   "key": "h2b",
+   "chapter": "home",
+   "speaker": "ILOS",
+   "text": "Did you see her at the harbor? They say she's the most beautiful woman alive.",
+   "start": 37.932,
+   "end": 41.76
+  },
+  {
+   "key": "h2c",
+   "chapter": "home",
+   "speaker": "YOU",
+   "text": "I saw a lot of Spartan gold. And a lot of guards.",
+   "start": 42.01,
+   "end": 44.863
+  },
+  {
+   "key": "h3",
+   "chapter": "home",
+   "speaker": "YOU",
+   "text": "Father, is it true? Prince Paris came back from Sparta with another man's wife?",
+   "start": 45.163,
+   "end": 49.358
+  },
+  {
+   "key": "h4",
+   "chapter": "home",
+   "speaker": "DAD",
+   "text": "Helen. Queen of Sparta. And her husband's brother is Agamemnon, the most powerful king in Greece.",
+   "start": 49.608,
+   "end": 54.985
+  },
+  {
+   "key": "h5",
+   "chapter": "home",
+   "speaker": "YOU",
+   "text": "So what happens now?",
+   "start": 55.235,
+   "end": 56.66
+  },
+  {
+   "key": "h6",
+   "chapter": "home",
+   "speaker": "DAD",
+   "text": "Now? Now we sharpen our spears.",
+   "start": 56.91,
+   "end": 58.92
+  },
+  {
+   "key": "h7",
+   "chapter": "home",
+   "speaker": "YOU",
+   "text": "A war? Over one woman?",
+   "start": 59.22,
+   "end": 60.799
+  },
+  {
+   "key": "h8",
+   "chapter": "home",
+   "speaker": "DAD",
+   "text": "Wars are never about one woman, son. Every ship that sails to the Black Sea passes our coast. The Greeks want what we have.",
+   "start": 61.049,
+   "end": 67.779
+  },
+  {
+   "key": "s1",
+   "chapter": "ships",
+   "speaker": "NARR",
+   "text": "A year later, you're on the wall at dawn.",
+   "start": 69.979,
+   "end": 72.166
+  },
+  {
+   "key": "s2",
+   "chapter": "ships",
+   "speaker": "ILOS",
+   "text": "Gods. Look at the sea. How many ships are there?",
+   "start": 72.416,
+   "end": 74.538
+  },
+  {
+   "key": "s3",
+   "chapter": "ships",
+   "speaker": "YOU",
+   "text": "I stopped counting at three hundred.",
+   "start": 74.788,
+   "end": 76.756
+  },
+  {
+   "key": "s3b",
+   "chapter": "ships",
+   "speaker": "ILOS",
+   "text": "Look! Prince Hector is coming down from the palace!",
+   "start": 77.056,
+   "end": 79.26
+  },
+  {
+   "key": "s4",
+   "chapter": "ships",
+   "speaker": "NARR",
+   "text": "Homer lists more than a thousand ships. Probably far fewer. But to you, it looks like the whole world has come for Troy.",
+   "start": 79.56,
+   "end": 87.722
+  },
+  {
+   "key": "s5",
+   "chapter": "ships",
+   "speaker": "HEC",
+   "text": "Trojans! To the beach! Push them back into the sea!",
+   "start": 88.022,
+   "end": 90.759
+  },
+  {
+   "key": "s6",
+   "chapter": "ships",
+   "speaker": "NARR",
+   "text": "A prophecy said the first Greek to step onto Trojan soil would die. He jumps anyway. He dies at once.",
+   "start": 91.059,
+   "end": 98.299
+  },
+  {
+   "key": "s7",
+   "chapter": "ships",
+   "speaker": "ILOS",
+   "text": "Ha! Who wants to be second?",
+   "start": 98.549,
+   "end": 99.737
+  },
+  {
+   "key": "s8",
+   "chapter": "ships",
+   "speaker": "NARR",
+   "text": "Thousands do. The Greeks take the beach.",
+   "start": 100.037,
+   "end": 102.621
+  },
+  {
+   "key": "w1",
+   "chapter": "siege",
+   "speaker": "NARR",
+   "text": "But they can't take the city. So they build a camp on the shore, and they stay. Year after year.",
+   "start": 104.821,
+   "end": 110.362
+  },
+  {
+   "key": "w2",
+   "chapter": "siege",
+   "speaker": "YOU",
+   "text": "Nine years, Ilos. I was sixteen when this started.",
+   "start": 110.662,
+   "end": 113.55
+  },
+  {
+   "key": "w3",
+   "chapter": "siege",
+   "speaker": "ILOS",
+   "text": "And now you're old and ugly. Pass the bread.",
+   "start": 113.8,
+   "end": 115.851
+  },
+  {
+   "key": "w3b",
+   "chapter": "siege",
+   "speaker": "ILOS",
+   "text": "My uncle says the Greeks are so hungry, they're eating their own horses.",
+   "start": 116.101,
+   "end": 119.74
+  },
+  {
+   "key": "w3c",
+   "chapter": "siege",
+   "speaker": "YOU",
+   "text": "Your uncle also says he once wrestled a lion.",
+   "start": 119.99,
+   "end": 122.528
+  },
+  {
+   "key": "w3d",
+   "chapter": "siege",
+   "speaker": "ILOS",
+   "text": "A small lion. It still counts.",
+   "start": 122.778,
+   "end": 124.3
+  },
+  {
+   "key": "w4",
+   "chapter": "siege",
+   "speaker": "YOU",
+   "text": "Father, why don't they just attack the walls?",
+   "start": 124.65,
+   "end": 126.869
+  },
+  {
+   "key": "w5",
+   "chapter": "siege",
+   "speaker": "DAD",
+   "text": "Look at them. The old songs say Poseidon himself built these walls.",
+   "start": 127.119,
+   "end": 130.919
+  },
+  {
+   "key": "w6",
+   "chapter": "siege",
+   "speaker": "YOU",
+   "text": "Did he?",
+   "start": 131.169,
+   "end": 131.841
+  },
+  {
+   "key": "w7",
+   "chapter": "siege",
+   "speaker": "DAD",
+   "text": "No. But the walls are real. And no ladder in Greece is tall enough.",
+   "start": 132.041,
+   "end": 135.881
+  },
+  {
+   "key": "w8",
+   "chapter": "siege",
+   "speaker": "NARR",
+   "text": "A full bronze armor costs as much as a farm. Most men fight with a spear, a shield of wood and leather, and a lot of hope.",
+   "start": 136.181,
+   "end": 144.556
+  },
+  {
+   "key": "w9",
+   "chapter": "siege",
+   "speaker": "DAD",
+   "text": "Shield high. And never, ever break the line. A line of shields is a wall. A man alone is just a target.",
+   "start": 144.856,
+   "end": 150.812
+  },
+  {
+   "key": "w10",
+   "chapter": "siege",
+   "speaker": "YOU",
+   "text": "Yes, Father. Never break the line.",
+   "start": 151.062,
+   "end": 152.91
+  },
+  {
+   "key": "a1",
+   "chapter": "achilles",
+   "speaker": "SCOUT",
+   "text": "News from the Greek camp! Achilles has quarreled with King Agamemnon!",
+   "start": 155.11,
+   "end": 158.872
+  },
+  {
+   "key": "a2",
+   "chapter": "achilles",
+   "speaker": "ILOS",
+   "text": "Achilles? Their best fighter?",
+   "start": 159.122,
+   "end": 160.499
+  },
+  {
+   "key": "a3",
+   "chapter": "achilles",
+   "speaker": "SCOUT",
+   "text": "He's sitting in his tent. He swears he won't fight for them anymore.",
+   "start": 160.699,
+   "end": 164.316
+  },
+  {
+   "key": "a3b",
+   "chapter": "achilles",
+   "speaker": "YOU",
+   "text": "What did they fight about?",
+   "start": 164.566,
+   "end": 165.962
+  },
+  {
+   "key": "a3c",
+   "chapter": "achilles",
+   "speaker": "SCOUT",
+   "text": "A captive girl named Briseis. Agamemnon took her from him, so Achilles took himself out of the war.",
+   "start": 166.162,
+   "end": 171.716
+  },
+  {
+   "key": "a4",
+   "chapter": "achilles",
+   "speaker": "HEC",
+   "text": "Then tomorrow we attack. We will burn their ships!",
+   "start": 172.016,
+   "end": 174.48
+  },
+  {
+   "key": "a4b",
+   "chapter": "achilles",
+   "speaker": "YOU",
+   "text": "If their ships burn, they can never go home.",
+   "start": 174.73,
+   "end": 177.069
+  },
+  {
+   "key": "a4c",
+   "chapter": "achilles",
+   "speaker": "ILOS",
+   "text": "Then they'll fight like wolves in a corner. Sleep well, brother.",
+   "start": 177.319,
+   "end": 180.291
+  },
+  {
+   "key": "a5",
+   "chapter": "achilles",
+   "speaker": "NARR",
+   "text": "This is what Homer's Iliad is really about: the anger of Achilles. And for the first time in nine years, Troy is winning.",
+   "start": 180.591,
+   "end": 188.48
+  },
+  {
+   "key": "b1",
+   "chapter": "battle",
+   "speaker": "NARR",
+   "text": "Dawn. The gates open, and thousands of Trojans pour onto the plain. You're in the front line.",
+   "start": 190.68,
+   "end": 196.467
+  },
+  {
+   "key": "b1b",
+   "chapter": "battle",
+   "speaker": "HEC",
+   "text": "Trojans! Today we fight for our wives, our children, and the walls of our fathers! Forward!",
+   "start": 196.717,
+   "end": 202.074
+  },
+  {
+   "key": "b2",
+   "chapter": "battle",
+   "speaker": "ILOS",
+   "text": "Shields up! Stay together! Whatever happens, stay next to me!",
+   "start": 202.374,
+   "end": 205.212
+  },
+  {
+   "key": "b3",
+   "chapter": "battle",
+   "speaker": "NARR",
+   "text": "Chariots thunder past. Arrows hiss overhead. Then the two armies crash together.",
+   "start": 205.462,
+   "end": 210.962
+  },
+  {
+   "key": "b3b",
+   "chapter": "battle",
+   "speaker": "ILOS",
+   "text": "Chariot! Get down!",
+   "start": 211.212,
+   "end": 212.202
+  },
+  {
+   "key": "b4",
+   "chapter": "battle",
+   "speaker": "YOU",
+   "text": "Ilos! On your left!",
+   "start": 212.402,
+   "end": 213.808
+  },
+  {
+   "key": "b5",
+   "chapter": "battle",
+   "speaker": "ILOS",
+   "text": "I see him! Push! Push!",
+   "start": 214.008,
+   "end": 215.208
+  },
+  {
+   "key": "b5b",
+   "chapter": "battle",
+   "speaker": "YOU",
+   "text": "Hold the line! Don't break the line!",
+   "start": 215.408,
+   "end": 217.268
+  },
+  {
+   "key": "b6",
+   "chapter": "battle",
+   "speaker": "HEC",
+   "text": "Fire! Bring fire to the ships!",
+   "start": 217.518,
+   "end": 219.073
+  },
+  {
+   "key": "b7",
+   "chapter": "battle",
+   "speaker": "NARR",
+   "text": "The first Greek ship goes up in flames. And then, out of the smoke, a warrior in shining armor charges straight at you.",
+   "start": 219.373,
+   "end": 227.053
+  },
+  {
+   "key": "b8",
+   "chapter": "battle",
+   "speaker": "YOU",
+   "text": "Achilles! It's Achilles!",
+   "start": 227.303,
+   "end": 228.89
+  },
+  {
+   "key": "b9",
+   "chapter": "battle",
+   "speaker": "NARR",
+   "text": "It isn't. It's his best friend, Patroclus, wearing his armor. Hector cuts him down. And now, Achilles will come for revenge.",
+   "start": 229.19,
+   "end": 237.856
+  },
+  {
+   "key": "b10",
+   "chapter": "battle",
+   "speaker": "YOU",
+   "text": "Ilos! Are you hurt?",
+   "start": 238.156,
+   "end": 239.472
+  },
+  {
+   "key": "b11",
+   "chapter": "battle",
+   "speaker": "ILOS",
+   "text": "Just a scratch. Bronze is cheaper than skin.",
+   "start": 239.672,
+   "end": 241.774
+  },
+  {
+   "key": "k1",
+   "chapter": "hector",
+   "speaker": "NARR",
+   "text": "That evening, you're guarding the gate when Hector stops to say goodbye to his wife.",
+   "start": 243.974,
+   "end": 248.627
+  },
+  {
+   "key": "k2",
+   "chapter": "hector",
+   "speaker": "AND",
+   "text": "Hector, please. Stay inside the walls. If you die, what happens to us?",
+   "start": 248.877,
+   "end": 252.819
+  },
+  {
+   "key": "k3",
+   "chapter": "hector",
+   "speaker": "HEC",
+   "text": "If I hide, I could never look a Trojan in the eye again. I have to fight.",
+   "start": 253.069,
+   "end": 257.258
+  },
+  {
+   "key": "k3b",
+   "chapter": "hector",
+   "speaker": "AND",
+   "text": "Then come back to us.",
+   "start": 257.508,
+   "end": 258.844
+  },
+  {
+   "key": "k3c",
+   "chapter": "hector",
+   "speaker": "HEC",
+   "text": "I will try. That is all a soldier can promise.",
+   "start": 259.094,
+   "end": 261.797
+  },
+  {
+   "key": "k4",
+   "chapter": "hector",
+   "speaker": "NARR",
+   "text": "He reaches for his baby son. The child screams, terrified of the horsehair crest on his helmet. Hector laughs, takes it off, and kisses him.",
+   "start": 262.097,
+   "end": 271.26
+  },
+  {
+   "key": "k4b",
+   "chapter": "hector",
+   "speaker": "HEC",
+   "text": "One day, may they say of you: he is even braver than his father.",
+   "start": 271.56,
+   "end": 275.173
+  },
+  {
+   "key": "k5",
+   "chapter": "hector",
+   "speaker": "NARR",
+   "text": "The next day, Achilles returns. Every Trojan runs for the gates. Except one.",
+   "start": 275.523,
+   "end": 280.932
+  },
+  {
+   "key": "k6",
+   "chapter": "hector",
+   "speaker": "ILOS",
+   "text": "Hector! Get inside! Hector!",
+   "start": 281.182,
+   "end": 282.506
+  },
+  {
+   "key": "k7",
+   "chapter": "hector",
+   "speaker": "ACH",
+   "text": "Hector! Turn and face me!",
+   "start": 282.756,
+   "end": 284.535
+  },
+  {
+   "key": "k8",
+   "chapter": "hector",
+   "speaker": "NARR",
+   "text": "Achilles chases him around the walls three times. Then it's over.",
+   "start": 284.835,
+   "end": 289.043
+  },
+  {
+   "key": "k8b",
+   "chapter": "hector",
+   "speaker": "YOU",
+   "text": "Hector is dead. Who will protect Troy now?",
+   "start": 289.343,
+   "end": 291.553
+  },
+  {
+   "key": "k9",
+   "chapter": "hector",
+   "speaker": "NARR",
+   "text": "That night, old King Priam walks alone into the enemy camp, and kneels before Achilles.",
+   "start": 291.903,
+   "end": 297.745
+  },
+  {
+   "key": "k10",
+   "chapter": "hector",
+   "speaker": "PRI",
+   "text": "Remember your own father, Achilles. I have done what no man has done. I have kissed the hands of the man who killed my son.",
+   "start": 297.995,
+   "end": 304.649
+  },
+  {
+   "key": "k11",
+   "chapter": "hector",
+   "speaker": "ACH",
+   "text": "Get up, old man. Take him home.",
+   "start": 304.949,
+   "end": 306.99
+  },
+  {
+   "key": "k12",
+   "chapter": "hector",
+   "speaker": "NARR",
+   "text": "The Iliad ends right here, with Hector's funeral. Not with the fall of Troy.",
+   "start": 307.34,
+   "end": 312.187
+  },
+  {
+   "key": "t1",
+   "chapter": "horse",
+   "speaker": "NARR",
+   "text": "Months later, you wake up to silence. The Greek camp is empty. And on the beach stands a giant wooden horse.",
+   "start": 314.387,
+   "end": 321.605
+  },
+  {
+   "key": "t2",
+   "chapter": "horse",
+   "speaker": "ILOS",
+   "text": "They've given up! It's an offering. We should take it to the temple!",
+   "start": 321.855,
+   "end": 324.752
+  },
+  {
+   "key": "t3",
+   "chapter": "horse",
+   "speaker": "LAO",
+   "text": "Are you mad? Burn it! I fear the Greeks, even when they bring gifts!",
+   "start": 325.002,
+   "end": 329.287
+  },
+  {
+   "key": "t3b",
+   "chapter": "horse",
+   "speaker": "SIN",
+   "text": "Wait! I am Sinon. The Greeks left me behind. The horse is an offering to Athena. They built it huge, so you could never take it into your city, because if you did, Troy could never fall.",
+   "start": 329.537,
+   "end": 338.308
+  },
+  {
+   "key": "t4",
+   "chapter": "horse",
+   "speaker": "CAS",
+   "text": "Fire! I see fire and blood! Troy is burning!",
+   "start": 338.558,
+   "end": 341.048
+  },
+  {
+   "key": "t5",
+   "chapter": "horse",
+   "speaker": "YOU",
+   "text": "That's Princess Cassandra. The gods cursed her. She always tells the truth, and nobody ever believes her.",
+   "start": 341.298,
+   "end": 346.836
+  },
+  {
+   "key": "t5b",
+   "chapter": "horse",
+   "speaker": "ILOS",
+   "text": "She says that about everything.",
+   "start": 347.086,
+   "end": 348.389
+  },
+  {
+   "key": "t6",
+   "chapter": "horse",
+   "speaker": "ILOS",
+   "text": "Come on, grab a rope! Pull!",
+   "start": 348.639,
+   "end": 349.943
+  },
+  {
+   "key": "t7",
+   "chapter": "horse",
+   "speaker": "NARR",
+   "text": "The horse is too big for the gate. So the Trojans break open their own wall to bring it in.",
+   "start": 350.243,
+   "end": 355.889
+  },
+  {
+   "key": "t8",
+   "chapter": "horse",
+   "speaker": "YOU",
+   "text": "We just broke our own wall, for a horse.",
+   "start": 356.189,
+   "end": 358.296
+  },
+  {
+   "key": "t9",
+   "chapter": "horse",
+   "speaker": "ILOS",
+   "text": "Relax! Tonight, we celebrate!",
+   "start": 358.546,
+   "end": 359.904
+  },
+  {
+   "key": "n1",
+   "chapter": "night",
+   "speaker": "NARR",
+   "text": "Back to tonight. Midnight. While Troy sleeps, a hidden door opens in the belly of the horse.",
+   "start": 362.104,
+   "end": 367.827
+  },
+  {
+   "key": "n2",
+   "chapter": "night",
+   "speaker": "YOU",
+   "text": "Ilos. Ilos, wake up! Do you hear that?",
+   "start": 368.127,
+   "end": 370.319
+  },
+  {
+   "key": "n3",
+   "chapter": "night",
+   "speaker": "ILOS",
+   "text": "The gates! Someone has opened the gates!",
+   "start": 370.569,
+   "end": 372.134
+  },
+  {
+   "key": "n3b",
+   "chapter": "night",
+   "speaker": "YOU",
+   "text": "Get your shield! Where's your spear?",
+   "start": 372.384,
+   "end": 374.165
+  },
+  {
+   "key": "n3c",
+   "chapter": "night",
+   "speaker": "ILOS",
+   "text": "Go! Find my mother! I'll hold them here!",
+   "start": 374.365,
+   "end": 376.137
+  },
+  {
+   "key": "n4",
+   "chapter": "night",
+   "speaker": "NARR",
+   "text": "The Greek fleet was hiding behind the island of Tenedos. Now the whole army is inside the walls.",
+   "start": 376.437,
+   "end": 383.002
+  },
+  {
+   "key": "n5",
+   "chapter": "night",
+   "speaker": "AEN",
+   "text": "Trojan! This way! The city is lost. Save who you can!",
+   "start": 383.302,
+   "end": 386.425
+  },
+  {
+   "key": "n6",
+   "chapter": "night",
+   "speaker": "YOU",
+   "text": "Ilos! Ilos, come on!",
+   "start": 386.675,
+   "end": 388.338
+  },
+  {
+   "key": "n6b",
+   "chapter": "night",
+   "speaker": "ILOS",
+   "text": "Go! Remember me, brother!",
+   "start": 388.588,
+   "end": 389.756
+  },
+  {
+   "key": "n7",
+   "chapter": "night",
+   "speaker": "NARR",
+   "text": "You follow Prince Aeneas through the smoke. He carries his old father on his back.",
+   "start": 390.056,
+   "end": 395.04
+  },
+  {
+   "key": "n8",
+   "chapter": "night",
+   "speaker": "YOU",
+   "text": "Where are we going?",
+   "start": 395.29,
+   "end": 396.543
+  },
+  {
+   "key": "n9",
+   "chapter": "night",
+   "speaker": "AEN",
+   "text": "Wherever the sea takes us. As long as we live, Troy lives.",
+   "start": 396.743,
+   "end": 400.017
+  },
+  {
+   "key": "n10",
+   "chapter": "night",
+   "speaker": "NARR",
+   "text": "Roman legend says Aeneas sailed west to Italy, and his descendants founded Rome.",
+   "start": 400.367,
+   "end": 405.616
+  },
+  {
+   "key": "r1",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "So, was any of it real?",
+   "start": 407.816,
+   "end": 409.298
+  },
+  {
+   "key": "r2",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "In eighteen seventy-one, Heinrich Schliemann dug into a hill called Hisarl\u0131k, near \u00c7anakkale. He found not one city, but nine, built on top of each other.",
+   "start": 409.598,
+   "end": 420.359
+  },
+  {
+   "key": "r2b",
+   "chapter": "real",
+   "speaker": "YOU",
+   "text": "Nine Troys? Which one was mine?",
+   "start": 420.609,
+   "end": 422.392
+  },
+  {
+   "key": "r3",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "One of them burned around eleven eighty BC. Archaeologists found signs of fire, and arrowheads and sling stones in its streets.",
+   "start": 422.692,
+   "end": 431.821
+  },
+  {
+   "key": "r4",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "And in Hittite archives, there are letters about a kingdom called Wilusa, which sounds a lot like Ilios, Homer's name for Troy. One of its kings was called Alaksandu.",
+   "start": 432.121,
+   "end": 443.55
+  },
+  {
+   "key": "r4b",
+   "chapter": "real",
+   "speaker": "YOU",
+   "text": "Alaksandu. Alexandros. That's Paris's other name!",
+   "start": 443.8,
+   "end": 446.753
+  },
+  {
+   "key": "r4c",
+   "chapter": "real",
+   "speaker": "YOU",
+   "text": "And the horse?",
+   "start": 447.053,
+   "end": 448.022
+  },
+  {
+   "key": "r4d",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "The horse isn't in the Iliad at all. Some historians think it's a memory of a siege engine. Or of an earthquake: Poseidon was the god of both horses and earthquakes.",
+   "start": 448.272,
+   "end": 459.519
+  },
+  {
+   "key": "r5",
+   "chapter": "real",
+   "speaker": "YOU",
+   "text": "So the war might have been real?",
+   "start": 459.819,
+   "end": 461.468
+  },
+  {
+   "key": "r6",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "The city was real. And it burned. The rest, historians are still arguing about.",
+   "start": 461.718,
+   "end": 467.086
+  },
+  {
+   "key": "r7",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "So, if you'd been standing in that square, looking up at the horse, would you have pulled it inside? Tell me in the comments.",
+   "start": 467.436,
+   "end": 474.188
+  }
+ ],
+ "voice_end": 474.688
+}
