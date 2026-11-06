@@ -166,3 +166,11 @@
 - Photos: skipped (workflow delivered junk 5 days in a row). vidIQ balance 2: no paid tools. Not Sunday.
 - YouTube Short: NOT submitted - the queue_publish.py step was blocked by the auto-mode permission classifier ([Create Public Surface]); not worked around. MP4 + json ready to submit manually (title "Your salary is 0% of your credit score #Shorts").
 - Tip: never `pkill -f reel2.py` inside the same shell command chain (kills the shell).
+
+### 2026-11-06 16:49 - FILE 022 - MONEY ANGLE #5: dynamic currency conversion, up to 12% markup (teal/coral dark DNA, 28.3 s) - https://www.instagram.com/reel/DfZxV9iHD0G/
+- File: HL_Reel_20261106_1649_dcc-own-currency.mp4 - Renderer reels/renderer/reel2_v18.py (+ reel_audio_v7.py), scenes_FILE022.py, caption_FILE022.txt.
+- New vs FILE 021: new `dcc` beat (drawn card reader, two currency options, tap ring picks own-currency, +extra chip counts up, stamp/ding); numeric hook "Up to 12% extra"; stat 12%; Visa doc receipt with redaction; speed 1.10 + silence trim (28 s); new teal/coral palette.
+- Sources: Motley Fool 15 May 2023 (Stiftung Warentest: prices 2.6%-12.0% higher with DCC), Visa DCC page ("the choice is yours in deciding to accept or decline"). Read 6 Nov 2026. Bankrate not fetchable.
+- Previous (FILE 021, 5 Nov): 63 plays, 8.6% watched, 80% skip (worst of money Reels; FILE 020: 69 plays, 25.4%, 60.3%; FILE 019 91 plays, 19.9%, 61.2%). Open-loop numeric hooks + shorter payoff beat tend to hold better.
+- Photos: skipped. vidIQ balance 2: no paid tools. Not Sunday.
+- YouTube Short: queue run https://github.com/scorsty-cmd/promtAPilot/actions/runs/42230197775 FAILED (upload step ended in 0 s, release step failed); release created with failure note, queue branch kept, not resubmitted.
