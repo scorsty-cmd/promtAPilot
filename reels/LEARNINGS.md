@@ -174,3 +174,12 @@
 - Previous (FILE 021, 5 Nov): 63 plays, 8.6% watched, 80% skip (worst of money Reels; FILE 020: 69 plays, 25.4%, 60.3%; FILE 019 91 plays, 19.9%, 61.2%). Open-loop numeric hooks + shorter payoff beat tend to hold better.
 - Photos: skipped. vidIQ balance 2: no paid tools. Not Sunday.
 - YouTube Short: queue run https://github.com/scorsty-cmd/promtAPilot/actions/runs/42230197775 FAILED (upload step ended in 0 s, release step failed); release created with failure note, queue branch kept, not resubmitted.
+
+### 2026-11-07 16:49 - FILE 023 - MONEY ANGLE #6: payment-app balances vs deposit insurance, CFPB Issue Spotlight (orange/ice-blue dark DNA, 24.4 s) - https://www.instagram.com/reel/DfcVxPGFbfv/
+- File: HL_Reel_20261107_1649_payment-app-balance.mp4 - Renderer reels/renderer/reel2_v19.py (+ reel_audio_v7.py), scenes_FILE023.py, caption_FILE023.txt.
+- New vs FILE 022: new `insure` beat (two drawn cards: BANK ACCOUNT shield locks on + INSURED up to $250,000, PAYMENT APP BALANCE dashed shield with "?" + OFTEN NOT deposit insured, footer); contrast hook "Bank: $250,000 insured. Your app?"; varied pauses (0.12-0.45 s, longest before the CFPB receipt); doc quote word-for-word from the CFPB page; new palette.
+- Sources: consumerfinance.gov Issue Spotlight full report (1 Jun 2023; quote "often are not placed in an account at a bank or credit union and lack individual deposit insurance coverage"; "over three-quarters of U.S. adults" used a payment app). Read 7 Nov 2026. 2023 data, labelled. Stat beat: value 75 suffix '%+'.
+- Previous (FILE 022, 6 Nov): 48 plays, 7.9% watched, 93.2% skip, 0 saves/shares (worst yet; FILE 021 8.6%/80%; FILE 020 25.4%/60.3%). Money Reels not clearly better than older ones; hooks that need a second to parse (currency) lose; keep hook to one number + one contrast.
+- Photos: skipped (workflow junk for days). vidIQ balance 2: no paid tools. Not Sunday.
+- Tip: `kill` render by pid (pgrep loop), never pkill -f in the same command.
+- YouTube Short: queue run https://github.com/scorsty-cmd/promtAPilot/actions/runs/42379359507 FAILED (same as 6 Nov); release created with failure note, queue branch kept, not resubmitted. Needs owner check of YOUTUBE_TOKEN_JSON_HIDDEN_LAYER / upload step.
