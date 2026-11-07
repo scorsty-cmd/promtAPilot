@@ -1,0 +1,13 @@
+{
+  "_doc": "Fight choreography for ep07 shared by shots.tsx and audio.py. Moves: [lineKey, dt, move]. Hits: [lineKey, dt, kind, x, y] (kind: clash | block | flesh | thud | whoosh)",
+  "gran": {
+    "ale": [["a9", 0.0, "guard"], ["a9", 1.4, "thrust"], ["a9", 2.0, "guard"], ["a9", 3.5, "slash"], ["a9", 4.1, "guard"], ["a10", 0.4, "block"], ["a10", 1.0, "guard"], ["a11", 0.85, "hit"], ["a11", 1.6, "guard"], ["a11", 3.4, "thrust"], ["a11", 4.0, "guard"], ["a14", 0.6, "rest"]],
+    "rho": [["a9", 0.0, "guard"], ["a9", 1.35, "block"], ["a9", 2.0, "guard"], ["a9", 3.1, "wind"], ["a9", 3.5, "slash"], ["a9", 4.1, "guard"], ["a10", 0.1, "wind"], ["a10", 0.4, "slash"], ["a10", 1.0, "guard"], ["a11", 0.5, "wind"], ["a11", 0.85, "slash"], ["a11", 1.6, "guard"], ["a11", 3.45, "hit"], ["a11", 3.8, "fall"]],
+    "spi": [["a11", 4.4, "step"], ["a11", 5.4, "wind"], ["a13", 0.3, "hit"], ["a13", 0.6, "fall"]],
+    "hits": [["a9", 1.45, "block", 980, 700], ["a9", 3.55, "clash", 960, 660], ["a10", 0.45, "block", 900, 690], ["a11", 0.9, "clash", 730, 590], ["a11", 3.5, "flesh", 1110, 760], ["a12", 0.2, "whoosh", 0, 0], ["a13", 0.35, "flesh", 500, 700], ["a13", 0.75, "thud", 480, 900]]
+  },
+  "issus": { "hits": [["i3", 0.6, "thud", 0, 0], ["i4", 0.3, "clash", 0, 0], ["i4", 1.2, "clash", 0, 0], ["i5", 0.4, "clash", 0, 0]] },
+  "gauga": { "hits": [["g9", 1.5, "clash", 0, 0], ["g9", 2.2, "clash", 0, 0], ["g9", 3.0, "thud", 0, 0], ["g10", 1.0, "clash", 0, 0], ["g11", 0.3, "clash", 0, 0]] },
+  "india": { "hits": [["n7", 1.2, "thud", 0, 0], ["n7", 1.8, "clash", 0, 0], ["n8", 0.8, "thud", 0, 0], ["n8", 2.0, "clash", 0, 0], ["n8", 3.3, "thud", 0, 0], ["n8", 4.5, "clash", 0, 0]] },
+  "open": { "hits": [["o6", 0.55, "flesh", 0, 0]] }
+}

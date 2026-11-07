@@ -89,3 +89,9 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
   fight choreography system, arena with reacting crowd + editor's box, ludus/cell/kitchen/Vesuvius cliff/Roman camp/coast/Crassus's ditch/Appian Way/Pompeii fresco sets, split-screen decision shot, Pompeian-wall explainers (Italy route map from Natural Earth),
   Roman score (hydraulis water organ, tuba fanfares, cornu, frame drums, cithara) + hit-synced SFX. Rendered in the cloud with era-render.yml.
   Sources: Plutarch (Crassus 8–11), Appian (BC 1.116–120), Vegetius 1.11, Lösch et al. 2014, Ville 1981.
+- 2026-11-07 · ep07 Alexander — "If You Were Alexander the Great's Classmate" (13:01, 13 chapters, 93 of 151 lines dialogue, 15 voices).
+  New: shock cold open (starts mid-argument at the Samarkand feast, smash-cut to black + name slam, classmates photo-card), rig v7 (Phrygian helmet with Alexander's two white plumes, kausia, Persian tiara & bashlyk, Indian turban, royal diadem, 'lion' hair, linen cuirass with pteruges,
+  Vergina-star shields, 6 m sarissas, Philip's eye patch), war elephant + scythed chariots + royal chariot, phalanx block that levels its sarissas and opens lanes, 'two versions' device (Gordian knot: sword vs pin),
+  black-figure vase explainers (golden mean, sarissa, Persepolis treasure, sources, 'no more worlds' myth), Greece→India route maps (Natural Earth), new sets (Pella, Mieza nymphaeum + Mieza today, Aegae theatre, Corinth & Diogenes's jar, Hellespont, Granicus, Gordion, royal tent, Gaugamela, Persepolis fire, Samarkand feast, Hydaspes monsoon, Gedrosia, Babylon, Alexandria),
+  Greek/Persian/Indian score (salpinx, aulos, lyre, tabla) + elephant trumpets, thunder, river SFX.
+  Lesson: never put CAPITALS in pronunciation respellings (Kokoro spells them letter by letter) — use lowercase respellings and check with k.tokenizer.phonemize().
