@@ -54,6 +54,9 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
 18. ~~Fight choreography~~ — DONE in ep06 (`fight()` move library: guard, step, thrust, wind, slash, block, dodge, low, hit, fall, beg, bash; blended moves, impact sparks, flash + camera punch; timings in `src/fights.json` shared with audio.py so every clash is in sync).
 19. ~~One-click cloud render~~ — DONE in ep06 (`.github/workflows/era-render.yml`: voices + mix → 16 parallel chunks → join → GitHub Release; nothing runs on the owner's computer).
 20. Next: split-screen choices reused for every 'who do you follow?' moment; proper side-view run cycle; vertical Shorts from the clean render.
+21. ~~Non-human talking cast~~ — DONE in ep08 (`Actor.c` custom renderer: any creature gets mouth sync, blinks, expressions, keyword gestures and camera coverage via `hh` head height; Trood dinosauroid, Pip primate, crow).
+22. ~~Render timeout guard~~ — DONE in ep08 (10 resumable chunks; heavy per-frame SVG filters profiled and replaced by baked PNG paper/halftone/grain → ~2x faster).
+23. Next: side-view run cycle for creatures with proper foot plant; vertical Shorts from the clean render.
 17. ~~Ending card motion~~ — DONE in ep05_zombies (continuous zoom/drift on closing card and all explainers).
 
 ## Log
@@ -99,3 +102,7 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
   New: geometer's-papyrus look (self-drawing ink diagrams, Caveat handwriting, Marcellus titles, rotating geometry overlay, coin era chip,
   scroll chapter cards), Roman kit (Montefortino helmet, scutum, gladius), machines (claw crane lifting a warship, catapults with
   stone arcs + splashes, compound-pulley rig moving the Syracusia, Archimedes screw), crowd variety, depth-of-field blur. QC passed first time.
+- 2026-11-07 · ep08 Dinosaurs — "What If the Dinosaurs Never Went Extinct?" (8:01, 9 chapters, 66 % dialogue, 6 voices).
+  New: risograph-print look (pink misregistration plate on every frame, halftone + paper baked to PNG, Dela Gothic / Rubik Mono / Space Grotesk),
+  creature kit (theropod with jaw/walk/breath, raptor pack, dinosauroid guide, tiny primate, sauropod herd, pterosaur, mosasaur leap, duckbills, crow),
+  13 "field guide" explainer posters with EVIDENCE / MAYBE / MYTH stickers, original marimba/kalimba/log-drum score + chase cue. QC passed first time.

@@ -1,0 +1,757 @@
+{
+ "lines": [
+  {
+   "key": "o1",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "You wake up. The ground is warm. And something is breathing on your face.",
+   "start": 0.3,
+   "end": 4.571
+  },
+  {
+   "key": "o2",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "Okay. Okay. Nobody move. Especially you, big guy.",
+   "start": 4.871,
+   "end": 8.029
+  },
+  {
+   "key": "o3",
+   "chapter": "open",
+   "speaker": "TROOD",
+   "text": "Don't worry. He only eats things that run. So, please, don't run.",
+   "start": 8.329,
+   "end": 11.831
+  },
+  {
+   "key": "o4",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "Sixty-six million years ago, a giant asteroid was heading for Earth. In this world, it missed. And now, you're here.",
+   "start": 12.181,
+   "end": 20.043
+  },
+  {
+   "key": "m1",
+   "chapter": "miss",
+   "speaker": "YOU",
+   "text": "Wait. You can talk?",
+   "start": 22.243,
+   "end": 23.553
+  },
+  {
+   "key": "m2",
+   "chapter": "miss",
+   "speaker": "TROOD",
+   "text": "Of course I can talk. I'm a troodont. Seventy million years of evolution. You're the one who looks strange.",
+   "start": 23.753,
+   "end": 29.769
+  },
+  {
+   "key": "m3",
+   "chapter": "miss",
+   "speaker": "YOU",
+   "text": "Where I come from, a rock ten kilometers wide hit Mexico and wiped out the dinosaurs.",
+   "start": 30.069,
+   "end": 34.828
+  },
+  {
+   "key": "m4",
+   "chapter": "miss",
+   "speaker": "TROOD",
+   "text": "Ten kilometers? That's a mountain. What happened?",
+   "start": 35.078,
+   "end": 37.77
+  },
+  {
+   "key": "m5",
+   "chapter": "miss",
+   "speaker": "NARR",
+   "text": "The impact threw so much soot and dust into the sky that the sun went dark for months. About three quarters of all species on Earth died, including every dinosaur that couldn't fly.",
+   "start": 38.02,
+   "end": 50.611
+  },
+  {
+   "key": "m6",
+   "chapter": "miss",
+   "speaker": "YOU",
+   "text": "And here's the crazy part. It hit one of the worst possible places, rocks full of oil and sulfur. Scientists calculated that if it had landed almost anywhere else, the dinosaurs might have survived.",
+   "start": 50.911,
+   "end": 61.842
+  },
+  {
+   "key": "m7",
+   "chapter": "miss",
+   "speaker": "TROOD",
+   "text": "So we were just unlucky?",
+   "start": 62.142,
+   "end": 63.83
+  },
+  {
+   "key": "m8",
+   "chapter": "miss",
+   "speaker": "YOU",
+   "text": "Very unlucky. A study from twenty seventeen says only about thirteen percent of the planet would have caused a mass extinction.",
+   "start": 64.08,
+   "end": 70.769
+  },
+  {
+   "key": "m9",
+   "chapter": "miss",
+   "speaker": "YOU",
+   "text": "Some scientists back home even say dinosaurs were already in decline before the asteroid.",
+   "start": 71.069,
+   "end": 76.118
+  },
+  {
+   "key": "m10",
+   "chapter": "miss",
+   "speaker": "TROOD",
+   "text": "Rude. Do I look like I'm in decline?",
+   "start": 76.368,
+   "end": 78.54
+  },
+  {
+   "key": "m11",
+   "chapter": "miss",
+   "speaker": "NARR",
+   "text": "That idea is still debated. Many dinosaur groups seem to have been doing fine right up to the very end.",
+   "start": 78.84,
+   "end": 85.814
+  },
+  {
+   "key": "w1",
+   "chapter": "world",
+   "speaker": "NARR",
+   "text": "Your guide's name is Trood. She leads you through a forest that has never seen a winter.",
+   "start": 88.014,
+   "end": 93.28
+  },
+  {
+   "key": "w2",
+   "chapter": "world",
+   "speaker": "YOU",
+   "text": "It's so hot. Where is all the ice?",
+   "start": 93.53,
+   "end": 95.396
+  },
+  {
+   "key": "w3",
+   "chapter": "world",
+   "speaker": "TROOD",
+   "text": "Ice? On the poles, there are only forests. And the sea comes much further inland.",
+   "start": 95.646,
+   "end": 100.148
+  },
+  {
+   "key": "w4",
+   "chapter": "world",
+   "speaker": "NARR",
+   "text": "In the age of dinosaurs, the Earth was a greenhouse. No ice caps. Sea levels were around a hundred meters higher than today. In this world, the planet never cooled down so far.",
+   "start": 100.448,
+   "end": 112.761
+  },
+  {
+   "key": "w5",
+   "chapter": "world",
+   "speaker": "YOU",
+   "text": "Are those flowers? I thought dinosaurs lived with ferns.",
+   "start": 113.061,
+   "end": 116.039
+  },
+  {
+   "key": "w6",
+   "chapter": "world",
+   "speaker": "TROOD",
+   "text": "Ferns are for my grandparents. We have flowers, fruit, and grass. They appeared while my ancestors were still around.",
+   "start": 116.289,
+   "end": 122.758
+  },
+  {
+   "key": "w7",
+   "chapter": "world",
+   "speaker": "YOU",
+   "text": "And something just bit me. Are there mosquitoes here too?",
+   "start": 123.058,
+   "end": 125.966
+  },
+  {
+   "key": "w8",
+   "chapter": "world",
+   "speaker": "TROOD",
+   "text": "Of course. Insects are older than all of us. And your blood is new to them. They will love you.",
+   "start": 126.216,
+   "end": 131.348
+  },
+  {
+   "key": "l1",
+   "chapter": "locals",
+   "speaker": "YOU",
+   "text": "Is that a T. rex? I knew it! I always knew they were real!",
+   "start": 133.548,
+   "end": 136.352
+  },
+  {
+   "key": "l2",
+   "chapter": "locals",
+   "speaker": "TROOD",
+   "text": "A what? That's a tyrannosaur, yes, but the one you know died out sixty-six million years ago, even here. Species don't last forever. This is its great-great-great, a million times great, grandchild.",
+   "start": 136.602,
+   "end": 147.865
+  },
+  {
+   "key": "l3",
+   "chapter": "locals",
+   "speaker": "YOU",
+   "text": "Does it have feathers? Back home, scientists argue about that all the time.",
+   "start": 148.165,
+   "end": 151.668
+  },
+  {
+   "key": "l3b",
+   "chapter": "locals",
+   "speaker": "YOU",
+   "text": "And how hard can it bite?",
+   "start": 151.918,
+   "end": 153.459
+  },
+  {
+   "key": "l3c",
+   "chapter": "locals",
+   "speaker": "TROOD",
+   "text": "Hard enough to crush a car. Whatever a car is.",
+   "start": 153.659,
+   "end": 156.532
+  },
+  {
+   "key": "l4",
+   "chapter": "locals",
+   "speaker": "TROOD",
+   "text": "Feathers? Babies do, for warmth. The big ones are mostly scales. Too hot for a fur coat when you weigh as much as an elephant.",
+   "start": 156.832,
+   "end": 164.075
+  },
+  {
+   "key": "l5",
+   "chapter": "locals",
+   "speaker": "NARR",
+   "text": "Skin fossils of big tyrannosaurs show mostly scales. Their smaller relatives had feathers.",
+   "start": 164.375,
+   "end": 170.625
+  },
+  {
+   "key": "l5b",
+   "chapter": "locals",
+   "speaker": "YOU",
+   "text": "What is that, in the sky? Is that a plane?",
+   "start": 170.875,
+   "end": 173.024
+  },
+  {
+   "key": "l5c",
+   "chapter": "locals",
+   "speaker": "TROOD",
+   "text": "A pterosaur. When it lands, it's as tall as a giraffe. Its wings are wider than a bus.",
+   "start": 173.224,
+   "end": 178.195
+  },
+  {
+   "key": "l6",
+   "chapter": "locals",
+   "speaker": "YOU",
+   "text": "And the ground is shaking. Why is the ground shaking?",
+   "start": 178.495,
+   "end": 181.303
+  },
+  {
+   "key": "l7",
+   "chapter": "locals",
+   "speaker": "TROOD",
+   "text": "Long-necks. Two hundred of them. Step behind the tree, please.",
+   "start": 181.503,
+   "end": 185.109
+  },
+  {
+   "key": "s1",
+   "chapter": "sea",
+   "speaker": "NARR",
+   "text": "Trood takes you to the coast. The sea is warm, shallow, and full of things you have only seen in museums.",
+   "start": 187.309,
+   "end": 194.207
+  },
+  {
+   "key": "s2",
+   "chapter": "sea",
+   "speaker": "YOU",
+   "text": "Can I swim?",
+   "start": 194.457,
+   "end": 195.589
+  },
+  {
+   "key": "s3",
+   "chapter": "sea",
+   "speaker": "TROOD",
+   "text": "You can. Once.",
+   "start": 195.789,
+   "end": 197.077
+  },
+  {
+   "key": "s4",
+   "chapter": "sea",
+   "speaker": "NARR",
+   "text": "Something huge rises out of the water. A mosasaur: a sea lizard longer than a school bus, with a double row of teeth in the roof of its mouth.",
+   "start": 197.377,
+   "end": 207.516
+  },
+  {
+   "key": "s5",
+   "chapter": "sea",
+   "speaker": "YOU",
+   "text": "Okay, I'll stay on the sand. Are there sharks too?",
+   "start": 207.766,
+   "end": 210.394
+  },
+  {
+   "key": "s5b",
+   "chapter": "sea",
+   "speaker": "TROOD",
+   "text": "Sharks are older than both of us. They survived everything.",
+   "start": 210.644,
+   "end": 214.102
+  },
+  {
+   "key": "s6",
+   "chapter": "sea",
+   "speaker": "TROOD",
+   "text": "Smart. Your species learns fast.",
+   "start": 214.402,
+   "end": 216.543
+  },
+  {
+   "key": "s7",
+   "chapter": "sea",
+   "speaker": "NARR",
+   "text": "Mosasaurs died out with the dinosaurs. Here, they rule the oceans. There are no whales, no dolphins, no seals. Those were all mammals that grew big after the asteroid.",
+   "start": 216.793,
+   "end": 229.126
+  },
+  {
+   "key": "p1",
+   "chapter": "mammals",
+   "speaker": "YOU",
+   "text": "Wait. If dinosaurs are still here, where are the mammals? Where are the people?",
+   "start": 231.326,
+   "end": 235.062
+  },
+  {
+   "key": "p2",
+   "chapter": "mammals",
+   "speaker": "PIP",
+   "text": "Down here! Hi! Please don't step on me!",
+   "start": 235.312,
+   "end": 237.306
+  },
+  {
+   "key": "p3",
+   "chapter": "mammals",
+   "speaker": "YOU",
+   "text": "A mouse?",
+   "start": 237.556,
+   "end": 238.334
+  },
+  {
+   "key": "p4",
+   "chapter": "mammals",
+   "speaker": "PIP",
+   "text": "A primate! Well, almost. I eat fruit, I climb trees, and I'm the size of a rat. My family has been doing this for millions of years.",
+   "start": 238.534,
+   "end": 245.718
+  },
+  {
+   "key": "p5",
+   "chapter": "mammals",
+   "speaker": "NARR",
+   "text": "Real fossils of a tiny tree-climber called Purgatorius date to just after the asteroid. Its family probably lived alongside the last dinosaurs. It may be one of your oldest ancestors.",
+   "start": 246.018,
+   "end": 259.513
+  },
+  {
+   "key": "p6",
+   "chapter": "mammals",
+   "speaker": "YOU",
+   "text": "So you're my great-grandparent?",
+   "start": 259.813,
+   "end": 261.503
+  },
+  {
+   "key": "p7",
+   "chapter": "mammals",
+   "speaker": "PIP",
+   "text": "Your great-great-great, a few million times great! But here, we never grew up. Every time a mammal gets big, something with teeth eats it.",
+   "start": 261.703,
+   "end": 268.905
+  },
+  {
+   "key": "p8",
+   "chapter": "mammals",
+   "speaker": "NARR",
+   "text": "That's the hard truth. With dinosaurs ruling the land, mammals would probably have stayed small. No apes. No humans. In this world, you shouldn't exist.",
+   "start": 269.205,
+   "end": 279.401
+  },
+  {
+   "key": "i1",
+   "chapter": "minds",
+   "speaker": "YOU",
+   "text": "Then who built that?",
+   "start": 281.601,
+   "end": 282.832
+  },
+  {
+   "key": "i2",
+   "chapter": "minds",
+   "speaker": "TROOD",
+   "text": "Our nests? My family did. Bigger brain, better hands, and we've had a lot of time.",
+   "start": 283.082,
+   "end": 287.626
+  },
+  {
+   "key": "i3",
+   "chapter": "minds",
+   "speaker": "NARR",
+   "text": "In nineteen eighty-two, the paleontologist Dale Russell imagined this exact idea. He took a smart dinosaur called Troodon and asked: what if it kept evolving? He called the result the dinosauroid.",
+   "start": 287.926,
+   "end": 302.062
+  },
+  {
+   "key": "i4",
+   "chapter": "minds",
+   "speaker": "YOU",
+   "text": "But yours doesn't look human at all.",
+   "start": 302.362,
+   "end": 304.268
+  },
+  {
+   "key": "i5",
+   "chapter": "minds",
+   "speaker": "TROOD",
+   "text": "Why would I? Your body is good for your history. Mine is good for mine. I keep the tail. It's great for balance.",
+   "start": 304.518,
+   "end": 310.664
+  },
+  {
+   "key": "i6",
+   "chapter": "minds",
+   "speaker": "NARR",
+   "text": "Many scientists criticized Russell's human-shaped version. A smart dinosaur would more likely look like a big, clever bird.",
+   "start": 310.964,
+   "end": 319.709
+  },
+  {
+   "key": "i7",
+   "chapter": "minds",
+   "speaker": "TROOD",
+   "text": "So tell me. What did your kind do with your big brains?",
+   "start": 320.009,
+   "end": 323.025
+  },
+  {
+   "key": "i8",
+   "chapter": "minds",
+   "speaker": "YOU",
+   "text": "We built cities. We flew to the Moon. We invented pizza. And we also made a pretty big mess.",
+   "start": 323.275,
+   "end": 328.177
+  },
+  {
+   "key": "i9",
+   "chapter": "minds",
+   "speaker": "TROOD",
+   "text": "Hmm. Maybe that asteroid did your planet a favor. Or maybe not.",
+   "start": 328.477,
+   "end": 332.392
+  },
+  {
+   "key": "i10",
+   "chapter": "minds",
+   "speaker": "NARR",
+   "text": "Trood shows you her town: hundreds of woven nests in the trees, and a field where her family herds duck-billed dinosaurs like cattle.",
+   "start": 332.692,
+   "end": 341.698
+  },
+  {
+   "key": "i11",
+   "chapter": "minds",
+   "speaker": "YOU",
+   "text": "You farm dinosaurs?",
+   "start": 341.948,
+   "end": 343.505
+  },
+  {
+   "key": "i12",
+   "chapter": "minds",
+   "speaker": "TROOD",
+   "text": "You farm birds, don't you? Same thing. These ones give eggs the size of your head.",
+   "start": 343.705,
+   "end": 348.24
+  },
+  {
+   "key": "i13",
+   "chapter": "minds",
+   "speaker": "YOU",
+   "text": "Okay, that's actually breakfast for a week.",
+   "start": 348.54,
+   "end": 350.853
+  },
+  {
+   "key": "d1",
+   "chapter": "danger",
+   "speaker": "YOU",
+   "text": "Okay, honest question. Could I survive here?",
+   "start": 353.053,
+   "end": 355.712
+  },
+  {
+   "key": "d2",
+   "chapter": "danger",
+   "speaker": "TROOD",
+   "text": "For a few days. Maybe. You're slow, you're soft, and you smell delicious.",
+   "start": 355.962,
+   "end": 359.794
+  },
+  {
+   "key": "d3",
+   "chapter": "danger",
+   "speaker": "YOU",
+   "text": "Thank you. Very helpful.",
+   "start": 360.094,
+   "end": 361.639
+  },
+  {
+   "key": "d4",
+   "chapter": "danger",
+   "speaker": "TROOD",
+   "text": "The air is fine for you, the fruit is fine. But at night, the small hunters come out, and they hunt in groups.",
+   "start": 361.839,
+   "end": 367.921
+  },
+  {
+   "key": "d5",
+   "chapter": "danger",
+   "speaker": "PIP",
+   "text": "That's why we sleep in holes! Want to share my hole?",
+   "start": 368.171,
+   "end": 370.676
+  },
+  {
+   "key": "d6",
+   "chapter": "danger",
+   "speaker": "YOU",
+   "text": "I don't think I'll fit.",
+   "start": 370.926,
+   "end": 372.256
+  },
+  {
+   "key": "d7",
+   "chapter": "danger",
+   "speaker": "NARR",
+   "text": "Night falls. Shapes move between the trees. Small, fast, feathered, and very quiet.",
+   "start": 372.556,
+   "end": 378.286
+  },
+  {
+   "key": "d8",
+   "chapter": "danger",
+   "speaker": "TROOD",
+   "text": "Don't move. Raptors see movement. Breathe slowly.",
+   "start": 378.536,
+   "end": 381.359
+  },
+  {
+   "key": "d9",
+   "chapter": "danger",
+   "speaker": "PIP",
+   "text": "Breathe slowly, he says. My heart beats ten times a second!",
+   "start": 381.609,
+   "end": 384.882
+  },
+  {
+   "key": "d10",
+   "chapter": "danger",
+   "speaker": "YOU",
+   "text": "Trood, what do we do?",
+   "start": 385.132,
+   "end": 386.403
+  },
+  {
+   "key": "d11",
+   "chapter": "danger",
+   "speaker": "TROOD",
+   "text": "Now? Now we run.",
+   "start": 386.603,
+   "end": 388.029
+  },
+  {
+   "key": "d12",
+   "chapter": "danger",
+   "speaker": "NARR",
+   "text": "You run. Trood runs faster. Pip rides on your shoulder, screaming the whole way.",
+   "start": 388.329,
+   "end": 393.473
+  },
+  {
+   "key": "d13",
+   "chapter": "danger",
+   "speaker": "PIP",
+   "text": "Left! No, right! No, up! Up the tree!",
+   "start": 393.723,
+   "end": 395.724
+  },
+  {
+   "key": "d14",
+   "chapter": "danger",
+   "speaker": "YOU",
+   "text": "I can't climb that fast!",
+   "start": 395.974,
+   "end": 397.571
+  },
+  {
+   "key": "d15",
+   "chapter": "danger",
+   "speaker": "TROOD",
+   "text": "Then grab my tail!",
+   "start": 397.771,
+   "end": 399.402
+  },
+  {
+   "key": "t1",
+   "chapter": "twist",
+   "speaker": "NARR",
+   "text": "And then you wake up again. A real bed. A real window. Your world.",
+   "start": 401.602,
+   "end": 405.898
+  },
+  {
+   "key": "t2",
+   "chapter": "twist",
+   "speaker": "CROW",
+   "text": "Caw. Morning.",
+   "start": 406.148,
+   "end": 407.31
+  },
+  {
+   "key": "t3",
+   "chapter": "twist",
+   "speaker": "YOU",
+   "text": "Wait. Did you just say morning?",
+   "start": 407.56,
+   "end": 409.159
+  },
+  {
+   "key": "t3b",
+   "chapter": "twist",
+   "speaker": "DOC",
+   "text": "It's a crow, not a parrot. And you were talking in your sleep. Something about please don't run?",
+   "start": 409.409,
+   "end": 413.749
+  },
+  {
+   "key": "t3c",
+   "chapter": "twist",
+   "speaker": "YOU",
+   "text": "Long night. Very long night.",
+   "start": 413.999,
+   "end": 415.614
+  },
+  {
+   "key": "t4",
+   "chapter": "twist",
+   "speaker": "DOC",
+   "text": "Crows can't talk, but they do something just as impressive. They make tools, remember faces, and plan ahead. And they are dinosaurs.",
+   "start": 415.914,
+   "end": 423.076
+  },
+  {
+   "key": "t5",
+   "chapter": "twist",
+   "speaker": "YOU",
+   "text": "Dinosaurs? Crows?",
+   "start": 423.376,
+   "end": 424.867
+  },
+  {
+   "key": "t5b",
+   "chapter": "twist",
+   "speaker": "DOC",
+   "text": "The asteroid really hit, by the way. The crater is still under Mexico. It's called Chicxulub, and it's about a hundred and eighty kilometers wide.",
+   "start": 425.067,
+   "end": 432.499
+  },
+  {
+   "key": "t5c",
+   "chapter": "twist",
+   "speaker": "YOU",
+   "text": "So in my world, the dinosaurs lost.",
+   "start": 432.749,
+   "end": 434.88
+  },
+  {
+   "key": "t6",
+   "chapter": "twist",
+   "speaker": "DOC",
+   "text": "Not all of them. Birds are the dinosaurs that survived the asteroid. In two thousand and eight, scientists compared proteins from a T. rex bone. Its closest living relatives were chickens and ostriches.",
+   "start": 435.13,
+   "end": 446.343
+  },
+  {
+   "key": "t7",
+   "chapter": "twist",
+   "speaker": "NARR",
+   "text": "There are about eleven thousand species of birds alive today. And a parrot's brain packs more neurons than a monkey's brain of the same size.",
+   "start": 446.643,
+   "end": 456.042
+  },
+  {
+   "key": "t8",
+   "chapter": "twist",
+   "speaker": "YOU",
+   "text": "So the dinosaurs never really went extinct.",
+   "start": 456.342,
+   "end": 458.791
+  },
+  {
+   "key": "t9",
+   "chapter": "twist",
+   "speaker": "DOC",
+   "text": "Exactly. They just got smaller, grew wings, and learned to sing.",
+   "start": 459.041,
+   "end": 462.309
+  },
+  {
+   "key": "t9b",
+   "chapter": "twist",
+   "speaker": "YOU",
+   "text": "Morning, little dinosaur.",
+   "start": 462.659,
+   "end": 464.226
+  },
+  {
+   "key": "t9c",
+   "chapter": "twist",
+   "speaker": "CROW",
+   "text": "Caw!",
+   "start": 464.426,
+   "end": 465.032
+  },
+  {
+   "key": "t10",
+   "chapter": "twist",
+   "speaker": "NARR",
+   "text": "So, which world would you rather live in? Theirs, or ours? Tell me in the comments.",
+   "start": 465.382,
+   "end": 470.343
+  }
+ ],
+ "voice_end": 470.843
+}

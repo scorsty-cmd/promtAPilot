@@ -1,0 +1,951 @@
+1
+00:00:00,300 --> 00:00:02,198
+You wake up. The ground is warm.
+
+2
+00:00:02,198 --> 00:00:04,570
+And something is breathing on your face.
+
+3
+00:00:04,871 --> 00:00:06,450
+YOU: Okay. Okay. Nobody move.
+
+4
+00:00:06,450 --> 00:00:08,028
+YOU: Especially you, big guy.
+
+5
+00:00:08,329 --> 00:00:10,627
+TROOD: Don't worry. He only eats things that run.
+
+6
+00:00:10,627 --> 00:00:11,830
+TROOD: So, please, don't run.
+
+7
+00:00:12,180 --> 00:00:14,129
+Sixty-six million years ago,
+
+8
+00:00:14,129 --> 00:00:16,842
+a giant asteroid was heading for Earth.
+
+9
+00:00:16,842 --> 00:00:18,581
+In this world, it missed.
+
+10
+00:00:18,581 --> 00:00:20,042
+And now, you're here.
+
+11
+00:00:22,242 --> 00:00:23,553
+YOU: Wait. You can talk?
+
+12
+00:00:23,753 --> 00:00:24,956
+TROOD: Of course I can talk.
+
+13
+00:00:24,956 --> 00:00:27,878
+TROOD: I'm a troodont. Seventy million years of evolution.
+
+14
+00:00:27,878 --> 00:00:29,768
+TROOD: You're the one who looks strange.
+
+15
+00:00:30,068 --> 00:00:31,101
+YOU: Where I come from,
+
+16
+00:00:31,101 --> 00:00:33,451
+YOU: a rock ten kilometers wide hit Mexico and
+
+17
+00:00:33,451 --> 00:00:34,828
+YOU: wiped out the dinosaurs.
+
+18
+00:00:35,078 --> 00:00:36,984
+TROOD: Ten kilometers? That's a mountain.
+
+19
+00:00:36,984 --> 00:00:37,770
+TROOD: What happened?
+
+20
+00:00:38,020 --> 00:00:40,723
+The impact threw so much soot and dust
+
+21
+00:00:40,723 --> 00:00:43,212
+into the sky that the sun went dark
+
+22
+00:00:43,212 --> 00:00:46,556
+for months. About three quarters of all species
+
+23
+00:00:46,556 --> 00:00:50,326
+on Earth died, including every dinosaur that couldn't
+
+24
+00:00:50,326 --> 00:00:50,610
+fly.
+
+25
+00:00:50,911 --> 00:00:52,375
+YOU: And here's the crazy part.
+
+26
+00:00:52,375 --> 00:00:54,629
+YOU: It hit one of the worst possible places,
+
+27
+00:00:54,629 --> 00:00:56,263
+YOU: rocks full of oil and sulfur.
+
+28
+00:00:56,263 --> 00:00:59,081
+YOU: Scientists calculated that if it had landed almost
+
+29
+00:00:59,081 --> 00:01:01,842
+YOU: anywhere else, the dinosaurs might have survived.
+
+30
+00:01:02,142 --> 00:01:03,829
+TROOD: So we were just unlucky?
+
+31
+00:01:04,079 --> 00:01:06,648
+YOU: Very unlucky. A study from twenty seventeen says
+
+32
+00:01:06,648 --> 00:01:09,163
+YOU: only about thirteen percent of the planet would
+
+33
+00:01:09,163 --> 00:01:10,769
+YOU: have caused a mass extinction.
+
+34
+00:01:11,069 --> 00:01:13,880
+YOU: Some scientists back home even say dinosaurs were
+
+35
+00:01:13,880 --> 00:01:16,117
+YOU: already in decline before the asteroid.
+
+36
+00:01:16,367 --> 00:01:18,540
+TROOD: Rude. Do I look like I'm in decline?
+
+37
+00:01:18,840 --> 00:01:20,704
+That idea is still debated.
+
+38
+00:01:20,704 --> 00:01:23,742
+Many dinosaur groups seem to have been doing
+
+39
+00:01:23,742 --> 00:01:25,814
+fine right up to the very end.
+
+40
+00:01:28,013 --> 00:01:29,667
+Your guide's name is Trood.
+
+41
+00:01:29,667 --> 00:01:32,055
+She leads you through a forest that has
+
+42
+00:01:32,055 --> 00:01:33,280
+never seen a winter.
+
+43
+00:01:33,530 --> 00:01:35,396
+YOU: It's so hot. Where is all the ice?
+
+44
+00:01:35,646 --> 00:01:36,671
+TROOD: Ice? On the poles,
+
+45
+00:01:36,671 --> 00:01:37,982
+TROOD: there are only forests.
+
+46
+00:01:37,982 --> 00:01:40,147
+TROOD: And the sea comes much further inland.
+
+47
+00:01:40,447 --> 00:01:42,176
+In the age of dinosaurs,
+
+48
+00:01:42,176 --> 00:01:44,120
+the Earth was a greenhouse.
+
+49
+00:01:44,120 --> 00:01:46,784
+No ice caps. Sea levels were around a
+
+50
+00:01:46,784 --> 00:01:49,160
+hundred meters higher than today.
+
+51
+00:01:49,160 --> 00:01:52,256
+In this world, the planet never cooled down
+
+52
+00:01:52,256 --> 00:01:52,761
+so far.
+
+53
+00:01:53,061 --> 00:01:55,714
+YOU: Are those flowers? I thought dinosaurs lived with
+
+54
+00:01:55,714 --> 00:01:56,039
+YOU: ferns.
+
+55
+00:01:56,289 --> 00:01:57,991
+TROOD: Ferns are for my grandparents.
+
+56
+00:01:57,991 --> 00:01:59,296
+TROOD: We have flowers, fruit,
+
+57
+00:01:59,296 --> 00:02:02,020
+TROOD: and grass. They appeared while my ancestors were
+
+58
+00:02:02,020 --> 00:02:02,757
+TROOD: still around.
+
+59
+00:02:03,058 --> 00:02:04,408
+YOU: And something just bit me.
+
+60
+00:02:04,408 --> 00:02:05,965
+YOU: Are there mosquitoes here too?
+
+61
+00:02:06,215 --> 00:02:08,423
+TROOD: Of course. Insects are older than all of
+
+62
+00:02:08,423 --> 00:02:10,299
+TROOD: us. And your blood is new to them.
+
+63
+00:02:10,299 --> 00:02:11,347
+TROOD: They will love you.
+
+64
+00:02:13,548 --> 00:02:14,148
+YOU: Is that a T.
+
+65
+00:02:14,148 --> 00:02:14,899
+YOU: rex? I knew it!
+
+66
+00:02:14,899 --> 00:02:16,352
+YOU: I always knew they were real!
+
+67
+00:02:16,602 --> 00:02:18,303
+TROOD: A what? That's a tyrannosaur,
+
+68
+00:02:18,303 --> 00:02:20,297
+TROOD: yes, but the one you know died out
+
+69
+00:02:20,297 --> 00:02:21,940
+TROOD: sixty-six million years ago,
+
+70
+00:02:21,940 --> 00:02:24,169
+TROOD: even here. Species don't last forever.
+
+71
+00:02:24,169 --> 00:02:25,929
+TROOD: This is its great-great-great,
+
+72
+00:02:25,929 --> 00:02:27,219
+TROOD: a million times great,
+
+73
+00:02:27,219 --> 00:02:27,865
+TROOD: grandchild.
+
+74
+00:02:28,164 --> 00:02:29,220
+YOU: Does it have feathers?
+
+75
+00:02:29,220 --> 00:02:31,428
+YOU: Back home, scientists argue about that all the
+
+76
+00:02:31,428 --> 00:02:31,667
+YOU: time.
+
+77
+00:02:31,918 --> 00:02:33,459
+YOU: And how hard can it bite?
+
+78
+00:02:33,658 --> 00:02:35,382
+TROOD: Hard enough to crush a car.
+
+79
+00:02:35,382 --> 00:02:36,532
+TROOD: Whatever a car is.
+
+80
+00:02:36,831 --> 00:02:38,716
+TROOD: Feathers? Babies do, for warmth.
+
+81
+00:02:38,716 --> 00:02:40,541
+TROOD: The big ones are mostly scales.
+
+82
+00:02:40,541 --> 00:02:42,367
+TROOD: Too hot for a fur coat when you
+
+83
+00:02:42,367 --> 00:02:44,074
+TROOD: weigh as much as an elephant.
+
+84
+00:02:44,375 --> 00:02:48,026
+Skin fossils of big tyrannosaurs show mostly scales.
+
+85
+00:02:48,026 --> 00:02:50,625
+Their smaller relatives had feathers.
+
+86
+00:02:50,875 --> 00:02:52,185
+YOU: What is that, in the sky?
+
+87
+00:02:52,185 --> 00:02:53,024
+YOU: Is that a plane?
+
+88
+00:02:53,223 --> 00:02:54,821
+TROOD: A pterosaur. When it lands,
+
+89
+00:02:54,821 --> 00:02:56,360
+TROOD: it's as tall as a giraffe.
+
+90
+00:02:56,360 --> 00:02:58,194
+TROOD: Its wings are wider than a bus.
+
+91
+00:02:58,495 --> 00:02:59,899
+YOU: And the ground is shaking.
+
+92
+00:02:59,899 --> 00:03:01,302
+YOU: Why is the ground shaking?
+
+93
+00:03:01,502 --> 00:03:03,426
+TROOD: Long-necks. Two hundred of them.
+
+94
+00:03:03,426 --> 00:03:04,688
+TROOD: Step behind the tree,
+
+95
+00:03:04,688 --> 00:03:05,109
+TROOD: please.
+
+96
+00:03:07,308 --> 00:03:09,270
+Trood takes you to the coast.
+
+97
+00:03:09,270 --> 00:03:10,352
+The sea is warm,
+
+98
+00:03:10,352 --> 00:03:13,124
+shallow, and full of things you have only
+
+99
+00:03:13,124 --> 00:03:14,207
+seen in museums.
+
+100
+00:03:14,456 --> 00:03:15,588
+YOU: Can I swim?
+
+101
+00:03:15,788 --> 00:03:17,076
+TROOD: You can. Once.
+
+102
+00:03:17,377 --> 00:03:20,148
+Something huge rises out of the water.
+
+103
+00:03:20,148 --> 00:03:22,920
+A mosasaur: a sea lizard longer than a
+
+104
+00:03:22,920 --> 00:03:25,692
+school bus, with a double row of teeth
+
+105
+00:03:25,692 --> 00:03:27,516
+in the roof of its mouth.
+
+106
+00:03:27,765 --> 00:03:29,267
+YOU: Okay, I'll stay on the sand.
+
+107
+00:03:29,267 --> 00:03:30,394
+YOU: Are there sharks too?
+
+108
+00:03:30,644 --> 00:03:32,611
+TROOD: Sharks are older than both of us.
+
+109
+00:03:32,611 --> 00:03:34,102
+TROOD: They survived everything.
+
+110
+00:03:34,401 --> 00:03:36,543
+TROOD: Smart. Your species learns fast.
+
+111
+00:03:36,793 --> 00:03:39,685
+Mosasaurs died out with the dinosaurs.
+
+112
+00:03:39,685 --> 00:03:41,741
+Here, they rule the oceans.
+
+113
+00:03:41,741 --> 00:03:43,264
+There are no whales,
+
+114
+00:03:43,264 --> 00:03:44,938
+no dolphins, no seals.
+
+115
+00:03:44,938 --> 00:03:48,136
+Those were all mammals that grew big after
+
+116
+00:03:48,136 --> 00:03:49,126
+the asteroid.
+
+117
+00:03:51,325 --> 00:03:52,975
+YOU: Wait. If dinosaurs are still here,
+
+118
+00:03:52,975 --> 00:03:54,043
+YOU: where are the mammals?
+
+119
+00:03:54,043 --> 00:03:55,061
+YOU: Where are the people?
+
+120
+00:03:55,312 --> 00:03:57,306
+PIP: Down here! Hi! Please don't step on me!
+
+121
+00:03:57,556 --> 00:03:58,334
+YOU: A mouse?
+
+122
+00:03:58,533 --> 00:03:59,881
+PIP: A primate! Well, almost.
+
+123
+00:03:59,881 --> 00:04:01,396
+PIP: I eat fruit, I climb trees,
+
+124
+00:04:01,396 --> 00:04:02,855
+PIP: and I'm the size of a rat.
+
+125
+00:04:02,855 --> 00:04:05,212
+PIP: My family has been doing this for millions
+
+126
+00:04:05,212 --> 00:04:05,717
+PIP: of years.
+
+127
+00:04:06,018 --> 00:04:10,066
+Real fossils of a tiny tree-climber called Purgatorius
+
+128
+00:04:10,066 --> 00:04:12,465
+date to just after the asteroid.
+
+129
+00:04:12,465 --> 00:04:16,589
+Its family probably lived alongside the last dinosaurs.
+
+130
+00:04:16,589 --> 00:04:19,512
+It may be one of your oldest ancestors.
+
+131
+00:04:19,812 --> 00:04:21,502
+YOU: So you're my great-grandparent?
+
+132
+00:04:21,702 --> 00:04:24,370
+PIP: Your great-great-great, a few million times great!
+
+133
+00:04:24,370 --> 00:04:25,810
+PIP: But here, we never grew up.
+
+134
+00:04:25,810 --> 00:04:27,357
+PIP: Every time a mammal gets big,
+
+135
+00:04:27,357 --> 00:04:28,904
+PIP: something with teeth eats it.
+
+136
+00:04:29,204 --> 00:04:30,720
+That's the hard truth.
+
+137
+00:04:30,720 --> 00:04:32,856
+With dinosaurs ruling the land,
+
+138
+00:04:32,856 --> 00:04:35,680
+mammals would probably have stayed small.
+
+139
+00:04:35,680 --> 00:04:36,989
+No apes. No humans.
+
+140
+00:04:36,989 --> 00:04:39,401
+In this world, you shouldn't exist.
+
+141
+00:04:41,600 --> 00:04:42,831
+YOU: Then who built that?
+
+142
+00:04:43,081 --> 00:04:44,502
+TROOD: Our nests? My family did.
+
+143
+00:04:44,502 --> 00:04:46,035
+TROOD: Bigger brain, better hands,
+
+144
+00:04:46,035 --> 00:04:47,625
+TROOD: and we've had a lot of time.
+
+145
+00:04:47,925 --> 00:04:52,637
+In nineteen eighty-two, the paleontologist Dale Russell imagined
+
+146
+00:04:52,637 --> 00:04:55,656
+this exact idea. He took a smart dinosaur
+
+147
+00:04:55,656 --> 00:04:57,497
+called Troodon and asked:
+
+148
+00:04:57,497 --> 00:04:59,337
+what if it kept evolving?
+
+149
+00:04:59,337 --> 00:05:02,061
+He called the result the dinosauroid.
+
+150
+00:05:02,362 --> 00:05:04,267
+YOU: But yours doesn't look human at all.
+
+151
+00:05:04,517 --> 00:05:06,435
+TROOD: Why would I? Your body is good for
+
+152
+00:05:06,435 --> 00:05:08,464
+TROOD: your history. Mine is good for mine.
+
+153
+00:05:08,464 --> 00:05:09,367
+TROOD: I keep the tail.
+
+154
+00:05:09,367 --> 00:05:10,663
+TROOD: It's great for balance.
+
+155
+00:05:10,963 --> 00:05:15,155
+Many scientists criticized Russell's human-shaped version.
+
+156
+00:05:15,155 --> 00:05:18,335
+A smart dinosaur would more likely look like
+
+157
+00:05:18,335 --> 00:05:19,709
+a big, clever bird.
+
+158
+00:05:20,009 --> 00:05:21,852
+TROOD: So tell me. What did your kind do
+
+159
+00:05:21,852 --> 00:05:23,024
+TROOD: with your big brains?
+
+160
+00:05:23,274 --> 00:05:25,290
+YOU: We built cities. We flew to the Moon.
+
+161
+00:05:25,290 --> 00:05:27,305
+YOU: We invented pizza. And we also made a
+
+162
+00:05:27,305 --> 00:05:28,176
+YOU: pretty big mess.
+
+163
+00:05:28,476 --> 00:05:31,129
+TROOD: Hmm. Maybe that asteroid did your planet a
+
+164
+00:05:31,129 --> 00:05:32,391
+TROOD: favor. Or maybe not.
+
+165
+00:05:32,692 --> 00:05:34,423
+Trood shows you her town:
+
+166
+00:05:34,423 --> 00:05:36,987
+hundreds of woven nests in the trees,
+
+167
+00:05:36,987 --> 00:05:40,173
+and a field where her family herds duck-billed
+
+168
+00:05:40,173 --> 00:05:41,697
+dinosaurs like cattle.
+
+169
+00:05:41,947 --> 00:05:43,504
+YOU: You farm dinosaurs?
+
+170
+00:05:43,704 --> 00:05:45,178
+TROOD: You farm birds, don't you?
+
+171
+00:05:45,178 --> 00:05:47,503
+TROOD: Same thing. These ones give eggs the size
+
+172
+00:05:47,503 --> 00:05:48,240
+TROOD: of your head.
+
+173
+00:05:48,540 --> 00:05:50,853
+YOU: Okay, that's actually breakfast for a week.
+
+174
+00:05:53,052 --> 00:05:55,711
+YOU: Okay, honest question. Could I survive here?
+
+175
+00:05:55,961 --> 00:05:56,771
+TROOD: For a few days.
+
+176
+00:05:56,771 --> 00:05:58,498
+TROOD: Maybe. You're slow, you're soft,
+
+177
+00:05:58,498 --> 00:05:59,793
+TROOD: and you smell delicious.
+
+178
+00:06:00,093 --> 00:06:01,639
+YOU: Thank you. Very helpful.
+
+179
+00:06:01,838 --> 00:06:03,203
+TROOD: The air is fine for you,
+
+180
+00:06:03,203 --> 00:06:04,226
+TROOD: the fruit is fine.
+
+181
+00:06:04,226 --> 00:06:06,556
+TROOD: But at night, the small hunters come out,
+
+182
+00:06:06,556 --> 00:06:07,920
+TROOD: and they hunt in groups.
+
+183
+00:06:08,170 --> 00:06:09,595
+PIP: That's why we sleep in holes!
+
+184
+00:06:09,595 --> 00:06:10,675
+PIP: Want to share my hole?
+
+185
+00:06:10,925 --> 00:06:12,255
+YOU: I don't think I'll fit.
+
+186
+00:06:12,555 --> 00:06:15,560
+Night falls. Shapes move between the trees.
+
+187
+00:06:15,560 --> 00:06:18,286
+Small, fast, feathered, and very quiet.
+
+188
+00:06:18,536 --> 00:06:20,476
+TROOD: Don't move. Raptors see movement.
+
+189
+00:06:20,476 --> 00:06:21,358
+TROOD: Breathe slowly.
+
+190
+00:06:21,608 --> 00:06:22,963
+PIP: Breathe slowly, he says.
+
+191
+00:06:22,963 --> 00:06:24,882
+PIP: My heart beats ten times a second!
+
+192
+00:06:25,132 --> 00:06:26,403
+YOU: Trood, what do we do?
+
+193
+00:06:26,603 --> 00:06:28,028
+TROOD: Now? Now we run.
+
+194
+00:06:28,329 --> 00:06:30,109
+You run. Trood runs faster.
+
+195
+00:06:30,109 --> 00:06:31,890
+Pip rides on your shoulder,
+
+196
+00:06:31,890 --> 00:06:33,473
+screaming the whole way.
+
+197
+00:06:33,723 --> 00:06:34,834
+PIP: Left! No, right! No,
+
+198
+00:06:34,834 --> 00:06:35,723
+PIP: up! Up the tree!
+
+199
+00:06:35,973 --> 00:06:37,571
+YOU: I can't climb that fast!
+
+200
+00:06:37,771 --> 00:06:39,401
+TROOD: Then grab my tail!
+
+201
+00:06:41,601 --> 00:06:43,414
+And then you wake up again.
+
+202
+00:06:43,414 --> 00:06:45,159
+A real bed. A real window.
+
+203
+00:06:45,159 --> 00:06:45,898
+Your world.
+
+204
+00:06:46,148 --> 00:06:47,310
+CROW: Caw. Morning.
+
+205
+00:06:47,560 --> 00:06:49,158
+YOU: Wait. Did you just say morning?
+
+206
+00:06:49,408 --> 00:06:50,609
+SISTER: It's a crow, not a parrot.
+
+207
+00:06:50,609 --> 00:06:52,225
+SISTER: And you were talking in your sleep.
+
+208
+00:06:52,225 --> 00:06:53,749
+SISTER: Something about please don't run?
+
+209
+00:06:53,999 --> 00:06:55,613
+YOU: Long night. Very long night.
+
+210
+00:06:55,913 --> 00:06:58,356
+SISTER: Crows can't talk, but they do something just
+
+211
+00:06:58,356 --> 00:07:00,077
+SISTER: as impressive. They make tools,
+
+212
+00:07:00,077 --> 00:07:01,799
+SISTER: remember faces, and plan ahead.
+
+213
+00:07:01,799 --> 00:07:03,076
+SISTER: And they are dinosaurs.
+
+214
+00:07:03,375 --> 00:07:04,867
+YOU: Dinosaurs? Crows?
+
+215
+00:07:05,067 --> 00:07:06,323
+SISTER: The asteroid really hit,
+
+216
+00:07:06,323 --> 00:07:08,259
+SISTER: by the way. The crater is still under
+
+217
+00:07:08,259 --> 00:07:09,829
+SISTER: Mexico. It's called Chicxulub,
+
+218
+00:07:09,829 --> 00:07:12,237
+SISTER: and it's about a hundred and eighty kilometers
+
+219
+00:07:12,237 --> 00:07:12,498
+SISTER: wide.
+
+220
+00:07:12,749 --> 00:07:13,689
+YOU: So in my world,
+
+221
+00:07:13,689 --> 00:07:14,879
+YOU: the dinosaurs lost.
+
+222
+00:07:15,129 --> 00:07:16,040
+SISTER: Not all of them.
+
+223
+00:07:16,040 --> 00:07:18,943
+SISTER: Birds are the dinosaurs that survived the asteroid.
+
+224
+00:07:18,943 --> 00:07:20,423
+SISTER: In two thousand and eight,
+
+225
+00:07:20,423 --> 00:07:22,586
+SISTER: scientists compared proteins from a T.
+
+226
+00:07:22,586 --> 00:07:25,546
+SISTER: rex bone. Its closest living relatives were chickens
+
+227
+00:07:25,546 --> 00:07:26,343
+SISTER: and ostriches.
+
+228
+00:07:26,642 --> 00:07:29,912
+There are about eleven thousand species of birds
+
+229
+00:07:29,912 --> 00:07:32,908
+alive today. And a parrot's brain packs more
+
+230
+00:07:32,908 --> 00:07:35,701
+neurons than a monkey's brain of the same
+
+231
+00:07:35,701 --> 00:07:36,041
+size.
+
+232
+00:07:36,341 --> 00:07:38,790
+YOU: So the dinosaurs never really went extinct.
+
+233
+00:07:39,040 --> 00:07:40,649
+SISTER: Exactly. They just got smaller,
+
+234
+00:07:40,649 --> 00:07:42,309
+SISTER: grew wings, and learned to sing.
+
+235
+00:07:42,658 --> 00:07:44,225
+YOU: Morning, little dinosaur.
+
+236
+00:07:44,425 --> 00:07:45,031
+CROW: Caw!
+
+237
+00:07:45,382 --> 00:07:47,862
+So, which world would you rather live in?
+
+238
+00:07:47,862 --> 00:07:50,343
+Theirs, or ours? Tell me in the comments.
