@@ -1,0 +1,327 @@
+1
+00:00:00,300 --> 00:00:05,980
+Syracuse, Sicily. Two hundred and twelve BC. The Romans are inside the city.
+
+2
+00:00:06,280 --> 00:00:08,508
+SOLDIER: You! Old man! The general wants you. Get up!
+
+3
+00:00:08,758 --> 00:00:11,400
+ARCHIMEDES: Not now. Do not disturb my circles!
+
+4
+00:00:11,750 --> 00:00:19,007
+You are the student of the greatest mind of the ancient world. And this is his last day. Go back twenty years.
+
+5
+00:00:21,207 --> 00:00:26,628
+You're twelve, and your mother sends you to deliver bread to a strange old man near the harbor.
+
+6
+00:00:26,878 --> 00:00:30,776
+MOTHER: Give him the bread, and make sure he eats it. His servants say he forgets.
+
+7
+00:00:31,026 --> 00:00:34,102
+YOU: Sir? Your bread. Sir? Why are you drawing circles in the ashes?
+
+8
+00:00:34,352 --> 00:00:41,648
+ARCHIMEDES: Because I have no sand tray, and the fire went out. Come here. Tell me: which is bigger, this circle, or this square?
+
+9
+00:00:41,948 --> 00:00:42,735
+YOU: The square?
+
+10
+00:00:42,935 --> 00:00:46,963
+ARCHIMEDES: Wrong! But a good guess. Come back tomorrow, and I'll show you why.
+
+11
+00:00:47,313 --> 00:00:58,659
+His name is Archimedes. He's about fifty-five, a relative of the king, and the most famous mathematician alive. You never deliver bread again. You become his student.
+
+12
+00:00:58,959 --> 00:01:04,650
+KLEON: I'm Kleon, the other apprentice. Rule one: when he's thinking, don't talk. Rule two: he's always thinking.
+
+13
+00:01:06,850 --> 00:01:10,078
+One day, a message comes from King Hiero himself.
+
+14
+00:01:10,328 --> 00:01:19,118
+KING HIERO: I gave a goldsmith pure gold to make a crown for the gods. I think he kept some gold, and mixed in silver. Prove it, Archimedes. And don't damage the crown.
+
+15
+00:01:19,418 --> 00:01:23,465
+GOLDSMITH: Your Majesty, it's pure gold, I swear by every god in Sicily!
+
+16
+00:01:23,765 --> 00:01:26,614
+YOU: Master, how can you see inside a crown without breaking it?
+
+17
+00:01:26,864 --> 00:01:30,258
+ARCHIMEDES: I don't know yet. I am going to take a bath and think.
+
+18
+00:01:30,608 --> 00:01:35,603
+He steps into a full bath, and the water spills over the edge. And he jumps out.
+
+19
+00:01:35,853 --> 00:01:38,540
+ARCHIMEDES: Eureka! Eureka! I have found it!
+
+20
+00:01:38,790 --> 00:01:41,924
+KLEON: Master! Your clothes! You're running through the streets with no clothes!
+
+21
+00:01:42,224 --> 00:01:51,443
+ARCHIMEDES: Silver is lighter than gold, so the same weight of silver takes more space. A cheating crown will push out more water than the pure gold!
+
+22
+00:01:51,743 --> 00:01:53,172
+YOU: But why not just weigh it?
+
+23
+00:01:53,372 --> 00:01:58,978
+ARCHIMEDES: I did. Same weight! The trick is not the weight. It is the space the crown takes up.
+
+24
+00:01:59,278 --> 00:02:10,721
+The crown spills more water than the gold. The goldsmith is caught. This story was written down two hundred years later, so maybe it's true, and maybe it's too good to be true.
+
+25
+00:02:12,921 --> 00:02:19,914
+KING HIERO: Archimedes, they say you can move anything. Prove it. My new ship, the Syracusia, is too heavy for a hundred men to launch.
+
+26
+00:02:20,164 --> 00:02:24,490
+ARCHIMEDES: Give me a place to stand, Your Majesty, and I will move the Earth.
+
+27
+00:02:24,790 --> 00:02:27,729
+SHIPWRIGHT: The Earth? Sir, just move the boat. It's the biggest ship ever built.
+
+28
+00:02:28,029 --> 00:02:33,606
+He builds a system of pulleys and ropes. Then he sits down, alone, and slowly pulls.
+
+29
+00:02:33,856 --> 00:02:35,547
+KLEON: It's moving! The whole ship is moving!
+
+30
+00:02:35,797 --> 00:02:37,691
+YOU: Master, how? You're not even sweating!
+
+31
+00:02:37,941 --> 00:02:44,311
+ARCHIMEDES: Every pulley halves the effort. Use enough of them, and one old man is stronger than a hundred.
+
+32
+00:02:44,611 --> 00:02:48,601
+KING HIERO: From this day on, Archimedes is to be believed in everything he says!
+
+33
+00:02:48,901 --> 00:02:57,069
+On that same ship, sailors use a turning screw to pump water out of the hull. Farmers still use the Archimedes screw today.
+
+34
+00:02:59,269 --> 00:03:01,094
+YOU: Master, what are you counting now?
+
+35
+00:03:01,294 --> 00:03:06,086
+ARCHIMEDES: Grains of sand. How many grains would it take to fill the whole universe?
+
+36
+00:03:06,336 --> 00:03:08,455
+KLEON: That's impossible. There are infinitely many.
+
+37
+00:03:08,705 --> 00:03:18,096
+ARCHIMEDES: No, Kleon. Very many is not infinitely many. I need a number with sixty-three zeros. So I'll invent a new way to write big numbers.
+
+38
+00:03:18,396 --> 00:03:21,755
+YOU: And the circle from the first day? Why was it bigger than the square?
+
+39
+00:03:22,005 --> 00:03:33,740
+ARCHIMEDES: Watch. I draw a shape with six sides inside the circle. Then twelve. Then twenty-four, forty-eight, ninety-six. The closer they hug the circle, the better I can measure it.
+
+40
+00:03:34,040 --> 00:03:48,248
+That's how Archimedes trapped the number pi between two fractions: a little more than three and ten seventy-firsts, and a little less than three and one seventh. Engineers used his bounds for more than a thousand years.
+
+41
+00:03:50,448 --> 00:03:59,467
+Then King Hiero dies, and Syracuse switches sides, from Rome to Carthage. In two-fourteen BC, a Roman army arrives.
+
+42
+00:03:59,717 --> 00:04:07,025
+MARCELLUS: Syracuse has old walls and an old mathematician. We attack from the land and the sea at once. Five days, and the city is ours.
+
+43
+00:04:07,325 --> 00:04:10,972
+KLEON: Sixty Roman warships, with ladders on them! Master, what do we do?
+
+44
+00:04:11,222 --> 00:04:13,504
+YOU: Master, you're over seventy. Shouldn't you hide?
+
+45
+00:04:13,754 --> 00:04:16,485
+ARCHIMEDES: At my age, hiding takes too long.
+
+46
+00:04:16,785 --> 00:04:20,696
+ARCHIMEDES: We do geometry. Boys, bring the ropes. And the big hook.
+
+47
+00:04:22,896 --> 00:04:28,121
+As the Roman ships reach the walls, giant wooden arms swing out over the water.
+
+48
+00:04:28,371 --> 00:04:30,205
+YOU: Lower it! Lower the claw! Now pull!
+
+49
+00:04:30,455 --> 00:04:35,261
+An iron hook grabs a warship by the bow, lifts it out of the sea, and drops it.
+
+50
+00:04:35,511 --> 00:04:36,554
+KLEON: Ha! Look at them swim!
+
+51
+00:04:36,804 --> 00:04:43,653
+Catapults hit the ships far out at sea. Smaller ones hit them up close. The Romans have nowhere to hide.
+
+52
+00:04:43,953 --> 00:04:46,830
+KLEON: The ladder ships! They're tying ships together to carry a ladder!
+
+53
+00:04:47,030 --> 00:04:49,048
+YOU: Drop the stones! Now! Break the ladder!
+
+54
+00:04:49,348 --> 00:04:53,879
+MARCELLUS: Are we going to keep fighting this geometrical giant, who plays catch with our ships?
+
+55
+00:04:54,179 --> 00:05:02,814
+Soon, if the Romans see so much as a rope or a beam over the wall, they turn and run. The siege drags on for two years.
+
+56
+00:05:05,014 --> 00:05:08,346
+KLEON: Master, people in the market say you burn Roman ships with mirrors.
+
+57
+00:05:08,596 --> 00:05:10,420
+ARCHIMEDES: Do they? How clever of me.
+
+58
+00:05:10,670 --> 00:05:13,847
+YOU: Could we? If every soldier on the wall held a polished shield?
+
+59
+00:05:14,097 --> 00:05:20,208
+ARCHIMEDES: The sun is strong, but ships move. And the sky is not always clear. Try it, and tell me.
+
+60
+00:05:20,558 --> 00:05:37,714
+No writer from the time mentions burning mirrors. The story appears centuries later. In two thousand and five, MIT students lit a model ship with a hundred and twenty-seven mirrors, but only after ten minutes of perfect sun on a ship that didn't move.
+
+61
+00:05:39,914 --> 00:05:47,025
+Two-twelve BC. The city celebrates a festival for Artemis. Wine, music, and tired guards.
+
+62
+00:05:47,275 --> 00:05:49,354
+KLEON: Listen. Do you hear that? Something on the wall.
+
+63
+00:05:49,604 --> 00:05:52,219
+YOU: Ladders! The Romans are on the wall! Wake up! Wake up!
+
+64
+00:05:52,519 --> 00:05:53,351
+KLEON: Where's the master?
+
+65
+00:05:53,551 --> 00:05:55,818
+YOU: In the courtyard, drawing. Where else? Come on!
+
+66
+00:05:56,118 --> 00:06:02,999
+By morning, the Romans hold most of the city. General Marcellus looks down at Syracuse, and he weeps.
+
+67
+00:06:03,249 --> 00:06:06,979
+MARCELLUS: Find Archimedes. Bring him to me alive. No one touches him.
+
+68
+00:06:09,179 --> 00:06:11,900
+YOU: Master, we have to go! The soldiers are everywhere!
+
+69
+00:06:12,150 --> 00:06:15,672
+ARCHIMEDES: One moment. I am so close. Look at this figure.
+
+70
+00:06:15,922 --> 00:06:18,150
+SOLDIER: You! Old man! The general wants you. Get up!
+
+71
+00:06:18,400 --> 00:06:21,042
+ARCHIMEDES: Not now. Do not disturb my circles!
+
+72
+00:06:21,392 --> 00:06:33,764
+The soldier doesn't know who he is. The greatest mind of the ancient world dies over a drawing in the sand. Some versions say so, at least. Even Plutarch tells three different stories.
+
+73
+00:06:34,064 --> 00:06:37,660
+MARCELLUS: Who did this? I gave an order! He was worth more than the whole city.
+
+74
+00:06:37,960 --> 00:06:47,364
+Marcellus gives Archimedes an honorable burial. On his tomb, as he wished: a sphere inside a cylinder. His proudest discovery.
+
+75
+00:06:49,564 --> 00:06:56,361
+A hundred and thirty-seven years later, the Roman orator Cicero comes to Syracuse and searches for the tomb.
+
+76
+00:06:56,611 --> 00:07:04,207
+CICERO: Cut away these bushes. There! A sphere and a cylinder. The Syracusans had forgotten their own greatest citizen.
+
+77
+00:07:04,507 --> 00:07:14,473
+Then his books almost vanish too. In twelve twenty-nine, a monk scrapes the ink off an old copy of Archimedes and writes a prayer book on top of it.
+
+78
+00:07:14,723 --> 00:07:15,840
+YOU: They erased him?
+
+79
+00:07:16,090 --> 00:07:29,968
+Almost. In nineteen-oh-six, a Danish scholar in Istanbul spots faint mathematics under the prayers. In nineteen ninety-eight, the book sells for two million dollars. Scientists scan it with X-rays.
+
+80
+00:07:30,268 --> 00:07:41,970
+Underneath is a lost book called The Method. Archimedes was slicing shapes into infinitely thin pieces: ideas close to calculus, almost two thousand years early.
+
+81
+00:07:42,270 --> 00:07:46,387
+ARCHIMEDES: Very many is not infinitely many. But it is a beginning.
+
+82
+00:07:46,737 --> 00:07:52,588
+So, if you'd been his student, which of his machines would you have built first? Tell me in the comments.

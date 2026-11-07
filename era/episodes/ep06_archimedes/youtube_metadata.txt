@@ -1,0 +1,38 @@
+TITLE OPTIONS
+1. If You Were Archimedes' Student
+2. He Fought the Roman Navy With Math (You Were There)
+3. Life as the Apprentice of the Greatest Mind in History
+
+DESCRIPTION
+Syracuse, 212 BC. The Romans are inside the city, and an old man is still drawing circles in the sand.
+Go back twenty years: you're the boy who delivers his bread — and becomes his apprentice. You're there for "Eureka!", for the day one old man launches the biggest ship ever built, for counting the grains of sand in the universe, for trapping π — and for the two years when his machines held off the Roman navy.
+
+Every key moment is marked MYTH, EVIDENCE or MAYBE. You and Kleon are fictional; Archimedes, Hiero II, Marcellus and Cicero are real, and the events come from Polybius, Livy, Plutarch, Vitruvius and Cicero. Some dialogue is dramatized.
+
+CHAPTERS
+0:00 The last day
+0:19 Circles in the ashes
+1:04 Eureka!
+2:11 Move the world
+2:57 Counting the universe
+3:48 Rome arrives
+4:20 The claw
+5:03 The death ray?
+5:38 The festival
+6:07 Do not disturb
+6:47 The lost book
+
+SOURCES
+- Polybius, Histories 8.3–8.7 (the siege machines)
+- Livy, History of Rome 24.34 and 25.31 (siege and fall of Syracuse)
+- Plutarch, Life of Marcellus 14–19 (pulleys and the ship, "geometrical Briareus", the death of Archimedes)
+- Vitruvius, On Architecture 9, preface (the crown and "Eureka")
+- Pappus of Alexandria, Collection 8 ("give me a place to stand")
+- Athenaeus, Deipnosophistae 5 (the Syracusia and the screw)
+- Archimedes, The Sand Reckoner; Measurement of a Circle
+- Cicero, Tusculan Disputations 5.64–66 (finding the tomb, 75 BC)
+- Reviel Netz & William Noel, The Archimedes Codex (2007) — the Palimpsest
+- MIT 2.009 (2005) mirror experiment; MythBusters (2006, 2010)
+
+TAGS
+archimedes, eureka, archimedes claw, siege of syracuse, ancient greek science, archimedes palimpsest, pi history, lever, archimedes screw, death ray, if you were, animated history, history of math, marcellus, ancient engineering

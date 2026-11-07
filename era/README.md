@@ -95,3 +95,7 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
   black-figure vase explainers (golden mean, sarissa, Persepolis treasure, sources, 'no more worlds' myth), Greece→India route maps (Natural Earth), new sets (Pella, Mieza nymphaeum + Mieza today, Aegae theatre, Corinth & Diogenes's jar, Hellespont, Granicus, Gordion, royal tent, Gaugamela, Persepolis fire, Samarkand feast, Hydaspes monsoon, Gedrosia, Babylon, Alexandria),
   Greek/Persian/Indian score (salpinx, aulos, lyre, tabla) + elephant trumpets, thunder, river SFX.
   Lesson: never put CAPITALS in pronunciation respellings (Kokoro spells them letter by letter) — use lowercase respellings and check with k.tokenizer.phonemize().
+- 2026-11-07 · ep06 Archimedes — "If You Were Archimedes' Student" (8:01, Syracuse 232–212 BC, 10 chapters, ~55 % dialogue, 10 voices).
+  New: geometer's-papyrus look (self-drawing ink diagrams, Caveat handwriting, Marcellus titles, rotating geometry overlay, coin era chip,
+  scroll chapter cards), Roman kit (Montefortino helmet, scutum, gladius), machines (claw crane lifting a warship, catapults with
+  stone arcs + splashes, compound-pulley rig moving the Syracusia, Archimedes screw), crowd variety, depth-of-field blur. QC passed first time.

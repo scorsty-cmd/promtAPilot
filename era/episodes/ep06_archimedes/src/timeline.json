@@ -1,0 +1,661 @@
+{
+ "lines": [
+  {
+   "key": "o1",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "Syracuse, Sicily. Two hundred and twelve BC. The Romans are inside the city.",
+   "start": 0.3,
+   "end": 5.98
+  },
+  {
+   "key": "o2",
+   "chapter": "open",
+   "speaker": "SOLD",
+   "text": "You! Old man! The general wants you. Get up!",
+   "start": 6.28,
+   "end": 8.508
+  },
+  {
+   "key": "o3",
+   "chapter": "open",
+   "speaker": "ARCH",
+   "text": "Not now. Do not disturb my circles!",
+   "start": 8.758,
+   "end": 11.4
+  },
+  {
+   "key": "o4",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "You are the student of the greatest mind of the ancient world. And this is his last day. Go back twenty years.",
+   "start": 11.75,
+   "end": 19.007
+  },
+  {
+   "key": "w1",
+   "chapter": "workshop",
+   "speaker": "NARR",
+   "text": "You're twelve, and your mother sends you to deliver bread to a strange old man near the harbor.",
+   "start": 21.207,
+   "end": 26.628
+  },
+  {
+   "key": "w2",
+   "chapter": "workshop",
+   "speaker": "MOM",
+   "text": "Give him the bread, and make sure he eats it. His servants say he forgets.",
+   "start": 26.878,
+   "end": 30.776
+  },
+  {
+   "key": "w3",
+   "chapter": "workshop",
+   "speaker": "YOU",
+   "text": "Sir? Your bread. Sir? Why are you drawing circles in the ashes?",
+   "start": 31.026,
+   "end": 34.102
+  },
+  {
+   "key": "w4",
+   "chapter": "workshop",
+   "speaker": "ARCH",
+   "text": "Because I have no sand tray, and the fire went out. Come here. Tell me: which is bigger, this circle, or this square?",
+   "start": 34.352,
+   "end": 41.648
+  },
+  {
+   "key": "w5",
+   "chapter": "workshop",
+   "speaker": "YOU",
+   "text": "The square?",
+   "start": 41.948,
+   "end": 42.735
+  },
+  {
+   "key": "w6",
+   "chapter": "workshop",
+   "speaker": "ARCH",
+   "text": "Wrong! But a good guess. Come back tomorrow, and I'll show you why.",
+   "start": 42.935,
+   "end": 46.963
+  },
+  {
+   "key": "w7",
+   "chapter": "workshop",
+   "speaker": "NARR",
+   "text": "His name is Archimedes. He's about fifty-five, a relative of the king, and the most famous mathematician alive. You never deliver bread again. You become his student.",
+   "start": 47.313,
+   "end": 58.659
+  },
+  {
+   "key": "w8",
+   "chapter": "workshop",
+   "speaker": "KLEO",
+   "text": "I'm Kleon, the other apprentice. Rule one: when he's thinking, don't talk. Rule two: he's always thinking.",
+   "start": 58.959,
+   "end": 64.65
+  },
+  {
+   "key": "c1",
+   "chapter": "crown",
+   "speaker": "NARR",
+   "text": "One day, a message comes from King Hiero himself.",
+   "start": 66.85,
+   "end": 70.078
+  },
+  {
+   "key": "c2",
+   "chapter": "crown",
+   "speaker": "HIERO",
+   "text": "I gave a goldsmith pure gold to make a crown for the gods. I think he kept some gold, and mixed in silver. Prove it, Archimedes. And don't damage the crown.",
+   "start": 70.328,
+   "end": 79.118
+  },
+  {
+   "key": "c3",
+   "chapter": "crown",
+   "speaker": "GOLD",
+   "text": "Your Majesty, it's pure gold, I swear by every god in Sicily!",
+   "start": 79.418,
+   "end": 83.465
+  },
+  {
+   "key": "c4",
+   "chapter": "crown",
+   "speaker": "YOU",
+   "text": "Master, how can you see inside a crown without breaking it?",
+   "start": 83.765,
+   "end": 86.614
+  },
+  {
+   "key": "c5",
+   "chapter": "crown",
+   "speaker": "ARCH",
+   "text": "I don't know yet. I am going to take a bath and think.",
+   "start": 86.864,
+   "end": 90.258
+  },
+  {
+   "key": "c6",
+   "chapter": "crown",
+   "speaker": "NARR",
+   "text": "He steps into a full bath, and the water spills over the edge. And he jumps out.",
+   "start": 90.608,
+   "end": 95.603
+  },
+  {
+   "key": "c7",
+   "chapter": "crown",
+   "speaker": "ARCH",
+   "text": "Eureka! Eureka! I have found it!",
+   "start": 95.853,
+   "end": 98.54
+  },
+  {
+   "key": "c8",
+   "chapter": "crown",
+   "speaker": "KLEO",
+   "text": "Master! Your clothes! You're running through the streets with no clothes!",
+   "start": 98.79,
+   "end": 101.924
+  },
+  {
+   "key": "c9",
+   "chapter": "crown",
+   "speaker": "ARCH",
+   "text": "Silver is lighter than gold, so the same weight of silver takes more space. A cheating crown will push out more water than the pure gold!",
+   "start": 102.224,
+   "end": 111.443
+  },
+  {
+   "key": "c9b",
+   "chapter": "crown",
+   "speaker": "YOU",
+   "text": "But why not just weigh it?",
+   "start": 111.743,
+   "end": 113.172
+  },
+  {
+   "key": "c9c",
+   "chapter": "crown",
+   "speaker": "ARCH",
+   "text": "I did. Same weight! The trick is not the weight. It is the space the crown takes up.",
+   "start": 113.372,
+   "end": 118.978
+  },
+  {
+   "key": "c10",
+   "chapter": "crown",
+   "speaker": "NARR",
+   "text": "The crown spills more water than the gold. The goldsmith is caught. This story was written down two hundred years later, so maybe it's true, and maybe it's too good to be true.",
+   "start": 119.278,
+   "end": 130.721
+  },
+  {
+   "key": "l1",
+   "chapter": "lever",
+   "speaker": "HIERO",
+   "text": "Archimedes, they say you can move anything. Prove it. My new ship, the Syracusia, is too heavy for a hundred men to launch.",
+   "start": 132.921,
+   "end": 139.914
+  },
+  {
+   "key": "l2",
+   "chapter": "lever",
+   "speaker": "ARCH",
+   "text": "Give me a place to stand, Your Majesty, and I will move the Earth.",
+   "start": 140.164,
+   "end": 144.49
+  },
+  {
+   "key": "l3",
+   "chapter": "lever",
+   "speaker": "CAPT",
+   "text": "The Earth? Sir, just move the boat. It's the biggest ship ever built.",
+   "start": 144.79,
+   "end": 147.729
+  },
+  {
+   "key": "l4",
+   "chapter": "lever",
+   "speaker": "NARR",
+   "text": "He builds a system of pulleys and ropes. Then he sits down, alone, and slowly pulls.",
+   "start": 148.029,
+   "end": 153.606
+  },
+  {
+   "key": "l5",
+   "chapter": "lever",
+   "speaker": "KLEO",
+   "text": "It's moving! The whole ship is moving!",
+   "start": 153.856,
+   "end": 155.547
+  },
+  {
+   "key": "l6",
+   "chapter": "lever",
+   "speaker": "YOU",
+   "text": "Master, how? You're not even sweating!",
+   "start": 155.797,
+   "end": 157.691
+  },
+  {
+   "key": "l7",
+   "chapter": "lever",
+   "speaker": "ARCH",
+   "text": "Every pulley halves the effort. Use enough of them, and one old man is stronger than a hundred.",
+   "start": 157.941,
+   "end": 164.311
+  },
+  {
+   "key": "l7b",
+   "chapter": "lever",
+   "speaker": "HIERO",
+   "text": "From this day on, Archimedes is to be believed in everything he says!",
+   "start": 164.611,
+   "end": 168.601
+  },
+  {
+   "key": "l8",
+   "chapter": "lever",
+   "speaker": "NARR",
+   "text": "On that same ship, sailors use a turning screw to pump water out of the hull. Farmers still use the Archimedes screw today.",
+   "start": 168.901,
+   "end": 177.069
+  },
+  {
+   "key": "p1",
+   "chapter": "numbers",
+   "speaker": "YOU",
+   "text": "Master, what are you counting now?",
+   "start": 179.269,
+   "end": 181.094
+  },
+  {
+   "key": "p2",
+   "chapter": "numbers",
+   "speaker": "ARCH",
+   "text": "Grains of sand. How many grains would it take to fill the whole universe?",
+   "start": 181.294,
+   "end": 186.086
+  },
+  {
+   "key": "p3",
+   "chapter": "numbers",
+   "speaker": "KLEO",
+   "text": "That's impossible. There are infinitely many.",
+   "start": 186.336,
+   "end": 188.455
+  },
+  {
+   "key": "p4",
+   "chapter": "numbers",
+   "speaker": "ARCH",
+   "text": "No, Kleon. Very many is not infinitely many. I need a number with sixty-three zeros. So I'll invent a new way to write big numbers.",
+   "start": 188.705,
+   "end": 198.096
+  },
+  {
+   "key": "p5",
+   "chapter": "numbers",
+   "speaker": "YOU",
+   "text": "And the circle from the first day? Why was it bigger than the square?",
+   "start": 198.396,
+   "end": 201.755
+  },
+  {
+   "key": "p6",
+   "chapter": "numbers",
+   "speaker": "ARCH",
+   "text": "Watch. I draw a shape with six sides inside the circle. Then twelve. Then twenty-four, forty-eight, ninety-six. The closer they hug the circle, the better I can measure it.",
+   "start": 202.005,
+   "end": 213.74
+  },
+  {
+   "key": "p7",
+   "chapter": "numbers",
+   "speaker": "NARR",
+   "text": "That's how Archimedes trapped the number pi between two fractions: a little more than three and ten seventy-firsts, and a little less than three and one seventh. Engineers used his bounds for more than a thousand years.",
+   "start": 214.04,
+   "end": 228.248
+  },
+  {
+   "key": "s1",
+   "chapter": "siege",
+   "speaker": "NARR",
+   "text": "Then King Hiero dies, and Syracuse switches sides, from Rome to Carthage. In two-fourteen BC, a Roman army arrives.",
+   "start": 230.448,
+   "end": 239.467
+  },
+  {
+   "key": "s2",
+   "chapter": "siege",
+   "speaker": "MARC",
+   "text": "Syracuse has old walls and an old mathematician. We attack from the land and the sea at once. Five days, and the city is ours.",
+   "start": 239.717,
+   "end": 247.025
+  },
+  {
+   "key": "s3",
+   "chapter": "siege",
+   "speaker": "KLEO",
+   "text": "Sixty Roman warships, with ladders on them! Master, what do we do?",
+   "start": 247.325,
+   "end": 250.972
+  },
+  {
+   "key": "s3b",
+   "chapter": "siege",
+   "speaker": "YOU",
+   "text": "Master, you're over seventy. Shouldn't you hide?",
+   "start": 251.222,
+   "end": 253.504
+  },
+  {
+   "key": "s3c",
+   "chapter": "siege",
+   "speaker": "ARCH",
+   "text": "At my age, hiding takes too long.",
+   "start": 253.754,
+   "end": 256.485
+  },
+  {
+   "key": "s4",
+   "chapter": "siege",
+   "speaker": "ARCH",
+   "text": "We do geometry. Boys, bring the ropes. And the big hook.",
+   "start": 256.785,
+   "end": 260.696
+  },
+  {
+   "key": "k1",
+   "chapter": "claw",
+   "speaker": "NARR",
+   "text": "As the Roman ships reach the walls, giant wooden arms swing out over the water.",
+   "start": 262.896,
+   "end": 268.121
+  },
+  {
+   "key": "k2",
+   "chapter": "claw",
+   "speaker": "YOU",
+   "text": "Lower it! Lower the claw! Now pull!",
+   "start": 268.371,
+   "end": 270.205
+  },
+  {
+   "key": "k3",
+   "chapter": "claw",
+   "speaker": "NARR",
+   "text": "An iron hook grabs a warship by the bow, lifts it out of the sea, and drops it.",
+   "start": 270.455,
+   "end": 275.261
+  },
+  {
+   "key": "k4",
+   "chapter": "claw",
+   "speaker": "KLEO",
+   "text": "Ha! Look at them swim!",
+   "start": 275.511,
+   "end": 276.554
+  },
+  {
+   "key": "k5",
+   "chapter": "claw",
+   "speaker": "NARR",
+   "text": "Catapults hit the ships far out at sea. Smaller ones hit them up close. The Romans have nowhere to hide.",
+   "start": 276.804,
+   "end": 283.653
+  },
+  {
+   "key": "k5b",
+   "chapter": "claw",
+   "speaker": "KLEO",
+   "text": "The ladder ships! They're tying ships together to carry a ladder!",
+   "start": 283.953,
+   "end": 286.83
+  },
+  {
+   "key": "k5c",
+   "chapter": "claw",
+   "speaker": "YOU",
+   "text": "Drop the stones! Now! Break the ladder!",
+   "start": 287.03,
+   "end": 289.048
+  },
+  {
+   "key": "k6",
+   "chapter": "claw",
+   "speaker": "MARC",
+   "text": "Are we going to keep fighting this geometrical giant, who plays catch with our ships?",
+   "start": 289.348,
+   "end": 293.879
+  },
+  {
+   "key": "k7",
+   "chapter": "claw",
+   "speaker": "NARR",
+   "text": "Soon, if the Romans see so much as a rope or a beam over the wall, they turn and run. The siege drags on for two years.",
+   "start": 294.179,
+   "end": 302.814
+  },
+  {
+   "key": "m1",
+   "chapter": "mirrors",
+   "speaker": "KLEO",
+   "text": "Master, people in the market say you burn Roman ships with mirrors.",
+   "start": 305.014,
+   "end": 308.346
+  },
+  {
+   "key": "m2",
+   "chapter": "mirrors",
+   "speaker": "ARCH",
+   "text": "Do they? How clever of me.",
+   "start": 308.596,
+   "end": 310.42
+  },
+  {
+   "key": "m3",
+   "chapter": "mirrors",
+   "speaker": "YOU",
+   "text": "Could we? If every soldier on the wall held a polished shield?",
+   "start": 310.67,
+   "end": 313.847
+  },
+  {
+   "key": "m4",
+   "chapter": "mirrors",
+   "speaker": "ARCH",
+   "text": "The sun is strong, but ships move. And the sky is not always clear. Try it, and tell me.",
+   "start": 314.097,
+   "end": 320.208
+  },
+  {
+   "key": "m5",
+   "chapter": "mirrors",
+   "speaker": "NARR",
+   "text": "No writer from the time mentions burning mirrors. The story appears centuries later. In two thousand and five, MIT students lit a model ship with a hundred and twenty-seven mirrors, but only after ten minutes of perfect sun on a ship that didn't move.",
+   "start": 320.558,
+   "end": 337.714
+  },
+  {
+   "key": "f1",
+   "chapter": "fall",
+   "speaker": "NARR",
+   "text": "Two-twelve BC. The city celebrates a festival for Artemis. Wine, music, and tired guards.",
+   "start": 339.914,
+   "end": 347.025
+  },
+  {
+   "key": "f2",
+   "chapter": "fall",
+   "speaker": "KLEO",
+   "text": "Listen. Do you hear that? Something on the wall.",
+   "start": 347.275,
+   "end": 349.354
+  },
+  {
+   "key": "f3",
+   "chapter": "fall",
+   "speaker": "YOU",
+   "text": "Ladders! The Romans are on the wall! Wake up! Wake up!",
+   "start": 349.604,
+   "end": 352.219
+  },
+  {
+   "key": "f3b",
+   "chapter": "fall",
+   "speaker": "KLEO",
+   "text": "Where's the master?",
+   "start": 352.519,
+   "end": 353.351
+  },
+  {
+   "key": "f3c",
+   "chapter": "fall",
+   "speaker": "YOU",
+   "text": "In the courtyard, drawing. Where else? Come on!",
+   "start": 353.551,
+   "end": 355.818
+  },
+  {
+   "key": "f4",
+   "chapter": "fall",
+   "speaker": "NARR",
+   "text": "By morning, the Romans hold most of the city. General Marcellus looks down at Syracuse, and he weeps.",
+   "start": 356.118,
+   "end": 362.999
+  },
+  {
+   "key": "f5",
+   "chapter": "fall",
+   "speaker": "MARC",
+   "text": "Find Archimedes. Bring him to me alive. No one touches him.",
+   "start": 363.249,
+   "end": 366.979
+  },
+  {
+   "key": "d1",
+   "chapter": "circles",
+   "speaker": "YOU",
+   "text": "Master, we have to go! The soldiers are everywhere!",
+   "start": 369.179,
+   "end": 371.9
+  },
+  {
+   "key": "d2",
+   "chapter": "circles",
+   "speaker": "ARCH",
+   "text": "One moment. I am so close. Look at this figure.",
+   "start": 372.15,
+   "end": 375.672
+  },
+  {
+   "key": "d3",
+   "chapter": "circles",
+   "speaker": "SOLD",
+   "text": "You! Old man! The general wants you. Get up!",
+   "start": 375.922,
+   "end": 378.15
+  },
+  {
+   "key": "d4",
+   "chapter": "circles",
+   "speaker": "ARCH",
+   "text": "Not now. Do not disturb my circles!",
+   "start": 378.4,
+   "end": 381.042
+  },
+  {
+   "key": "d5",
+   "chapter": "circles",
+   "speaker": "NARR",
+   "text": "The soldier doesn't know who he is. The greatest mind of the ancient world dies over a drawing in the sand. Some versions say so, at least. Even Plutarch tells three different stories.",
+   "start": 381.392,
+   "end": 393.764
+  },
+  {
+   "key": "d6",
+   "chapter": "circles",
+   "speaker": "MARC",
+   "text": "Who did this? I gave an order! He was worth more than the whole city.",
+   "start": 394.064,
+   "end": 397.66
+  },
+  {
+   "key": "d7",
+   "chapter": "circles",
+   "speaker": "NARR",
+   "text": "Marcellus gives Archimedes an honorable burial. On his tomb, as he wished: a sphere inside a cylinder. His proudest discovery.",
+   "start": 397.96,
+   "end": 407.364
+  },
+  {
+   "key": "b1",
+   "chapter": "book",
+   "speaker": "NARR",
+   "text": "A hundred and thirty-seven years later, the Roman orator Cicero comes to Syracuse and searches for the tomb.",
+   "start": 409.564,
+   "end": 416.361
+  },
+  {
+   "key": "b2",
+   "chapter": "book",
+   "speaker": "CIC",
+   "text": "Cut away these bushes. There! A sphere and a cylinder. The Syracusans had forgotten their own greatest citizen.",
+   "start": 416.611,
+   "end": 424.207
+  },
+  {
+   "key": "b3",
+   "chapter": "book",
+   "speaker": "NARR",
+   "text": "Then his books almost vanish too. In twelve twenty-nine, a monk scrapes the ink off an old copy of Archimedes and writes a prayer book on top of it.",
+   "start": 424.507,
+   "end": 434.473
+  },
+  {
+   "key": "b4",
+   "chapter": "book",
+   "speaker": "YOU",
+   "text": "They erased him?",
+   "start": 434.723,
+   "end": 435.84
+  },
+  {
+   "key": "b5",
+   "chapter": "book",
+   "speaker": "NARR",
+   "text": "Almost. In nineteen-oh-six, a Danish scholar in Istanbul spots faint mathematics under the prayers. In nineteen ninety-eight, the book sells for two million dollars. Scientists scan it with X-rays.",
+   "start": 436.09,
+   "end": 449.968
+  },
+  {
+   "key": "b6",
+   "chapter": "book",
+   "speaker": "NARR",
+   "text": "Underneath is a lost book called The Method. Archimedes was slicing shapes into infinitely thin pieces: ideas close to calculus, almost two thousand years early.",
+   "start": 450.268,
+   "end": 461.97
+  },
+  {
+   "key": "b7",
+   "chapter": "book",
+   "speaker": "ARCH",
+   "text": "Very many is not infinitely many. But it is a beginning.",
+   "start": 462.27,
+   "end": 466.387
+  },
+  {
+   "key": "b8",
+   "chapter": "book",
+   "speaker": "NARR",
+   "text": "So, if you'd been his student, which of his machines would you have built first? Tell me in the comments.",
+   "start": 466.737,
+   "end": 472.588
+  }
+ ],
+ "voice_end": 473.088
+}
