@@ -27,14 +27,28 @@ def run(cmd):
     return subprocess.run(cmd, capture_output=True, text=True)
 
 def probe(path):
-    out = run(["ffprobe", "-v", "error", "-show_entries",
-               "stream=codec_type,width,height,r_frame_rate:format=duration", "-of", "json", path]).stdout
-    j = json.loads(out)
-    v = next((s for s in j["streams"] if s["codec_type"] == "video"), None)
-    a = any(s["codec_type"] == "audio" for s in j["streams"])
-    num, den = (v["r_frame_rate"].split("/") + ["1"])[:2]
-    return dict(w=v["width"], h=v["height"], fps=float(num) / float(den or 1),
-                dur=float(j["format"]["duration"]), audio=a)
+    try:
+        out = run(["ffprobe", "-v", "error", "-show_entries",
+                   "stream=codec_type,width,height,r_frame_rate:format=duration", "-of", "json", path]).stdout
+        j = json.loads(out)
+        v = next((s for s in j["streams"] if s["codec_type"] == "video"), None)
+        a = any(s["codec_type"] == "audio" for s in j["streams"])
+        num, den = (v["r_frame_rate"].split("/") + ["1"])[:2]
+        return dict(w=v["width"], h=v["height"], fps=float(num) / float(den or 1),
+                    dur=float(j["format"]["duration"]), audio=a)
+    except FileNotFoundError:
+        err = run(["ffmpeg", "-i", path]).stderr
+        dur_m = re.search(r"Duration:\s*(\d+):(\d+):([\d.]+)", err)
+        dur = int(dur_m.group(1))*3600 + int(dur_m.group(2))*60 + float(dur_m.group(3)) if dur_m else 0.0
+        res_m = re.search(r"Video:.*?\s(\d{3,5})x(\d{3,5})", err)
+        fps_m = re.search(r"([\d.]+)\s*fps", err)
+        return dict(
+            w=int(res_m.group(1)) if res_m else 0,
+            h=int(res_m.group(2)) if res_m else 0,
+            fps=float(fps_m.group(1)) if fps_m else 30.0,
+            dur=dur,
+            audio=("Audio:" in err)
+        )
 
 def loudness(path):
     err = run(["ffmpeg", "-hide_banner", "-nostats", "-i", path, "-af", "ebur128=peak=true",

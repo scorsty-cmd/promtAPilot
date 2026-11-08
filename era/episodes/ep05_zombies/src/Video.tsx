@@ -295,6 +295,7 @@ const EndCard: React.FC<{ T: number }> = ({ T }) => {
           padding: '40px 80px',
           textAlign: 'center',
           boxShadow: '0 25px 80px rgba(0,0,0,0.9)',
+          transform: `scale(${1 + 0.04 * Math.sin(T * 1.8)}) translateY(${Math.cos(T * 1.4) * 8}px)`,
         }}
       >
         <div style={{ fontFamily: 'Mono', fontSize: 32, color: BLOOD, letterSpacing: 4 }}>

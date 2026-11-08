@@ -55,7 +55,8 @@ if __name__ == "__main__":
         "-f", "concat", "-safe", "0", "-i", list_path,
         "-i", "public/mix.wav",
         "-map", "0:v", "-map", "1:a",
-        "-c:v", "copy",
+        "-vf", "eq=brightness='0.038+0.032*sin(2*PI*t/3.2)':eval=frame",
+        "-c:v", "libx264", "-preset", "ultrafast", "-crf", "18",
         "-c:a", "aac", "-b:a", "192k",
         "-shortest",
         final_mp4
