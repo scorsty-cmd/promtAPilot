@@ -1,0 +1,949 @@
+{
+ "lines": [
+  {
+   "key": "o1",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "There are no streets in your town. No doors. No windows.",
+   "start": 0.3,
+   "end": 3.997
+  },
+  {
+   "key": "o2",
+   "chapter": "open",
+   "speaker": "SIS",
+   "text": "Wake up! Wake up! The sun is up! Last one on the roof is a sheep!",
+   "start": 4.347,
+   "end": 7.74
+  },
+  {
+   "key": "o3",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "I'm coming! Stop shaking the ladder!",
+   "start": 7.99,
+   "end": 9.908
+  },
+  {
+   "key": "o4",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "To go outside, you climb a ladder, through a hole in the ceiling. Every single house in town works like this.",
+   "start": 10.158,
+   "end": 17.221
+  },
+  {
+   "key": "o5",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "Good morning, grandmother.",
+   "start": 17.521,
+   "end": 19.036
+  },
+  {
+   "key": "o6",
+   "chapter": "open",
+   "speaker": "SIS",
+   "text": "Who are you talking to? There's nobody there.",
+   "start": 19.286,
+   "end": 21.57
+  },
+  {
+   "key": "o7",
+   "chapter": "open",
+   "speaker": "YOU",
+   "text": "She's right here. Under my bed.",
+   "start": 21.82,
+   "end": 23.573
+  },
+  {
+   "key": "o8",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "And that's true. Your grandmother is buried in the floor, under the platform where you sleep. So is her mother. Here, this is completely normal.",
+   "start": 24.173,
+   "end": 32.926
+  },
+  {
+   "key": "o9",
+   "chapter": "open",
+   "speaker": "NARR",
+   "text": "Almost nine thousand years ago, in the middle of today's Turkey, this was one of the biggest towns on Earth. Today we call it \u00c7atalh\u00f6y\u00fck. And you were born here.",
+   "start": 33.226,
+   "end": 43.867
+  },
+  {
+   "key": "h1",
+   "chapter": "home",
+   "speaker": "NARR",
+   "text": "The Konya plain, around six thousand seven hundred BC. Your house has one main room, about five steps wide, and a small storeroom for grain.",
+   "start": 46.067,
+   "end": 56.251
+  },
+  {
+   "key": "h2",
+   "chapter": "home",
+   "speaker": "MOM",
+   "text": "Don't step there! That's the clean side. Ash and cooking stay by the oven.",
+   "start": 56.501,
+   "end": 60.712
+  },
+  {
+   "key": "h3",
+   "chapter": "home",
+   "speaker": "NARR",
+   "text": "Archaeologists found that families kept the messy work, like cooking and making tools, on one side, under the ladder. The other side, with the sleeping platforms, stayed clean.",
+   "start": 60.962,
+   "end": 72.906
+  },
+  {
+   "key": "h4",
+   "chapter": "home",
+   "speaker": "MOM",
+   "text": "Bring the white clay. The walls need a new coat before the feast.",
+   "start": 73.206,
+   "end": 76.712
+  },
+  {
+   "key": "h5",
+   "chapter": "home",
+   "speaker": "YOU",
+   "text": "Again? We did it last month!",
+   "start": 76.962,
+   "end": 78.562
+  },
+  {
+   "key": "h6",
+   "chapter": "home",
+   "speaker": "MOM",
+   "text": "And we'll do it again next month. Clean walls, happy house.",
+   "start": 78.762,
+   "end": 82.232
+  },
+  {
+   "key": "h7",
+   "chapter": "home",
+   "speaker": "SIS",
+   "text": "Why do we always paint? Nobody ever comes inside.",
+   "start": 82.482,
+   "end": 85.35
+  },
+  {
+   "key": "h8",
+   "chapter": "home",
+   "speaker": "MOM",
+   "text": "We come inside. And the ancestors are inside.",
+   "start": 85.55,
+   "end": 88.467
+  },
+  {
+   "key": "h9",
+   "chapter": "home",
+   "speaker": "NARR",
+   "text": "Some walls here have hundreds of thin layers of white plaster, put on again and again, over many years.",
+   "start": 88.817,
+   "end": 95.774
+  },
+  {
+   "key": "h10",
+   "chapter": "home",
+   "speaker": "SIS",
+   "text": "Can I put my hand on it? While it's still wet?",
+   "start": 96.074,
+   "end": 98.43
+  },
+  {
+   "key": "h11",
+   "chapter": "home",
+   "speaker": "MOM",
+   "text": "One hand. Red, from the ochre. Just like your father did, when he was little.",
+   "start": 98.63,
+   "end": 103.038
+  },
+  {
+   "key": "h11b",
+   "chapter": "home",
+   "speaker": "SIS",
+   "text": "Look! My hand is on the wall forever!",
+   "start": 103.338,
+   "end": 105.397
+  },
+  {
+   "key": "h11c",
+   "chapter": "home",
+   "speaker": "YOU",
+   "text": "Until mother paints over it next month.",
+   "start": 105.597,
+   "end": 107.697
+  },
+  {
+   "key": "h11d",
+   "chapter": "home",
+   "speaker": "SIS",
+   "text": "Hey!",
+   "start": 107.897,
+   "end": 108.46
+  },
+  {
+   "key": "h12",
+   "chapter": "home",
+   "speaker": "YOU",
+   "text": "Mother, why are there bull horns in our wall?",
+   "start": 108.81,
+   "end": 110.989
+  },
+  {
+   "key": "h13",
+   "chapter": "home",
+   "speaker": "MOM",
+   "text": "Those are from the great hunt, before you were born. They watch over us.",
+   "start": 111.239,
+   "end": 115.169
+  },
+  {
+   "key": "h14",
+   "chapter": "home",
+   "speaker": "NARR",
+   "text": "Houses here were decorated with the horns and skulls of wild cattle, set into walls and benches. What they meant exactly, nobody knows.",
+   "start": 115.469,
+   "end": 125.303
+  },
+  {
+   "key": "f1",
+   "chapter": "food",
+   "speaker": "NARR",
+   "text": "Outside, the town looks like a giant honeycomb. People walk across the rooftops, like streets in the sky.",
+   "start": 127.503,
+   "end": 134.461
+  },
+  {
+   "key": "f2",
+   "chapter": "food",
+   "speaker": "NEI",
+   "text": "Watch your feet! My roof is still wet!",
+   "start": 134.761,
+   "end": 137.253
+  },
+  {
+   "key": "f3",
+   "chapter": "food",
+   "speaker": "YOU",
+   "text": "Sorry! Sorry!",
+   "start": 137.453,
+   "end": 138.648
+  },
+  {
+   "key": "f4",
+   "chapter": "food",
+   "speaker": "NARR",
+   "text": "Down on the plain, by the river, your family grows wheat, barley, peas and lentils. And you keep sheep and goats.",
+   "start": 138.948,
+   "end": 146.219
+  },
+  {
+   "key": "f5",
+   "chapter": "food",
+   "speaker": "FAT",
+   "text": "Take the sheep to the marsh, and watch for wolves. And don't fall asleep this time.",
+   "start": 146.469,
+   "end": 151.002
+  },
+  {
+   "key": "f6",
+   "chapter": "food",
+   "speaker": "YOU",
+   "text": "That was one time, father!",
+   "start": 151.252,
+   "end": 152.866
+  },
+  {
+   "key": "f7",
+   "chapter": "food",
+   "speaker": "FAT",
+   "text": "One time. And we lost two sheep.",
+   "start": 153.116,
+   "end": 154.956
+  },
+  {
+   "key": "f7b",
+   "chapter": "food",
+   "speaker": "YOU",
+   "text": "Come on, sheep. Not in the water. Not in the water!",
+   "start": 155.256,
+   "end": 157.619
+  },
+  {
+   "key": "f7c",
+   "chapter": "food",
+   "speaker": "SIS",
+   "text": "A wolf! Over there, in the reeds!",
+   "start": 157.869,
+   "end": 159.753
+  },
+  {
+   "key": "f7d",
+   "chapter": "food",
+   "speaker": "YOU",
+   "text": "Shout! Throw stones! Make yourself big!",
+   "start": 159.953,
+   "end": 162.061
+  },
+  {
+   "key": "f8",
+   "chapter": "food",
+   "speaker": "NARR",
+   "text": "Bread and porridge fed the town. But all that sticky grain was bad for teeth. Many skeletons here have cavities.",
+   "start": 162.461,
+   "end": 169.918
+  },
+  {
+   "key": "f9",
+   "chapter": "food",
+   "speaker": "SIS",
+   "text": "My tooth hurts again.",
+   "start": 170.218,
+   "end": 171.595
+  },
+  {
+   "key": "f10",
+   "chapter": "food",
+   "speaker": "MOM",
+   "text": "Then stop stealing honey from the neighbours.",
+   "start": 171.795,
+   "end": 173.914
+  },
+  {
+   "key": "f11",
+   "chapter": "food",
+   "speaker": "NARR",
+   "text": "That's not a joke, by the way. Traces of beeswax were found in cooking pots from this region, from around this time.",
+   "start": 174.214,
+   "end": 182.079
+  },
+  {
+   "key": "u1",
+   "chapter": "hunt",
+   "speaker": "NARR",
+   "text": "One day, the hunters come back with big news.",
+   "start": 184.279,
+   "end": 186.941
+  },
+  {
+   "key": "u2",
+   "chapter": "hunt",
+   "speaker": "HUN",
+   "text": "An aurochs! A giant bull, down by the lake! The biggest any of us has ever seen!",
+   "start": 187.191,
+   "end": 191.264
+  },
+  {
+   "key": "u3",
+   "chapter": "hunt",
+   "speaker": "FAT",
+   "text": "You're old enough now. Get your spear. Today, you come with us.",
+   "start": 191.514,
+   "end": 194.716
+  },
+  {
+   "key": "u4",
+   "chapter": "hunt",
+   "speaker": "YOU",
+   "text": "Me? Really?",
+   "start": 194.966,
+   "end": 196.017
+  },
+  {
+   "key": "u5",
+   "chapter": "hunt",
+   "speaker": "MOM",
+   "text": "Stay behind your father. And come back with both your legs.",
+   "start": 196.217,
+   "end": 199.558
+  },
+  {
+   "key": "u6",
+   "chapter": "hunt",
+   "speaker": "NARR",
+   "text": "The aurochs was the wild ancestor of today's cattle. A big bull could stand almost two meters tall at the shoulder, and weigh about a ton.",
+   "start": 199.858,
+   "end": 208.955
+  },
+  {
+   "key": "u7",
+   "chapter": "hunt",
+   "speaker": "HUN",
+   "text": "Quiet. Spread out. Wait for my signal.",
+   "start": 209.255,
+   "end": 211.352
+  },
+  {
+   "key": "u8",
+   "chapter": "hunt",
+   "speaker": "YOU",
+   "text": "It's looking at me. Why is it looking at me?",
+   "start": 211.652,
+   "end": 213.713
+  },
+  {
+   "key": "u9",
+   "chapter": "hunt",
+   "speaker": "FAT",
+   "text": "Don't move. Let it come to us.",
+   "start": 213.913,
+   "end": 215.493
+  },
+  {
+   "key": "u10",
+   "chapter": "hunt",
+   "speaker": "HUN",
+   "text": "Now! Spears!",
+   "start": 215.793,
+   "end": 216.783
+  },
+  {
+   "key": "u11",
+   "chapter": "hunt",
+   "speaker": "FAT",
+   "text": "Run! To the side! Run!",
+   "start": 216.983,
+   "end": 218.353
+  },
+  {
+   "key": "u12",
+   "chapter": "hunt",
+   "speaker": "NARR",
+   "text": "Paintings found in the houses here show crowds of people around giant bulls and deer, some pulling the animal's tail or tongue. Nobody knows if they show real hunts, or stories.",
+   "start": 218.703,
+   "end": 231.094
+  },
+  {
+   "key": "u13",
+   "chapter": "hunt",
+   "speaker": "HUN",
+   "text": "We did it! Tonight, the whole town eats!",
+   "start": 231.394,
+   "end": 233.356
+  },
+  {
+   "key": "u13b",
+   "chapter": "hunt",
+   "speaker": "YOU",
+   "text": "Father, I threw my spear! Did I hit it?",
+   "start": 233.606,
+   "end": 235.765
+  },
+  {
+   "key": "u13c",
+   "chapter": "hunt",
+   "speaker": "FAT",
+   "text": "You hit the ground. Very bravely.",
+   "start": 235.965,
+   "end": 237.87
+  },
+  {
+   "key": "u13d",
+   "chapter": "hunt",
+   "speaker": "HUN",
+   "text": "Ha! Next time, aim for the bull.",
+   "start": 238.12,
+   "end": 239.842
+  },
+  {
+   "key": "u14",
+   "chapter": "hunt",
+   "speaker": "NARR",
+   "text": "A bull like this could feed hundreds of people. Big feasts may have brought the whole town together. And afterwards, the horns went into the walls.",
+   "start": 240.142,
+   "end": 249.253
+  },
+  {
+   "key": "t1",
+   "chapter": "trade",
+   "speaker": "NARR",
+   "text": "Your town needs something it can't make itself: obsidian. Black volcanic glass, sharper than any knife.",
+   "start": 251.453,
+   "end": 258.153
+  },
+  {
+   "key": "t2",
+   "chapter": "trade",
+   "speaker": "TRA",
+   "text": "Black glass from the fire mountains! The sharpest edge in the world! Who wants it?",
+   "start": 258.403,
+   "end": 262.292
+  },
+  {
+   "key": "t3",
+   "chapter": "trade",
+   "speaker": "YOU",
+   "text": "What about that round one? The shiny one?",
+   "start": 262.542,
+   "end": 264.629
+  },
+  {
+   "key": "t4",
+   "chapter": "trade",
+   "speaker": "TRA",
+   "text": "That? That's a mirror. Go on. Look into it.",
+   "start": 264.829,
+   "end": 266.891
+  },
+  {
+   "key": "t5",
+   "chapter": "trade",
+   "speaker": "YOU",
+   "text": "Is that me? That's what my face looks like?",
+   "start": 267.191,
+   "end": 269.467
+  },
+  {
+   "key": "t6",
+   "chapter": "trade",
+   "speaker": "TRA",
+   "text": "Two baskets of lentils, and it's yours.",
+   "start": 269.767,
+   "end": 272.014
+  },
+  {
+   "key": "t7",
+   "chapter": "trade",
+   "speaker": "YOU",
+   "text": "Two baskets? My mother will kill me!",
+   "start": 272.214,
+   "end": 274.246
+  },
+  {
+   "key": "t7b",
+   "chapter": "trade",
+   "speaker": "TRA",
+   "text": "One basket, and you carry my bags to the edge of town.",
+   "start": 274.546,
+   "end": 277.432
+  },
+  {
+   "key": "t7c",
+   "chapter": "trade",
+   "speaker": "YOU",
+   "text": "Deal!",
+   "start": 277.632,
+   "end": 278.287
+  },
+  {
+   "key": "t8",
+   "chapter": "trade",
+   "speaker": "NARR",
+   "text": "Polished obsidian mirrors were found in graves here. They are among the oldest mirrors ever discovered.",
+   "start": 278.637,
+   "end": 285.125
+  },
+  {
+   "key": "t9",
+   "chapter": "trade",
+   "speaker": "NARR",
+   "text": "The obsidian came from volcanoes in Cappadocia, more than a hundred kilometers away. One of them, Hasan Da\u011f\u0131, can be seen from the rooftops on a clear day.",
+   "start": 285.425,
+   "end": 296.203
+  },
+  {
+   "key": "t10",
+   "chapter": "trade",
+   "speaker": "SIS",
+   "text": "Look! The mountain! The mountain is on fire!",
+   "start": 296.503,
+   "end": 298.913
+  },
+  {
+   "key": "t11",
+   "chapter": "trade",
+   "speaker": "FAT",
+   "text": "Everyone inside! Now! Pull up the ladders!",
+   "start": 299.163,
+   "end": 301.606
+  },
+  {
+   "key": "t12",
+   "chapter": "trade",
+   "speaker": "NARR",
+   "text": "Scientists have dated an eruption of Hasan Da\u011f\u0131 to roughly this time. And one painting found here may show it: a mountain with two peaks, spitting fire, above rows of houses.",
+   "start": 301.906,
+   "end": 314.056
+  },
+  {
+   "key": "t13",
+   "chapter": "trade",
+   "speaker": "NARR",
+   "text": "Some call it the oldest map in the world. Others say it's just the pattern of a leopard skin. Archaeologists are still arguing.",
+   "start": 314.356,
+   "end": 322.942
+  },
+  {
+   "key": "l1",
+   "chapter": "life",
+   "speaker": "NARR",
+   "text": "Life in a crowded town wasn't easy. Several thousand people live packed together, with animals, rubbish, and smoke from every oven.",
+   "start": 325.142,
+   "end": 334.037
+  },
+  {
+   "key": "l2",
+   "chapter": "life",
+   "speaker": "YOU",
+   "text": "Why do I cough all the time?",
+   "start": 334.287,
+   "end": 335.94
+  },
+  {
+   "key": "l3",
+   "chapter": "life",
+   "speaker": "MOM",
+   "text": "Everybody coughs in winter. It's the smoke. Now go and wash your hands.",
+   "start": 336.14,
+   "end": 340.395
+  },
+  {
+   "key": "l4",
+   "chapter": "life",
+   "speaker": "NARR",
+   "text": "In rooms with no windows, people breathed smoke all winter. Archaeologists found black soot on the inside of ribs from burials here.",
+   "start": 340.695,
+   "end": 349.965
+  },
+  {
+   "key": "l5",
+   "chapter": "life",
+   "speaker": "NEI",
+   "text": "That's my roof! You built your wall on my roof!",
+   "start": 350.265,
+   "end": 353.169
+  },
+  {
+   "key": "l6",
+   "chapter": "life",
+   "speaker": "FAT",
+   "text": "Your roof? My grandfather built this wall before you were even born!",
+   "start": 353.369,
+   "end": 356.922
+  },
+  {
+   "key": "l7",
+   "chapter": "life",
+   "speaker": "MOM",
+   "text": "Enough! Both of you! The elders will decide.",
+   "start": 357.172,
+   "end": 359.647
+  },
+  {
+   "key": "l7b",
+   "chapter": "life",
+   "speaker": "NEI",
+   "text": "Fine. But your sister stays off my roof!",
+   "start": 359.997,
+   "end": 362.437
+  },
+  {
+   "key": "l7c",
+   "chapter": "life",
+   "speaker": "SIS",
+   "text": "That was one time!",
+   "start": 362.637,
+   "end": 363.94
+  },
+  {
+   "key": "l8",
+   "chapter": "life",
+   "speaker": "NARR",
+   "text": "And sometimes, people fought. A study in twenty nineteen found healed head wounds on about one in four skulls examined. Many were hit from behind, probably by clay balls thrown with slings.",
+   "start": 364.34,
+   "end": 377.531
+  },
+  {
+   "key": "l9",
+   "chapter": "life",
+   "speaker": "NARR",
+   "text": "But here's something surprising. The bones show that men and women ate the same food, did similar work, and were buried in the same way.",
+   "start": 377.831,
+   "end": 386.664
+  },
+  {
+   "key": "l10",
+   "chapter": "life",
+   "speaker": "SIS",
+   "text": "When I grow up, I want to hunt aurochs, like you.",
+   "start": 386.914,
+   "end": 389.523
+  },
+  {
+   "key": "l11",
+   "chapter": "life",
+   "speaker": "YOU",
+   "text": "Then you'll need a bigger spear.",
+   "start": 389.723,
+   "end": 391.461
+  },
+  {
+   "key": "l12",
+   "chapter": "life",
+   "speaker": "SIS",
+   "text": "Then make me one!",
+   "start": 391.711,
+   "end": 392.791
+  },
+  {
+   "key": "d1",
+   "chapter": "death",
+   "speaker": "NARR",
+   "text": "One winter, the old storyteller who lived in your house dies in his sleep. He wasn't your grandfather. He wasn't even related to you by blood.",
+   "start": 394.991,
+   "end": 404.402
+  },
+  {
+   "key": "d2",
+   "chapter": "death",
+   "speaker": "YOU",
+   "text": "Where will we put him?",
+   "start": 404.652,
+   "end": 405.932
+  },
+  {
+   "key": "d3",
+   "chapter": "death",
+   "speaker": "MOM",
+   "text": "Where we put everyone we love. Under the floor. Close to us.",
+   "start": 406.132,
+   "end": 409.403
+  },
+  {
+   "key": "d3b",
+   "chapter": "death",
+   "speaker": "SIS",
+   "text": "Can I give him something to take with him?",
+   "start": 409.753,
+   "end": 411.844
+  },
+  {
+   "key": "d3c",
+   "chapter": "death",
+   "speaker": "MOM",
+   "text": "Give him his beads. He loved those beads.",
+   "start": 412.044,
+   "end": 414.488
+  },
+  {
+   "key": "d4",
+   "chapter": "death",
+   "speaker": "NARR",
+   "text": "The body is folded tightly, wrapped in cloth or matting, and buried under a platform. Then the floor is plastered smooth again.",
+   "start": 414.838,
+   "end": 423.13
+  },
+  {
+   "key": "d5",
+   "chapter": "death",
+   "speaker": "NARR",
+   "text": "In twenty twenty-one, a DNA study found that many people buried in the same house here were not close relatives. Family was something you made. Not only something you were born into.",
+   "start": 423.43,
+   "end": 435.488
+  },
+  {
+   "key": "d6",
+   "chapter": "death",
+   "speaker": "SIS",
+   "text": "Will he be lonely down there?",
+   "start": 435.788,
+   "end": 437.33
+  },
+  {
+   "key": "d7",
+   "chapter": "death",
+   "speaker": "YOU",
+   "text": "No. He's right under my bed. Now I'll tell him the stories.",
+   "start": 437.58,
+   "end": 440.545
+  },
+  {
+   "key": "d8",
+   "chapter": "death",
+   "speaker": "NARR",
+   "text": "Sometimes, the skull of an important person was taken out later, covered with plaster, and painted. One woman was found buried, holding a plastered skull in her arms.",
+   "start": 440.945,
+   "end": 452.294
+  },
+  {
+   "key": "b1",
+   "chapter": "build",
+   "speaker": "NARR",
+   "text": "Years pass. You're grown up now. Your house is old, and the walls are cracking.",
+   "start": 454.494,
+   "end": 459.317
+  },
+  {
+   "key": "b2",
+   "chapter": "build",
+   "speaker": "FAT",
+   "text": "It's time. We build the new house.",
+   "start": 459.567,
+   "end": 461.342
+  },
+  {
+   "key": "b3",
+   "chapter": "build",
+   "speaker": "YOU",
+   "text": "Where?",
+   "start": 461.592,
+   "end": 462.288
+  },
+  {
+   "key": "b4",
+   "chapter": "build",
+   "speaker": "FAT",
+   "text": "Right here. On top of this one.",
+   "start": 462.488,
+   "end": 464.222
+  },
+  {
+   "key": "b5",
+   "chapter": "build",
+   "speaker": "NARR",
+   "text": "When a house got old, people took off the roof, filled the room with earth, and built a new house on top. Often with the walls in exactly the same place.",
+   "start": 464.522,
+   "end": 474.67
+  },
+  {
+   "key": "b6",
+   "chapter": "build",
+   "speaker": "NARR",
+   "text": "Over more than a thousand years, house on house, the town grew into a hill twenty meters high.",
+   "start": 474.97,
+   "end": 480.981
+  },
+  {
+   "key": "b7",
+   "chapter": "build",
+   "speaker": "SIS",
+   "text": "So our old house is under our new house?",
+   "start": 481.281,
+   "end": 483.422
+  },
+  {
+   "key": "b8",
+   "chapter": "build",
+   "speaker": "YOU",
+   "text": "And grandmother's house is under that one. And her grandmother's under that.",
+   "start": 483.622,
+   "end": 487.38
+  },
+  {
+   "key": "b9",
+   "chapter": "build",
+   "speaker": "NARR",
+   "text": "That's where the name comes from. In Turkish, h\u00f6y\u00fck means a mound, a hill made by people. \u00c7atal means fork.",
+   "start": 487.68,
+   "end": 494.783
+  },
+  {
+   "key": "z1",
+   "chapter": "end",
+   "speaker": "NARR",
+   "text": "Your town lasted more than a thousand years. Then, around six thousand BC, people moved across the river, and later they left for good.",
+   "start": 496.983,
+   "end": 506.504
+  },
+  {
+   "key": "z2",
+   "chapter": "end",
+   "speaker": "NARR",
+   "text": "Why? Maybe the climate got drier. Maybe the town was simply too crowded. Nobody knows for sure.",
+   "start": 506.804,
+   "end": 513.336
+  },
+  {
+   "key": "z3",
+   "chapter": "end",
+   "speaker": "YOU",
+   "text": "When I'm old, they'll bury me under this floor too. And one day, someone will build a house on top of me.",
+   "start": 513.636,
+   "end": 518.574
+  },
+  {
+   "key": "z4",
+   "chapter": "end",
+   "speaker": "SIS",
+   "text": "And they'll never know you were here.",
+   "start": 518.874,
+   "end": 520.493
+  },
+  {
+   "key": "z5",
+   "chapter": "end",
+   "speaker": "YOU",
+   "text": "Maybe they will.",
+   "start": 520.793,
+   "end": 522.002
+  },
+  {
+   "key": "r1",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "In nineteen fifty-eight, a British archaeologist named James Mellaart noticed the mound. In the nineteen sixties, his team found the houses, the paintings, and the bull horns.",
+   "start": 524.202,
+   "end": 536.023
+  },
+  {
+   "key": "r2",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "And a little clay figure of a large woman, seated between two big cats. People called her the Mother Goddess.",
+   "start": 536.323,
+   "end": 543.41
+  },
+  {
+   "key": "r3",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "For decades, books said the people here worshipped a great goddess, and that women ruled. Today, most archaeologists think that's too simple. Most figurines aren't goddesses at all, and many are animals.",
+   "start": 543.71,
+   "end": 557.436
+  },
+  {
+   "key": "r4",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "Some of Mellaart's drawings were later questioned too. A few famous wall designs he published were never seen by anyone else.",
+   "start": 557.736,
+   "end": 565.854
+  },
+  {
+   "key": "r5",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "But the town itself is very real. Since nineteen ninety-three, teams from around the world have excavated here. In twenty twelve, it became a UNESCO World Heritage Site.",
+   "start": 566.154,
+   "end": 577.822
+  },
+  {
+   "key": "r6",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "Your town is older than Stonehenge, and older than the pyramids of Egypt, by more than four thousand years.",
+   "start": 578.122,
+   "end": 585.73
+  },
+  {
+   "key": "r7",
+   "chapter": "real",
+   "speaker": "YOU",
+   "text": "No streets. No doors. Just ladders, white walls, and the people we loved, under our feet.",
+   "start": 586.03,
+   "end": 590.911
+  },
+  {
+   "key": "r8",
+   "chapter": "real",
+   "speaker": "NARR",
+   "text": "So, could you live here? On the rooftops, in the smoke, sleeping above your ancestors? Tell me in the comments. And if you're ever near Konya, you can still visit it.",
+   "start": 591.311,
+   "end": 601.282
+  }
+ ],
+ "voice_end": 601.782
+}

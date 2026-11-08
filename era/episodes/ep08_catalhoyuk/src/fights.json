@@ -1,0 +1,4 @@
+{
+  "_doc": "ep08: aurochs hunt hits shared by shots.tsx and audio.py. Hits: [lineKey, dt, kind, x, y] (kind: clash | block | flesh | thud | whoosh)",
+  "hunt": { "hits": [["u10", 0.15, "whoosh", 0, 0], ["u10", 0.35, "whoosh", 0, 0], ["u10", 0.55, "whoosh", 0, 0], ["u10", 0.7, "flesh", 1460, 780], ["u10", 0.9, "thud", 0, 0], ["u11", 0.3, "thud", 0, 0], ["u11", 1.0, "thud", 0, 0]] }
+}

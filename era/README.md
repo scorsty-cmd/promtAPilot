@@ -106,3 +106,8 @@ Talk to the owner in Turkish; videos, captions and metadata are English.
   New: risograph-print look (pink misregistration plate on every frame, halftone + paper baked to PNG, Dela Gothic / Rubik Mono / Space Grotesk),
   creature kit (theropod with jaw/walk/breath, raptor pack, dinosauroid guide, tiny primate, sauropod herd, pterosaur, mosasaur leap, duckbills, crow),
   13 "field guide" explainer posters with EVIDENCE / MAYBE / MYTH stickers, original marimba/kalimba/log-drum score + chase cue. QC passed first time.
+- 2026-11-08 · ep08 Çatalhöyük — "If You Were Born in Çatalhöyük" (10:10, 10 chapters, 76 of 118 lines dialogue, 8 voices).
+  New: 3-word slam cold open + "location of grandmother" card, new type system (Rubik Dirt / Bowlby One SC / Caveat Brush incl. latin-ext for ğ ş ı), rig v8 (hide & leopard-skin outfits, bead necklaces, bow/basket/mirror/brush/sling/horn props, aurochs/sheep/goat/dog),
+  sets3: honeycomb rooftop town with ladders + smoke, plastered interior lit only by the roof hole (clean/dirty sides, bucrania, handprints, hunt/map/vulture paintings, under-floor burial cutaway, plastered skull), cutaway "doll's house" of a neighbourhood, mound time-lapse, Hasan Dağı eruption, excavation shelter;
+  in-scene annotation labels, wall-painting explainers (Anatolia & obsidian maps, plaster layers, aurochs scale, bones, 1-in-4 head wounds, men=women scale, DNA family, seated woman MYTH/MAYBE, map-or-leopard, timeline vs pyramids),
+  Neolithic score (bone flute, hummed voices, clay-pot drum, rattles; pentatonic, no metal or strings) + marsh birds/frogs, sheep, wolf, aurochs bellow & stampede, volcano, coughs.

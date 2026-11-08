@@ -1,0 +1,10 @@
+node_modules
+chunks/
+out/
+models/
+stills/
+public/*.wav
+*.mp4
+*.log
+tts_cache/
+mix_raw.wav
