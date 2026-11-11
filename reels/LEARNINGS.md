@@ -183,3 +183,11 @@
 - Photos: skipped (workflow junk for days). vidIQ balance 2: no paid tools. Not Sunday.
 - Tip: `kill` render by pid (pgrep loop), never pkill -f in the same command.
 - YouTube Short: queue run https://github.com/scorsty-cmd/promtAPilot/actions/runs/42379359507 FAILED (same as 6 Nov); release created with failure note, queue branch kept, not resubmitted. Needs owner check of YOUTUBE_TOKEN_JSON_HIDDEN_LAYER / upload step.
+
+### 2026-11-11 16:49 - FILE 024 - MONEY ANGLE #7: Amazon Prime FTC settlement ($1B penalty, up to $1.5B redress, $845M+ paid) (rose/mint dark DNA, 29.8 s) - https://www.instagram.com/reel/Dfmo9Bho02l/
+- File: HL_Reel_20261111_1649_amazon-prime-refunds.mp4 - Renderer reels/renderer/reel2_v20.py (+ reel_audio_v7.py), scenes_FILE024.py, caption_FILE024.txt.
+- New vs FILE 023: new `payout` beat (ledger panel, paid-so-far counter + bar filling toward a dashed "up to $1.5B" line, AUTOMATIC / NO CLAIM FORM stamp); hook = one big number + actor ("Amazon refunds up to $1.5 billion"); stat with tiers; doc = Ferguson quote from FTC release; payoff = refund is automatic, never pay for a refund (scam-safety, save-worthy); rose/mint palette. Note: 29.8 s is near the 30 s target; trim a beat next time.
+- Sources: FTC press release 25 Sep 2025 (ftc.gov .../2025/09/ftc-secures-historic-25-billion-settlement-against-amazon: $1B penalty, $1.5B redress, est. 35M consumers, Ferguson quote) and FTC release 17 Sep 2026 (>$845M paid as of Sep 2026, automatic payments, no claims). Read 11 Nov 2026.
+- Previous (FILE 023, 7 Nov): 49 plays, 12.0% watched, 78.3% skip, 0 saves/shares. FILE 020 (25.4%/60.3%) and FILE 015 (32.8%/53.1%) remain the best; money Reels not clearly better yet.
+- Photos skipped (workflow junk for days). vidIQ balance 2: no paid tools. Not Sunday. Kit is run from /tmp/claude-0/kit; the working clone is /home/claude/promtapilot (no add_repo needed).
+- YouTube Short: queue run https://github.com/scorsty-cmd/promtAPilot/actions/runs/43033994644 (tag hiddenlayer-reel-2026-11-11-amazon-prime-refunds); queue_publish --wait returned early, result checked via Actions API (see email).
