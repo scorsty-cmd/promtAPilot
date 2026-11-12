@@ -1,0 +1,703 @@
+1
+00:00:00,350 --> 00:00:01,350
+A dozen eggs.
+
+2
+00:00:01,633 --> 00:00:03,554
+One Safeway store in Washington.
+
+3
+00:00:03,804 --> 00:00:07,586
+Shoppers ordering them through the same app, in the same test, saw
+
+4
+00:00:07,586 --> 00:00:08,847
+five different prices.
+
+5
+00:00:09,212 --> 00:00:10,036
+Same eggs.
+
+6
+00:00:10,386 --> 00:00:11,236
+Same store.
+
+7
+00:00:11,471 --> 00:00:13,236
+The cheapest was three ninety-nine.
+
+8
+00:00:13,564 --> 00:00:15,838
+The most expensive was four seventy-nine.
+
+9
+00:00:16,265 --> 00:00:18,670
+That's what people now call surveillance pricing.
+
+10
+00:00:18,963 --> 00:00:21,023
+A price that depends on who's looking.
+
+11
+00:00:21,254 --> 00:00:24,874
+And in August, the Federal Trade Commission put in writing where it
+
+12
+00:00:24,874 --> 00:00:26,440
+thinks that crosses the line.
+
+13
+00:00:26,725 --> 00:00:30,006
+So by the end of this, you'll know what's documented, what's a
+
+14
+00:00:30,006 --> 00:00:33,497
+myth, and four quick checks that tell you whether the price you're
+
+15
+00:00:33,497 --> 00:00:34,555
+seeing is the price.
+
+16
+00:00:34,938 --> 00:00:38,960
+And one of the FTC's own examples involves a hotel room and
+
+17
+00:00:38,960 --> 00:00:39,642
+a funeral.
+
+18
+00:00:39,963 --> 00:00:41,219
+Hold on to that one.
+
+19
+00:00:41,448 --> 00:00:43,096
+It explains where this is heading.
+
+20
+00:00:43,695 --> 00:00:45,765
+Here's how those egg prices were found.
+
+21
+00:00:46,073 --> 00:00:51,833
+Consumer Reports and Groundwork Collaborative, with More Perfect Union, recruited four hundred
+
+22
+00:00:51,833 --> 00:00:53,549
+and thirty-seven volunteers.
+
+23
+00:00:53,854 --> 00:00:58,137
+In September twenty twenty-five, they loaded the same basket, at the same
+
+24
+00:00:58,137 --> 00:01:01,950
+store, at the same moment, and wrote down what they were charged.
+
+25
+00:01:02,244 --> 00:01:05,774
+Seventy-four percent of the items showed more than one price.
+
+26
+00:01:06,224 --> 00:01:10,242
+For those items, the gap between the lowest and highest price averaged
+
+27
+00:01:10,242 --> 00:01:11,218
+thirteen percent.
+
+28
+00:01:11,451 --> 00:01:13,055
+The biggest gap was twenty-three.
+
+29
+00:01:13,364 --> 00:01:14,905
+Whole baskets moved too.
+
+30
+00:01:15,143 --> 00:01:19,091
+At one Seattle Safeway, the same basket cost a hundred and fourteen
+
+31
+00:01:19,091 --> 00:01:24,514
+thirty-four, a hundred and nineteen eighty-five, or a hundred and twenty-three ninety-three.
+
+32
+00:01:24,847 --> 00:01:27,390
+That works out to about seven percent per basket.
+
+33
+00:01:27,694 --> 00:01:32,025
+The researchers applied it to Instacart's own estimate of what a family
+
+34
+00:01:32,025 --> 00:01:34,343
+of four spends on groceries in a year.
+
+35
+00:01:34,709 --> 00:01:36,673
+Roughly twelve hundred dollars a year.
+
+36
+00:01:37,058 --> 00:01:39,677
+That's a projection, not anyone's actual bill.
+
+37
+00:01:39,923 --> 00:01:42,254
+And here's the part most of the headlines skipped.
+
+38
+00:01:42,754 --> 00:01:46,773
+Instacart said the tests were randomized, and that they don't use any
+
+39
+00:01:46,773 --> 00:01:48,463
+personal or demographic data.
+
+40
+00:01:48,728 --> 00:01:53,080
+The report itself found differences tied to demographics were small, and not
+
+41
+00:01:53,080 --> 00:01:54,512
+statistically meaningful.
+
+42
+00:01:54,810 --> 00:01:57,248
+So this wasn't a price built from your profile.
+
+43
+00:01:57,593 --> 00:02:01,183
+It was a price experiment, and the shoppers were the test subjects.
+
+44
+00:02:01,593 --> 00:02:03,623
+Nobody told them which group they were in.
+
+45
+00:02:04,001 --> 00:02:08,574
+The tool behind it came from Eversight, a pricing company Instacart bought
+
+46
+00:02:08,574 --> 00:02:09,871
+in twenty twenty-two.
+
+47
+00:02:10,207 --> 00:02:13,902
+It tells retailers it can lift sales by one to three percent,
+
+48
+00:02:13,902 --> 00:02:15,537
+and margins by two to five.
+
+49
+00:02:15,937 --> 00:02:19,171
+In December, Instacart ended those item price tests.
+
+50
+00:02:19,471 --> 00:02:21,339
+But the question they raised didn't end.
+
+51
+00:02:21,754 --> 00:02:24,653
+If prices can be tested on you, could they be built for
+
+52
+00:02:24,653 --> 00:02:24,863
+you?
+
+53
+00:02:25,463 --> 00:02:30,121
+That's the question the FTC asked eight companies that sell pricing tools
+
+54
+00:02:30,121 --> 00:02:32,418
+to retailers, in twenty twenty-four.
+
+55
+00:02:32,878 --> 00:02:37,457
+In January twenty twenty-five, FTC staff published early findings.
+
+56
+00:02:37,686 --> 00:02:41,511
+As the FTC's chair put it, the data ranged from a person's
+
+57
+00:02:41,511 --> 00:02:46,587
+location and demographics, quote, down to their mouse movements on a webpage.
+
+58
+00:02:47,057 --> 00:02:51,041
+Even the products you leave unpurchased in an online shopping cart can
+
+59
+00:02:51,041 --> 00:02:51,668
+be tracked.
+
+60
+00:02:52,008 --> 00:02:56,379
+And those intermediaries worked with at least two hundred and fifty client
+
+61
+00:02:56,379 --> 00:02:59,568
+businesses, from grocery stores to clothing retailers.
+
+62
+00:02:59,939 --> 00:03:02,020
+And here's why this is so hard to catch.
+
+63
+00:03:02,412 --> 00:03:04,746
+Online, you only ever see your own price.
+
+64
+00:03:05,024 --> 00:03:08,459
+There's no shelf next to you showing what the person behind you
+
+65
+00:03:08,459 --> 00:03:09,058
+was quoted.
+
+66
+00:03:09,418 --> 00:03:11,801
+The FTC gave one hypothetical.
+
+67
+00:03:12,050 --> 00:03:16,203
+Someone profiled as a new parent could be shown higher priced baby
+
+68
+00:03:16,203 --> 00:03:18,846
+thermometers on the first page of results.
+
+69
+00:03:19,320 --> 00:03:20,549
+Notice what that is.
+
+70
+00:03:20,792 --> 00:03:23,292
+Not a different price for the same thermometer.
+
+71
+00:03:23,574 --> 00:03:24,546
+A different shelf.
+
+72
+00:03:24,930 --> 00:03:28,459
+And that difference, the price versus the placement, is where most of
+
+73
+00:03:28,459 --> 00:03:29,483
+the myths come from.
+
+74
+00:03:30,081 --> 00:03:30,832
+Myth one.
+
+75
+00:03:31,090 --> 00:03:32,397
+Mac users pay more.
+
+76
+00:03:32,734 --> 00:03:37,621
+What actually happened: in twenty twelve, the Wall Street Journal reported that
+
+77
+00:03:37,621 --> 00:03:41,888
+Orbitz was showing Mac users pricier hotels higher up in the results.
+
+78
+00:03:42,201 --> 00:03:45,282
+Same hotels, same prices, for anyone who looked.
+
+79
+00:03:45,629 --> 00:03:47,686
+That's steering, not a personal price.
+
+80
+00:03:47,980 --> 00:03:49,049
+Still worth knowing.
+
+81
+00:03:49,378 --> 00:03:51,055
+Your first page isn't neutral.
+
+82
+00:03:51,373 --> 00:03:52,132
+Myth two.
+
+83
+00:03:52,365 --> 00:03:54,983
+A low phone battery raises your ride price.
+
+84
+00:03:55,215 --> 00:03:59,735
+In twenty sixteen, Uber's head of economic research said people with low
+
+85
+00:03:59,735 --> 00:04:04,193
+battery are more willing to accept surge pricing, and that Uber doesn't
+
+86
+00:04:04,193 --> 00:04:05,638
+use that to set prices.
+
+87
+00:04:05,967 --> 00:04:07,548
+Now, a documented one.
+
+88
+00:04:07,808 --> 00:04:12,206
+In twenty nineteen, a TV station in Minneapolis, KARE 11, found that
+
+89
+00:04:12,206 --> 00:04:16,992
+Target's app showed lower prices outside the store, and switched to higher
+
+90
+00:04:16,992 --> 00:04:20,355
+in-store prices once the phone was inside the store.
+
+91
+00:04:20,687 --> 00:04:24,584
+Ten items they checked were two hundred and sixty-two dollars cheaper in
+
+92
+00:04:24,584 --> 00:04:26,425
+the parking lot than in the store.
+
+93
+00:04:26,781 --> 00:04:30,730
+Target said it showed in-store prices in stores, and it added labels
+
+94
+00:04:30,730 --> 00:04:32,356
+saying which price is which.
+
+95
+00:04:32,744 --> 00:04:33,936
+Documented, again.
+
+96
+00:04:34,241 --> 00:04:40,338
+In twenty fourteen, Northeastern University researchers tested sixteen big shopping and travel
+
+97
+00:04:40,338 --> 00:04:44,620
+sites, and found price steering or discrimination on nine of them.
+
+98
+00:04:45,029 --> 00:04:45,900
+And airlines?
+
+99
+00:04:46,303 --> 00:04:50,876
+In twenty twenty-five, Delta said a company called Fetcherr was helping set
+
+100
+00:04:50,876 --> 00:04:54,106
+fares on about three percent of its domestic network.
+
+101
+00:04:54,444 --> 00:04:56,832
+Senators asked if that meant personal fares.
+
+102
+00:04:57,143 --> 00:05:01,266
+Delta said it has no plans to set individual fares from personal
+
+103
+00:05:01,266 --> 00:05:01,588
+data.
+
+104
+00:05:01,925 --> 00:05:03,562
+So here's the honest scoreboard.
+
+105
+00:05:03,841 --> 00:05:07,462
+A price built from your personal profile is rare, and hard to
+
+106
+00:05:07,462 --> 00:05:07,818
+prove.
+
+107
+00:05:08,197 --> 00:05:11,760
+Prices that change with where you are, what device you're on, and
+
+108
+00:05:11,760 --> 00:05:13,459
+which test group you landed in?
+
+109
+00:05:13,939 --> 00:05:15,221
+Those are documented.
+
+110
+00:05:15,822 --> 00:05:19,763
+Which is why the FTC document from August nineteenth matters.
+
+111
+00:05:20,032 --> 00:05:24,233
+It's a proposed enforcement policy statement on personalized pricing.
+
+112
+00:05:24,605 --> 00:05:26,408
+It doesn't ban personal prices.
+
+113
+00:05:26,744 --> 00:05:27,330
+Quote.
+
+114
+00:05:27,775 --> 00:05:32,775
+Congress has not given the Commission the authority to prohibit personalized pricing
+
+115
+00:05:32,775 --> 00:05:33,311
+outright.
+
+116
+00:05:33,672 --> 00:05:37,204
+But where you'd reasonably expect one price for everyone, it says the
+
+117
+00:05:37,204 --> 00:05:39,047
+seller should tell you three things.
+
+118
+00:05:39,442 --> 00:05:41,153
+That the price is personalized.
+
+119
+00:05:41,519 --> 00:05:42,606
+The basis for it.
+
+120
+00:05:42,883 --> 00:05:44,340
+And the type of data used.
+
+121
+00:05:44,744 --> 00:05:48,333
+Skip that, and the FTC says it's likely to be an unfair
+
+122
+00:05:48,333 --> 00:05:49,769
+or deceptive practice.
+
+123
+00:05:50,259 --> 00:05:51,704
+Then come the examples.
+
+124
+00:05:52,120 --> 00:05:56,428
+A grocery chain charging more for milk because data shows several children
+
+125
+00:05:56,428 --> 00:05:57,710
+live in the household.
+
+126
+00:05:57,953 --> 00:06:02,449
+A rideshare app charging more because you haven't installed its competitors' apps.
+
+127
+00:06:02,880 --> 00:06:04,085
+And the one I promised.
+
+128
+00:06:04,388 --> 00:06:08,254
+A hotel charging a higher price because data leads it to believe
+
+129
+00:06:08,254 --> 00:06:12,784
+you're traveling for a funeral, or some other can't-miss personal business.
+
+130
+00:06:13,384 --> 00:06:16,959
+That's the whole logic of a personal price, in one sentence.
+
+131
+00:06:17,331 --> 00:06:18,567
+It doesn't price the room.
+
+132
+00:06:18,817 --> 00:06:20,860
+It prices how badly you need the room.
+
+133
+00:06:21,360 --> 00:06:22,580
+It's still a proposal.
+
+134
+00:06:22,896 --> 00:06:25,014
+Comments closed on September twenty-fifth.
+
+135
+00:06:25,242 --> 00:06:28,961
+And while Washington writes guidance, states have already written laws.
+
+136
+00:06:29,389 --> 00:06:33,981
+Since November twenty twenty-five, New York requires a line next to any
+
+137
+00:06:33,981 --> 00:06:36,762
+algorithmic price built from personal data.
+
+138
+00:06:37,115 --> 00:06:38,286
+In capital letters.
+
+139
+00:06:38,577 --> 00:06:42,527
+Fines run up to a thousand dollars per violation, and a federal
+
+140
+00:06:42,527 --> 00:06:45,911
+judge turned down retailers' attempt to block the law.
+
+141
+00:06:46,389 --> 00:06:51,886
+And this year, Connecticut, Maryland and New Jersey passed laws restricting surveillance
+
+142
+00:06:51,886 --> 00:06:54,884
+pricing, mostly for groceries and food delivery.
+
+143
+00:06:55,257 --> 00:06:57,973
+At least eleven more states have bills on the table.
+
+144
+00:06:58,572 --> 00:06:59,897
+So what can you do today?
+
+145
+00:07:00,351 --> 00:07:02,043
+Four checks, about two minutes.
+
+146
+00:07:02,437 --> 00:07:02,923
+One.
+
+147
+00:07:03,205 --> 00:07:04,308
+Compare logged out.
+
+148
+00:07:04,668 --> 00:07:08,433
+Open the same item signed out, in a private window, or on
+
+149
+00:07:08,433 --> 00:07:09,489
+a second device.
+
+150
+00:07:09,828 --> 00:07:11,137
+A gap tells you something.
+
+151
+00:07:11,610 --> 00:07:15,498
+Private mode won't hide your location, so if it matters, compare at
+
+152
+00:07:15,498 --> 00:07:16,600
+home and on the go.
+
+153
+00:07:17,057 --> 00:07:17,608
+Two.
+
+154
+00:07:17,944 --> 00:07:19,620
+Read the label next to the price.
+
+155
+00:07:19,931 --> 00:07:21,460
+Online versus in-store.
+
+156
+00:07:21,848 --> 00:07:24,588
+And in New York, look for that algorithm sentence.
+
+157
+00:07:24,954 --> 00:07:25,545
+Three.
+
+158
+00:07:25,954 --> 00:07:28,192
+Compare the final total, not the tag.
+
+159
+00:07:28,505 --> 00:07:33,328
+In the Instacart study, some sale prices matched, but the crossed-out original
+
+160
+00:07:33,328 --> 00:07:34,193
+prices didn't.
+
+161
+00:07:34,562 --> 00:07:35,141
+Four.
+
+162
+00:07:35,494 --> 00:07:36,783
+Cut what the app knows.
+
+163
+00:07:37,016 --> 00:07:41,185
+Set shopping apps to use location only while open, and use the
+
+164
+00:07:41,185 --> 00:07:44,278
+opt out links many state privacy laws require.
+
+165
+00:07:44,581 --> 00:07:48,491
+Rules here are still changing, so check the sources in the description.
+
+166
+00:07:48,852 --> 00:07:50,552
+This isn't financial advice.
+
+167
+00:07:51,153 --> 00:07:53,908
+A price used to be a number on a shelf, the same
+
+168
+00:07:53,908 --> 00:07:55,286
+for whoever walked past.
+
+169
+00:07:55,636 --> 00:07:57,575
+Online, it can be a guess about you.
+
+170
+00:07:57,994 --> 00:08:00,298
+The new rules are starting to say one thing.
+
+171
+00:08:00,682 --> 00:08:02,028
+If you're guessing, say so.
+
+172
+00:08:02,321 --> 00:08:05,664
+Have you ever seen two different prices for the same thing, on
+
+173
+00:08:05,664 --> 00:08:06,258
+two phones?
+
+174
+00:08:06,655 --> 00:08:08,222
+Tell me what it was in the comments.
+
+175
+00:08:08,516 --> 00:08:11,505
+And if you want to know which rule is deciding your next
+
+176
+00:08:11,505 --> 00:08:13,266
+price, subscribe to Hidden Layer.

@@ -1,0 +1,52 @@
+TITLE:
+Same Eggs, 5 Prices: How Apps Decide What You Pay
+DESCRIPTION:
+Same eggs, same store, same app: shoppers in one test saw five different prices, from $3.99 to $4.79. Here's what surveillance pricing really is.
+You'll learn what's documented and what's a myth, what the FTC's August 2026 proposal says sellers must disclose, and 4 checks to see whether the price you're shown is the price.
+
+What's inside: the Instacart price-test study (437 volunteers, 74% of items with more than one price, ~$1,200/year projected gap), what data pricing tools can use according to the FTC's 2025 staff findings, four claims checked (Mac users, low battery, store apps, airline AI), the FTC's proposed personalized-pricing policy (19 Aug 2026), New York's disclosure law and 2026 state laws.
+
+SOURCES (read 12 Nov 2026)
+- Groundwork Collaborative, Consumer Reports, More Perfect Union - "Same Cart, Different Price" (Dec 2025): https://groundworkcollaborative.org/wp-content/uploads/2025/12/Same-Cart-Different-Price.pdf
+- Instacart ends item price tests (Reuters via The Packer, Dec 2025): https://www.thepacker.com/news/instacart-ends-ai-driven-price-experiments-after-criticism
+- TechSpot on the Instacart study: https://www.techspot.com/news/110569-instacart-algorithm-quietly-charging-people-different-prices-same.html
+- FTC press release, surveillance pricing study initial findings (17 Jan 2025): https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-surveillance-pricing-study-indicates-wide-range-personal-data-used-set-individualized-consumer
+- FTC, Proposed Enforcement Policy Statement Regarding Personalized Pricing (19 Aug 2026): https://www.ftc.gov/system/files/ftc_gov/pdf/p034101-ftc-enforcement-policy-statement-re-personalized-pricing-proposed-for-public-comment.pdf
+- FTC extends comment period to 25 Sep 2026 (3 Sep 2026): https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-extends-public-comment-proposed-policy-statement-regarding-personalized-pricing
+- Consumer Finance Monitor on the FTC proposal and 2026 state laws (20 Aug 2026): https://www.consumerfinancemonitor.com/2026/08/20/ftc-proposes-enforcement-policy-on-personalized-pricing-as-states-and-congress-move-toward-broader-restrictions/
+- Duane Morris, New York Algorithmic Pricing Disclosure Act (12 Mar 2026): https://www.duanemorris.com/alerts/new_yorks_algorithmic_pricing_disclosure_act_is_in_effect_0326.html
+- Court rejects retailers' bid to block NY law (Oct 2025): https://www.retail-insight-network.com/newsletters/court-rejects-retailers-bid-to-block-new-york-surveillance-pricing-law/
+- KARE 11, Target app pricing investigation (2019): https://kare11.com/article/money/consumer/target-changes-app-after-kare-11-investigation/89-40ee0e76-9a0f-425d-93b0-b0eb89150f6c
+- Northeastern University, price steering study (2014): https://news.northeastern.edu/2014/10/23/ecommerce-study
+- Orbitz and Mac users (WSJ report, 2012, via CBS News): https://www.cbsnews.com/news/report-orbitz-steers-mac-users-to-pricier-hotels
+- Uber and low battery (2016, Engadget): https://www.engadget.com/2016-05-20-uber-surge-pricing-battery-life.html
+- Delta and AI pricing (TechSpot, 2025): https://www.techspot.com/news/108916-delta-denies-using-ai-set-personalized-ticket-prices.html
+
+Myths are labelled as myths; "documented" means a primary or reputable published source reports it. The $1,200 figure is the study's own projection, not a measured bill.
+
+PHOTO CREDITS: public-domain / CC0 photos via Flickr (USDAgov, The Wright State Guardian, Image Catalog, Daquella manera), Wikimedia Commons (JohnLEE Brothers), WordPress Photos (Alina Kakshapati, Nilo Velez), rawpixel (Library of Congress). "Akupunktio" by yourbartender, CC BY 2.0. "Cabinet War Rooms" by avinashkunnath, CC BY 2.0. No logos or app screenshots; on-screen app and document layouts are schematic recreations.
+
+CHAPTERS
+0:00 Same eggs, 5 prices
+0:43 The egg test
+2:25 What pricing tools can see
+3:30 Myth or documented?
+5:15 The FTC draws a line
+6:58 4 checks before you pay
+7:51 Recap
+
+Voiceover is AI-generated. Not sponsored. This isn't financial advice.
+
+#SurveillancePricing #DynamicPricing #ConsumerRights
+CHAPTERS:
+0:00 Same eggs, 5 prices
+0:43 The egg test
+2:25 What pricing tools can see
+3:30 Myth or documented?
+5:15 The FTC draws a line
+6:58 4 checks before you pay
+7:51 Recap
+TAGS:
+Hidden Layer, surveillance pricing, personalized pricing, dynamic pricing, Instacart prices, same cart different price, FTC personalized pricing, algorithmic pricing, New York algorithmic pricing disclosure act, why do prices change online, price discrimination, consumer rights, online shopping prices, grocery prices
+UPLOAD NOTES:
+Series: The Algorithm (EP. 04). Category Science & Technology (or Education), not made for kids, altered/synthetic content: no (AI voice only, disclosed). Thumbnail: thumb_B.jpg. Pinned comment: "Have you ever seen two different prices for the same thing on two phones? What was it?"
