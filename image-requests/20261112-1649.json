@@ -1,0 +1,17 @@
+{
+ "id": "20261112-1649",
+ "items": [
+  {
+   "key": "receipt",
+   "query": "paper receipt on counter",
+   "n": 2,
+   "orientation": "tall"
+  },
+  {
+   "key": "coffee",
+   "query": "coffee cup on cafe counter",
+   "n": 2,
+   "orientation": "tall"
+  }
+ ]
+}
