@@ -1,0 +1,53 @@
+{
+ "id": "20261112-hl-price",
+ "items": [
+  {
+   "key": "cart",
+   "query": "shopping cart supermarket",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "aisle",
+   "query": "grocery store aisle",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "eggs",
+   "query": "carton of eggs",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "receipt",
+   "query": "grocery receipt",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "phone",
+   "query": "smartphone in hand",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "mouse",
+   "query": "computer mouse on desk",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "parking",
+   "query": "parking lot cars",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "milk",
+   "query": "milk bottles",
+   "n": 3,
+   "orientation": "wide"
+  }
+ ]
+}

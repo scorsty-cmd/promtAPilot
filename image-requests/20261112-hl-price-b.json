@@ -1,0 +1,53 @@
+{
+ "id": "20261112-hl-price-b",
+ "items": [
+  {
+   "key": "hotel",
+   "query": "hotel room bed",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "airport",
+   "query": "airport departure board",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "servers",
+   "query": "server room",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "delivery",
+   "query": "food delivery bag",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "pricetag",
+   "query": "price tag",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "checkout",
+   "query": "supermarket checkout",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "map",
+   "query": "paper map with pins",
+   "n": 3,
+   "orientation": "wide"
+  },
+  {
+   "key": "cereal",
+   "query": "breakfast cereal bowl",
+   "n": 3,
+   "orientation": "wide"
+  }
+ ]
+}
