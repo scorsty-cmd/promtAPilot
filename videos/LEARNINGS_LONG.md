@@ -38,3 +38,4 @@
 - AUDIO FIX: AAC 192k overshot the -1.2 dBTP wav to +3.0 dBTP. Encode audio with `alimiter=limit=0.63:attack=0.5:release=40` + AAC 256k -> -14.3 LUFS / -2.7 dBTP. Do this in every mux.
 - Renderer v4 = videos/renderer/v4 (cat render3_head.py render3_mid.py render3_tail.py > render3.py; mid holds the ink palette + new beats + CAPFIX). 2 halves in parallel ~15 fps each = 8:15 in ~13 min.
 - Photos: phone/airport/parking queries returned logos, UI or faces -> avoid those queries; eggs/servers/hotel/price-tag/pins worked.
+- 12 Nov upload FAILED: YOUTUBE_TOKEN_JSON_HIDDEN_LAYER invalid_grant (expired/revoked) in run 43167215770; release created, queue branch kept for Re-run after the owner re-authorizes.
