@@ -191,3 +191,10 @@
 - Previous (FILE 023, 7 Nov): 49 plays, 12.0% watched, 78.3% skip, 0 saves/shares. FILE 020 (25.4%/60.3%) and FILE 015 (32.8%/53.1%) remain the best; money Reels not clearly better yet.
 - Photos skipped (workflow junk for days). vidIQ balance 2: no paid tools. Not Sunday. Kit is run from /tmp/claude-0/kit; the working clone is /home/claude/promtapilot (no add_repo needed).
 - YouTube Short: queue run https://github.com/scorsty-cmd/promtAPilot/actions/runs/43033994644 (tag hiddenlayer-reel-2026-11-11-amazon-prime-refunds); queue_publish --wait returned early, result checked via Actions API (see email).
+
+### 2026-11-12 16:49 - FILE 025 - MONEY ANGLE #8: overdraft fees, $4 coffee -> $39 (example), NCLC $12B 2025, CFPB opt-in (lavender/lime dark DNA, 28.9 s) - https://www.instagram.com/reel/DfpO2LnEQsQ/
+- File: HL_Reel_20261112_1649_overdraft-coffee.mp4 - Renderer reels/renderer/reel2_v21.py (+ reel_audio_v7.py), scenes_FILE025.py, caption_FILE025.txt.
+- New vs FILE 024: `ledger` beat (bank statement: coffee -$4.00 turns balance negative, OVERDRAFT FEE row slams in with shake, COFFEE COST counts 4 -> 39, EXAMPLE label); hook = small everyday item + big consequence number; real CC BY coffee photos behind hook and checklist (photos workflow delivered this time, ~8 min); tighter script (28.9 s, speed 1.12).
+- Sources: NCLC release 3 Jun 2026 ($12B+ overdraft/NSF 2025, 20 largest banks; 2024 CFPB rule reversed by Congress 2025), CFPB newsroom 17 Sep 2024 (opt-in quote), Banking Dive 12 Dec 2024 (typical ~$35). Read 12 Nov 2026.
+- Previous (FILE 024, 11 Nov): 54 plays, 20.1% watched, 74.5% skip, 0 saves/shares. Best recent: FILE 020 (25.4%/60.3%), FILE 015 (32.8%/53.1%). Stat chip labels must be short (value is right-aligned and overlaps long labels).
+- vidIQ balance not spent (0 credits). Not Sunday.
