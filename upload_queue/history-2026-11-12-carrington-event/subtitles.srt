@@ -1,0 +1,624 @@
+1
+00:00:00,500 --> 00:00:01,601
+Ow! It bit me!
+
+2
+00:00:01,921 --> 00:00:02,595
+Boston.
+
+3
+00:00:02,595 --> 00:00:06,768
+The small hours of the 2nd of September, 1859.
+
+4
+00:00:06,933 --> 00:00:09,520
+Your telegraph is throwing sparks.
+
+5
+00:00:09,520 --> 00:00:13,309
+And outside the window, the sky has turned the colour of blood.
+
+6
+00:00:13,629 --> 00:00:15,481
+Fire! Half the city's on fire!
+
+7
+00:00:15,667 --> 00:00:18,430
+But there is no smoke. No flames.
+
+8
+00:00:18,430 --> 00:00:21,993
+The whole sky is glowing, from one horizon to the other.
+
+9
+00:00:22,167 --> 00:00:26,855
+Before morning, your wire will spit fire, shock the men who touch it,
+
+10
+00:00:26,855 --> 00:00:29,545
+and then do something nobody thought possible.
+
+11
+00:00:29,865 --> 00:00:33,355
+It will carry messages with the battery unplugged.
+
+12
+00:00:33,355 --> 00:00:34,935
+Powered by the sky.
+
+13
+00:00:39,467 --> 00:00:42,380
+You are Ned Barlow, 17 years old,
+
+14
+00:00:42,380 --> 00:00:46,307
+the junior night operator at a telegraph office in Boston.
+
+15
+00:00:46,627 --> 00:00:48,290
+Ned is invented.
+
+16
+00:00:48,290 --> 00:00:53,505
+But almost everything that happens to him tonight happened to real operators,
+
+17
+00:00:53,505 --> 00:00:54,822
+all over the world.
+
+18
+00:00:55,000 --> 00:00:59,670
+In 1859, the telegraph is the fastest thing on Earth.
+
+19
+00:00:59,670 --> 00:01:05,510
+News that once took days on horseback now crosses hundreds of miles in minutes,
+
+20
+00:01:05,510 --> 00:01:09,637
+as pulses of electric current on a single iron wire.
+
+21
+00:01:09,833 --> 00:01:15,665
+A row of glass jars, a battery of acid and metal, pushes current down the line.
+
+22
+00:01:15,665 --> 00:01:16,430
+You tap the key.
+
+23
+00:01:16,430 --> 00:01:18,535
+Far away, a sounder clicks.
+
+24
+00:01:18,535 --> 00:01:20,074
+Dots, and dashes.
+
+25
+00:01:20,267 --> 00:01:23,080
+A good operator doesn't even need to look.
+
+26
+00:01:23,080 --> 00:01:27,222
+You read the clicks by ear, the way other people hear words.
+
+27
+00:01:27,542 --> 00:01:29,934
+Barlow can hear a typo from across the room.
+
+28
+00:01:30,254 --> 00:01:31,465
+Only yours, sir.
+
+29
+00:01:31,633 --> 00:01:34,822
+Your boss is the night manager, Mister Pike.
+
+30
+00:01:35,142 --> 00:01:37,162
+Barlow! The Portland line. Anything?
+
+31
+00:01:37,482 --> 00:01:38,751
+Just crackling, sir.
+
+32
+00:01:39,071 --> 00:01:40,250
+Well, make it stop.
+
+33
+00:01:40,433 --> 00:01:42,355
+It has been a strange week.
+
+34
+00:01:42,355 --> 00:01:47,140
+Four nights ago, the northern lights came much further south than usual,
+
+35
+00:01:47,140 --> 00:01:51,313
+and telegraph lines across the country went haywire for hours.
+
+36
+00:01:51,633 --> 00:01:53,583
+Then things calmed down.
+
+37
+00:01:53,767 --> 00:01:55,855
+Nothing ever happens on the night wire.
+
+38
+00:01:57,033 --> 00:02:01,480
+But the trouble had started the morning before, 3,000 miles away,
+
+39
+00:02:01,480 --> 00:02:05,505
+at a private observatory in Redhill, just south of London.
+
+40
+00:02:05,700 --> 00:02:08,785
+Richard Carrington is an amateur astronomer,
+
+41
+00:02:08,785 --> 00:02:11,865
+and every clear morning he draws sunspots.
+
+42
+00:02:11,865 --> 00:02:14,285
+He never looks at the sun directly.
+
+43
+00:02:14,285 --> 00:02:17,766
+His telescope throws its image onto a white screen.
+
+44
+00:02:17,933 --> 00:02:20,985
+Just before noon on the 1st of September,
+
+45
+00:02:20,985 --> 00:02:25,581
+two beads of blinding white light burst out of a group of sunspots.
+
+46
+00:02:26,567 --> 00:02:29,850
+He runs off to fetch someone to witness it.
+
+47
+00:02:29,850 --> 00:02:31,465
+He is back within 60 seconds.
+
+48
+00:02:31,465 --> 00:02:33,920
+By then, it is already fading.
+
+49
+00:02:33,920 --> 00:02:36,400
+In about 5 minutes, it is gone.
+
+50
+00:02:36,567 --> 00:02:41,925
+Across London, another observer, Richard Hodgson, saw the same flash.
+
+51
+00:02:41,925 --> 00:02:46,559
+And at the Kew Observatory, the magnetic instruments gave a sudden jump.
+
+52
+00:02:46,733 --> 00:02:51,640
+Both men wrote up what they had seen for the Royal Astronomical Society.
+
+53
+00:02:51,640 --> 00:02:54,750
+Their reports were printed side by side.
+
+54
+00:02:54,750 --> 00:02:58,396
+It was the first solar flare anyone had ever recorded.
+
+55
+00:02:58,567 --> 00:03:04,530
+Nobody knew it yet, but the sun had thrown a vast cloud of charged gas into space,
+
+56
+00:03:04,530 --> 00:03:05,820
+straight at the Earth.
+
+57
+00:03:06,140 --> 00:03:10,500
+A cloud like that usually takes days to arrive.
+
+58
+00:03:10,500 --> 00:03:15,973
+This one crossed 150 million kilometres in about 17½ hours.
+
+59
+00:03:16,167 --> 00:03:19,229
+And late that night, in Boston, it arrives.
+
+60
+00:03:19,400 --> 00:03:21,011
+Fire! Somebody ring the bells!
+
+61
+00:03:21,331 --> 00:03:25,745
+Many Bostonians first thought the red sky was a great fire.
+
+62
+00:03:25,745 --> 00:03:31,394
+Then the red turned to green, and spires of light shot up toward the top of the sky.
+
+63
+00:03:31,567 --> 00:03:36,589
+People pour into the streets in their nightclothes, pointing, whispering, praying.
+
+64
+00:03:36,767 --> 00:03:38,354
+Ned, is it the end of the world?
+
+65
+00:03:38,674 --> 00:03:40,269
+I don't think so, Mrs Kane.
+
+66
+00:03:40,669 --> 00:03:41,733
+Probably not.
+
+67
+00:03:41,900 --> 00:03:43,922
+Barlow. I can read the shipping news.
+
+68
+00:03:44,242 --> 00:03:47,395
+The light is so strong that in the northeast,
+
+69
+00:03:47,395 --> 00:03:50,365
+people said you could read a newspaper by it.
+
+70
+00:03:50,365 --> 00:03:51,778
+In the middle of the night.
+
+71
+00:03:51,967 --> 00:03:57,039
+Far to the west, in the Rocky Mountains, gold miners woke up in the glow.
+
+72
+00:03:57,359 --> 00:03:58,582
+Up, boys! It's morning!
+
+73
+00:03:58,902 --> 00:04:00,971
+And they started cooking breakfast.
+
+74
+00:04:01,167 --> 00:04:05,640
+In South Carolina, bricklayers reportedly got up and went to work,
+
+75
+00:04:05,640 --> 00:04:08,330
+until they realised what time it was.
+
+76
+00:04:08,330 --> 00:04:12,077
+In Virginia, birds started singing at one in the morning.
+
+77
+00:04:12,267 --> 00:04:16,850
+The lights were seen as far south as Cuba, Jamaica and Hawaii.
+
+78
+00:04:16,850 --> 00:04:20,450
+There were even reports from Colombia, close to the equator.
+
+79
+00:04:20,633 --> 00:04:22,550
+But you don't get to watch for long.
+
+80
+00:04:22,550 --> 00:04:27,424
+Inside, your sounder is clattering all by itself, spelling nonsense.
+
+81
+00:04:27,600 --> 00:04:29,100
+It's sending by itself!
+
+82
+00:04:29,100 --> 00:04:30,648
+There's nobody on the other end!
+
+83
+00:04:30,833 --> 00:04:33,220
+Sparks jump from the instruments.
+
+84
+00:04:33,220 --> 00:04:34,815
+At some stations,
+
+85
+00:04:34,815 --> 00:04:39,183
+the chemically treated paper that records the messages caught fire.
+
+86
+00:04:39,367 --> 00:04:41,196
+Mister Pike! The line's alive!
+
+87
+00:04:41,516 --> 00:04:42,386
+Don't touch it!
+
+88
+00:04:42,886 --> 00:04:43,673
+Too late.
+
+89
+00:04:43,867 --> 00:04:44,940
+In Washington,
+
+90
+00:04:44,940 --> 00:04:48,255
+an operator named Frederick Royce was badly shocked
+
+91
+00:04:48,255 --> 00:04:51,285
+when his forehead brushed a ground wire.
+
+92
+00:04:51,285 --> 00:04:55,903
+A witness said an arc of fire jumped from his head to the equipment.
+
+93
+00:04:56,100 --> 00:05:01,014
+In Pittsburgh, the manager reported streams of fire pouring from the circuits.
+
+94
+00:05:01,200 --> 00:05:05,370
+Across North America and Europe, telegraph lines failed.
+
+95
+00:05:05,370 --> 00:05:09,517
+For hours, the fastest network on Earth was close to useless.
+
+96
+00:05:09,700 --> 00:05:16,290
+What nobody in 1859 can know: the storm is shaking the Earth's magnetic field,
+
+97
+00:05:16,290 --> 00:05:19,827
+and that drives electric currents into long wires.
+
+98
+00:05:20,147 --> 00:05:23,396
+Your line is pulling power straight out of the sky.
+
+99
+00:05:23,567 --> 00:05:25,820
+By the morning of the 2nd of September,
+
+100
+00:05:25,820 --> 00:05:30,205
+the Boston office still cannot send or receive properly.
+
+101
+00:05:30,205 --> 00:05:33,893
+The current on the line keeps swelling and fading on its own.
+
+102
+00:05:34,067 --> 00:05:35,902
+Sir, what if we take the battery off?
+
+103
+00:05:36,222 --> 00:05:37,537
+Then nothing will work.
+
+104
+00:05:37,857 --> 00:05:42,880
+Here is what the operators on the line between Boston and Portland, Maine,
+
+105
+00:05:42,880 --> 00:05:44,755
+actually did that morning.
+
+106
+00:05:44,755 --> 00:05:48,538
+These are their words, as a Boston newspaper printed them.
+
+107
+00:05:48,733 --> 00:05:52,042
+Please cut off your battery entirely from the line for 15 minutes.
+
+108
+00:05:52,362 --> 00:05:54,738
+Will do so. It is now disconnected.
+
+109
+00:05:54,933 --> 00:05:58,355
+Mine is disconnected, and we are working with the auroral current.
+
+110
+00:05:58,355 --> 00:05:59,831
+How do you receive my writing?
+
+111
+00:06:00,151 --> 00:06:01,935
+Better than with our batteries on.
+
+112
+00:06:01,935 --> 00:06:03,861
+Current comes and goes gradually.
+
+113
+00:06:04,633 --> 00:06:05,611
+Well. I'll be.
+
+114
+00:06:06,600 --> 00:06:09,982
+Suppose we work without batteries while we are affected by this trouble.
+
+115
+00:06:10,302 --> 00:06:12,585
+Very well. Shall I go ahead with business?
+
+116
+00:06:12,905 --> 00:06:14,060
+Yes. Go ahead.
+
+117
+00:06:14,233 --> 00:06:16,965
+And they did. For about two hours,
+
+118
+00:06:16,965 --> 00:06:21,382
+Boston and Portland traded messages powered by nothing but the storm.
+
+119
+00:06:21,567 --> 00:06:22,560
+The next day,
+
+120
+00:06:22,560 --> 00:06:25,275
+some lines were still being worked for a
+
+121
+00:06:25,275 --> 00:06:28,331
+while by what people called atmospheric current alone.
+
+122
+00:06:28,500 --> 00:06:28,900
+Barlow.
+
+123
+00:06:28,620 --> 00:06:31,142
+Not a word to head office that we unplugged it.
+
+124
+00:06:31,462 --> 00:06:32,277
+No, sir.
+
+125
+00:06:32,467 --> 00:06:37,085
+Carrington suspected that the flash he saw and the storm were connected.
+
+126
+00:06:37,085 --> 00:06:38,565
+But he was careful.
+
+127
+00:06:38,565 --> 00:06:41,600
+One swallow, he wrote, does not make a summer.
+
+128
+00:06:41,767 --> 00:06:47,655
+In America, the Yale professor Elias Loomis gathered reports from around the world,
+
+129
+00:06:47,655 --> 00:06:51,875
+and published them in nine articles over the next three years.
+
+130
+00:06:52,067 --> 00:06:54,920
+Today it is called the Carrington Event:
+
+131
+00:06:54,920 --> 00:06:59,241
+the most intense geomagnetic storm in recorded history.
+
+132
+00:06:59,433 --> 00:07:03,030
+What you saw that night was the storm hitting the air itself.
+
+133
+00:07:03,030 --> 00:07:07,890
+Charged particles slam into the upper atmosphere, and oxygen glows:
+
+134
+00:07:07,890 --> 00:07:10,855
+green lower down, deep red higher up.
+
+135
+00:07:10,855 --> 00:07:14,885
+In a storm this strong, the glow spreads far from the poles.
+
+136
+00:07:15,067 --> 00:07:21,185
+In 1859, the worst it could do was shock a few operators and burn some paper.
+
+137
+00:07:21,185 --> 00:07:24,305
+Today we run almost everything on wires.
+
+138
+00:07:24,305 --> 00:07:27,730
+Power grids. Satellites. Navigation.
+
+139
+00:07:27,730 --> 00:07:28,415
+The internet.
+
+140
+00:07:28,600 --> 00:07:34,150
+In July 2012, the sun threw out a storm thought to be of similar strength.
+
+141
+00:07:34,150 --> 00:07:36,939
+It missed the Earth by about 9 days.
+
+142
+00:07:37,133 --> 00:07:40,730
+And smaller storms have already done real damage.
+
+143
+00:07:40,730 --> 00:07:46,620
+In March 1989, one knocked out the power grid of Quebec, in Canada,
+
+144
+00:07:46,620 --> 00:07:50,922
+leaving about 6 million people in the dark for around 9 hours.
+
+145
+00:07:51,100 --> 00:07:58,075
+A 2013 study for the insurer Lloyd's of London estimated that a storm like
+
+146
+00:07:58,075 --> 00:08:05,709
+1859's could cost the United States alone between $600 billion and $2.6 trillion.
+
+147
+00:08:05,900 --> 00:08:07,050
+And in May 2024,
+
+148
+00:08:07,050 --> 00:08:12,297
+a far weaker storm brought the northern lights to skies far to the south,
+
+149
+00:08:12,297 --> 00:08:15,029
+where most people had never seen them.
+
+150
+00:08:15,200 --> 00:08:17,326
+And you? Your shift finally ends.
+
+151
+00:08:17,326 --> 00:08:20,548
+You walk home through streets still full of people
+
+152
+00:08:20,548 --> 00:08:23,383
+talking about the night the sky caught fire.
+
+153
+00:08:23,567 --> 00:08:24,885
+So, tell me.
+
+154
+00:08:24,885 --> 00:08:30,098
+If the sky turned red tonight, and every screen went dead, what would you do first?
+
+155
+00:08:30,418 --> 00:08:31,668
+Unplug the battery.
+
+156
+00:08:31,988 --> 00:08:32,834
+Make coffee.
+
