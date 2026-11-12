@@ -1,0 +1,35 @@
+{
+  "tag": "history-2026-11-12-carrington-event",
+  "release_name": "History Sourced: You're a Telegraph Operator in 1859. Then the Sky Catches Fire.",
+  "release_body": "Kanal: history\nSeri: You Were There – Bölüm 2\nKonu: Carrington Olayı 1859 (Güneş fırtınası; Boston'da genç bir telgraf memurunun gözünden)\nÖzet: 1859'da gökyüzü kızıla döner, telgraf telleri kıvılcım saçar ve Boston–Portland hattı pilsiz, sadece fırtınanın akımıyla çalışır.\n",
+  "created_at": "2026-11-12T08:06:38Z",
+  "files": [
+    {
+      "name": "YOUTUBE_METADATA.txt",
+      "size": 3759,
+      "sha256": "91e58178250c3dab365d9fe2cf2c4bdd032f7a4601c9f47cfa369ccfc90f14b3"
+    },
+    {
+      "name": "subtitles.srt",
+      "size": 12517,
+      "sha256": "8c5a4b5648ac9483597493eb6d57316c3ba18ed606ea7e89453cb1f53d19eb04"
+    },
+    {
+      "name": "thumb_B.jpg",
+      "size": 119728,
+      "sha256": "fd24e9cbeb08d78b9deb9964e757336faeb2b273ac883586d24c97fc870e39fd"
+    },
+    {
+      "name": "2026-11-12_carrington-event.mp4",
+      "size": 401065262,
+      "sha256": "c7663147875d4d6277289bc89a02ee92289e4a9640645d23ab7d47470eb64cdf",
+      "parts": [
+        "2026-11-12_carrington-event.mp4.part000",
+        "2026-11-12_carrington-event.mp4.part001",
+        "2026-11-12_carrington-event.mp4.part002",
+        "2026-11-12_carrington-event.mp4.part003",
+        "2026-11-12_carrington-event.mp4.part004"
+      ]
+    }
+  ]
+}
