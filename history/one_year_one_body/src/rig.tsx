@@ -11,7 +11,9 @@ export type Look = {
   belly?: number; // 0 slim .. 1 stout
   blush?: string;
   // v3 additions
-  cap?: 'coif' | 'baker' | 'tall' | 'felt' | 'souwester' | 'peaked' | 'knit'; capColor?: string;
+  cap?: 'coif' | 'baker' | 'tall' | 'felt' | 'souwester' | 'peaked' | 'knit' | 'visor' | 'nightcap'; capColor?: string;
+  // v5 additions
+  garters?: string; bowtie?: string; shawl?: string;
   // v4 additions
   sideburns?: string; monocle?: boolean; noStrap?: boolean; collar?: string; buttons?: string;
   skirt?: string; skirtShade?: string; // long skirt hides the legs (women)
@@ -324,6 +326,21 @@ export const Head: React.FC<{h: HeadPose; L: Look; frame: number}> = ({h, L, fra
           <path d="M-56 -60 Q-50 -128 4 -130 Q56 -128 58 -60 Q0 -48 -56 -60 Z" fill={L.capColor ?? '#3E3328'} />
         </g>
       )}
+      {L.cap === 'visor' && (
+        <g stroke={ink} strokeLinejoin="round">
+          {/* v5: telegrapher's green celluloid eyeshade — headband + translucent brim that tints the eyes */}
+          <path d={`M-74 -44 Q0 -64 76 -44 L74 -30 Q0 -50 -72 -30 Z`} fill="#1E3A2A" strokeWidth={4} />
+          <path d={`M${-70 + 34 * t} -42 Q${8 + 30 * t} -60 ${86 + 40 * t} -38 L${118 + 46 * t} -6 Q${30 + 34 * t} -26 ${-62 + 30 * t} -14 Z`} fill={L.capColor ?? '#2F8F5A'} fillOpacity={0.62} strokeWidth={4.5} />
+          <path d={`M${-50 + 32 * t} -24 Q${28 + 32 * t} -36 ${104 + 44 * t} -14`} stroke="#BFF2D2" strokeWidth={3} fill="none" opacity={0.55} />
+        </g>
+      )}
+      {L.cap === 'nightcap' && (
+        <g stroke={ink} strokeWidth={5} strokeLinejoin="round">
+          <path d={`M-74 -54 C-84 -120 -10 -146 30 -132 C70 -120 ${-110 + Math.sin(frame * 0.12) * 8} -170 ${-128 + Math.sin(frame * 0.12) * 10} -96 C-100 -110 -60 -80 76 -58 Q0 -44 -74 -54 Z`} fill={L.capColor ?? '#F1ECE2'} />
+          <path d="M-76 -60 Q0 -44 80 -62 L78 -46 Q0 -30 -74 -44 Z" fill="#E2D8C6" />
+          <circle cx={-128 + Math.sin(frame * 0.12) * 10} cy={-96} r={12} fill="#C9574A" />
+        </g>
+      )}
       {L.band && (
         <g>
           <path d="M-4 -90 C -78 -78, -96 60, 4 96" stroke={ink} strokeWidth={34} fill="none" strokeLinecap="round" />
@@ -402,6 +419,8 @@ export const Puppet: React.FC<{L: Look; p: Pose; propF?: React.ReactNode; propAn
             <path d={`M42 -128 L18 -128 L6 14 C ${46 + belly * 36} -10, ${48 + belly * 36} -80, 42 -128 Z`} />
           </g>
         )}
+        {L.shawl && <path d="M-46 -136 Q0 -116 50 -136 L54 -60 Q0 -30 -48 -60 Z" fill={L.shawl} stroke={ink} strokeWidth={5} strokeLinejoin="round" />}
+        {L.bowtie && <path d="M4 -132 l-18 -10 v20 Z M4 -132 l18 -10 v20 Z" fill={L.bowtie} stroke={ink} strokeWidth={3.5} strokeLinejoin="round" />}
         {L.collar && <path d="M-36 -140 L-2 -104 L-10 -150 Z M44 -140 L10 -104 L18 -150 Z" fill={L.collar} stroke={ink} strokeWidth={4} strokeLinejoin="round" />}
         {L.buttons && [0, 1, 2, 3].map((i) => <g key={i}><circle cx={-18} cy={-96 + i * 26} r={4.5} fill={L.buttons} stroke={ink} strokeWidth={2} /><circle cx={22 + belly * 12} cy={-96 + i * 26} r={4.5} fill={L.buttons} stroke={ink} strokeWidth={2} /></g>)}
         {L.vest && [0, 1, 2].map((i) => <circle key={i} cx={-4 + belly * 10 * Math.sin((i + 1) * 0.9)} cy={-100 + i * 32} r={4} fill="#C9A35A" stroke={ink} strokeWidth={2} />)}
@@ -417,6 +436,7 @@ export const Puppet: React.FC<{L: Look; p: Pose; propF?: React.ReactNode; propAn
         <Head h={p.head} L={L} frame={p.frame} />
       </g>
       <Seg p={[shF, [aF.ex, aF.ey], [aF.hx, aF.hy]]} w={24} c={L.shirt} ink={ink} />
+      {L.garters && (() => { const mx = shF[0] + (aF.ex - shF[0]) * 0.62, my = shF[1] + (aF.ey - shF[1]) * 0.62; const a = Math.atan2(aF.ey - shF[1], aF.ex - shF[0]); const px = -Math.sin(a) * 15, py = Math.cos(a) * 15; return <path d={`M${mx - px} ${my - py} L${mx + px} ${my + py}`} stroke={L.garters} strokeWidth={8} strokeLinecap="round" />; })()}
       <Hand x={aF.hx} y={aF.hy} ang={angF} skin={L.skin} ink={ink} grip={gripF} propAng={propAngF} pose={poseF}>{propF}</Hand>
     </g>
   );
@@ -654,4 +674,38 @@ export const SOPHIA: Look = {
 export const DOYLE: Look = {
   skin: '#F0DEC6', shade: '#DCC6A6', outline: '#2B1D14', shirt: '#E9E1D0', shirtShade: '#C7BCA6', vest: '#5A4632', breeches: '#3A3028', stocking: '#3A3028', shoe: '#120C08',
   hair: 'tuft', hairColor: '#5A3A22', moustache: '#5A3A22', belly: 0.3, collar: '#F4F0E8',
+};
+
+// ---------- v5 cast: You Were There Ep 2 (Carrington Event, 1859) ----------
+export const NED: Look = {
+  skin: '#F4E7D3', shade: '#E2CFB2', outline: '#2B1D14', shirt: '#EEE8DA', shirtShade: '#CBC2B0', vest: '#5A3A2A', breeches: '#3A3530', stocking: '#3A3530', shoe: '#17110C',
+  hair: 'tuft', hairColor: '#9A4E22', cap: 'visor', capColor: '#2F9A5E', blush: '#EC9A84', belly: 0, garters: '#B3362B', bowtie: '#2B1D14',
+};
+export const PIKE: Look = {
+  skin: '#EAD5B8', shade: '#D4BA96', outline: '#2B1D14', shirt: '#E9E1D0', shirtShade: '#C7BCA6', vest: '#2A3A4A', breeches: '#2A2622', stocking: '#2A2622', shoe: '#120C08',
+  hair: 'ring', hairColor: '#8C8478', sideburns: '#8C8478', belly: 1, buttons: '#C9A35A', wrinkles: true, blush: '#E2957C', garters: '#3A3A44',
+};
+export const PORTLAND: Look = {
+  skin: '#F0E0C8', shade: '#DCC6A6', outline: '#2B1D14', shirt: '#C8D4DE', shirtShade: '#9FB0BE', vest: '#3A3A44', breeches: '#2E2A28', stocking: '#2E2A28', shoe: '#120C08',
+  hair: 'ring', hairColor: '#5A3A22', moustache: '#5A3A22', specs: true, cap: 'visor', capColor: '#2F7A9A', belly: 0.4,
+};
+export const KANE: Look = {
+  skin: '#F2E4D0', shade: '#DFCAAE', outline: '#2B1D14', shirt: '#EDE6D6', shirtShade: '#C9C0AE', breeches: '#3A2C24', stocking: '#B9AE98', shoe: '#1E1510',
+  hair: 'none', hairColor: '#8A6A4A', cap: 'nightcap', capColor: '#F4EFE4', skirt: '#E8E0D0', skirtShade: '#BFB49C', shawl: '#8A3A3A', belly: 0.6, wrinkles: true, blush: '#E39A85',
+};
+export const MINER: Look = {
+  skin: '#E8D0B0', shade: '#D0B48E', outline: '#2B1D14', shirt: '#A8402E', shirtShade: '#7E2E20', breeches: '#3E4A5A', stocking: '#3E4A5A', shoe: '#2A1E14',
+  hair: 'none', hairColor: '#6B4528', beard: '#7A5232', cap: 'felt', capColor: '#5A4632', belly: 0.3, blush: '#E09A84',
+};
+export const CARRINGTON: Look = {
+  skin: '#F1E2CC', shade: '#DCC8A8', outline: '#2B1D14', shirt: '#EEE8DA', shirtShade: '#C7BCA6', vest: '#3A3028', breeches: '#2A2420', stocking: '#2A2420', shoe: '#120C08',
+  hair: 'tuft', hairColor: '#4A3020', sideburns: '#4A3020', gown: '#2A2420', collar: '#F4F0E8', bowtie: '#1A1410', belly: 0.2,
+};
+export const ROYCE: Look = {
+  skin: '#EEDCC2', shade: '#D8C2A0', outline: '#2B1D14', shirt: '#E6DCC6', shirtShade: '#BFB29A', vest: '#4E5A44', breeches: '#2E2A26', stocking: '#2E2A26', shoe: '#120C08',
+  hair: 'tuft', hairColor: '#2A1E16', moustache: '#2A1E16', belly: 0.3, garters: '#2A3A6A',
+};
+export const LOOMIS: Look = {
+  skin: '#F0E0CA', shade: '#DCC8AA', outline: '#2B1D14', shirt: '#E9E1D0', shirtShade: '#C7BCA6', vest: '#3A2E26', breeches: '#2A2420', stocking: '#2A2420', shoe: '#120C08',
+  hair: 'ring', hairColor: '#D8D2C6', specs: true, gown: '#1F1A18', wrinkles: true, belly: 0.4, collar: '#F4F0E8',
 };

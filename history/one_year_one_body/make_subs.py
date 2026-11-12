@@ -10,7 +10,12 @@ NUMS = {"sixteen sixty-five": "1665", "sixteen sixty-six": "1666", "sixty-eight 
         "eighteen seventy-two": "1872", "one thousand, seven hundred and one": "1,701", "one thousand seven hundred pounds": "£1,700",
         "three and a half feet": "3½ feet", "twenty twenty-six": "2026", "eighteen eighty-five": "1885", "two thousand and one": "2001",
         "eighteen nineties": "1890s", "twenty-fifth of November": "25th of November", "thirteenth of December": "13th of December",
-        "seventh of November": "7th of November", "December the fourth": "4 December"}
+        "seventh of November": "7th of November", "December the fourth": "4 December",
+        "eighteen fifty-nine": "1859", "seventeen years old": "17 years old", "three thousand miles": "3,000 miles", "second of September": "2nd of September",
+        "first of September": "1st of September", "sixty seconds": "60 seconds", "a hundred and fifty million kilometres": "150 million kilometres",
+        "seventeen and a half hours": "17½ hours", "twenty twelve": "2012", "nineteen eighty-nine": "1989", "six million": "6 million", "nine hours": "9 hours",
+        "twenty thirteen": "2013", "six hundred billion and two point six trillion dollars": "$600 billion and $2.6 trillion", "twenty twenty-four": "2024",
+        "fifteen minutes": "15 minutes", "nine days": "9 days", "five minutes": "5 minutes"}
 def display(s):
     for k in sorted(NUMS, key=len, reverse=True): s = re.sub(re.escape(k), NUMS[k], s, flags=re.I)
     return s

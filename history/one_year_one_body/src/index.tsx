@@ -8,6 +8,9 @@ import {Thumb} from './ep01/Thumb';
 import {Episode as Episode2} from './ep02/Episode';
 import TL2 from './ep02/timeline.json';
 import {Thumb2} from './ep02/Thumb';
+import {Episode as Episode3} from './ep03/Episode';
+import TL3 from './ep03/timeline.json';
+import {Thumb3} from './ep03/Thumb';
 
 const shots = (TL as any).shots as {ch: number; start: number; end: number}[];
 const chapters = Array.from(new Set(shots.map((s) => s.ch)));
@@ -25,6 +28,8 @@ const Root: React.FC = () => (
     })}
     <Composition id="Ep02" component={Episode2} durationInFrames={(TL2 as any).frames} fps={30} width={1920} height={1080} defaultProps={{offset: 0}} />
     {(['A', 'B', 'C'] as const).map((v) => <Composition key={`t2${v}`} id={`Thumb2${v}`} component={Thumb2} durationInFrames={1} fps={30} width={1280} height={720} defaultProps={{v}} />)}
+    <Composition id="Ep03" component={Episode3} durationInFrames={(TL3 as any).frames} fps={30} width={1920} height={1080} defaultProps={{offset: 0}} />
+    {(['A', 'B', 'C'] as const).map((v) => <Composition key={`t3${v}`} id={`Thumb3${v}`} component={Thumb3} durationInFrames={1} fps={30} width={1280} height={720} defaultProps={{v}} />)}
   </>
 );
 registerRoot(Root);
