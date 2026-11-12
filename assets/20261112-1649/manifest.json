@@ -1,0 +1,66 @@
+{
+ "id": "20261112-1649",
+ "images": [
+  {
+   "file": "receipt_0.jpg",
+   "key": "receipt",
+   "query": "paper receipt on counter",
+   "width": 637,
+   "height": 1800,
+   "title": "File:The New York Lottery Policy Game in the New York Herald of New York City, New York on November 23, 1869.png",
+   "creator": "AnonymousUnknown author",
+   "license": "pdm",
+   "license_version": "public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:The_New_York_Lottery_Policy_Game_in_the_New_York_Herald_of_New_York_City,_New_York_on_November_23,_1869.png",
+   "attribution_required": false,
+   "attribution": null
+  },
+  {
+   "file": "receipt_1.jpg",
+   "key": "receipt",
+   "query": "paper receipt on counter",
+   "width": 1280,
+   "height": 717,
+   "title": "File:Automated Postal Center and new Priority Mail box display (5115759015).jpg",
+   "creator": "tales of a wandering youkai",
+   "license": "by",
+   "license_version": "cc by 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Automated_Postal_Center_and_new_Priority_Mail_box_display_(5115759015).jpg",
+   "attribution_required": true,
+   "attribution": "File:Automated Postal Center and new Priority Mail box display (5115759015).jpg by tales of a wandering youkai (cc by 2.0), via Wikimedia Commons"
+  },
+  {
+   "file": "coffee_0.jpg",
+   "key": "coffee",
+   "query": "coffee cup on cafe counter",
+   "width": 819,
+   "height": 1024,
+   "title": "coffee beans clip art - Credit to https://coffee-rank.com",
+   "creator": "coffee-rank",
+   "license": "by",
+   "license_version": "2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source_page": "https://www.flickr.com/photos/189612330@N06/50520488997",
+   "attribution_required": true,
+   "attribution": "\"coffee beans clip art - Credit to https://coffee-rank.com\" by coffee-rank is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/."
+  },
+  {
+   "file": "coffee_1.jpg",
+   "key": "coffee",
+   "query": "coffee cup on cafe counter",
+   "width": 826,
+   "height": 1024,
+   "title": "stainless steel kettle near glass pitcher with coffee filter - Credit to https://myfriendscoffee.com/",
+   "creator": "John Beans",
+   "license": "by",
+   "license_version": "2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source_page": "https://www.flickr.com/photos/147592390@N06/46856131114",
+   "attribution_required": true,
+   "attribution": "\"stainless steel kettle near glass pitcher with coffee filter - Credit to https://myfriendscoffee.com/\" by John Beans is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/."
+  }
+ ],
+ "missing": []
+}
