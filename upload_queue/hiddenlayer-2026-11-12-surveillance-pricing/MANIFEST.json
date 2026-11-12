@@ -1,0 +1,40 @@
+{
+  "tag": "hiddenlayer-2026-11-12-surveillance-pricing",
+  "release_name": "Hidden Layer: Same Eggs, 5 Prices: How Apps Decide What You Pay",
+  "release_body": "Kanal: hiddenlayer\nSeri: The Algorithm (EP. 04)\nKonu: Surveillance pricing - kişiye/teste göre değişen fiyatlar (Instacart çalışması, FTC Ağustos 2026 önerisi, eyalet yasaları)\nÖzet: Aynı yumurta, aynı mağaza, 5 farklı fiyat: neyin belgelenmiş neyin efsane olduğu ve ödemeden önce 4 kontrol.\n",
+  "created_at": "2026-11-12T06:16:13Z",
+  "files": [
+    {
+      "name": "YOUTUBE_METADATA.txt",
+      "size": 4970,
+      "sha256": "3085dec3198bd0549e8a12f7ca8409f000efd4b9bcb7c9923dd9adf787a5657a"
+    },
+    {
+      "name": "subtitles.srt",
+      "size": 13834,
+      "sha256": "a4d15374e8a7b98d54a95e510368edf7136c65089ed9e7f83caf28747ca8c5a4"
+    },
+    {
+      "name": "thumb_B.jpg",
+      "size": 283261,
+      "sha256": "e516c41d7d02303dce4f30ae9891cc7dc909dae7b2e7ec80e77b98bb37025379"
+    },
+    {
+      "name": "hiddenlayer_2026-11-12_surveillance-pricing.mp4",
+      "size": 879051673,
+      "sha256": "afb2fdfc7d3ac7ad1e022b81bddd7792ad52e4579bf2041323ec43d8af26f170",
+      "parts": [
+        "hiddenlayer_2026-11-12_surveillance-pricing.mp4.part000",
+        "hiddenlayer_2026-11-12_surveillance-pricing.mp4.part001",
+        "hiddenlayer_2026-11-12_surveillance-pricing.mp4.part002",
+        "hiddenlayer_2026-11-12_surveillance-pricing.mp4.part003",
+        "hiddenlayer_2026-11-12_surveillance-pricing.mp4.part004",
+        "hiddenlayer_2026-11-12_surveillance-pricing.mp4.part005",
+        "hiddenlayer_2026-11-12_surveillance-pricing.mp4.part006",
+        "hiddenlayer_2026-11-12_surveillance-pricing.mp4.part007",
+        "hiddenlayer_2026-11-12_surveillance-pricing.mp4.part008",
+        "hiddenlayer_2026-11-12_surveillance-pricing.mp4.part009"
+      ]
+    }
+  ]
+}
