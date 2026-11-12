@@ -198,3 +198,4 @@
 - Sources: NCLC release 3 Jun 2026 ($12B+ overdraft/NSF 2025, 20 largest banks; 2024 CFPB rule reversed by Congress 2025), CFPB newsroom 17 Sep 2024 (opt-in quote), Banking Dive 12 Dec 2024 (typical ~$35). Read 12 Nov 2026.
 - Previous (FILE 024, 11 Nov): 54 plays, 20.1% watched, 74.5% skip, 0 saves/shares. Best recent: FILE 020 (25.4%/60.3%), FILE 015 (32.8%/53.1%). Stat chip labels must be short (value is right-aligned and overlaps long labels).
 - vidIQ balance not spent (0 credits). Not Sunday.
+- YouTube Short: queue run https://github.com/scorsty-cmd/promtAPilot/actions/runs/43234025592 FAILED (YouTube upload step ended in 1 s, release step failed; same pattern as 6/7 Nov). Release hiddenlayer-reel-2026-11-12-overdraft-coffee created with failure note, queue branch kept, not resubmitted.
